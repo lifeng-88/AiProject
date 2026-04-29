@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recharge - The Digital Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;700&amp;family=Space_Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#c59aff",
+              "primary-dim": "#9547f7",
+              "surface": "#0d0d19",
+              "secondary": "#ffd709",
+              "on-surface": "#e6e3f5",
+              "on-surface-variant": "#aba9ba",
+              "outline": "#757483",
+              "neon-pink": "#ff2d78",
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans", "sans-serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-modal {
+        background: rgba(13, 13, 25, 0.92);
+        backdrop-filter: blur(40px);
+        border: 0.5px solid rgba(197, 154, 255, 0.15);
+      }
+      .package-card {
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.02);
+      }
+      .package-card-selected {
+        border-radius: 24px;
+        border: 2px solid #c59aff;
+        box-shadow: 0 0 25px rgba(197, 154, 255, 0.35);
+        background: rgba(197, 154, 255, 0.05);
+      }
+      .neon-badge {
+        background: #ff2d78;
+        box-shadow: 0 0 12px rgba(255, 45, 120, 0.6);
+      }
+      .popular-badge {
+        background: #c59aff;
+        color: #0d0d19;
+      }
+      .coin-glow {
+        filter: drop-shadow(0 0 6px rgba(255, 215, 9, 0.5));
+      }
+      .premium-btn-gradient {
+        background: linear-gradient(135deg, #ba88ff 0%, #9547f7 50%, #7e29df 100%);
+        box-shadow: 0 4px 15px rgba(149, 71, 247, 0.3);
+      }
+      .wide-tracking {
+        letter-spacing: 0.12em;
+      }
+    </style>
+</head>
+<body class="bg-black font-body text-on-surface antialiased overflow-hidden min-h-screen">
+<!-- Background Simulation -->
+<div class="fixed inset-0 z-0 flex flex-col items-center justify-center p-8 opacity-20 blur-xl">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsxFZUkonSVzqyfleg3liAeq65WONCpt0-bXVzurQmc7hZYbMADV-JLCtoaAg9tTtfNvi-rqu_dofbr8i9LZISWOruEeRCazYwxtvqO6ddz09DNYvPLaNQiW_6dquUyf_UGoGZFdubkvd0M33FCq2hyiT1PyM1NasxPX3kRPOldL0sGp_NSFzMyWYK4xVTthbd7L2tuuZedkedQFdfBti30T_TspdG-CyUPL2ALUxK44piqKR5iFi8pAB1NfEhxr3SFw7lIy1TbgZS"/>
+</div>
+<!-- Modal Overlay -->
+<div class="fixed inset-0 z-10 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+<!-- Modal Container -->
+<div class="relative w-full max-w-[380px] glass-modal rounded-[28px] overflow-hidden flex flex-col shadow-[0_32px_64px_-16px_rgba(0,0,0,0.6)] animate-in fade-in zoom-in duration-500">
+<!-- Header -->
+<div class="flex justify-between items-center px-6 pt-6 pb-2">
+<h1 class="font-headline font-bold text-[10px] wide-tracking text-primary/80 uppercase">Recharge</h1>
+<button class="text-on-surface-variant/60 hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Content -->
+<div class="px-5 pb-8 space-y-6">
+<!-- Promotional Features (Moved to Top, Left-aligned) -->
+<div class="flex flex-col gap-2.5 items-start justify-center py-4 px-2 border-b border-white/[0.03]">
+<div class="flex items-center gap-3 font-headline text-[11px] text-on-surface/80 tracking-wide">
+<span class="text-[14px] shrink-0">🔓</span>
+<span>Unlock All Premium Templates</span>
+</div>
+<div class="flex items-center gap-3 font-headline text-[11px] text-on-surface/80 tracking-wide">
+<span class="text-[14px] shrink-0">🪄</span>
+<span>Ultra-Realistic AI Effects</span>
+</div>
+<div class="flex items-center gap-3 font-headline text-[11px] text-on-surface/80 tracking-wide">
+<span class="text-[14px] shrink-0">🚀</span>
+<span>Priority Processing (Skip the Wait)</span>
+</div>
+<div class="flex items-center gap-3 font-headline text-[11px] text-on-surface/80 tracking-wide">
+<span class="text-[14px] shrink-0">🖼️</span>
+<span>High-Res / 4K Downloads</span>
+</div>
+</div>
+<!-- Grid Layout for Packages (Moved below text) -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Package 1 -->
+<div class="relative group">
+<div class="absolute top-0 right-2 -translate-y-1/2 z-20">
+<div class="neon-badge px-3 py-1 rounded-full flex items-center justify-center min-h-[22px]">
+<span class="font-headline font-extrabold text-white uppercase tracking-wider leading-none text-[13px]">+10%</span>
+</div>
+</div>
+<div class="package-card flex flex-col items-center justify-center p-5 pt-8 text-center transition-all cursor-pointer hover:bg-white/[0.04]">
+<div class="flex items-center justify-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary text-[24px] coin-glow" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<div class="font-headline font-extrabold text-[24px] text-white leading-none">55</div>
+</div>
+<div class="font-headline text-[10px] text-on-surface/60 font-medium mb-4 uppercase tracking-wider">50 + <span class="text-secondary font-bold">5</span> BONUS</div>
+<div class="font-headline font-bold text-[18px] text-white">$9.99</div>
+</div>
+</div>
+<!-- Package 2: Selected -->
+<div class="relative group">
+<div class="absolute top-0 right-2 -translate-y-1/2 z-20">
+<div class="neon-badge px-3 py-1 rounded-full flex items-center justify-center min-h-[22px]">
+<span class="font-headline font-extrabold text-white uppercase tracking-wider leading-none text-[13px]">+20%</span>
+</div>
+</div>
+<div class="package-card-selected flex flex-col items-center justify-center p-5 pt-8 text-center transition-all cursor-pointer">
+<div class="flex items-center justify-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary text-[24px] coin-glow" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<div class="font-headline font-extrabold text-[24px] text-white leading-none">90</div>
+</div>
+<div class="font-headline text-[10px] text-on-surface/60 font-medium mb-4 uppercase tracking-wider">75 + <span class="text-secondary font-bold">15</span> BONUS</div>
+<div class="font-headline font-bold text-[18px] text-white">$14.99</div>
+</div>
+</div>
+</div>
+<!-- Action Section -->
+<div class="space-y-4 pt-2">
+<!-- Main CTA -->
+<button class="w-full py-4 rounded-2xl premium-btn-gradient text-white font-headline font-extrabold text-[12px] wide-tracking shadow-lg hover:brightness-110 active:scale-[0.98] transition-all uppercase">
+                        Recharge Now
+                    </button>
+<!-- View more packages link (Moved directly below Recharge Now) -->
+<div class="flex justify-center">
+<a class="flex items-center gap-1 font-headline text-[10px] text-primary/70 hover:text-primary transition-colors wide-tracking font-bold uppercase group" href="#">
+                            Explore More
+                            <span class="material-symbols-outlined text-[14px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Footer -->
+<div class="flex items-center justify-center gap-1.5 pt-1">
+<span class="material-symbols-outlined text-outline/40 text-[12px]">lock</span>
+<p class="font-headline text-[8px] text-outline/60 uppercase wide-tracking font-bold">100% Secure &amp; Private Billing</p>
+</div>
+</div>
+<!-- Bottom Accent -->
+<div class="h-[1px] w-full bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#fff7e6",
+              "inverse-on-surface": "#545462",
+              "on-primary": "#420082",
+              "surface-tint": "#c59aff",
+              "outline": "#757483",
+              "secondary-fixed-dim": "#efc900",
+              "primary-fixed": "#ba88ff",
+              "on-secondary-fixed": "#453900",
+              "on-tertiary-fixed-variant": "#760037",
+              "secondary-container": "#705d00",
+              "error-container": "#a70138",
+              "on-surface-variant": "#aba9ba",
+              "tertiary-fixed": "#ff8eae",
+              "surface-container-low": "#12121f",
+              "surface-dim": "#0d0d19",
+              "on-tertiary-fixed": "#380017",
+              "on-tertiary": "#47001f",
+              "primary-container": "#ba88ff",
+              "error-dim": "#d73357",
+              "on-error-container": "#ffb2b9",
+              "surface-container-lowest": "#000000",
+              "on-surface": "#e6e3f5",
+              "surface-container": "#181827",
+              "primary-dim": "#9547f7",
+              "on-tertiary-container": "#000000",
+              "inverse-surface": "#fcf8ff",
+              "on-primary-container": "#330066",
+              "on-primary-fixed": "#000000",
+              "secondary-fixed": "#ffd709",
+              "surface-variant": "#242436",
+              "secondary-dim": "#efc900",
+              "surface": "#0d0d19",
+              "surface-container-highest": "#242436",
+              "surface-bright": "#2a2a3d",
+              "inverse-primary": "#7e29df",
+              "on-secondary-fixed-variant": "#665500",
+              "error": "#ff6e84",
+              "on-error": "#490013",
+              "secondary": "#ffd709",
+              "tertiary-fixed-dim": "#ff75a0",
+              "tertiary-container": "#ff067f",
+              "on-background": "#e6e3f5",
+              "on-primary-fixed-variant": "#3f007c",
+              "on-secondary": "#5b4b00",
+              "primary": "#c59aff",
+              "primary-fixed-dim": "#b075ff",
+              "tertiary-dim": "#e30071",
+              "background": "#0d0d19",
+              "surface-container-high": "#1e1e2e",
+              "tertiary": "#ff6b9b",
+              "outline-variant": "#474755"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .waterfall-grid {
+            column-count: 2;
+            column-gap: 12px;
+        }
+        .waterfall-item {
+            break-inside: avoid;
+            margin-bottom: 12px;
+        }
+        .aspect-9-16 {
+            aspect-ratio: 9 / 16;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .glow-sm {
+            box-shadow: 0 0 15px -3px rgba(197, 154, 255, 0.3);
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-[#0d0d19] dark:bg-[#0d0d19] text-[#c59aff]">
+<div class="flex items-center gap-4">
+<button class="hover:bg-[#242436]/50 transition-colors p-2 rounded-full active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline font-bold text-xl tracking-tight">My Creations</h1>
+</div>
+</header>
+<main class="pt-20 px-4 min-h-screen pb-12">
+<!-- Tab Bar -->
+<nav class="flex items-center gap-2 overflow-x-auto pb-4 custom-scrollbar">
+<button class="flex-none px-6 py-2 rounded-full bg-primary/10 text-primary font-bold font-label text-xs tracking-widest border border-primary/20 glow-sm">
+            ALL
+        </button>
+<button class="flex-none px-6 py-2 rounded-full bg-surface-container-low text-on-surface/40 font-semibold font-label text-xs tracking-widest hover:text-on-surface transition-colors">
+            GENERATING
+        </button>
+<button class="flex-none px-6 py-2 rounded-full bg-surface-container-low text-on-surface/40 font-semibold font-label text-xs tracking-widest hover:text-on-surface transition-colors">
+            SUCCESS
+        </button>
+<button class="flex-none px-6 py-2 rounded-full bg-surface-container-low text-on-surface/40 font-semibold font-label text-xs tracking-widest hover:text-on-surface transition-colors">
+            FAILURE
+        </button>
+</nav>
+<!-- Expiration Notice (Relocated and De-emphasized) -->
+<div class="mb-4 px-2 flex items-center gap-2 opacity-40">
+<span class="material-symbols-outlined text-on-surface text-[10px]" data-icon="info">info</span>
+<p class="text-[9px] leading-none text-on-surface font-medium uppercase tracking-wider">
+            Works expire after 24h. Please save them in time.
+        </p>
+</div>
+<!-- Waterfall Grid -->
+<div class="waterfall-grid">
+<!-- Item: Success -->
+<div class="waterfall-item">
+<div class="relative group aspect-9-16 bg-surface-container rounded-lg overflow-hidden border border-outline-variant/20">
+<img class="w-full h-full object-cover" data-alt="Generated abstract 3D digital art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnDLEq6uE83Z4O6anC6DmGnrQqIbH5_09ifuTdaz4tS2fvs6jXGZWXpss5PNKUgj01oCLEf4zbgvOcWwFICh-YUZZgqmoCBwH6iwP7IacARtWLCSoT2-IgYnxXTjNWnr8GEaG0CXuZz_XzMp3Cg1cljXa03FWVWwQJ0gzc15rAK0gF3RTFPIpNRLNXhS6A3WUTw2oeJS4FJetGj71A3BoBjJ_ihaDfJKmwJWVW4bFnPK09cpjdZ-mCNLnv_ZOZ34cUhzpfZaeOKDdS"/>
+<!-- Status Label -->
+<div class="absolute top-2 left-2 px-2 py-1 rounded bg-black/60 backdrop-blur-md border border-white/10 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.6)]"></span>
+<span class="text-[10px] font-bold text-white uppercase tracking-tighter">Success</span>
+</div>
+<!-- Quick Actions -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-3 gap-3">
+<div class="flex justify-around items-center">
+<button class="p-2 rounded-full bg-white/10 backdrop-blur hover:bg-primary/20 transition-all">
+<span class="material-symbols-outlined text-white text-lg" data-icon="visibility">visibility</span>
+</button>
+<button class="p-2 rounded-full bg-white/10 backdrop-blur hover:bg-primary/20 transition-all">
+<span class="material-symbols-outlined text-white text-lg" data-icon="download">download</span>
+</button>
+<button class="p-2 rounded-full bg-white/10 backdrop-blur hover:bg-primary/20 transition-all">
+<span class="material-symbols-outlined text-white text-lg" data-icon="share">share</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item: Generating with Placeholder -->
+<div class="waterfall-item">
+<div class="relative aspect-9-16 bg-surface-container rounded-lg overflow-hidden border border-primary/20">
+<img class="w-full h-full object-cover opacity-30 blur-[2px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBydE3U29SoOohfIW7_jJ7kSVqoihuB8sdEvQRYom3NXXrRWfdvEipp8ICojnENSZUZmkzHuNVA2Fgb8TaLxJm2wpmYutNZHM4M6dWelkTznGjMgNVlGCnhM5_Cgn-xoE4fd5yuodBEm7_iszYeNNk8i6KOMquP6wPkUdllZsaIQsWD3LLcSRv6_-padbfSDGMRseuXTdpK1JNJ8Hli3QRntG63_g3Wed41dhMQbLqgFxssgjyPTxiTAOJNCoHy8cWtUy0ywo-O-cr2"/>
+<div class="absolute inset-0 bg-black/20 flex flex-col items-center justify-center p-4">
+<div class="relative flex flex-col items-center text-center gap-4">
+<div class="w-12 h-12 border-2 border-primary/20 border-t-primary rounded-full animate-spin"></div>
+<div class="space-y-1">
+<span class="text-primary font-label text-lg font-bold">64%</span>
+<p class="text-[10px] uppercase font-bold tracking-[0.2em] text-on-surface/60">Generating</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Item: Queuing -->
+<div class="waterfall-item">
+<div class="relative aspect-9-16 bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant/10 flex flex-col items-center justify-center">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 blur-[2px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBydE3U29SoOohfIW7_jJ7kSVqoihuB8sdEvQRYom3NXXrRWfdvEipp8ICojnENSZUZmkzHuNVA2Fgb8TaLxJm2wpmYutNZHM4M6dWelkTznGjMgNVlGCnhM5_Cgn-xoE4fd5yuodBEm7_iszYeNNk8i6KOMquP6wPkUdllZsaIQsWD3LLcSRv6_-padbfSDGMRseuXTdpK1JNJ8Hli3QRntG63_g3Wed41dhMQbLqgFxssgjyPTxiTAOJNCoHy8cWtUy0ywo-O-cr2"/>
+<div class="relative z-10 flex flex-col items-center justify-center p-4">
+<span class="material-symbols-outlined text-primary/40 text-4xl mb-4" data-icon="schedule">schedule</span>
+<div class="text-center">
+<p class="text-xs font-bold text-on-surface/60">Queuing</p>
+<p class="text-[10px] text-on-surface/30 mt-1 uppercase">Est. 2 Mins</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Item: Failure (Softened impact) -->
+<div class="waterfall-item">
+<div class="relative aspect-9-16 bg-surface-container-low rounded-lg overflow-hidden border border-error/20 flex flex-col items-center justify-center p-4">
+<div class="w-10 h-10 rounded-full bg-error/5 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-error/60 text-xl" data-icon="error_outline">error_outline</span>
+</div>
+<div class="text-center">
+<p class="text-xs font-bold text-on-surface/60">Failure</p>
+<p class="text-[9px] uppercase tracking-widest text-on-surface/30 mt-2 font-bold leading-tight">Refunded<br/>Credits</p>
+<p class="text-[9px] uppercase tracking-widest text-primary/60 mt-2 font-bold">Tap to retry</p></div>
+</div>
+</div>
+<!-- Item: Expired -->
+<div class="waterfall-item">
+<div class="relative aspect-9-16 bg-surface-container rounded-lg overflow-hidden grayscale opacity-40 border border-outline-variant/20">
+<img class="w-full h-full object-cover" data-alt="Old expired generated artwork" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL2uJU-GWxgZwiaZ0Uju_L67GLylsUhhXcTFJecDtPBZe9FdZPNdhByVFA3i7U5r5X2yGOG4EMR4LBX2dWmBcNWcP9ZyUgaTw-ZEGKSM77xnGvTHSQK72Zi9--xA4lmIi-yqhki9Mukght06pPPhBzQR4fGYPqy3_0B57jpt90hp588wyzKOpzgTiXjZR-ehxc9asPpgKE8mGJXRQde5ySyRlu-d1C5DinsVddtZMASYMCT3mDIN1i7IB3qH0T80_-QU1drdBQ8qY5"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<div class="px-3 py-1 border border-white/20 bg-black/20 backdrop-blur-sm rounded">
+<span class="text-[10px] font-bold text-white uppercase tracking-widest">Expired</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item: Success 2 -->
+<div class="waterfall-item">
+<div class="relative group aspect-9-16 bg-surface-container rounded-lg overflow-hidden border border-outline-variant/20">
+<img class="w-full h-full object-cover" data-alt="Neon cyberpunk city generation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBydE3U29SoOohfIW7_jJ7kSVqoihuB8sdEvQRYom3NXXrRWfdvEipp8ICojnENSZUZmkzHuNVA2Fgb8TaLxJm2wpmYutNZHM4M6dWelkTznGjMgNVlGCnhM5_Cgn-xoE4fd5yuodBEm7_iszYeNNk8i6KOMquP6wPkUdllZsaIQsWD3LLcSRv6_-padbfSDGMRseuXTdpK1JNJ8Hli3QRntG63_g3Wed41dhMQbLqgFxssgjyPTxiTAOJNCoHy8cWtUy0ywo-O-cr2"/>
+<div class="absolute top-2 left-2 px-2 py-1 rounded bg-black/60 backdrop-blur-md border border-white/10 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.6)]"></span>
+<span class="text-[10px] font-bold text-white uppercase tracking-tighter">Success</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation (Home, Recharge, My) -->
+</body></html>

@@ -1,0 +1,32 @@
+{
+  "_说明": "请用真实 GET /v1/packages?channel_id=... 的响应体替换本文件（或只保留其中 list 数组字段），再运行 scripts/generate_iap_storekit.py",
+  "list": [
+    {
+      "packageId": 1,
+      "name": "Starter Pack",
+      "regularPrice": "999",
+      "discountPrice": "999",
+      "gold": 50,
+      "bonus": 5,
+      "apple_product_id": "com.glamai.coins.starter"
+    },
+    {
+      "packageId": 2,
+      "name": "Popular Pack",
+      "regularPrice": "1499",
+      "discountPrice": "1499",
+      "gold": 75,
+      "bonus": 15,
+      "apple_product_id": "com.glamai.coins.popular"
+    },
+    {
+      "packageId": 3,
+      "name": "Value Pack",
+      "regularPrice": "1999",
+      "discountPrice": "1999",
+      "gold": 100,
+      "bonus": 20,
+      "apple_product_id": "com.glamai.coins.value"
+    }
+  ]
+}

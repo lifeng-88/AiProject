@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#242436",
+              "surface-bright": "#2a2a3d",
+              "primary-fixed-dim": "#b075ff",
+              "primary-fixed": "#ba88ff",
+              "on-surface": "#e6e3f5",
+              "secondary": "#ffd709",
+              "error-dim": "#d73357",
+              "surface-dim": "#0d0d19",
+              "on-primary-fixed": "#000000",
+              "tertiary-dim": "#e30071",
+              "on-secondary": "#5b4b00",
+              "secondary-dim": "#efc900",
+              "background": "#0d0d19",
+              "inverse-on-surface": "#545462",
+              "secondary-fixed-dim": "#efc900",
+              "on-tertiary-container": "#000000",
+              "surface": "#0d0d19",
+              "on-surface-variant": "#aba9ba",
+              "on-error": "#490013",
+              "tertiary-fixed-dim": "#ff75a0",
+              "surface-container": "#181827",
+              "surface-container-highest": "#242436",
+              "error-container": "#a70138",
+              "on-primary-fixed-variant": "#3f007c",
+              "on-tertiary-fixed-variant": "#760037",
+              "outline-variant": "#474755",
+              "surface-tint": "#c59aff",
+              "on-secondary-fixed": "#453900",
+              "on-secondary-container": "#fff7e6",
+              "inverse-surface": "#fcf8ff",
+              "on-primary": "#420082",
+              "surface-container-low": "#12121f",
+              "outline": "#757483",
+              "on-primary-container": "#330066",
+              "on-background": "#e6e3f5",
+              "primary-container": "#ba88ff",
+              "surface-container-lowest": "#000000",
+              "secondary-fixed": "#ffd709",
+              "on-secondary-fixed-variant": "#665500",
+              "primary": "#c59aff",
+              "tertiary-fixed": "#ff8eae",
+              "tertiary": "#ff6b9b",
+              "inverse-primary": "#7e29df",
+              "tertiary-container": "#ff067f",
+              "on-tertiary-fixed": "#380017",
+              "on-error-container": "#ffb2b9",
+              "surface-container-high": "#1e1e2e",
+              "error": "#ff6e84",
+              "primary-dim": "#9547f7",
+              "on-tertiary": "#47001f",
+              "secondary-container": "#705d00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            background: rgba(36, 36, 54, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(71, 71, 85, 0.2);
+        }
+        .text-micro {
+            font-size: 0.65rem;
+            letter-spacing: 0.05em;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body min-h-screen pb-32">
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-[#0d0d19] flex justify-between items-center px-6 h-16 w-full max-w-none shadow-none">
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-xl tracking-tight text-[#c59aff]">Profile</h1>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-10">
+<!-- User Profile Section -->
+<section class="flex flex-col items-center text-center space-y-4">
+<div>
+<div class="flex items-center justify-center gap-2 group cursor-pointer hover:opacity-80 transition-opacity active:scale-95">
+<p class="font-label text-micro uppercase text-on-surface-variant tracking-widest">ID: 2031667668129439744</p>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant/70">content_copy</span>
+</div>
+</div>
+</section>
+<!-- Core Features: Bento-ish Grid -->
+<section class="grid grid-cols-2 gap-4 mb-2">
+<div class="glass-panel rounded-lg flex flex-col items-center justify-center space-y-3 hover:bg-surface-container-highest transition-colors cursor-pointer group py-6 px-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="text-center">
+<span class="block font-headline font-semibold text-sm">My Creations</span>
+</div>
+</div>
+<div class="glass-panel rounded-lg flex flex-col items-center justify-center space-y-3 hover:bg-surface-container-highest transition-colors cursor-pointer group py-6 px-4">
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+</div>
+<div class="text-center">
+<span class="block font-headline font-semibold text-sm whitespace-nowrap">Recharge Record</span>
+</div>
+</div>
+</section>
+<!-- Support & Legal: Refined List -->
+<!-- Personal Assets Section -->
+<section class="space-y-2">
+<h3 class="font-label text-micro uppercase tracking-[0.2em] text-outline px-2 mb-4">Personal Assets</h3>
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<!-- List Item: My Collection -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">favorite</span>
+<span class="font-body text-sm font-medium">My Likes</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm">chevron_right</span>
+</div>
+</div>
+</section><section class="space-y-2">
+<h3 class="font-label text-micro uppercase tracking-[0.2em] text-outline px-2 mb-4">Support &amp; Assets</h3>
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<!-- List Item -->
+<div class="flex items-center justify-between p-4 hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">description</span>
+<span class="font-body text-sm font-medium">User Agreement</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm">chevron_right</span>
+</div>
+<!-- Divider (using spacing and color shift as per DS) -->
+<div class="h-[1px] mx-4 bg-outline-variant/10"></div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">verified_user</span>
+<span class="font-body text-sm font-medium">Privacy Policy</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm">chevron_right</span>
+</div>
+<div class="h-[1px] mx-4 bg-outline-variant/10"></div>
+<div class="flex items-center justify-between p-4 hover:bg-surface-container transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">support_agent</span>
+<span class="font-body text-sm font-medium">Feedback Center</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Logout / Destructive Action -->
+<section class="pt-4">
+<p class="text-center font-label text-[10px] text-outline-variant mt-8 uppercase tracking-widest">Version 2.4.0-Beta</p>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-[3rem] bg-[#181827]/80 backdrop-blur-xl flex justify-around items-center h-20 pb-safe px-8 shadow-[0_-8px_32px_rgba(0,0,0,0.4)]">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-[#474755] hover:text-[#c59aff]/70 tap-highlight-none transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-wide uppercase mt-1">Home</span>
+</a>
+<!-- Recharge -->
+<a class="flex flex-col items-center justify-center text-[#474755] hover:text-[#c59aff]/70 tap-highlight-none transition-all duration-300" href="#">
+<span class="material-symbols-outlined text-2xl">account_balance_wallet</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-wide uppercase mt-1">Recharge</span>
+</a>
+<!-- My (Active) -->
+<a class="flex flex-col items-center justify-center text-[#c59aff] scale-110 transition-transform tap-highlight-none duration-300" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Manrope'] font-medium text-[10px] tracking-wide uppercase mt-1">My</span>
+</a>
+</nav>
+</body></html>

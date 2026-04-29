@@ -1,0 +1,8 @@
+App Store 预览图（竖屏 PNG）
+
+依据 Apple App Store Connect — Screenshot specifications 常见档位：
+- iPhone_6.7_1290x2796：1290 × 2796 px（6.7" 等，亦被 6.9" 档位接受）
+- iPhone_6.5_1284x2778：1284 × 2778 px（6.5"）
+- iPhone_5.5_1242x2208：1242 × 2208 px（5.5"）
+
+格式：PNG，不透明背景。可按需替换为真实截图并保留同名尺寸导出。

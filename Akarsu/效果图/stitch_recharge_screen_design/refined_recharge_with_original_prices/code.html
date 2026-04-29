@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#000000",
+              "background": "#0d0d19",
+              "inverse-surface": "#fcf8ff",
+              "error-dim": "#d73357",
+              "on-primary-fixed-variant": "#3f007c",
+              "tertiary-dim": "#e30071",
+              "on-background": "#e6e3f5",
+              "on-error": "#490013",
+              "surface": "#0d0d19",
+              "secondary-fixed-dim": "#efc900",
+              "on-primary-container": "#330066",
+              "on-primary-fixed": "#000000",
+              "surface-bright": "#2a2a3d",
+              "on-secondary": "#5b4b00",
+              "on-tertiary-fixed": "#380017",
+              "on-secondary-fixed": "#453900",
+              "tertiary-fixed": "#ff8eae",
+              "primary-dim": "#9547f7",
+              "outline-variant": "#474755",
+              "tertiary": "#ff6b9b",
+              "primary-fixed-dim": "#b075ff",
+              "secondary-fixed": "#ffd709",
+              "primary-fixed": "#ba88ff",
+              "outline": "#757483",
+              "on-tertiary-container": "#000000",
+              "primary": "#c59aff",
+              "on-error-container": "#ffb2b9",
+              "tertiary-fixed-dim": "#ff75a0",
+              "tertiary-container": "#ff067f",
+              "error": "#ff6e84",
+              "on-secondary-container": "#fff7e6",
+              "secondary": "#ffd709",
+              "on-tertiary": "#47001f",
+              "surface-dim": "#0d0d19",
+              "on-tertiary-fixed-variant": "#760037",
+              "secondary-container": "#705d00",
+              "surface-container-high": "#1e1e2e",
+              "primary-container": "#ba88ff",
+              "on-surface-variant": "#aba9ba",
+              "inverse-on-surface": "#545462",
+              "surface-container": "#181827",
+              "inverse-primary": "#7e29df",
+              "surface-variant": "#242436",
+              "surface-container-low": "#12121f",
+              "surface-tint": "#c59aff",
+              "error-container": "#a70138",
+              "surface-container-highest": "#242436",
+              "secondary-dim": "#efc900",
+              "on-surface": "#e6e3f5",
+              "on-secondary-fixed-variant": "#665500",
+              "on-primary": "#420082"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(36, 36, 54, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .ghost-border {
+            border: 1px solid rgba(71, 71, 85, 0.2);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .coin-glow {
+            filter: drop-shadow(0 0 8px rgba(255, 215, 9, 0.3));
+        }
+        .discount-badge {
+            background: linear-gradient(135deg, #ff3d77 0%, #ff0055 100%);
+            box-shadow: 0 0 12px rgba(255, 0, 85, 0.5);
+        }
+        html { font-size: 15px; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen pb-32">
+<!-- Header with RECHARGE text and Balance Display -->
+<header class="bg-transparent flex justify-between items-center w-full px-6 py-4 fixed top-0 z-50">
+<h1 class="font-headline font-extrabold text-lg tracking-widest text-on-background">RECHARGE</h1>
+<div class="flex items-center gap-1.5 bg-[#181827]/80 backdrop-blur-md rounded-full px-3 py-1 active:scale-95 duration-200 cursor-pointer border border-white/5">
+<span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">paid</span>
+<span class="text-[#c59aff] font-headline font-bold tracking-tight text-xs">1,250</span>
+</div>
+</header>
+<main class="pt-20 px-6 max-w-2xl mx-auto space-y-4">
+<!-- Packs Grid -->
+<div class="grid gap-4">
+<!-- 25 Coins -->
+<div class="glass-card ghost-border rounded-xl p-3.5 px-5 flex items-center justify-between group active:scale-[0.98] transition-all">
+<div class="flex items-center gap-4">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center coin-glow">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">paid</span>
+</div>
+<div>
+<h3 class="font-headline text-base font-bold">25 COINS</h3>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline text-base font-black">$4.99</div>
+<div class="text-[10px] text-outline line-through font-headline opacity-60">$9.99</div></div>
+</div>
+<!-- 55 Coins -->
+<div class="glass-card ghost-border rounded-xl p-3.5 px-5 flex items-center justify-between group active:scale-[0.98] transition-all relative">
+<div class="absolute -top-1.5 right-6 discount-badge text-white font-label text-[9px] font-black px-2 py-0.5 rounded-full uppercase">+10% FREE</div>
+<div class="flex items-center gap-4">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center coin-glow">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">paid</span>
+</div>
+<div>
+<h3 class="font-headline text-base font-bold">55 COINS</h3>
+<span class="font-label text-[10px] font-bold block mt-0.5 uppercase tracking-wider text-white">50 + <span class="text-secondary">5</span> Bonus</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline text-base font-black">$9.99</div>
+<div class="text-[10px] text-outline line-through font-headline opacity-60">$19.99</div></div>
+</div>
+<!-- 90 Coins (SELECTED) -->
+<div class="relative group active:scale-[0.98] transition-all">
+<div class="absolute -inset-0.5 bg-gradient-to-r from-primary-dim to-primary rounded-xl blur-sm opacity-50"></div>
+<div class="relative glass-card border-2 border-primary rounded-xl p-3.5 px-5 flex items-center justify-between bg-[#1e1e2e]">
+<div class="absolute -top-2 left-6 bg-primary text-on-primary font-label text-[9px] font-black px-3 py-0.5 rounded-full">
+                        MOST POPULAR
+                    </div>
+<div class="absolute -top-2 right-6 discount-badge text-white font-label text-[9px] font-black px-2 py-0.5 rounded-full uppercase">+20% FREE</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center coin-glow">
+<span class="material-symbols-outlined text-secondary text-xl" style="font-variation-settings: 'FILL' 1;">paid</span>
+</div>
+<div>
+<h3 class="font-headline text-lg font-black text-primary uppercase">90 COINS</h3>
+<span class="font-label text-[10px] font-bold block mt-0.5 uppercase tracking-wider text-white">75 + <span class="text-secondary">15</span> Bonus</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline text-lg font-black">$14.99</div>
+<div class="text-[10px] text-outline line-through font-headline opacity-60">$29.99</div></div>
+</div>
+</div>
+<!-- 225 Coins -->
+<div class="glass-card ghost-border rounded-xl p-3.5 px-5 flex items-center justify-between group active:scale-[0.98] transition-all relative">
+<div class="absolute -top-1.5 right-6 discount-badge text-white font-label text-[9px] font-black px-2 py-0.5 rounded-full uppercase">+50% FREE</div>
+<div class="flex items-center gap-4">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center coin-glow">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">paid</span>
+</div>
+<div>
+<h3 class="font-headline text-base font-bold">225 COINS</h3>
+<span class="font-label text-[10px] font-bold block mt-0.5 uppercase tracking-wider text-white">150 + <span class="text-secondary">75</span> Bonus</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline text-base font-black">$29.99</div>
+<div class="text-[10px] text-outline line-through font-headline opacity-60">$59.99</div></div>
+</div>
+<!-- 425 Coins -->
+<div class="glass-card ghost-border rounded-xl p-3.5 px-5 flex items-center justify-between group active:scale-[0.98] transition-all relative">
+<div class="absolute -top-1.5 right-6 discount-badge text-white font-label text-[9px] font-black px-2 py-0.5 rounded-full uppercase">+70% FREE</div>
+<div class="flex items-center gap-4">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center coin-glow">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">paid</span>
+</div>
+<div>
+<h3 class="font-headline text-base font-bold">425 COINS</h3>
+<span class="font-label text-[10px] font-bold block mt-0.5 uppercase tracking-wider text-white">250 + <span class="text-secondary">175</span> Bonus</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline text-base font-black">$49.99</div>
+<div class="text-[10px] text-outline line-through font-headline opacity-60">$99.99</div></div>
+</div>
+<!-- 1000 Coins -->
+<div class="glass-card ghost-border rounded-xl p-3.5 px-5 flex items-center justify-between group active:scale-[0.98] transition-all relative">
+<div class="absolute -top-1.5 right-6 discount-badge text-white font-label text-[9px] font-black px-2 py-0.5 rounded-full uppercase">+100% FREE</div>
+<div class="flex items-center gap-4">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center coin-glow">
+<div class="relative">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">paid</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[10px] absolute -top-1 -right-1" style="font-variation-settings: 'FILL' 1;">paid</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-base font-bold">1000 COINS</h3>
+<span class="font-label text-[10px] font-bold block mt-0.5 uppercase tracking-wider text-white">500 + <span class="text-secondary">500</span> Bonus</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline text-base font-black">$99.99</div>
+<div class="text-[10px] text-outline line-through font-headline opacity-60">$199.99</div></div>
+</div>
+<!-- 2250 Coins (BEST VALUE) -->
+<div class="relative group active:scale-[0.98] transition-all">
+<div class="relative glass-card border rounded-xl p-3.5 px-5 flex items-center justify-between bg-[#1e1e2e] ghost-border">
+<div class="absolute -top-2 left-6 bg-secondary text-on-secondary font-label text-[9px] font-black px-3 py-0.5 rounded-full shadow-[0_0_10px_rgba(255,215,9,0.4)] uppercase">
+                        BEST VALUE
+                    </div>
+<div class="absolute -top-2 right-6 discount-badge text-white font-label text-[9px] font-black px-2 py-0.5 rounded-full uppercase">+125% FREE</div>
+<div class="flex items-center gap-4">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center coin-glow">
+<div class="relative">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">paid</span>
+<span class="material-symbols-outlined text-secondary-fixed-dim text-[10px] absolute -top-1 -right-1" style="font-variation-settings: 'FILL' 1;">paid</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-base font-bold">2250 COINS</h3>
+<span class="font-label text-[10px] font-bold block mt-0.5 uppercase tracking-wider text-white">1000 + <span class="text-secondary">1250</span> Bonus</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline text-lg font-black">$199.99</div>
+<div class="text-[10px] text-outline line-through font-headline opacity-60">$399.99</div></div>
+</div>
+</div>
+</div>
+<!-- CTA Action -->
+<div class="pt-4 pb-10">
+<button class="w-full py-4 rounded-full bg-gradient-to-r from-[#9547f7] to-[#ff6b9b] text-on-primary font-headline font-extrabold text-sm tracking-widest uppercase shadow-[0_8px_32px_rgba(149,71,247,0.2)] active:scale-95 transition-transform">
+                RECHARGE NOW
+            </button>
+<p class="text-center text-[10px] text-on-surface mt-6 font-label font-bold uppercase tracking-[0.15em] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+                100% Discreet &amp; Secure Billing
+            </p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#181827]/90 backdrop-blur-xl rounded-t-[2.5rem] shadow-[0_-8px_32px_rgba(0,0,0,0.4)] border-t border-white/5">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-[#474755] opacity-70 hover:text-[#c59aff] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1 text-xl" data-icon="explore">explore</span>
+<span class="font-body font-semibold text-[8px] uppercase tracking-widest">Home</span>
+</a>
+<!-- Recharge (ACTIVE) -->
+<a class="flex flex-col items-center justify-center text-[#c59aff] bg-[#242436] rounded-full px-5 py-1.5 shadow-[0_0_15px_rgba(197,154,255,0.1)] active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-0.5 text-xl" data-icon="paid" style="font-variation-settings: 'FILL' 1;">paid</span>
+<span class="font-body font-semibold text-[8px] uppercase tracking-widest">Recharge</span>
+</a>
+<!-- My -->
+<a class="flex flex-col items-center justify-center text-[#474755] opacity-70 hover:text-[#c59aff] transition-colors active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined mb-1 text-xl" data-icon="person">person</span>
+<span class="font-body font-semibold text-[8px] uppercase tracking-widest">My</span>
+</a>
+</nav>
+</body></html>

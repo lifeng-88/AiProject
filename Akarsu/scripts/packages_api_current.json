@@ -1,0 +1,40 @@
+{
+  "list": [
+    {
+      "regularPrice": "2000",
+      "discountPrice": "999",
+      "bonus": 0,
+      "appleProductId": "com.magic.app.coins_100",
+      "gold": 100,
+      "packageId": 1775720100,
+      "name": "9.99"
+    },
+    {
+      "regularPrice": "4000",
+      "discountPrice": "1999",
+      "bonus": 30,
+      "appleProductId": "com.magic.app.coins_200",
+      "gold": 200,
+      "packageId": 1775720114,
+      "name": "19.99"
+    },
+    {
+      "regularPrice": "6000",
+      "discountPrice": "2999",
+      "bonus": 50,
+      "appleProductId": "com.magic.app.coins_300",
+      "gold": 300,
+      "packageId": 1776392504,
+      "name": "29.99"
+    },
+    {
+      "regularPrice": "10000",
+      "discountPrice": "4999",
+      "bonus": 100,
+      "appleProductId": "com.magic.app.coins_500",
+      "gold": 500,
+      "packageId": 1776392534,
+      "name": "49.99"
+    }
+  ]
+}

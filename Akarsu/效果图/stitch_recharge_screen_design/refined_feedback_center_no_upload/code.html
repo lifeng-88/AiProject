@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Feedback Center - Digital Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space_Grotesk:wght@500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed": "#ba88ff",
+            "on-error-container": "#ffb2b9",
+            "surface-container": "#181827",
+            "primary-dim": "#9547f7",
+            "on-primary-fixed-variant": "#3f007c",
+            "on-secondary-container": "#fff7e6",
+            "inverse-primary": "#7e29df",
+            "surface-container-high": "#1e1e2e",
+            "surface-container-low": "#12121f",
+            "primary-fixed-dim": "#b075ff",
+            "secondary-fixed": "#ffd709",
+            "surface-variant": "#242436",
+            "on-surface": "#e6e3f5",
+            "surface-tint": "#c59aff",
+            "on-error": "#490013",
+            "surface-dim": "#0d0d19",
+            "error-container": "#a70138",
+            "error": "#ff6e84",
+            "on-tertiary-fixed-variant": "#760037",
+            "on-surface-variant": "#aba9ba",
+            "background": "#0d0d19",
+            "surface-container-highest": "#242436",
+            "on-primary-container": "#330066",
+            "secondary-container": "#705d00",
+            "tertiary": "#ff6b9b",
+            "secondary-fixed-dim": "#efc900",
+            "primary": "#c59aff",
+            "outline-variant": "#474755",
+            "primary-container": "#ba88ff",
+            "surface-container-lowest": "#000000",
+            "on-secondary-fixed-variant": "#665500",
+            "on-secondary-fixed": "#453900",
+            "secondary-dim": "#efc900",
+            "tertiary-dim": "#e30071",
+            "outline": "#757483",
+            "surface-bright": "#2a2a3d",
+            "on-tertiary-fixed": "#380017",
+            "on-primary": "#420082",
+            "on-background": "#e6e3f5",
+            "secondary": "#ffd709",
+            "inverse-surface": "#fcf8ff",
+            "surface": "#0d0d19",
+            "tertiary-container": "#ff067f",
+            "on-tertiary-container": "#000000",
+            "on-tertiary": "#47001f",
+            "on-primary-fixed": "#000000",
+            "error-dim": "#d73357",
+            "tertiary-fixed-dim": "#ff75a0",
+            "on-secondary": "#5b4b00",
+            "inverse-on-surface": "#545462",
+            "tertiary-fixed": "#ff8eae"
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Manrope"],
+            "label": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+    }
+    .glass-card {
+      background: rgba(36, 36, 54, 0.6);
+      backdrop-filter: blur(20px);
+    }
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0d0d19;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #474755;
+      border-radius: 10px;
+    }
+  </style>
+<style>
+    body {
+      min-height: 100dvh;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-dim selection:text-white min-h-screen pb-12">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0d0d19]/80 backdrop-blur-md">
+<div class="flex items-center px-5 h-14 w-full max-w-7xl mx-auto">
+<button class="mr-3 text-[#c59aff] active:scale-95 duration-200 transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined text-xl">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] text-lg font-bold tracking-tight text-[#c59aff]">Feedback</h1>
+</div>
+</header>
+<main class="pt-20 px-5 max-w-2xl mx-auto space-y-6">
+<!-- Hero Header -->
+<section>
+<h2 class="font-headline text-2xl font-extrabold tracking-tight text-on-background mb-1">How can we improve?</h2>
+<p class="text-on-surface-variant text-xs font-body leading-relaxed">Your insights drive the future of our digital curation engine.</p>
+</section>
+<!-- Category Selection -->
+<section class="space-y-3">
+<h3 class="font-label text-[9px] uppercase tracking-widest text-secondary-fixed-dim">Category Selection</h3>
+<div class="flex flex-wrap gap-2">
+<!-- Active Chip -->
+<button class="px-4 py-2 rounded-full bg-surface-container-highest border border-primary/30 text-primary font-body text-[10px] font-semibold shadow-[0_0_15px_rgba(197,154,255,0.1)] transition-all">
+          AI Generation Quality
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low border border-outline-variant/20 text-on-surface-variant font-body text-[10px] font-medium hover:bg-surface-container transition-colors">
+          Poor Result
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low border border-outline-variant/20 text-on-surface-variant font-body text-[10px] font-medium hover:bg-surface-container transition-colors">
+          Payment
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low border border-outline-variant/20 text-on-surface-variant font-body text-[10px] font-medium hover:bg-surface-container transition-colors">
+          App Bug
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-low border border-outline-variant/20 text-on-surface-variant font-body text-[10px] font-medium hover:bg-surface-container transition-colors">
+          Other
+        </button>
+</div>
+</section>
+<!-- Description Field -->
+<section class="space-y-3">
+<h3 class="font-label text-[9px] uppercase tracking-widest text-secondary-fixed-dim">Issue Description</h3>
+<div class="relative group">
+<textarea class="w-full h-36 bg-surface-container-low border border-outline-variant/20 rounded-xl p-4 text-on-surface text-xs font-body placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all resize-none" placeholder="Please describe your issue in detail..."></textarea>
+<div class="absolute bottom-3 right-4 text-[9px] font-label text-outline uppercase tracking-wider">0 / 500</div>
+</div>
+</section>
+<!-- Attachment Section -->
+<!-- Action Section -->
+<div class="space-y-4 pt-1">
+<button class="w-full py-3.5 rounded-full bg-gradient-to-r from-primary-dim to-primary text-on-primary font-body font-bold text-xs tracking-wide shadow-[0_8px_24px_rgba(151,71,247,0.25)] active:scale-[0.98] transition-all">
+        Submit Feedback
+      </button>
+<div class="flex justify-center">
+<button class="flex items-center gap-1.5 px-4 py-1.5 rounded-full text-on-surface-variant hover:text-primary transition-colors group">
+<span class="font-label text-[9px] uppercase tracking-widest">View Feedback History</span>
+<span class="material-symbols-outlined text-[10px] group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+</body></html>

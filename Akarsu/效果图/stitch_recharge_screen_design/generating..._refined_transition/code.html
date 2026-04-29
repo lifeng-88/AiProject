@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline": "#757483",
+                        "on-primary-container": "#330066",
+                        "on-background": "#e6e3f5",
+                        "on-primary": "#420082",
+                        "surface-container-low": "#12121f",
+                        "on-secondary-fixed-variant": "#665500",
+                        "primary": "#c59aff",
+                        "tertiary-fixed": "#ff8eae",
+                        "secondary-fixed": "#ffd709",
+                        "surface-container-lowest": "#000000",
+                        "primary-container": "#ba88ff",
+                        "on-tertiary-fixed": "#380017",
+                        "on-error-container": "#ffb2b9",
+                        "tertiary-container": "#ff067f",
+                        "inverse-primary": "#7e29df",
+                        "tertiary": "#ff6b9b",
+                        "secondary-container": "#705d00",
+                        "on-tertiary": "#47001f",
+                        "surface-container-high": "#1e1e2e",
+                        "error": "#ff6e84",
+                        "primary-dim": "#9547f7",
+                        "on-primary-fixed": "#000000",
+                        "error-dim": "#d73357",
+                        "surface-dim": "#0d0d19",
+                        "primary-fixed": "#ba88ff",
+                        "on-surface": "#e6e3f5",
+                        "secondary": "#ffd709",
+                        "surface-variant": "#242436",
+                        "surface-bright": "#2a2a3d",
+                        "primary-fixed-dim": "#b075ff",
+                        "secondary-fixed-dim": "#efc900",
+                        "tertiary-dim": "#e30071",
+                        "on-secondary": "#5b4b00",
+                        "secondary-dim": "#efc900",
+                        "background": "#0d0d19",
+                        "inverse-on-surface": "#545462",
+                        "on-error": "#490013",
+                        "on-surface-variant": "#aba9ba",
+                        "surface": "#0d0d19",
+                        "on-tertiary-container": "#000000",
+                        "on-secondary-container": "#fff7e6",
+                        "inverse-surface": "#fcf8ff",
+                        "outline-variant": "#474755",
+                        "surface-tint": "#c59aff",
+                        "on-secondary-fixed": "#453900",
+                        "tertiary-fixed-dim": "#ff75a0",
+                        "surface-container": "#181827",
+                        "surface-container-highest": "#242436",
+                        "error-container": "#a70138",
+                        "on-primary-fixed-variant": "#3f007c",
+                        "on-tertiary-fixed-variant": "#760037"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pulsing-glow {
+            box-shadow: 0 0 30px rgba(197, 154, 255, 0.5);
+            animation: pulse-glow 2s infinite ease-in-out;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(197, 154, 255, 0.4); }
+            50% { box-shadow: 0 0 40px rgba(197, 154, 255, 0.7); }
+        }
+        .neon-glow-icon {
+            box-shadow: 0 0 15px rgba(197, 154, 255, 0.6), inset 0 0 8px rgba(197, 154, 255, 0.4);
+        }
+        .glass-badge {
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+        .progress-ring__circle {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30 antialiased">
+<!-- TopAppBar -->
+<header class="bg-[#0d0d19]/90 backdrop-blur-md fixed top-0 w-full z-50 flex items-center justify-between px-6 h-16 border-b border-white/5 shadow-none">
+<div class="flex items-center gap-4">
+<button class="text-[#c59aff] hover:opacity-80 transition-opacity active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline font-bold tracking-[0.15em] text-[11px] text-[#c59aff] opacity-90 uppercase">Generating...</h1>
+</div>
+<div class="w-10"></div>
+</header>
+<main class="pt-24 min-h-screen px-6 flex flex-col items-center justify-center py-24">
+<!-- Processing Visual Section -->
+<div class="w-full max-w-md mx-auto space-y-12">
+<!-- Dual Image Comparison -->
+<div class="relative flex justify-center items-center gap-4">
+<!-- Source Image -->
+<div class="flex-1 aspect-[9/16] rounded-[22px] overflow-hidden bg-surface-container-high relative group ring-1 ring-white/10 shadow-2xl">
+<img class="w-full h-full object-cover opacity-60 grayscale-[0.2]" data-alt="Portrait photo of a young woman smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU63GmyxYGTRRJnmYofHHyCxeLr9K75qJuPcNy9KnITBLLN0ur23mxGp5XL8hqg3pHvux_kuDgnaHJxuHNn8iE0wwfPnkhS4yrdK_0ynWcMTIuNKkzNoMyVUQHCJAUBmKiJZOaZ9QmfpL2zi1FTmWTEN7NEW2d6m5IRJ-tyIyQ78N6cDVlJY9FhtzUGUt-mwrztKXisf1kefj2wlMJKrgL4tXiLdQNFIctudflsLKvTHl6-hyvmpEs7GInJZ8sTiCaF4nSFDVa4xUn"/>
+<div class="absolute bottom-4 left-4 px-3 py-1 glass-badge rounded-md">
+<span class="font-label text-[9px] text-primary/90 font-bold tracking-[0.1em] uppercase">SOURCE</span>
+</div>
+</div>
+<!-- Modern Swap Icon (High-tech Sync) -->
+<div class="absolute z-10 bg-[#1e1e2e] text-primary p-3 rounded-full neon-glow-icon ring-1 ring-primary/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl font-light scale-110" data-icon="sync_alt">sync_alt</span>
+</div>
+<!-- Template Image -->
+<div class="flex-1 aspect-[9/16] rounded-[22px] overflow-hidden bg-surface-container-high relative ring-1 ring-white/10 shadow-2xl">
+<img class="w-full h-full object-cover opacity-60 grayscale-[0.2]" data-alt="Abstract aesthetic digital art landscape neon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD70SiD2SCC9_6nlcSO-jGtJSm720Q8CaTyWMiem7-ga1l-g0ar2X3O3pDpUn51VwoSGdEc2LWHbjv0XYTnftXAUUfbteylhtxbiTF2ZcwzcMCuePPVD6VkO9RlNp-Ugad-yuKpdgVBgRoB7zNX1GTWaXWfHrVvhGFJGFHRTu298htBvAMBVR0fRlt2zjjDeyTKSfFAYCE271CKEUd4phR3HPbfvCdh22Lik_S8LLmZu8ht17VQRF1IaRwR25KJHUnuBHh44O2nlHyy"/>
+<div class="absolute bottom-4 right-4 px-3 py-1 glass-badge rounded-md">
+<span class="font-label text-[9px] text-secondary/90 font-bold tracking-[0.1em] uppercase">TEMPLATE</span>
+</div>
+</div>
+</div>
+<!-- Status Indicator -->
+<div class="flex flex-col items-center gap-8">
+<div class="relative flex items-center justify-center">
+<!-- Progress Ring Background -->
+<svg class="w-28 h-28 transform -rotate-90">
+<circle class="text-white/5" cx="56" cy="56" fill="transparent" r="50" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary progress-ring__circle" cx="56" cy="56" fill="transparent" r="50" stroke="currentColor" stroke-dasharray="314.159" stroke-dashoffset="109.95" stroke-linecap="round" stroke-width="4"></circle>
+</svg>
+<!-- Center Progress Label -->
+<div class="absolute inset-0 flex flex-col items-center justify-center bg-surface-container-highest/30 backdrop-blur-xl rounded-full w-[84px] h-[84px] m-auto pulsing-glow ring-1 ring-white/10">
+<span class="font-headline font-extrabold text-xl text-primary">65%</span>
+</div>
+</div>
+<div class="text-center space-y-3">
+<h2 class="font-headline font-extrabold text-3xl tracking-tight text-on-background uppercase bg-clip-text text-transparent bg-gradient-to-b from-on-background to-on-background/70">Generating...</h2>
+</div>
+</div>
+<!-- Action Area -->
+<div class="space-y-8 pt-4">
+<button class="w-full py-5 px-8 rounded-2xl bg-primary text-on-primary font-label text-[13px] font-extrabold tracking-[0.2em] uppercase hover:bg-primary-dim active:scale-[0.97] transition-all duration-300 shadow-[0_12px_30px_rgba(197,154,255,0.25)] flex items-center justify-center gap-3">
+                    BROWSE OTHER CONTENT
+                    <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center font-body text-[12px] text-on-surface-variant/60 leading-relaxed max-w-[280px] mx-auto font-medium">
+                    Generation continues in the background. You can safely leave this page.
+                </p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+</body></html>

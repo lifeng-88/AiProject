@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#ff75a0",
+                        "surface-container-low": "#12121f",
+                        "surface-container-highest": "#242436",
+                        "inverse-surface": "#fcf8ff",
+                        "on-secondary": "#5b4b00",
+                        "surface-dim": "#0d0d19",
+                        "tertiary": "#ff6b9b",
+                        "on-tertiary-fixed": "#380017",
+                        "surface": "#0d0d19",
+                        "on-tertiary-fixed-variant": "#760037",
+                        "primary-fixed-dim": "#b075ff",
+                        "on-primary-fixed-variant": "#3f007c",
+                        "inverse-primary": "#7e29df",
+                        "secondary-container": "#705d00",
+                        "on-primary-container": "#330066",
+                        "surface-variant": "#242436",
+                        "on-tertiary-container": "#000000",
+                        "surface-container": "#181827",
+                        "secondary": "#ffd709",
+                        "on-error": "#490013",
+                        "on-secondary-container": "#fff7e6",
+                        "on-primary": "#420082",
+                        "on-error-container": "#ffb2b9",
+                        "error": "#ff6e84",
+                        "on-surface-variant": "#aba9ba",
+                        "tertiary-dim": "#e30071",
+                        "primary": "#c59aff",
+                        "inverse-on-surface": "#545462",
+                        "on-surface": "#e6e3f5",
+                        "on-background": "#e6e3f5",
+                        "on-tertiary": "#47001f",
+                        "outline-variant": "#474755",
+                        "on-secondary-fixed": "#453900",
+                        "surface-container-lowest": "#000000",
+                        "error-container": "#a70138",
+                        "surface-container-high": "#1e1e2e",
+                        "outline": "#757483",
+                        "error-dim": "#d73357",
+                        "primary-fixed": "#ba88ff",
+                        "tertiary-container": "#ff067f",
+                        "on-primary-fixed": "#000000",
+                        "primary-container": "#ba88ff",
+                        "secondary-dim": "#efc900",
+                        "secondary-fixed": "#ffd709",
+                        "primary-dim": "#9547f7",
+                        "tertiary-fixed": "#ff8eae",
+                        "on-secondary-fixed-variant": "#665500",
+                        "surface-bright": "#2a2a3d",
+                        "secondary-fixed-dim": "#efc900",
+                        "background": "#0d0d19",
+                        "surface-tint": "#c59aff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .masonry-grid {
+            column-count: 2;
+            column-gap: 0.5rem;
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 0.5rem;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .tag-glass {
+            backdrop-filter: blur(8px);
+            border-width: 0.5px;
+        }
+        .gradient-free {
+            background: linear-gradient(135deg, rgba(34, 211, 238, 0.6) 0%, rgba(59, 130, 246, 0.6) 100%);
+            border-color: rgba(34, 211, 238, 0.4);
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+        }
+        .gradient-hot {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.6) 0%, rgba(249, 115, 22, 0.6) 100%);
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: 0 0 10px rgba(249, 115, 22, 0.3);
+        }
+        .gradient-new {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.6) 0%, rgba(132, 204, 22, 0.6) 100%);
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+        }
+        .tab-neon-hot {
+            background: rgba(249, 115, 22, 0.1);
+            border: 1px solid rgba(249, 115, 22, 0.4);
+            box-shadow: 0 0 12px rgba(249, 115, 22, 0.2);
+            color: #ff8c42;
+        }
+        .tab-neon-new {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            box-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
+            color: #34d399;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body select-none">
+<!-- Combined TopAppBar and Navigation -->
+<header class="bg-[#0d0d19] dark:bg-[#0d0d19] fixed top-0 left-0 w-full z-50 px-4 h-14 border-b border-outline-variant/10">
+<div class="flex items-center justify-between h-full gap-4">
+<!-- Left: Toggle Button -->
+<button class="hover:bg-[#242436] transition-colors p-1.5 rounded-full active:scale-95 duration-150 flex-shrink-0">
+<span class="material-symbols-outlined text-[#c59aff] text-[20px]">grid_view</span>
+</button>
+<!-- Center: Primary Tabs -->
+<div class="flex gap-6 overflow-x-auto hide-scrollbar items-center flex-grow justify-center">
+<button class="text-[13px] font-bold font-headline transition-all text-on-surface-variant hover:text-primary whitespace-nowrap">Image</button>
+<div class="relative py-3.5">
+<button class="text-[13px] font-bold font-headline transition-all text-primary whitespace-nowrap">Video</button>
+<div class="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full"></div>
+</div>
+<button class="text-[13px] font-bold font-headline transition-all text-on-surface-variant hover:text-primary whitespace-nowrap">Dance</button>
+</div>
+<!-- Right: Coin Balance -->
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-full border border-outline-variant/10 shadow-sm hover:bg-[#242436] transition-colors cursor-pointer flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="font-label text-[10px] font-bold tracking-tight text-on-surface">1,510</span>
+</div>
+</div>
+</header>
+<main class="pt-14 pb-28">
+<!-- Secondary Tabs Navigation -->
+<section class="sticky top-14 z-40 bg-background/95 backdrop-blur-md px-4 py-3">
+<!-- Secondary Tabs (Filtered by Video) -->
+<div class="flex gap-2 overflow-x-auto hide-scrollbar">
+<button class="px-5 py-1.5 rounded-full tab-neon-hot text-[10px] font-bold font-label uppercase tracking-wider whitespace-nowrap active:scale-95 transition-transform">Hot</button>
+<button class="px-5 py-1.5 rounded-full tab-neon-new text-[10px] font-bold font-label uppercase tracking-wider whitespace-nowrap active:scale-95 transition-transform">New</button>
+<button class="px-5 py-1.5 rounded-full bg-surface-container-highest text-primary text-[10px] font-bold font-label uppercase tracking-wider border border-primary/20 whitespace-nowrap">Cyberpunk</button>
+<button class="px-5 py-1.5 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold font-label uppercase tracking-wider border border-outline-variant/10 hover:bg-surface-container-high whitespace-nowrap">Sci-Fi</button>
+</div>
+</section>
+<!-- Masonry Content Grid -->
+<section class="px-2">
+<div class="masonry-grid">
+<!-- Card 1 -->
+<div class="masonry-item group relative overflow-hidden rounded-[8px] bg-surface-container aspect-[9/16]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Abstract AI neon purple flow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsjIuc6x29CZZRPzkYl0s7CAnJLRJXWZTKUlIKSLixhF1bojOm7T6aXzmHrpM0C8JgEcDDVsSmqzfG_PcB8PiGDTyWtHKAmG_GjBAzZPefDFnlU7dOosN7er9LopuxjQiDDm34WzHKIKwQwoRJx-Ox8akODVO6tfpm_LC66Gnm34tC2APo9KZdSKaWa7dCHU0CKqo815tlV6nfEHiQifVTlia2IsSj61HFrjZr5PmWkSmQddgNAhDwnwT-D1DEasC43dB4HREf6VEA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+<!-- Type Icon: Top Left -->
+<div class="absolute top-2.5 left-2.5">
+<div class="tag-glass gradient-free px-2.5 py-0.5 rounded-full">
+<span class="text-white font-headline text-[9px] font-extrabold uppercase tracking-widest italic">Free</span>
+</div>
+</div>
+<!-- Price: Bottom Left -->
+<div class="absolute bottom-2 left-2">
+<div class="bg-secondary px-1.5 py-0.5 rounded-[4px] flex items-center gap-1 shadow-lg">
+<span class="material-symbols-outlined text-on-secondary text-[10px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="text-on-secondary font-label text-[9px] font-bold">50</span>
+</div>
+</div>
+<!-- Heart: Bottom Right -->
+<div class="absolute bottom-2 right-2">
+<div class="bg-black/40 backdrop-blur-md p-1.5 rounded-full border border-white/10 flex items-center justify-center shadow-lg active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-white text-[16px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="masonry-item group relative overflow-hidden rounded-[8px] bg-surface-container aspect-[9/16]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Futuristic sci-fi cinematic character AI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6F26Q2ytXjFDv5rEJqlADERWlbZfxKC6EOKlR3nmN4cbVc8udviSeJwy5AzI-ViOPr7e6gL5wvQE1fedlppWEAnj5RSEwiW_wGicbBK1yeR73vQIwYRh7BmdBbi4X4OMjvU4je2dnFEsyzbZ1Vro-jd9oJG9SDr5JeZD5gflg2lhxPmvDWd9gC2-TIiX3VkNglZ1xZN9w9TO5-XgIlc09E_QZlWpUmxOA-9czi2l7exxui4M6FUsMZOmYeJsrL1caniKE5QSrPM70"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+<div class="absolute top-2.5 left-2.5">
+<div class="tag-glass gradient-hot px-2.5 py-0.5 rounded-full">
+<span class="text-white font-headline text-[9px] font-extrabold uppercase tracking-widest italic">Hot</span>
+</div>
+</div>
+<!-- Price: Bottom Left -->
+<div class="absolute bottom-2 left-2">
+<div class="bg-secondary px-1.5 py-0.5 rounded-[4px] flex items-center gap-1 shadow-lg">
+<span class="material-symbols-outlined text-on-secondary text-[10px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="text-on-secondary font-label text-[9px] font-bold">80</span>
+</div>
+</div>
+<!-- Heart: Bottom Right -->
+<div class="absolute bottom-2 right-2">
+<div class="bg-black/40 backdrop-blur-md p-1.5 rounded-full border border-white/10 flex items-center justify-center shadow-lg active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-white text-[16px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="masonry-item group relative overflow-hidden rounded-[8px] bg-surface-container aspect-[9/16]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Vibrant digital art with pink and gold" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIrPukjVM7PbasubNiNrCBPNpgPH_oUFhKrUFlcpCoP6hLGdYfTBz8tCnwpUqcn-JAHKvbF0l0-FNAph6vH10ceFw7FMyY4Sb31_CcYdizL7AoX-7KquYNDrvKXBQs8JSn7gx6LtJNSp9kZqfoSKQDd5aFcY81CclXjwMvE-XwNihhXJhiNhZTSyYM4kO0PbwLneCB9cmweA_PM5SwAr5r4fQmuMTmWlNQSxV8Lken3A1tNgiKHOWNVzXPrKTwDs2I7vnte_Sx8efN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+<div class="absolute top-2.5 left-2.5">
+<div class="tag-glass gradient-new px-2.5 py-0.5 rounded-full">
+<span class="text-white font-headline text-[9px] font-extrabold uppercase tracking-widest italic">New</span>
+</div>
+</div>
+<!-- Lock: Bottom Left -->
+<div class="absolute bottom-2 left-2">
+<div class="bg-secondary px-1.5 py-0.5 rounded-[4px] flex items-center gap-1 shadow-lg">
+<span class="material-symbols-outlined text-on-secondary text-[10px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="text-on-secondary font-label text-[9px] font-bold">30</span>
+</div>
+</div>
+<!-- Heart: Bottom Right -->
+<div class="absolute bottom-2 right-2">
+<div class="bg-black/40 backdrop-blur-md p-1.5 rounded-full border border-white/10 flex items-center justify-center shadow-lg active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-white text-[16px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="masonry-item group relative overflow-hidden rounded-[8px] bg-surface-container aspect-[9/16]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Ethereal AI generated dreamscape gradient" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmI1YKGM_13Zvi4U_rSzr8gc69gjwsIMrZqrBt8G2SAv55e59tj26bSdv7L23cfkavjiSzOyp0BTAcM4mAQk25LzY4Y1CpGy7EzRROJWCNG6a0mrCWpt0ZYCUzs1S1T3zLt97PGsaS9p6dHZTJnhMdemaY8GVx-SnRxbChgKc6l_z3gM4462hBpsnjwFiym6fl5jLo3l3sjjnPbOqhfyheK6gHJhvLCRHfV6WyN_Sovl4NVkURjC04YHafKGZZRVsqOqc6152PPubI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+<!-- Lock: Bottom Left -->
+<div class="absolute bottom-2 left-2">
+<div class="bg-secondary px-1.5 py-0.5 rounded-[4px] flex items-center gap-1 shadow-lg">
+<span class="material-symbols-outlined text-on-secondary text-[10px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="text-on-secondary font-label text-[9px] font-bold">50</span>
+</div>
+</div>
+<!-- Heart: Bottom Right -->
+<div class="absolute bottom-2 right-2">
+<div class="bg-black/40 backdrop-blur-md p-1.5 rounded-full border border-white/10 flex items-center justify-center shadow-lg active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-white text-[16px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="masonry-item group relative overflow-hidden rounded-[8px] bg-surface-container aspect-[9/16]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Cyberpunk character portrait neon aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTmfxFmNZ8N_-A0kKPK5QBGEDKYT-cFiY_3a9cSHtanseBUNpDtWHBu9YcL7tD09AcGOHAps_dcqPFppFTHmdUf4yzBqbLyKQ-_5V0nWBhLuDcKUxwzpV403NrkVV5FKxtiHLcPPbCA4t2KeM-tpqLxckQqI5n-Qp42Kd0a0M3iBtq4bKzGjbuv6IcvZTcg5OAreWsaL4UJ4h4qwGXxkXCGLOsp8UlJDUFuhSchrFrZdUteJjxSLVVw2ySZRsKBHF6deBQU-JS-JkN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+<!-- Lock: Bottom Left -->
+<div class="absolute bottom-2 left-2">
+<div class="bg-secondary px-1.5 py-0.5 rounded-[4px] flex items-center gap-1 shadow-lg">
+<span class="material-symbols-outlined text-on-secondary text-[10px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="text-on-secondary font-label text-[9px] font-bold">80</span>
+</div>
+</div>
+<!-- Heart: Bottom Right -->
+<div class="absolute bottom-2 right-2">
+<div class="bg-black/40 backdrop-blur-md p-1.5 rounded-full border border-white/10 flex items-center justify-center shadow-lg active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-white text-[16px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="masonry-item group relative overflow-hidden rounded-[8px] bg-surface-container aspect-[9/16]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Abstract colorful light streaks AI" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXKz2V6Ea0kW-GqCpETP3ghfIRqxMkr5zTGdNljWy_vKvd578ah3e3H2JoX8dM0wyzVolGTOegz3pxJWNXyvQ6fGCd9uGjn554qeqE7ZlIojv3pcM0w5sWMQbXBYliGCH9i0hI0Yf79QnhgCcXdQBiywMwvXpvG9qSuMEQWghiazEBkrgrBm1naWZV6PeA6-9-6440QNG2R5dQ_rBE7IQ2ZF-hDFB4f64gyr0BenQMjMEgcw9qf_C1H4Jkz4x8PnlWEXf_NhuuSUJZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div>
+<!-- Lock: Bottom Left -->
+<div class="absolute bottom-2 left-2">
+<div class="bg-secondary px-1.5 py-0.5 rounded-[4px] flex items-center gap-1 shadow-lg">
+<span class="material-symbols-outlined text-on-secondary text-[10px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="text-on-secondary font-label text-[9px] font-bold">60</span>
+</div>
+</div>
+<!-- Heart: Bottom Right -->
+<div class="absolute bottom-2 right-2">
+<div class="bg-black/40 backdrop-blur-md p-1.5 rounded-full border border-white/10 flex items-center justify-center shadow-lg active:scale-90 transition-transform cursor-pointer">
+<span class="material-symbols-outlined text-white text-[16px]">favorite</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 grid grid-cols-3 items-center px-4 pb-6 pt-3 bg-[#181827]/80 backdrop-blur-xl rounded-t-[3rem] border-t border-[#474755]/20 shadow-[0_-10px_50px_rgba(138,43,226,0.15)]">
+<a class="flex flex-col items-center justify-center text-[#c59aff] transition-transform active:scale-95 py-1" href="#">
+<div class="flex flex-col items-center justify-center bg-[#c59aff]/10 rounded-2xl px-4 py-2 shadow-[0_0_20px_rgba(197,154,255,0.2)]">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Manrope'] font-semibold text-[10px] uppercase tracking-tighter mt-0.5">Home</span>
+</div>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e6e3f5]/50 hover:text-[#c59aff] transition-all duration-300 active:scale-95 py-1" href="#">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+<span class="font-['Manrope'] font-semibold text-[10px] uppercase tracking-tighter mt-0.5">Recharge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e6e3f5]/50 hover:text-[#c59aff] transition-all duration-300 active:scale-95 py-1" href="#">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="font-['Manrope'] font-semibold text-[10px] uppercase tracking-tighter mt-0.5">My</span>
+</a>
+</nav>
+</body></html>

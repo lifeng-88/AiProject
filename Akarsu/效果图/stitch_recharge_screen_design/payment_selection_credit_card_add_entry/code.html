@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recharge - Select Payment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "inverse-on-surface": "#545462",
+            "secondary": "#ffd709",
+            "on-surface-variant": "#aba9ba",
+            "surface-container-high": "#1e1e2e",
+            "surface-container-low": "#12121f",
+            "surface-bright": "#2a2a3d",
+            "error-container": "#a70138",
+            "tertiary": "#ff6b9b",
+            "error": "#ff6e84",
+            "on-tertiary-fixed": "#380017",
+            "on-primary": "#420082",
+            "on-secondary-fixed": "#453900",
+            "surface-container": "#181827",
+            "secondary-container": "#705d00",
+            "on-tertiary": "#47001f",
+            "tertiary-container": "#ff067f",
+            "primary-dim": "#9547f7",
+            "on-primary-fixed-variant": "#3f007c",
+            "on-surface": "#e6e3f5",
+            "tertiary-fixed": "#ff8eae",
+            "surface": "#0d0d19",
+            "on-secondary": "#5b4b00",
+            "error-dim": "#d73357",
+            "on-tertiary-container": "#000000",
+            "secondary-fixed": "#ffd709",
+            "primary-container": "#ba88ff",
+            "outline-variant": "#474755",
+            "on-primary-fixed": "#000000",
+            "on-tertiary-fixed-variant": "#760037",
+            "tertiary-fixed-dim": "#ff75a0",
+            "on-secondary-container": "#fff7e6",
+            "surface-variant": "#242436",
+            "surface-container-highest": "#242436",
+            "surface-dim": "#0d0d19",
+            "secondary-dim": "#efc900",
+            "surface-tint": "#c59aff",
+            "on-error-container": "#ffb2b9",
+            "inverse-surface": "#fcf8ff",
+            "tertiary-dim": "#e30071",
+            "on-error": "#490013",
+            "primary": "#c59aff",
+            "on-primary-container": "#330066",
+            "on-secondary-fixed-variant": "#665500",
+            "on-background": "#e6e3f5",
+            "secondary-fixed-dim": "#efc900",
+            "background": "#0d0d19",
+            "primary-fixed-dim": "#b075ff",
+            "inverse-primary": "#7e29df",
+            "primary-fixed": "#ba88ff",
+            "outline": "#757483"
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans"],
+            "body": ["Manrope"],
+            "label": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "4px", "lg": "4px", "xl": "4px", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .ghost-border {
+      border: 1px solid rgba(197, 154, 255, 0.1);
+    }
+    .gradient-primary {
+      background: linear-gradient(135deg, #9547f7 0%, #c59aff 100%);
+    }
+    .premium-card-glow {
+        box-shadow: 0 4px 20px -5px rgba(197, 154, 255, 0.2), 
+                    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    }
+    .neon-text-glow {
+        text-shadow: 0 0 8px rgba(255, 215, 9, 0.4);
+    }
+    .radio-custom:checked + div::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #c59aff;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 min-h-screen">
+<!-- Background Layer (Recharge Page - Dimmed & Blurred) -->
+<div class="fixed inset-0 z-0 overflow-y-auto filter blur-md brightness-50">
+<header class="bg-[#0d0d19] fixed top-0 w-full z-50 flex items-center justify-between px-6 h-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#c59aff]">arrow_back</span>
+<h1 class="text-xl font-bold text-[#e6e3f5] font-headline">Recharge</h1>
+</div>
+<span class="material-symbols-outlined text-[#c59aff]">help_outline</span>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-md mx-auto space-y-8">
+<div class="space-y-4">
+<div class="h-32 w-full bg-surface-container rounded"></div>
+<div class="grid grid-cols-2 gap-4">
+<div class="h-48 bg-surface-container rounded"></div>
+<div class="h-48 bg-surface-container-highest rounded border-2 border-primary/20"></div>
+<div class="h-48 bg-surface-container rounded"></div>
+<div class="h-48 bg-surface-container rounded"></div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#181827]/80 backdrop-blur-xl rounded-t shadow-[0_-8px_32px_rgba(0,0,0,0.4)]">
+<div class="flex flex-col items-center text-[#c59aff] bg-[#242436] rounded-full p-3">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="text-[10px] font-medium font-label uppercase">Store</span>
+</div>
+<div class="flex flex-col items-center text-[#474755] p-3">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="text-[10px] font-medium font-label uppercase">Inventory</span>
+</div>
+<div class="flex flex-col items-center text-[#474755] p-3">
+<span class="material-symbols-outlined">storefront</span>
+<span class="text-[10px] font-medium font-label uppercase">Market</span>
+</div>
+<div class="flex flex-col items-center text-[#474755] p-3">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium font-label uppercase">Profile</span>
+</div>
+</nav>
+</div>
+<!-- Modal Overlay -->
+<div class="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm"></div>
+<!-- Bottom Drawer -->
+<div class="fixed bottom-0 left-0 right-0 z-[70] max-w-lg mx-auto bg-surface-container rounded-t-[28px] shadow-2xl border-t border-white/5">
+<!-- Handle -->
+<div class="flex justify-center py-2.5">
+<div class="w-10 h-1 bg-outline-variant/20 rounded-full"></div>
+</div>
+<!-- Header -->
+<div class="flex items-center justify-between px-6 pb-3">
+<h2 class="text-xl font-bold font-headline text-on-surface tracking-tight">Select Payment</h2>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-variant text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="px-6 pb-8 space-y-4 overflow-y-auto max-h-[75vh]">
+<!-- Premium Summary Card (Compact Refinement) -->
+<div class="bg-surface-container-highest ghost-border px-5 py-3.5 premium-card-glow relative overflow-hidden group rounded-[28px]">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-50"></div>
+<div class="relative flex flex-col gap-2.5">
+<!-- Price Row -->
+<div class="flex justify-between items-end border-b border-white/5 pb-2">
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-[0.2em] mb-0.5">Total Amount</span>
+<span class="text-2xl font-extrabold font-headline text-on-surface tracking-tighter">600 <span class="text-xs font-medium text-on-surface-variant align-middle ml-1">COINS</span></span>
+</div>
+<div class="text-right">
+<span class="text-2xl font-extrabold font-headline text-primary tracking-tight">USD 4.99</span>
+</div>
+</div>
+<!-- Breakdown Formula (Tightened version) -->
+<div class="flex items-center overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-1 shrink-0">
+<span class="text-[9px] font-bold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded border border-white/5">400</span>
+<span class="text-[10px] text-outline font-bold mx-0.5">+</span>
+<div class="flex items-center bg-primary/10 border border-primary/20 px-2 py-0.5 rounded"><span class="text-[9px] font-bold text-primary uppercase tracking-wider">100 Bonus</span></div>
+<span class="text-[10px] text-outline font-bold mx-0.5">+</span>
+<div class="flex items-center bg-secondary/10 border border-secondary/20 px-2 py-0.5 rounded"><span class="text-[9px] font-bold text-secondary uppercase tracking-wider">100 Payment Bonus</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Payment Methods List (Refined sizing & radius) -->
+<div class="space-y-2">
+<!-- Apple Pay -->
+<label class="group relative flex items-center justify-between p-3 bg-surface-container-low rounded-[2rem] cursor-pointer border border-white/5 hover:border-primary/30 hover:bg-surface-variant transition-all duration-300 has-[:checked]:border-primary/50 has-[:checked]:bg-surface-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-white rounded-full shadow-inner flex items-center justify-center">
+<span class="material-symbols-outlined text-black text-xl font-bold">ios</span>
+</div>
+<span class="font-bold text-[15px] text-on-surface">Apple Pay</span>
+</div>
+<div class="relative w-5 h-5 mr-1">
+<input checked="" class="radio-custom absolute opacity-0 w-full h-full cursor-pointer z-10" name="payment" type="radio"/>
+<div class="w-5 h-5 border-2 border-outline-variant rounded-full bg-transparent group-has-[:checked]:border-primary transition-colors"></div>
+</div>
+</label>
+<!-- Credit Card -->
+<label class="group relative flex items-center justify-between p-3 bg-surface-container-low rounded-[2rem] cursor-pointer border border-white/5 hover:border-primary/30 hover:bg-surface-variant transition-all duration-300 has-[:checked]:border-primary/50 has-[:checked]:bg-surface-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-bright rounded-full flex items-center justify-center border border-white/5">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-xl">credit_card</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-[15px] text-on-surface">Credit Card</span>
+<div class="flex items-center gap-1.5">
+<span class="text-secondary text-[9px] font-extrabold uppercase tracking-tighter neon-text-glow">+20% Bonus (+100)</span>
+</div>
+</div>
+</div>
+<button class="mr-3 px-3 py-1 rounded-full border border-primary/40 text-primary text-[10px] font-extrabold tracking-wider uppercase bg-primary/5 hover:bg-primary/10 transition-all shadow-[0_0_10px_rgba(149,71,247,0.2)]">ADD+</button><div class="relative w-5 h-5 mr-1">
+<input class="radio-custom absolute opacity-0 w-full h-full cursor-pointer z-10" name="payment" type="radio"/>
+<div class="w-5 h-5 border-2 border-outline-variant rounded-full bg-transparent group-has-[:checked]:border-primary transition-colors"></div>
+</div>
+</label>
+<!-- PayPal -->
+<label class="group relative flex items-center justify-between p-3 bg-surface-container-low rounded-[2rem] cursor-pointer border border-white/5 hover:border-primary/30 hover:bg-surface-variant transition-all duration-300 has-[:checked]:border-primary/50 has-[:checked]:bg-surface-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-[#003087] rounded-full flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-white text-lg">account_balance_wallet</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-[15px] text-on-surface">PayPal</span>
+<div>
+<span class="text-secondary text-[9px] font-extrabold uppercase tracking-tighter neon-text-glow">+20% Bonus (+100)</span>
+</div>
+</div>
+</div>
+<div class="relative w-5 h-5 mr-1">
+<input class="radio-custom absolute opacity-0 w-full h-full cursor-pointer z-10" name="payment" type="radio"/>
+<div class="w-5 h-5 border-2 border-outline-variant rounded-full bg-transparent group-has-[:checked]:border-primary transition-colors"></div>
+</div>
+</label>
+<!-- Google Pay -->
+<label class="group relative flex items-center justify-between p-3 bg-surface-container-low rounded-[2rem] cursor-pointer border border-white/5 hover:border-primary/30 hover:bg-surface-variant transition-all duration-300 has-[:checked]:border-primary/50 has-[:checked]:bg-surface-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-bright rounded-full flex items-center justify-center border border-white/5">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-xl">payments</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-[15px] text-on-surface">Google Pay</span>
+<div>
+<span class="text-secondary text-[9px] font-extrabold uppercase tracking-tighter neon-text-glow">+20% Bonus (+100)</span>
+</div>
+</div>
+</div>
+<div class="relative w-5 h-5 mr-1">
+<input class="radio-custom absolute opacity-0 w-full h-full cursor-pointer z-10" name="payment" type="radio"/>
+<div class="w-5 h-5 border-2 border-outline-variant rounded-full bg-transparent group-has-[:checked]:border-primary transition-colors"></div>
+</div>
+</label>
+<!-- Bank Transfer -->
+<label class="group relative flex items-center justify-between p-3 bg-surface-container-low rounded-[2rem] cursor-pointer border border-white/5 hover:border-primary/30 hover:bg-surface-variant transition-all duration-300 has-[:checked]:border-primary/50 has-[:checked]:bg-surface-variant">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-bright rounded-full flex items-center justify-center border border-white/5">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors text-xl">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-[15px] text-on-surface">Bank Transfer</span>
+<div>
+<span class="text-secondary text-[9px] font-extrabold uppercase tracking-tighter neon-text-glow">+20% Bonus (+100)</span>
+</div>
+</div>
+</div>
+<div class="relative w-5 h-5 mr-1">
+<input class="radio-custom absolute opacity-0 w-full h-full cursor-pointer z-10" name="payment" type="radio"/>
+<div class="w-5 h-5 border-2 border-outline-variant rounded-full bg-transparent group-has-[:checked]:border-primary transition-colors"></div>
+</div>
+</label>
+</div>
+<!-- Action Button -->
+<div class="pt-2">
+<button class="w-full h-14 gradient-primary rounded-full text-on-primary-fixed font-extrabold font-headline text-sm shadow-[0_12px_30px_rgba(149,71,247,0.4)] hover:shadow-[0_12px_40px_rgba(149,71,247,0.6)] active:scale-[0.98] transition-all duration-200 uppercase tracking-[0.15em]">
+          RECHARGE NOW
+        </button>
+<div class="flex items-center justify-center gap-2 mt-5 px-10">
+<span class="material-symbols-outlined text-[14px] text-primary/60">verified_user</span>
+<p class="text-[10px] text-on-surface-variant text-center font-medium leading-tight">100% Secure Transaction &amp; Private Billing. Your privacy is our top priority.</p>
+</div>
+</div>
+</div>
+</div>
+</body></html>

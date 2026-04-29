@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Feedback - AI Generation App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Manrope:wght@400;600;700&amp;family=Space_Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#12121f",
+              "tertiary-container": "#ff067f",
+              "surface-container": "#181827",
+              "surface": "#0d0d19",
+              "tertiary-fixed-dim": "#ff75a0",
+              "on-tertiary-container": "#000000",
+              "error": "#ff6e84",
+              "error-dim": "#d73357",
+              "background": "#0d0d19",
+              "outline": "#757483",
+              "on-primary": "#420082",
+              "secondary-container": "#705d00",
+              "inverse-surface": "#fcf8ff",
+              "primary-dim": "#9547f7",
+              "tertiary-fixed": "#ff8eae",
+              "on-error-container": "#ffb2b9",
+              "on-error": "#490013",
+              "surface-container-highest": "#242436",
+              "surface-container-lowest": "#000000",
+              "primary-fixed-dim": "#b075ff",
+              "secondary-fixed-dim": "#efc900",
+              "primary-container": "#ba88ff",
+              "inverse-primary": "#7e29df",
+              "on-primary-fixed": "#000000",
+              "inverse-on-surface": "#545462",
+              "on-background": "#e6e3f5",
+              "surface-bright": "#2a2a3d",
+              "on-tertiary": "#47001f",
+              "error-container": "#a70138",
+              "secondary-dim": "#efc900",
+              "on-tertiary-fixed": "#380017",
+              "on-surface-variant": "#aba9ba",
+              "tertiary-dim": "#e30071",
+              "on-tertiary-fixed-variant": "#760037",
+              "primary-fixed": "#ba88ff",
+              "tertiary": "#ff6b9b",
+              "on-secondary-container": "#fff7e6",
+              "surface-dim": "#0d0d19",
+              "surface-variant": "#242436",
+              "on-secondary-fixed": "#453900",
+              "on-primary-fixed-variant": "#3f007c",
+              "secondary-fixed": "#ffd709",
+              "on-surface": "#e6e3f5",
+              "on-secondary-fixed-variant": "#665500",
+              "secondary": "#ffd709",
+              "on-primary-container": "#330066",
+              "surface-tint": "#c59aff",
+              "on-secondary": "#5b4b00",
+              "primary": "#c59aff",
+              "outline-variant": "#474755",
+              "surface-container-high": "#1e1e2e"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .glass-panel {
+            background: rgba(36, 36, 54, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #12121f;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #474755;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30 antialiased overflow-hidden">
+<!-- Blurred Background Context (Representing Screen 139) -->
+<div class="fixed inset-0 z-0 overflow-y-auto filter blur-md brightness-50 pointer-events-none scale-105">
+<header class="bg-[#0d0d19] flex items-center justify-between px-6 h-16 w-full">
+<span class="material-symbols-outlined text-[#c59aff]">arrow_back</span>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#c59aff]">Gallery</h1>
+<span class="material-symbols-outlined text-[#c59aff]">more_vert</span>
+</header>
+<main class="p-8 grid grid-cols-2 gap-6">
+<div class="aspect-[3/4] bg-surface-container rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Cyberpunk character portrait with glowing neon accents and high fashion digital armor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOorPWou7_rRIm5-pbTrVK14DYYX3WAVU-W2KgP9FBz5RSx0NZATtUsQgqKFAp8RokLLJt_GESwh5EMKlq4145EJGkPvv1x86UadLzUZQfL_PMBfCwnHuxuQQXGPn4Ix3-wS_fzLG2Jxc3ZTeypeiH9JGolxqNunHevtAc2tIiEE5U4X04wHoDaC36EAXPdcFfyOXV4nNEEyndC1wygVrQKCq_qjekVgI3f1bC_m4b5FLxg--R41trFr6DtZMb6IEu0ZpMaUktGec1"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Ethereal digital landscape with floating islands and iridescent nebula sky in deep purple and gold" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC15ZNJmkw9iFslq1FvYzYSFHJVEdb8zGoVJDxSInJS-nE-W0dLlZ6mcj9g9hp1co7leOjHXrUf0WezxhkIHDrZ7LH2qaytT9_Zx6iYaNunPmu5VEqQy5lsgOlctaXSuVDdCM-f7Sqi8s_oLVLBmXHnmRTgZVrhRoKPmYJnv4CjENr5qkyimkVfhSku6fK2uoqSNUH8msOWsjCWj7wyDHm4DGs7MFy_WLytsB8lWvvuBONiTI_ZJzXI9hvnAej06c7qMUhb1Q-Lm5me"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Surreal geometric abstraction with liquid chrome spheres and glowing energy lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Cqb4DtXtiLvflB_emaLAvU-5ofNRXsTjiXxjcKgGo13kcqBzYCY8Db2G8cpMsSpOZUapCPcvd3vQrPd3nP3Fr2hsAAbzevSdRQDHGhin38ZYWLCELJO2ut0bz-jTFAD0BhQ7BOuEy7Z_DMuaYu2NWjYa1zyV5x8mRcUZfYtGp0LEU4arpFg9OgOQaYriuqPcPzuLD1t_sgL3btkpwXpXhkDnzkZtv624kRJ9uvlghweqfn4yqHWzRXLrHW6ELr_YzFFpMDRZMyEE"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up of mechanical robotic eye with intricate golden circuits and purple light reflecting in lens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjuZgnYhdCCjn4KZjLwmc9KRi2ZyRbUTb3uGZvCLuiAFCAbhVxCXjSSvBz-KTYMcLSu6pkl9i0knniZuDaXA7w3Dx0656r0bEiDtFd6H6oqYDhZ_4kZxgw6YnA86KSmzZsfHlFjKEDqV1HHdjGb_hH3sb-rmE7EKNQb8LfjQi8obpgTSFmecbQdUF0IqY336GOuXfBRDuzDMHAOBZhRA91PxR6yjYMkRj85SU0ssH9s3BdAvE9IFAKA-wO5eYq_jeNEoPDkDU4zHWK"/>
+</div>
+</main>
+</div>
+<!-- Modal Backdrop -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface/80 backdrop-blur-sm">
+<!-- Feedback Modal Container -->
+<!-- Corner radius 4px as requested: rounded-[4px] -->
+<div class="relative w-full max-w-[420px] bg-[#181827] shadow-[0_20px_60px_rgba(0,0,0,0.6)] rounded-[4px] overflow-hidden border border-outline-variant/20 transition-all duration-300">
+<!-- Header -->
+<div class="px-6 pt-6 pb-2"><div class="absolute top-6 right-6"><button class="text-on-surface-variant/60 hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">close</span></button></div>
+<h2 class="font-headline font-bold text-[10px] tracking-[0.2em] text-primary uppercase">Feedback</h2>
+</div>
+<!-- Content Area -->
+<div class="px-6 py-4 space-y-6">
+<!-- Category Selection -->
+<p class="text-[11px] text-on-surface-variant/70 font-body leading-relaxed mb-4">
+    If you are unsatisfied with the generation result, coins will be refunded after successful verification.
+</p><div class="space-y-3">
+<p class="font-label text-[11px] text-on-surface-variant tracking-wider uppercase">Select Category</p>
+<div class="flex flex-wrap gap-2">
+<!-- Selected State -->
+<button class="px-4 py-2 rounded-[4px] bg-primary/10 border border-primary text-primary text-[12px] font-medium shadow-[0_0_15px_rgba(197,154,255,0.2)] transition-all">
+                            AI Generation Quality
+                        </button>
+<button class="px-4 py-2 rounded-[4px] bg-surface-container-highest/40 border border-outline-variant/30 text-on-surface-variant text-[12px] font-medium hover:border-primary/50 hover:text-on-surface transition-all">
+                            Poor Generation Result
+                        </button>
+<button class="px-4 py-2 rounded-[4px] bg-surface-container-highest/40 border border-outline-variant/30 text-on-surface-variant text-[12px] font-medium hover:border-primary/50 hover:text-on-surface transition-all">
+                            Payment Issue
+                        </button>
+<button class="px-4 py-2 rounded-[4px] bg-surface-container-highest/40 border border-outline-variant/30 text-on-surface-variant text-[12px] font-medium hover:border-primary/50 hover:text-on-surface transition-all">
+                            App Bug
+                        </button>
+<button class="px-4 py-2 rounded-[4px] bg-surface-container-highest/40 border border-outline-variant/30 text-on-surface-variant text-[12px] font-medium hover:border-primary/50 hover:text-on-surface transition-all">
+                            Other
+                        </button>
+</div>
+</div>
+<!-- Text Input -->
+<div class="space-y-3">
+<p class="font-label text-[11px] text-on-surface-variant tracking-wider uppercase">Details</p>
+<div class="relative group">
+<textarea class="w-full border rounded-[4px] p-4 text-[13px] text-on-surface placeholder:text-outline/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-all resize-none bg-black/60 border-outline-variant/40" placeholder="Describe your issue in detail..." rows="4"></textarea>
+<div class="absolute inset-0 rounded-[4px] pointer-events-none border border-primary/0 group-focus-within:border-primary/40 transition-all"></div>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-4 bg-gradient-to-br from-primary-dim to-primary text-on-primary font-headline font-extrabold text-[12px] tracking-[0.1em] shadow-[0_8px_24px_rgba(149,71,247,0.3)] hover:shadow-[0_12px_32px_rgba(149,71,247,0.4)] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] transition-all rounded-full">
+                    SUBMIT
+                </button>
+</div>
+<!-- Footer Spacing -->
+<div class="h-6"></div>
+</div>
+</div>
+<!-- Toast Overlay -->
+<!-- Bottom Navigation (Shared Component Reference - Suppressed due to modal context but shown for layout logic) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#181827]/80 backdrop-blur-xl z-10 opacity-20 pointer-events-none">
+<div class="flex flex-col items-center justify-center text-[#e6e3f5]/40 p-3">
+<span class="material-symbols-outlined mb-1">auto_awesome</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">Generate</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6e3f5]/40 p-3">
+<span class="material-symbols-outlined mb-1">grid_view</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">Gallery</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#e6e3f5]/40 p-3">
+<span class="material-symbols-outlined mb-1">payments</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">Credits</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#c59aff]/10 text-[#c59aff] rounded-full p-3 shadow-[0_0_20px_rgba(197,154,255,0.15)]">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase tracking-widest">Profile</span>
+</div>
+</nav>
+</body></html>

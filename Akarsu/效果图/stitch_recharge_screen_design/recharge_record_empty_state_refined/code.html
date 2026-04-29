@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary": "#5b4b00",
+                        "primary-dim": "#9547f7",
+                        "on-surface": "#e6e3f5",
+                        "error-container": "#a70138",
+                        "surface-dim": "#0d0d19",
+                        "error": "#ff6e84",
+                        "on-tertiary": "#47001f",
+                        "on-surface-variant": "#aba9ba",
+                        "surface-container-highest": "#242436",
+                        "outline-variant": "#474755",
+                        "secondary": "#ffd709",
+                        "tertiary-container": "#ff067f",
+                        "primary-fixed-dim": "#b075ff",
+                        "inverse-primary": "#7e29df",
+                        "surface-variant": "#242436",
+                        "secondary-fixed": "#ffd709",
+                        "inverse-surface": "#fcf8ff",
+                        "surface": "#0d0d19",
+                        "on-primary-fixed": "#000000",
+                        "surface-tint": "#c59aff",
+                        "on-tertiary-fixed": "#380017",
+                        "tertiary-fixed": "#ff8eae",
+                        "surface-container-low": "#12121f",
+                        "on-primary-container": "#330066",
+                        "tertiary-dim": "#e30071",
+                        "on-secondary-fixed": "#453900",
+                        "tertiary-fixed-dim": "#ff75a0",
+                        "on-tertiary-fixed-variant": "#760037",
+                        "surface-container": "#181827",
+                        "secondary-fixed-dim": "#efc900",
+                        "error-dim": "#d73357",
+                        "secondary-dim": "#efc900",
+                        "on-background": "#e6e3f5",
+                        "surface-container-high": "#1e1e2e",
+                        "tertiary": "#ff6b9b",
+                        "outline": "#757483",
+                        "on-secondary-fixed-variant": "#665500",
+                        "on-tertiary-container": "#000000",
+                        "secondary-container": "#705d00",
+                        "primary-fixed": "#ba88ff",
+                        "inverse-on-surface": "#545462",
+                        "on-error-container": "#ffb2b9",
+                        "on-primary-fixed-variant": "#3f007c",
+                        "primary-container": "#ba88ff",
+                        "on-secondary-container": "#fff7e6",
+                        "on-error": "#490013",
+                        "surface-container-lowest": "#000000",
+                        "on-primary": "#420082",
+                        "background": "#0d0d19",
+                        "surface-bright": "#2a2a3d",
+                        "primary": "#c59aff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            background-color: #0d0d19;
+            color: #e6e3f5;
+            font-family: 'Manrope', sans-serif;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-[#0d0d19] sticky top-0 z-50 flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#c59aff] hover:opacity-80 transition-opacity active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold font-headline text-[#e6e3f5] tracking-tight">Recharge Record</h1>
+</div>
+<div class="flex gap-4"></div>
+</header>
+<main class="max-w-2xl mx-auto px-6 pt-6 flex-grow flex flex-col w-full">
+<!-- Summary Stats Card (Full width balance) -->
+<div class="mb-8">
+<div class="bg-surface-container p-6 rounded-[4px] shadow-sm">
+<p class="text-[10px] uppercase tracking-widest font-label text-outline mb-1">Total Balance</p>
+<div class="flex items-baseline gap-2">
+<span class="text-2xl font-bold font-headline text-on-surface">1,510</span>
+<span class="text-xs font-label text-secondary">COINS</span>
+</div>
+</div>
+</div>
+<!-- Empty State -->
+<div class="flex-grow flex flex-col items-center justify-center py-12 px-4 text-center">
+<div class="mb-6 opacity-20">
+<span class="material-symbols-outlined text-[84px] text-primary" style="font-variation-settings: 'wght' 100;">receipt_long</span>
+</div>
+<h2 class="text-lg font-semibold font-headline text-on-surface mb-2">No transaction records found</h2>
+<p class="text-sm font-body text-outline-variant max-w-[240px]">Transactions from the last 30 days will appear here</p>
+</div>
+<!-- Footer Actions -->
+<div class="mt-auto pt-8 pb-12 flex flex-col items-center gap-8">
+<button class="w-full max-w-xs py-4 rounded-full bg-primary text-on-primary font-bold font-headline tracking-wider text-sm hover:brightness-110 active:scale-[0.98] transition-all shadow-lg shadow-primary/20 uppercase">
+                Get Coins
+            </button>
+<p class="text-[10px] font-label text-outline-variant italic uppercase tracking-[0.2em]">
+                Showing records from the last 30 days
+            </p>
+</div>
+</main>
+</body></html>

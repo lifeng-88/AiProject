@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary": "#5b4b00",
+              "primary-container": "#ba88ff",
+              "secondary-container": "#705d00",
+              "surface-container-lowest": "#000000",
+              "tertiary-dim": "#e30071",
+              "inverse-surface": "#fcf8ff",
+              "surface-variant": "#242436",
+              "secondary-fixed-dim": "#efc900",
+              "on-primary": "#420082",
+              "tertiary": "#ff6b9b",
+              "primary-dim": "#9547f7",
+              "tertiary-fixed": "#ff8eae",
+              "on-tertiary-fixed-variant": "#760037",
+              "tertiary-fixed-dim": "#ff75a0",
+              "on-tertiary-container": "#000000",
+              "background": "#0d0d19",
+              "surface-container-highest": "#242436",
+              "on-secondary-container": "#fff7e6",
+              "inverse-primary": "#7e29df",
+              "on-primary-container": "#330066",
+              "error": "#ff6e84",
+              "error-container": "#a70138",
+              "surface-dim": "#0d0d19",
+              "secondary-fixed": "#ffd709",
+              "error-dim": "#d73357",
+              "surface-container-low": "#12121f",
+              "surface-container-high": "#1e1e2e",
+              "secondary-dim": "#efc900",
+              "secondary": "#ffd709",
+              "on-secondary-fixed-variant": "#665500",
+              "on-primary-fixed": "#000000",
+              "surface-bright": "#2a2a3d",
+              "outline-variant": "#474755",
+              "on-error-container": "#ffb2b9",
+              "surface": "#0d0d19",
+              "on-primary-fixed-variant": "#3f007c",
+              "on-error": "#490013",
+              "tertiary-container": "#ff067f",
+              "on-background": "#e6e3f5",
+              "primary-fixed": "#ba88ff",
+              "inverse-on-surface": "#545462",
+              "on-tertiary-fixed": "#380017",
+              "on-surface": "#e6e3f5",
+              "on-surface-variant": "#aba9ba",
+              "on-secondary-fixed": "#453900",
+              "surface-tint": "#c59aff",
+              "primary": "#c59aff",
+              "primary-fixed-dim": "#b075ff",
+              "outline": "#757483",
+              "on-tertiary": "#47001f",
+              "surface-container": "#181827"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {
+              "DEFAULT": "9999px",
+              "lg": "9999px",
+              "xl": "9999px",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .portrait-aspect {
+            aspect-ratio: 9/16;
+        }
+        .bg-bokeh {
+            background: radial-gradient(circle at 20% 30%, #420082 0%, transparent 40%),
+                        radial-gradient(circle at 80% 70%, #3f007c 0%, transparent 40%),
+                        radial-gradient(circle at 50% 50%, #181827 0%, #0d0d19 100%);
+        }
+        .noise-overlay::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            z-index: 1;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-surface-dim text-on-surface font-body min-h-screen flex flex-col items-center bg-bokeh noise-overlay relative">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0d0d19]/40 backdrop-blur-xl border-b border-white/5 flex items-center justify-between px-6 py-4">
+<div class="flex items-center text-[#c59aff]">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</div>
+<h1 class="font-headline font-bold tracking-tight text-[#e6e3f5] text-[10px] uppercase flex-1 text-center pr-6 font-display tracking-[0.25em]">Generation Success</h1>
+<div class="flex items-center text-[#c59aff]">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-2xl px-6 pt-24 pb-36 flex flex-col items-center justify-center relative z-10">
+<!-- Central Masterpiece -->
+<div class="relative w-full max-w-sm group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-tertiary/20 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative portrait-aspect w-full bg-surface-container-low rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+<img alt="AI Generated Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnCI47YbP3CHP7SOhIVov06qKxbZt6m-1M28gtzIqkr824jwv-vUcApJv8hPxmm-zEGcsi4QaRmcmwT-o1DZNMTRmadEBX577OvMKcH9JSDx0x0J1YTikUdLS1f5fMMjdolkJ-QqfrwjFCzdfsSJXMt7jrfGU7h-MrZx0kM1gpyIcelCJDxAB-E5SrSDiFZBYxt4dRSZMia55m8dWdkTI8MpaR6_AZXfaD9e4K7BQ7ZhL8XggC53-vz8lAxdt2QtRv9j3cnr7uzqpn"/>
+<div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl"></div>
+</div>
+</div>
+</main>
+<!-- Fixed Action Buttons Shell -->
+<section class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md px-6 pb-12 flex gap-4 z-40">
+<!-- Download Button -->
+<button class="flex-1 flex items-center justify-center gap-3 py-4 bg-primary text-on-primary hover:opacity-90 transition-all active:scale-95 font-semibold shadow-xl shadow-primary/25 rounded-full pointer-events-none opacity-60">
+<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span>
+<span class="text-xs font-bold tracking-widest">59%</span>
+</button>
+<!-- Feedback Button -->
+<button class="flex-1 flex items-center justify-center gap-3 py-4 bg-surface-container-high/80 backdrop-blur-md text-on-surface border border-white/10 hover:bg-surface-bright transition-all active:scale-95 font-semibold rounded-full">
+<span class="material-symbols-outlined text-primary text-[20px]">auto_awesome</span>
+<span class="text-xs uppercase tracking-widest">Feedback</span>
+</button>
+</section>
+<!-- BottomNavBar (Suppressed) -->
+<nav class="hidden">
+<div class="style_active_navigation">auto_awesome</div>
+<div class="style_inactive_navigation">history</div>
+<div class="style_inactive_navigation">search</div>
+<div class="style_inactive_navigation">person</div>
+</nav>
+</body></html>

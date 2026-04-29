@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600&amp;family=Space+Grotesk:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#242436",
+              "secondary-fixed-dim": "#efc900",
+              "surface-container-lowest": "#000000",
+              "on-tertiary": "#47001f",
+              "on-error": "#490013",
+              "error-container": "#a70138",
+              "error-dim": "#d73357",
+              "surface-tint": "#c59aff",
+              "outline": "#757483",
+              "surface-bright": "#2a2a3d",
+              "surface": "#0d0d19",
+              "surface-container-highest": "#242436",
+              "background": "#0d0d19",
+              "on-background": "#e6e3f5",
+              "inverse-primary": "#7e29df",
+              "error": "#ff6e84",
+              "secondary": "#ffd709",
+              "surface-container-low": "#12121f",
+              "inverse-on-surface": "#545462",
+              "on-primary-container": "#330066",
+              "secondary-dim": "#efc900",
+              "on-tertiary-fixed": "#380017",
+              "on-surface-variant": "#aba9ba",
+              "secondary-fixed": "#ffd709",
+              "on-primary-fixed": "#000000",
+              "primary-fixed": "#ba88ff",
+              "surface-container-high": "#1e1e2e",
+              "inverse-surface": "#fcf8ff",
+              "on-surface": "#e6e3f5",
+              "on-secondary-container": "#fff7e6",
+              "on-secondary-fixed-variant": "#665500",
+              "on-primary-fixed-variant": "#3f007c",
+              "primary": "#c59aff",
+              "surface-dim": "#0d0d19",
+              "on-secondary-fixed": "#453900",
+              "on-tertiary-fixed-variant": "#760037",
+              "on-secondary": "#5b4b00",
+              "on-tertiary-container": "#000000",
+              "tertiary-dim": "#e30071",
+              "secondary-container": "#705d00",
+              "tertiary-container": "#ff067f",
+              "tertiary": "#ff6b9b",
+              "primary-dim": "#9547f7",
+              "primary-container": "#ba88ff",
+              "on-error-container": "#ffb2b9",
+              "outline-variant": "#474755",
+              "tertiary-fixed-dim": "#ff75a0",
+              "surface-container": "#181827",
+              "primary-fixed-dim": "#b075ff",
+              "tertiary-fixed": "#ff8eae",
+              "on-primary": "#420082"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0d0d19;
+            color: #e6e3f5;
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .legal-content p {
+            line-height: 1.75;
+            font-size: 0.9375rem;
+            color: #aba9ba;
+            margin-bottom: 1.5rem;
+        }
+        .legal-content h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #c59aff;
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.01em;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .legal-content h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #757483;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5rem;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex items-center px-6 h-16 bg-[#181827]/80 backdrop-blur-lg">
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#242436]/50 transition-colors active:scale-95 duration-200 text-[#c59aff]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight text-[#c59aff]">Legal Center</h1>
+</div>
+</header>
+<main class="pt-24 pb-20 px-8 max-w-2xl mx-auto">
+<!-- Header Section -->
+<div class="mb-10">
+<div class="inline-block px-2.5 py-1 mb-4 rounded-md bg-primary/10 text-primary font-label text-[10px] uppercase tracking-widest border border-primary/20">
+                Last Updated: October 24, 2023
+            </div>
+<h2 class="font-headline text-3xl font-extrabold text-on-background tracking-tight leading-tight mb-4">
+                Privacy Policy
+            </h2>
+<p class="text-on-surface-variant font-body leading-relaxed text-[0.9375rem]">
+                This document outlines our commitment to protecting your digital identity and how we process data within our AI ecosystem.
+            </p>
+</div>
+<!-- Content Container -->
+<div class="space-y-12">
+<article class="legal-content">
+<section>
+<h3>Section 01</h3>
+<h2>Information Collection</h2>
+<p>
+                        Our AI system is designed with a privacy-first architecture. We collect the minimum amount of data necessary to provide a personalized experience. This includes account information such as your email address and basic profile details.
+                    </p>
+<p>
+                        Interaction data, including prompt history and model responses, is processed to improve machine learning performance. However, this data is anonymized and stripped of personally identifiable information (PII) before being used in our training sets.
+                    </p>
+</section>
+<section>
+<h3>Section 02</h3>
+<h2>Use of Information</h2>
+<p>
+                        The data we collect serves several core functions within the Digital Curator framework:
+                    </p>
+<ul class="space-y-4 mb-6 text-on-surface-variant text-[0.9375rem] leading-relaxed">
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span>Tailoring AI responses to match your unique linguistic style and preferences.</span>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span>Detecting and preventing fraudulent activity or misuse of our computational resources.</span>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+<span>Communicating critical security updates and new feature availability.</span>
+</li>
+</ul>
+</section>
+<section>
+<h3>Section 03</h3>
+<h2>Data Security</h2>
+<p>
+                        We employ industry-standard encryption protocols (AES-256) for all data at rest and TLS 1.3 for data in transit. Our infrastructure is hosted on secure, distributed cloud environments with physical security measures and 24/7 monitoring.
+                    </p>
+<p>
+                        While no system is entirely impenetrable, we perform regular penetration testing and vulnerability assessments to ensure our "Neon Sovereign" security standards are met consistently.
+                    </p>
+</section>
+<section>
+<h3>Section 04</h3>
+<h2>Third-Party Disclosure</h2>
+<p>
+                        We do not sell, trade, or otherwise transfer your personal information to outside parties. This excludes trusted third parties who assist us in operating our application, conducting our business, or servicing you, so long as those parties agree to keep this information strictly confidential.
+                    </p>
+</section>
+<section>
+<h3>Section 05</h3>
+<h2>User Rights</h2>
+<p>
+                        You maintain full sovereignty over your data. At any time, you may request access to the data we hold, demand corrections to inaccurate information, or request the permanent deletion of your account and all associated data from our servers.
+                    </p>
+</section>
+<div class="mt-16 pt-8 border-t border-outline-variant/10">
+<div class="flex flex-col gap-4">
+<div>
+<p class="font-label text-[10px] text-outline uppercase tracking-[0.2em] mb-1.5">Inquiries</p>
+<a class="font-headline font-bold text-primary hover:text-primary-dim transition-colors text-sm" href="mailto:privacy@ai-sovereign.io">
+                                privacy@ai-sovereign.io
+                            </a>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Footer spacing -->
+<div class="h-12"></div>
+</main>
+<!-- Visual Background Accents -->
+<div class="fixed top-[-10%] right-[-10%] w-[50%] h-[50%] bg-primary/5 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+<div class="fixed bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-tertiary/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+</body></html>

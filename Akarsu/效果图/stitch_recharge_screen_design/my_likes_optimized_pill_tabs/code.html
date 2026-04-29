@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#545462",
+              "tertiary-fixed": "#ff8eae",
+              "surface-container-highest": "#242436",
+              "primary-fixed-dim": "#b075ff",
+              "error-container": "#a70138",
+              "surface-variant": "#242436",
+              "secondary-container": "#705d00",
+              "surface-container-low": "#12121f",
+              "on-surface-variant": "#aba9ba",
+              "tertiary": "#ff6b9b",
+              "on-tertiary-fixed-variant": "#760037",
+              "surface-container-high": "#1e1e2e",
+              "surface": "#0d0d19",
+              "tertiary-container": "#ff067f",
+              "on-secondary-fixed-variant": "#665500",
+              "tertiary-fixed-dim": "#ff75a0",
+              "secondary-fixed-dim": "#efc900",
+              "on-tertiary-container": "#000000",
+              "secondary-dim": "#efc900",
+              "on-error": "#490013",
+              "background": "#0d0d19",
+              "on-primary-fixed-variant": "#3f007c",
+              "on-secondary-container": "#fff7e6",
+              "on-primary-fixed": "#000000",
+              "on-tertiary": "#47001f",
+              "on-secondary": "#5b4b00",
+              "error-dim": "#d73357",
+              "tertiary-dim": "#e30071",
+              "surface-container-lowest": "#000000",
+              "outline": "#757483",
+              "on-background": "#e6e3f5",
+              "secondary-fixed": "#ffd709",
+              "on-tertiary-fixed": "#380017",
+              "surface-container": "#181827",
+              "on-primary-container": "#330066",
+              "primary-container": "#ba88ff",
+              "on-secondary-fixed": "#453900",
+              "primary": "#c59aff",
+              "surface-dim": "#0d0d19",
+              "on-surface": "#e6e3f5",
+              "primary-fixed": "#ba88ff",
+              "surface-tint": "#c59aff",
+              "surface-bright": "#2a2a3d",
+              "error": "#ff6e84",
+              "secondary": "#ffd709",
+              "primary-dim": "#9547f7",
+              "outline-variant": "#474755",
+              "on-primary": "#420082",
+              "inverse-surface": "#fcf8ff",
+              "inverse-primary": "#7e29df",
+              "on-error-container": "#ffb2b9"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .waterfall-grid {
+            column-count: 2;
+            column-gap: 1rem;
+        }
+        .waterfall-item {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+    </style>
+<style>
+        body {
+            min-height: 100dvh;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body select-none">
+<!-- Top App Bar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#0d0d19]">
+<div class="flex items-center px-6 pt-6 pb-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-[#c59aff] active:scale-95 duration-150">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-xl uppercase tracking-tight text-[#c59aff]">My Likes</h1>
+</div>
+</div>
+<!-- Tab Navigation (Pill Style) -->
+<div class="flex items-center pb-4 overflow-x-auto hide-scrollbar gap-2 px-4">
+<button class="px-5 py-1.5 rounded-full border border-[#c59aff] bg-[#c59aff]/10 text-[#c59aff] font-headline font-bold text-[10px] tracking-[0.15em] uppercase whitespace-nowrap transition-all">
+                IMAGE
+            </button>
+<button class="px-5 py-1.5 rounded-full border border-transparent bg-surface-container/50 text-[#e6e3f5]/30 font-headline font-bold text-[10px] tracking-[0.15em] uppercase whitespace-nowrap hover:text-[#e6e3f5]/60 transition-all">
+                VIDEO
+            </button>
+<button class="px-5 py-1.5 rounded-full border border-transparent bg-surface-container/50 text-[#e6e3f5]/30 font-headline font-bold text-[10px] tracking-[0.15em] uppercase whitespace-nowrap hover:text-[#e6e3f5]/60 transition-all">
+                DANCE
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-40 pb-10 px-4 max-w-7xl mx-auto min-h-screen">
+<!-- Waterfall Grid Layout -->
+<div class="waterfall-grid">
+<!-- Item 1 -->
+<div class="waterfall-item relative group">
+<div class="aspect-[9/16] w-full rounded-lg overflow-hidden bg-surface-container-high relative">
+<img alt="Abstract digital 3D render with flowing ethereal purple and neon blue silk textures in a vertical composition" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf1OiAwdqqjgh5pSeY2by1YSEQyazG_-LIn-AoLIQayr-23KInA44ocrJvpyyCrTT1KsZ1AVjKleWo2mT2M30YPGeIm1odDNnm2HfxC3rW1eipK33FcFdB5w0Z0qPonWHI6T8uRYsj7SzHFRLA55kPkrklS4zvhLhd3mJYVKcHkNOuLpqeUA4wJ1Wje8O1K7BwtPLoIbXv9903p973SspC3PeFf4B3oZLBpHS-A5b7Rar0lLfAd5QS5uDFxlk5RWzGXeBwO7mOU1Gd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-surface-variant/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span class="font-label text-xs font-bold text-secondary">450</span>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="waterfall-item relative group">
+<div class="aspect-[9/16] w-full rounded-lg overflow-hidden bg-surface-container-high relative">
+<img alt="Cinematic digital art of shimmering liquid gold pouring through a dark cosmic background with stardust" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIwxJBpdfVojqL7exqo3dnorxt_uDGP6z7USaZmU8_m6FH9oI1a3bw98micFFFgO6zs62ymPUN-A1IrlCund6HzYpyKNMOVnnVSJX_rH4ZHJ2jixHZpfHMe6iVL-fu20w3WfiCvVrpd9pAjEPwNGHCtklBA06K_AFAPHavj_gArVkLO_6ozDrJzMXgKj5Uz5VQf1nTP5kDGXtTau9K3GXeIxNQ_7hgK7WBSGByfIdaRh6zVCf-B5ugDHVHEcrkvkES9UKrv2OaSPv7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-surface-variant/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span class="font-label text-xs font-bold text-secondary">300</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="waterfall-item relative group">
+<div class="aspect-[9/16] w-full rounded-lg overflow-hidden bg-surface-container-high relative">
+<img alt="Close up of a futuristic high-tech glass sculpture with glowing electric violet inner light and soft ambient shadows" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt4tUUqTt-t_AA6_2tV21IVHuaHb4ZM7xBVeVfLf0roAEnjk8gOjgoYSAYbHhQRqR8yppslRP8_KgiEmPkN-ofK1WNkxxBDIyvKumjc8IjF8j65weJPARX7jY6BpY0Immrk6CZ0LFbciJYvx5f_XPxTYIHrO6ZhZGi3PBTbv68srTr0cPScZiUbFqdPOM1ZQvA8Fe7AS1ZpjJ3vpGNgwf__D4ytohEbxBggIvwByH9iojCjvd3K5juYssaz9JKXh4-VMSszqVB0J62"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-surface-variant/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span class="font-label text-xs font-bold text-secondary">820</span>
+</div>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="waterfall-item relative group">
+<div class="aspect-[9/16] w-full rounded-lg overflow-hidden bg-surface-container-high relative">
+<img alt="Vibrant iridescent waves with metallic sheen and dark purple highlights in a vertical macro composition" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVsQOktn67ANHhQpLjSPYzYwQPL5MZxQRuJcaOg6ppUGgGsQ0UJsTq5dbivGhzb5cZfvtJU9zXlMTLFjj2mQLwNmNt43wsW3L8pn9F3-Oe_AdcWZKHjZOT276YVR5meSupL2ikseJgJcpZ9U_mMaJP2yxwThoXDM3PHEmYYmyFkae8aOvZFk1x7T1hHyc-MCs2jEOUNWZW4srwEeWFrWnG4XH5dVKIpQgKloHcgcDeQG9x4OE0etZf8ahrz_GsLHcGNDwjPHHwSmpq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-surface-variant/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span class="font-label text-xs font-bold text-secondary">950</span>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="waterfall-item relative group">
+<div class="aspect-[9/16] w-full rounded-lg overflow-hidden bg-surface-container-high relative">
+<img alt="Aesthetic vertical shot of minimal geometric spheres floating in a dark void with neon pink rim lighting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPXz3eKWpXdN6IluVNH8RbYIks5YQUFCYU440DvG53uTtEq3x_mUN_3bSY-N2kb6FQyjkax-2SAxMHvyYUebP3HUlsFcTEEKU5HyP1PT5udWqxmBhlUPe-ZuiUu1oxwoqd687tMuNyJ8wKlV6bobV2-j_DiFy8vmpF1-nAurmFsMVb62AuUN8OHLzAYldVn5noVgI2gnbPMa_o5xKj0wtNBxpyzLG85qPvKbCvFUMTvVAPGUAdZXt93SdtFe_uGNnRVXwU_MtvEASC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-surface-variant/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span class="font-label text-xs font-bold text-secondary">1,200</span>
+</div>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="waterfall-item relative group">
+<div class="aspect-[9/16] w-full rounded-lg overflow-hidden bg-surface-container-high relative">
+<img alt="Hyper-realistic digital fabric with crystal-like textures glowing under deep violet studio lighting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUEktAoy1N_Bu1E_lYdni5kgbdYFBc5lj1exKRtFZu9ME4IARPOOQPKE64lUHfD3yJjdaEgAwNk6iHnRiEOqTz4W3AZBE2zZX1q5QijCpSrD3VZQEgIWfUJBmJaIN9yX68bx4nDRjtxtHBaRbGCIyhbdiPocvLps8Td1J9EAXp6cnYMeYFRe1fxP9Ef1fkCfiQ4t7nwHk3wptmsih5xscwa58ornwdhqKcVmDGfZIHbiEOhoq21C67_16JFs91i5CLwdsOuZc9psat"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 right-3 flex items-center gap-1.5 bg-surface-variant/60 backdrop-blur-md px-3 py-1.5 rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span class="font-label text-xs font-bold text-secondary">2,100</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Navigation Drawer (Filters) - Hidden on mobile but present as part of design system -->
+<aside class="fixed left-0 top-0 h-full w-64 z-[60] bg-[#181827] rounded-r-[3rem] shadow-[32px_0_64px_rgba(0,0,0,0.4)] transition-transform -translate-x-full lg:translate-x-0 hidden lg:block">
+<div class="p-8">
+<h2 class="font-['Space_Grotesk'] text-sm uppercase tracking-widest text-[#c59aff] font-black mb-8">Filters</h2>
+<nav class="space-y-4">
+<button class="w-full text-left px-4 py-3 text-[#c59aff] font-bold bg-[#242436] rounded-full flex items-center gap-3">
+<span class="material-symbols-outlined">image</span>
+<span class="font-['Space_Grotesk'] uppercase tracking-widest text-sm">IMAGE</span>
+</button>
+<button class="w-full text-left px-4 py-3 text-[#e6e3f5]/50 hover:bg-[#242436]/50 rounded-full flex items-center gap-3 transition-all duration-300">
+<span class="material-symbols-outlined">movie</span>
+<span class="font-['Space_Grotesk'] uppercase tracking-widest text-sm">VIDEO</span>
+</button>
+<button class="w-full text-left px-4 py-3 text-[#e6e3f5]/50 hover:bg-[#242436]/50 rounded-full flex items-center gap-3 transition-all duration-300">
+<span class="material-symbols-outlined">flare</span>
+<span class="font-['Space_Grotesk'] uppercase tracking-widest text-sm">DANCE</span>
+</button>
+</nav>
+</div>
+</aside>
+</body></html>

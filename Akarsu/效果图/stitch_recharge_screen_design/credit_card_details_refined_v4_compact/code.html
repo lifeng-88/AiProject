@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payment Details | Secure Checkout</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary": "#5b4b00",
+                        "surface-container-lowest": "#000000",
+                        "tertiary-dim": "#e30071",
+                        "primary-container": "#ba88ff",
+                        "on-tertiary-container": "#000000",
+                        "error-container": "#a70138",
+                        "surface-container": "#181827",
+                        "primary-fixed-dim": "#b075ff",
+                        "background": "#0d0d19",
+                        "surface-container-low": "#06060c",
+                        "tertiary-fixed-dim": "#ff75a0",
+                        "on-primary-container": "#330066",
+                        "surface-container-highest": "#242436",
+                        "error-dim": "#d73357",
+                        "on-background": "#e6e3f5",
+                        "primary-fixed": "#ba88ff",
+                        "secondary-fixed-dim": "#efc900",
+                        "secondary-fixed": "#ffd709",
+                        "tertiary-fixed": "#ff8eae",
+                        "on-error-container": "#ffb2b9",
+                        "surface-variant": "#242436",
+                        "on-primary-fixed": "#000000",
+                        "error": "#ff6e84",
+                        "inverse-surface": "#fcf8ff",
+                        "secondary-dim": "#efc900",
+                        "surface-bright": "#2a2a3d",
+                        "surface-container-high": "#1e1e2e",
+                        "surface-tint": "#c59aff",
+                        "on-secondary-fixed-variant": "#665500",
+                        "on-surface": "#e6e3f5",
+                        "inverse-primary": "#7e29df",
+                        "surface-dim": "#0d0d19",
+                        "on-tertiary-fixed-variant": "#760037",
+                        "on-primary-fixed-variant": "#3f007c",
+                        "outline": "#757483",
+                        "tertiary-container": "#ff067f",
+                        "on-secondary-fixed": "#453900",
+                        "primary": "#c59aff",
+                        "on-tertiary": "#47001f",
+                        "secondary-container": "#705d00",
+                        "surface": "#0d0d19",
+                        "primary-dim": "#9547f7",
+                        "on-surface-variant": "#aba9ba",
+                        "on-error": "#490013",
+                        "inverse-on-surface": "#545462",
+                        "secondary": "#ffd709",
+                        "outline-variant": "#474755",
+                        "on-secondary-container": "#fff7e6",
+                        "on-primary": "#420082",
+                        "tertiary": "#ff6b9b",
+                        "on-tertiary-fixed": "#380017"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: { "DEFAULT": "4px", "lg": "4px", "xl": "4px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #0d0d19;
+            color: #e6e3f5;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glow-overlay {
+            background: radial-gradient(circle at 50% -20%, rgba(197, 154, 255, 0.15), transparent 70%);
+            pointer-events: none;
+        }
+        input::placeholder {
+            color: #474755;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.65rem;
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#0d0d19] flex items-center justify-between px-6 h-16 w-full max-w-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#c59aff] cursor-pointer hover:opacity-80 transition-opacity active:scale-95 transition-transform" data-icon="arrow_back">arrow_back</span>
+</div>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-lg uppercase tracking-widest text-[#c59aff]">Payment Details</h1>
+<div class="w-6"></div> <!-- Spacer for center alignment -->
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-6 max-w-md mx-auto relative min-h-screen">
+<div class="glow-overlay absolute inset-0"></div>
+<!-- Payment Form -->
+<form class="space-y-5 relative z-10">
+<!-- Section Title -->
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-1.5 bg-primary rounded-full"></span>
+<h3 class="font-headline text-[11px] font-bold uppercase tracking-[0.3em] text-primary">Card Information</h3>
+</div>
+<!-- Cardholder Name -->
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">Cardholder Name</label>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<input class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface" placeholder="Johnathan Doe" type="text"/>
+</div>
+</div>
+<!-- Card Number -->
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">Card Number</label>
+<div class="flex items-center bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<span class="material-symbols-outlined pl-3 text-outline text-lg" data-icon="credit_card">credit_card</span>
+<input class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface tracking-widest" placeholder="0000 0000 0000 0000" type="text"/>
+</div>
+</div>
+<!-- Expiry & CVC -->
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">Expiry Date</label>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<input class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface" placeholder="MM / YY" type="text"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">CVC / CVV</label>
+<div class="flex items-center bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<input class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface" placeholder="***" type="password"/>
+<span class="material-symbols-outlined pr-3 text-outline text-lg" data-icon="help">help</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="w-1.5 h-1.5 bg-primary rounded-full"></span>
+<h3 class="font-headline text-[11px] font-bold uppercase tracking-[0.3em] text-primary">Billing Address</h3>
+</div>
+<!-- Country/Region -->
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">Country / Region</label>
+<div class="relative flex items-center bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<select class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface appearance-none">
+<option value="US">United States</option>
+<option value="UK">United Kingdom</option>
+<option value="CA">Canada</option>
+<option value="EU">European Union</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 pointer-events-none text-outline" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<!-- Street Address -->
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">Street Address</label>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<input class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface" placeholder="123 Digital Avenue" type="text"/>
+</div>
+</div>
+<!-- City & State -->
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">City</label>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<input class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface" placeholder="San Francisco" type="text"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">State</label>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<input class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface" placeholder="CA" type="text"/>
+</div>
+</div>
+</div>
+<!-- Zip & Phone -->
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">Zip Code</label>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<input class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface" placeholder="94103" type="text"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">Phone Number</label>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<input class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface" placeholder="+1 555-0123" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Email Address -->
+<div class="space-y-1.5">
+<label class="font-label text-[10px] uppercase tracking-wider text-outline px-1">Email Address</label>
+<div class="bg-surface-container-low border border-outline-variant/30 rounded focus-within:border-primary/50 transition-colors">
+<input class="w-full bg-transparent border-none text-[13px] font-headline font-medium py-2.5 px-3 focus:ring-0 text-on-surface" placeholder="curator@vault.com" type="email"/>
+</div>
+</div>
+<!-- Confirm Button -->
+<div class="pt-6">
+<button class="w-full bg-gradient-to-r from-primary-dim to-primary text-on-primary py-4 rounded font-headline font-extrabold text-[12px] uppercase tracking-[0.2em] shadow-[0_0_20px_rgba(197,154,255,0.3)] hover:shadow-[0_0_30px_rgba(197,154,255,0.5)] active:scale-95 transition-all" type="submit">SAVE CREDIT CARD</button>
+<div class="mt-4 flex flex-col items-center gap-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<p class="font-label text-[10px] text-on-surface-variant tracking-wide">100% Secure Transaction &amp; Private Billing.</p>
+</div>
+<p class="font-label text-[9px] text-outline text-center px-4">Your privacy is our top priority.</p>
+</div>
+</div>
+</form>
+</main>
+</body></html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#ff75a0",
+                        "surface-container-low": "#12121f",
+                        "surface-container-highest": "#242436",
+                        "inverse-surface": "#fcf8ff",
+                        "on-secondary": "#5b4b00",
+                        "surface-dim": "#0d0d19",
+                        "tertiary": "#ff6b9b",
+                        "on-tertiary-fixed": "#380017",
+                        "surface": "#0d0d19",
+                        "on-tertiary-fixed-variant": "#760037",
+                        "primary-fixed-dim": "#b075ff",
+                        "on-primary-fixed-variant": "#3f007c",
+                        "inverse-primary": "#7e29df",
+                        "secondary-container": "#705d00",
+                        "on-primary-container": "#330066",
+                        "surface-variant": "#242436",
+                        "on-tertiary-container": "#000000",
+                        "surface-container": "#181827",
+                        "secondary": "#ffd709",
+                        "on-error": "#490013",
+                        "on-secondary-container": "#fff7e6",
+                        "on-primary": "#420082",
+                        "on-error-container": "#ffb2b9",
+                        "error": "#ff6e84",
+                        "on-surface-variant": "#aba9ba",
+                        "tertiary-dim": "#e30071",
+                        "primary": "#c59aff",
+                        "inverse-on-surface": "#545462",
+                        "on-surface": "#e6e3f5",
+                        "on-background": "#e6e3f5",
+                        "on-tertiary": "#47001f",
+                        "outline-variant": "#474755",
+                        "on-secondary-fixed": "#453900",
+                        "surface-container-lowest": "#000000",
+                        "error-container": "#a70138",
+                        "surface-container-high": "#1e1e2e",
+                        "outline": "#757483",
+                        "error-dim": "#d73357",
+                        "primary-fixed": "#ba88ff",
+                        "tertiary-container": "#ff067f",
+                        "on-primary-fixed": "#000000",
+                        "primary-container": "#ba88ff",
+                        "secondary-dim": "#efc900",
+                        "secondary-fixed": "#ffd709",
+                        "primary-dim": "#9547f7",
+                        "tertiary-fixed": "#ff8eae",
+                        "on-secondary-fixed-variant": "#665500",
+                        "surface-bright": "#2a2a3d",
+                        "secondary-fixed-dim": "#efc900",
+                        "background": "#0d0d19",
+                        "surface-tint": "#c59aff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .masonry-grid {
+            column-count: 2;
+            column-gap: 0.5rem;
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 0.5rem;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-modal {
+            background: rgba(13, 13, 25, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(71, 71, 85, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body select-none min-h-screen overflow-hidden">
+<!-- Background: Home Screen content from SCREEN_19 -->
+<div class="fixed inset-0 z-0">
+<header class="bg-[#0d0d19] border-b border-outline-variant/10 px-4 h-14 flex items-center justify-between">
+<button class="p-1.5 rounded-full"><span class="material-symbols-outlined text-[#c59aff] text-[20px]">grid_view</span></button>
+<div class="flex gap-6 items-center"><span class="text-[13px] font-bold text-primary">Video</span></div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-full"><span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span><span class="font-label text-[10px] font-bold">1,510</span></div>
+</header>
+<main class="px-2 pt-4">
+<div class="masonry-grid opacity-40 grayscale-[0.5]">
+<div class="masonry-item rounded-[8px] bg-surface-container aspect-[9/16] overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsjIuc6x29CZZRPzkYl0s7CAnJLRJXWZTKUlIKSLixhF1bojOm7T6aXzmHrpM0C8JgEcDDVsSmqzfG_PcB8PiGDTyWtHKAmG_GjBAzZPefDFnlU7dOosN7er9LopuxjQiDDm34WzHKIKwQwoRJx-Ox8akODVO6tfpm_LC66Gnm34tC2APo9KZdSKaWa7dCHU0CKqo815tlV6nfEHiQifVTlia2IsSj61HFrjZr5PmWkSmQddgNAhDwnwT-D1DEasC43dB4HREf6VEA"/>
+</div>
+<div class="masonry-item rounded-[8px] bg-surface-container aspect-[9/16] overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6F26Q2ytXjFDv5rEJqlADERWlbZfxKC6EOKlR3nmN4cbVc8udviSeJwy5AzI-ViOPr7e6gL5wvQE1fedlppWEAnj5RSEwiW_wGicbBK1yeR73vQIwYRh7BmdBbi4X4OMjvU4je2dnFEsyzbZ1Vro-jd9oJG9SDr5JeZD5gflg2lhxPmvDWd9gC2-TIiX3VkNglZ1xZN9w9TO5-XgIlc09E_QZlWpUmxOA-9czi2l7exxui4M6FUsMZOmYeJsrL1caniKE5QSrPM70"/>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 w-full px-4 pb-6 pt-3 bg-[#181827]/80 flex justify-around rounded-t-[3rem] border-t border-[#474755]/20">
+<div class="flex flex-col items-center"><span class="material-symbols-outlined text-[24px]">home</span></div>
+<div class="flex flex-col items-center"><span class="material-symbols-outlined text-[24px]">payments</span></div>
+<div class="flex flex-col items-center"><span class="material-symbols-outlined text-[24px]">person</span></div>
+</nav>
+</div>
+<!-- Dim Overlay (Lighter/More Transparent as requested) -->
+<div class="fixed inset-0 bg-surface-dim/40 backdrop-blur-[2px] z-10"></div>
+<!-- Perfectly Centered Popup -->
+<div class="fixed inset-0 flex items-center justify-center z-20 p-6">
+<div class="glass-modal w-full max-w-[340px] rounded-[4px] p-6 shadow-2xl relative overflow-hidden">
+<!-- Header with Close Button -->
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-[16px] font-bold font-headline text-on-surface">Upload Tips</h2>
+<button class="text-on-surface/60 hover:text-on-surface active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- GOOD vs BAD Comparison -->
+<div class="grid grid-cols-2 gap-3 mb-6">
+<!-- GOOD -->
+<div class="flex flex-col items-center">
+<div class="relative w-full aspect-square rounded-[4px] overflow-hidden bg-surface-container-highest mb-2">
+<img alt="Good example" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChnrICJxOn0VUhPnE-R4Re9748G7oLZQYbHHhbIdTJ3cwc6oikRFomvX4ZJgpBSA7JyAitqyQwAqPsRiwKVKmpojzRL2iuhcROsXg8RFm4qSH78-mDuDtOzUNjXn3rBas8j019QJhasV7gAdS5KghMF5BEze09ohr8JYR5jAOzGyDU8DrsAuzo1xXwKqkEw_3CzmyoTBOrYV3R3RTib_uB7gyvi3xMVxzWKcJKkSbcHKG0wMdZLJxpQOu5w8_GQY91dQTgbC_7Gvj_"/>
+<div class="absolute top-1 right-1 w-4 h-4 bg-[#4ade80] rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-black text-[10px] font-bold" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+</div>
+<span class="text-[10px] font-bold font-label uppercase tracking-widest text-primary mb-0.5">GOOD</span>
+<p class="text-[9px] text-on-surface-variant text-center leading-tight">Clear, front-facing, high light</p>
+</div>
+<!-- BAD -->
+<div class="flex flex-col items-center">
+<div class="relative w-full aspect-square rounded-[4px] overflow-hidden bg-surface-container-highest mb-2">
+<img alt="Bad example" class="w-full h-full object-cover grayscale brightness-50 blur-[0.5px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUw8h9iyVet0slewopxJ4j1rH28fBk8JVeB3jf39pkrVcJBUjvxHnmMUDm9lT-1UrKJZ_Y6VJxls6LqtXOHZ3QZb2TKtFnurganXxe6Uzk0vWMV3WEzmTopCRip5DV45iTLqEeRL_rcew8P5f5euIHlb5tnSMn3TGogq9b5cCdjqHgEU3B0aIm13JrGI__sRwzPv1lXXWbo1OdUaOMqETR4jAO91HSawlrgNFMaCmj72L_-P8gNK8khHZkEqA_6CRe3JjyjtpNOrUY"/>
+<div class="absolute top-1 right-1 w-4 h-4 bg-[#f87171] rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[10px] font-bold" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+</div>
+<span class="text-[10px] font-bold font-label uppercase tracking-widest text-on-surface-variant mb-0.5">BAD</span>
+<p class="text-[9px] text-on-surface-variant text-center leading-tight">Blurry, side view, dark hair/hat</p>
+</div>
+</div>
+<!-- Checkbox -->
+<div class="flex items-center gap-2 mb-8">
+<div class="w-4 h-4 rounded-[3px] border border-outline-variant flex items-center justify-center cursor-pointer hover:border-primary transition-colors"></div>
+<span class="text-[11px] text-on-surface-variant">Don't show again</span>
+</div>
+<!-- Action Button -->
+<button class="w-full h-[52px] bg-[#b075ff] rounded-full text-black font-bold font-headline text-[14px] active:scale-[0.98] transition-transform shadow-[0_4px_20px_rgba(176,117,255,0.3)]">
+            Confirm &amp; Upload
+        </button>
+</div>
+</div>
+</body></html>

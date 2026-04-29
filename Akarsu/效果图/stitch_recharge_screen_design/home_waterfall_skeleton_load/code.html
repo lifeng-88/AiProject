@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#ff75a0",
+                        "surface-container-low": "#12121f",
+                        "surface-container-highest": "#242436",
+                        "inverse-surface": "#fcf8ff",
+                        "on-secondary": "#5b4b00",
+                        "surface-dim": "#0d0d19",
+                        "tertiary": "#ff6b9b",
+                        "on-tertiary-fixed": "#380017",
+                        "surface": "#0d0d19",
+                        "on-tertiary-fixed-variant": "#760037",
+                        "primary-fixed-dim": "#b075ff",
+                        "on-primary-fixed-variant": "#3f007c",
+                        "inverse-primary": "#7e29df",
+                        "secondary-container": "#705d00",
+                        "on-primary-container": "#330066",
+                        "surface-variant": "#242436",
+                        "on-tertiary-container": "#000000",
+                        "surface-container": "#181827",
+                        "secondary": "#ffd709",
+                        "on-error": "#490013",
+                        "on-secondary-container": "#fff7e6",
+                        "on-primary": "#420082",
+                        "on-error-container": "#ffb2b9",
+                        "error": "#ff6e84",
+                        "on-surface-variant": "#aba9ba",
+                        "tertiary-dim": "#e30071",
+                        "primary": "#c59aff",
+                        "inverse-on-surface": "#545462",
+                        "on-surface": "#e6e3f5",
+                        "on-background": "#e6e3f5",
+                        "on-tertiary": "#47001f",
+                        "outline-variant": "#474755",
+                        "on-secondary-fixed": "#453900",
+                        "surface-container-lowest": "#000000",
+                        "error-container": "#a70138",
+                        "surface-container-high": "#1e1e2e",
+                        "outline": "#757483",
+                        "error-dim": "#d73357",
+                        "primary-fixed": "#ba88ff",
+                        "tertiary-container": "#ff067f",
+                        "on-primary-fixed": "#000000",
+                        "primary-container": "#ba88ff",
+                        "secondary-dim": "#efc900",
+                        "secondary-fixed": "#ffd709",
+                        "primary-dim": "#9547f7",
+                        "tertiary-fixed": "#ff8eae",
+                        "on-secondary-fixed-variant": "#665500",
+                        "surface-bright": "#2a2a3d",
+                        "secondary-fixed-dim": "#efc900",
+                        "background": "#0d0d19",
+                        "surface-tint": "#c59aff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                    keyframes: {
+                        shimmer: {
+                            '0%': { transform: 'translateX(-100%)' },
+                            '100%': { transform: 'translateX(100%)' }
+                        }
+                    },
+                    animation: {
+                        shimmer: 'shimmer 1.5s infinite'
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .masonry-grid {
+            column-count: 2;
+            column-gap: 0.5rem;
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 0.5rem;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .skeleton-pulse {
+            position: relative;
+            overflow: hidden;
+            background-color: #181827;
+        }
+        .skeleton-pulse::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: translateX(-100%);
+            background-image: linear-gradient(
+                90deg,
+                rgba(24, 24, 39, 0) 0,
+                rgba(36, 36, 54, 0.5) 50%,
+                rgba(24, 24, 39, 0) 100%
+            );
+            animation: shimmer 1.5s infinite;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body select-none">
+<!-- Combined TopAppBar and Navigation -->
+<header class="bg-[#0d0d19] dark:bg-[#0d0d19] fixed top-0 left-0 w-full z-50 px-4 h-14 border-b border-outline-variant/10">
+<div class="flex items-center justify-between h-full gap-4">
+<!-- Left: Toggle Button -->
+<button class="hover:bg-[#242436] transition-colors p-1.5 rounded-full active:scale-95 duration-150 flex-shrink-0">
+<span class="material-symbols-outlined text-[#c59aff] text-[20px]">grid_view</span>
+</button>
+<!-- Center: Primary Tabs -->
+<div class="flex gap-6 overflow-x-auto hide-scrollbar items-center flex-grow justify-center">
+<button class="text-[13px] font-bold font-headline transition-all text-on-surface-variant hover:text-primary whitespace-nowrap">Image</button>
+<div class="relative py-3.5">
+<button class="text-[13px] font-bold font-headline transition-all text-primary whitespace-nowrap">Video</button>
+<div class="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full"></div>
+</div>
+<button class="text-[13px] font-bold font-headline transition-all text-on-surface-variant hover:text-primary whitespace-nowrap">Dance</button>
+</div>
+<!-- Right: Coin Balance -->
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1 rounded-full border border-outline-variant/10 shadow-sm hover:bg-[#242436] transition-colors cursor-pointer flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: 'FILL' 1;">monetization_on</span>
+<span class="font-label text-[10px] font-bold tracking-tight text-on-surface">1,510</span>
+</div>
+</div>
+</header>
+<main class="pt-14 pb-28">
+<!-- Secondary Tabs Navigation -->
+<section class="sticky top-14 z-40 bg-background/95 backdrop-blur-md px-4 py-3">
+<div class="flex gap-2">
+<button class="px-5 py-1.5 rounded-full bg-surface-container-highest text-primary text-[10px] font-bold font-label uppercase tracking-wider border border-primary/20">Cyberpunk</button>
+<button class="px-5 py-1.5 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold font-label uppercase tracking-wider border border-outline-variant/10 hover:bg-surface-container-high">Sci-Fi</button>
+</div>
+</section>
+<!-- Masonry Skeleton Content Grid -->
+<section class="px-2">
+<div class="masonry-grid">
+<!-- Skeleton Item 1 -->
+<div class="masonry-item rounded-[4px] aspect-[9/16] skeleton-pulse"></div>
+<!-- Skeleton Item 2 -->
+<div class="masonry-item rounded-[4px] aspect-[9/16] skeleton-pulse"></div>
+<!-- Skeleton Item 3 -->
+<div class="masonry-item rounded-[4px] aspect-[9/16] skeleton-pulse"></div>
+<!-- Skeleton Item 4 -->
+<div class="masonry-item rounded-[4px] aspect-[9/16] skeleton-pulse"></div>
+<!-- Skeleton Item 5 -->
+<div class="masonry-item rounded-[4px] aspect-[9/16] skeleton-pulse"></div>
+<!-- Skeleton Item 6 -->
+<div class="masonry-item rounded-[4px] aspect-[9/16] skeleton-pulse"></div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 grid grid-cols-3 items-center px-4 pb-6 pt-3 bg-[#181827]/80 backdrop-blur-xl rounded-t-[3rem] border-t border-[#474755]/20 shadow-[0_-10px_50px_rgba(138,43,226,0.15)]">
+<a class="flex flex-col items-center justify-center text-[#c59aff] transition-transform active:scale-95 py-1" href="#">
+<div class="flex flex-col items-center justify-center bg-[#c59aff]/10 rounded-2xl px-4 py-2 shadow-[0_0_20px_rgba(197,154,255,0.2)]">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Manrope'] font-semibold text-[10px] uppercase tracking-tighter mt-0.5">Home</span>
+</div>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e6e3f5]/50 hover:text-[#c59aff] transition-all duration-300 active:scale-95 py-1" href="#">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+<span class="font-['Manrope'] font-semibold text-[10px] uppercase tracking-tighter mt-0.5">Recharge</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e6e3f5]/50 hover:text-[#c59aff] transition-all duration-300 active:scale-95 py-1" href="#">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="font-['Manrope'] font-semibold text-[10px] uppercase tracking-tighter mt-0.5">My</span>
+</a>
+</nav>
+</body></html>

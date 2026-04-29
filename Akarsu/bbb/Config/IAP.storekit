@@ -1,0 +1,132 @@
+{
+  "appPolicies": {
+    "eula": "",
+    "policies": [
+      {
+        "locale": "en_US",
+        "policyText": "",
+        "policyURL": ""
+      }
+    ]
+  },
+  "identifier": "BBB_IAP_FROM_API",
+  "nonRenewingSubscriptions": [],
+  "products": [
+    {
+      "displayPrice": "4.99",
+      "familyShareable": false,
+      "internalID": "PKG_1776753211_com_akarsu_app_coins_20",
+      "localizations": [
+        {
+          "description": "4.99 — 20+0 coins (channel package)",
+          "displayName": "4.99",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.akarsu.app.coins_20",
+      "referenceName": "4.99",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "9.99",
+      "familyShareable": false,
+      "internalID": "PKG_1776755982_com_akarsu_app_coins_40",
+      "localizations": [
+        {
+          "description": "9.99 — 40+10 coins (channel package)",
+          "displayName": "9.99",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.akarsu.app.coins_40",
+      "referenceName": "9.99",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "19.99",
+      "familyShareable": false,
+      "internalID": "PKG_1776756008_com_akarsu_app_coins_80",
+      "localizations": [
+        {
+          "description": "19.99 — 80+40 coins (channel package)",
+          "displayName": "19.99",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.akarsu.app.coins_80",
+      "referenceName": "19.99",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "49.99",
+      "familyShareable": false,
+      "internalID": "PKG_1776756041_com_akarsu_app_coins_200",
+      "localizations": [
+        {
+          "description": "49.99 — 200+140 coins (channel package)",
+          "displayName": "49.99",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.akarsu.app.coins_200",
+      "referenceName": "49.99",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "99.99",
+      "familyShareable": false,
+      "internalID": "PKG_1776756073_com_akarsu_app_coins_400",
+      "localizations": [
+        {
+          "description": "99.99 — 400+400 coins (channel package)",
+          "displayName": "99.99",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.akarsu.app.coins_400",
+      "referenceName": "99.99",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "199.99",
+      "familyShareable": false,
+      "internalID": "PKG_1776756164_com_akarsu_app_coins_800",
+      "localizations": [
+        {
+          "description": "199.99 — 800+1200 coins (channel package)",
+          "displayName": "199.99",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.akarsu.app.coins_800",
+      "referenceName": "199.99",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "299.99",
+      "familyShareable": false,
+      "internalID": "PKG_1776756290_com_akarsu_app_coins_1200",
+      "localizations": [
+        {
+          "description": "299.99 — 1200+2400 coins (channel package)",
+          "displayName": "299.99",
+          "locale": "en_US"
+        }
+      ],
+      "productID": "com.akarsu.app.coins_1200",
+      "referenceName": "299.99",
+      "type": "Consumable"
+    }
+  ],
+  "settings": {
+    "_failTransactionsEnabled": false,
+    "_locale": "en_US",
+    "_storefront": "USA",
+    "_storeKitErrors": []
+  },
+  "subscriptionGroups": [],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}

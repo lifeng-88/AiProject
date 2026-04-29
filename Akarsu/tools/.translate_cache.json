@@ -1,0 +1,1801 @@
+{
+  "My": {
+    "pt": "Meu",
+    "es": "Mi",
+    "ja": "私の",
+    "fr": "Mon",
+    "de": "Mein"
+  },
+  "OK": {
+    "pt": "OK",
+    "es": "DE ACUERDO",
+    "ja": "わかりました",
+    "fr": "D'ACCORD",
+    "de": "OK"
+  },
+  "ALL": {
+    "pt": "TODOS",
+    "es": "TODO",
+    "ja": "全て",
+    "fr": "TOUS",
+    "de": "ALLE"
+  },
+  "All": {
+    "pt": "Todos",
+    "es": "Todo",
+    "ja": "全て",
+    "fr": "Tous",
+    "de": "Alle"
+  },
+  "BAD": {
+    "pt": "RUIM",
+    "es": "MALO",
+    "ja": "悪い",
+    "fr": "MAUVAIS",
+    "de": "SCHLECHT"
+  },
+  "CVV": {
+    "pt": "CVV",
+    "es": "CVV",
+    "ja": "CVV",
+    "fr": "CVV",
+    "de": "CVV"
+  },
+  "HOT": {
+    "pt": "QUENTE",
+    "es": "CALIENTE",
+    "ja": "熱い",
+    "fr": "CHAUD",
+    "de": "HEISS"
+  },
+  "NEW": {
+    "pt": "NOVO",
+    "es": "NUEVO",
+    "ja": "新しい",
+    "fr": "NOUVEAU",
+    "de": "NEU"
+  },
+  "bbb": {
+    "pt": "bbb",
+    "es": "bbb",
+    "ja": "BBB",
+    "fr": "bbb",
+    "de": "bbb"
+  },
+  "ADD+": {
+    "pt": "ADICIONAR+",
+    "es": "AÑADIR+",
+    "ja": "追加+",
+    "fr": "AJOUTER+",
+    "de": "HINZUFÜGEN+"
+  },
+  "Back": {
+    "pt": "Voltar",
+    "es": "Atrás",
+    "ja": "戻る",
+    "fr": "Dos",
+    "de": "Zurück"
+  },
+  "Cost": {
+    "pt": "Custo",
+    "es": "Costo",
+    "ja": "料金",
+    "fr": "Coût",
+    "de": "Kosten"
+  },
+  "FREE": {
+    "pt": "LIVRE",
+    "es": "GRATIS",
+    "ja": "無料",
+    "fr": "GRATUIT",
+    "de": "FREI"
+  },
+  "GOOD": {
+    "pt": "BOM",
+    "es": "BIEN",
+    "ja": "良い",
+    "fr": "BIEN",
+    "de": "GUT"
+  },
+  "Home": {
+    "pt": "Lar",
+    "es": "Hogar",
+    "ja": "家",
+    "fr": "Maison",
+    "de": "Heim"
+  },
+  "TYPE": {
+    "pt": "TIPO",
+    "es": "TIPO",
+    "ja": "タイプ",
+    "fr": "TAPER",
+    "de": "TYP"
+  },
+  "Type": {
+    "pt": "Tipo",
+    "es": "Tipo",
+    "ja": "タイプ",
+    "fr": "Taper",
+    "de": "Typ"
+  },
+  "BONUS": {
+    "pt": "BÔNUS",
+    "es": "PRIMA",
+    "ja": "ボーナス",
+    "fr": "PRIME",
+    "de": "BONUS"
+  },
+  "Build": {
+    "pt": "Construir",
+    "es": "Construir",
+    "ja": "建てる",
+    "fr": "Construire",
+    "de": "Bauen"
+  },
+  "Close": {
+    "pt": "Fechar",
+    "es": "Cerca",
+    "ja": "近い",
+    "fr": "Fermer",
+    "de": "Schließen"
+  },
+  "Dance": {
+    "pt": "Dança",
+    "es": "Bailar",
+    "ja": "ダンス",
+    "fr": "Danse",
+    "de": "Tanzen"
+  },
+  "Image": {
+    "pt": "Imagem",
+    "es": "Imagen",
+    "ja": "画像",
+    "fr": "Image",
+    "de": "Bild"
+  },
+  "MEDIA": {
+    "pt": "MÍDIA",
+    "es": "MEDIOS DE COMUNICACIÓN",
+    "ja": "メディア",
+    "fr": "MÉDIAS",
+    "de": "MEDIEN"
+  },
+  "Other": {
+    "pt": "Outro",
+    "es": "Otro",
+    "ja": "他の",
+    "fr": "Autre",
+    "de": "Andere"
+  },
+  "Retry": {
+    "pt": "Tentar novamente",
+    "es": "Rever",
+    "ja": "リトライ",
+    "fr": "Réessayer",
+    "de": "Wiederholen"
+  },
+  "Start": {
+    "pt": "Começar",
+    "es": "Comenzar",
+    "ja": "始める",
+    "fr": "Commencer",
+    "de": "Start"
+  },
+  "Video": {
+    "pt": "Vídeo",
+    "es": "Video",
+    "ja": "ビデオ",
+    "fr": "Vidéo",
+    "de": "Video"
+  },
+  "%lld%%": {
+    "pt": "%lld%%",
+    "es": "%lld%%",
+    "ja": "%lld%%",
+    "fr": "%ld%%",
+    "de": "%lld%%"
+  },
+  "Cancel": {
+    "pt": "Cancelar",
+    "es": "Cancelar",
+    "ja": "キャンセル",
+    "fr": "Annuler",
+    "de": "Stornieren"
+  },
+  "Failed": {
+    "pt": "Fracassado",
+    "es": "Fallido",
+    "ja": "失敗した",
+    "fr": "Échoué",
+    "de": "Fehlgeschlagen"
+  },
+  "French": {
+    "pt": "Francês",
+    "es": "Francés",
+    "ja": "フランス語",
+    "fr": "Français",
+    "de": "Französisch"
+  },
+  "German": {
+    "pt": "Alemão",
+    "es": "Alemán",
+    "ja": "ドイツ語",
+    "fr": "Allemand",
+    "de": "Deutsch"
+  },
+  "ID: %@": {
+    "pt": "EU IA: %@",
+    "es": "IDENTIFICACIÓN: %@",
+    "ja": "ID: %@",
+    "fr": "IDENTIFIANT: %@",
+    "de": "AUSWEIS: %@"
+  },
+  "Notice": {
+    "pt": "Perceber",
+    "es": "Aviso",
+    "ja": "知らせ",
+    "fr": "Avis",
+    "de": "Beachten"
+  },
+  "REROLL": {
+    "pt": "ROLLAR",
+    "es": "REROLLAR",
+    "ja": "リロール",
+    "fr": "REROLLER",
+    "de": "ROLL"
+  },
+  "Status": {
+    "pt": "Status",
+    "es": "Estado",
+    "ja": "状態",
+    "fr": "Statut",
+    "de": "Status"
+  },
+  "API: %@": {
+    "pt": "API: %@",
+    "es": "API: %@",
+    "ja": "API: %@",
+    "fr": "API : %@",
+    "de": "API: %@"
+  },
+  "App bug": {
+    "pt": "Bug no aplicativo",
+    "es": "Error de aplicación",
+    "ja": "アプリのバグ",
+    "fr": "Bogue de l'application",
+    "de": "App-Fehler"
+  },
+  "Confirm": {
+    "pt": "Confirmar",
+    "es": "Confirmar",
+    "ja": "確認する",
+    "fr": "Confirmer",
+    "de": "Bestätigen"
+  },
+  "Created": {
+    "pt": "Criado",
+    "es": "Creado",
+    "ja": "作成されました",
+    "fr": "Créé",
+    "de": "Erstellt"
+  },
+  "Default": {
+    "pt": "Padrão",
+    "es": "Por defecto",
+    "ja": "デフォルト",
+    "fr": "Défaut",
+    "de": "Standard"
+  },
+  "Dismiss": {
+    "pt": "Liberar",
+    "es": "Despedir",
+    "ja": "却下する",
+    "fr": "Rejeter",
+    "de": "Zurückweisen"
+  },
+  "EXPIRED": {
+    "pt": "EXPIRADO",
+    "es": "VENCIÓ",
+    "ja": "期限切れ",
+    "fr": "EXPIRÉ",
+    "de": "ABGELAUFEN"
+  },
+  "EXPIRES": {
+    "pt": "EXPIRA",
+    "es": "EXPIRA",
+    "ja": "有効期限が切れます",
+    "fr": "EXPIRE",
+    "de": "LÄUFT AB"
+  },
+  "English": {
+    "pt": "Inglês",
+    "es": "Inglés",
+    "ja": "英語",
+    "fr": "Anglais",
+    "de": "Englisch"
+  },
+  "GENERAL": {
+    "pt": "EM GERAL",
+    "es": "GENERAL",
+    "ja": "一般的な",
+    "fr": "GÉNÉRAL",
+    "de": "ALLGEMEIN"
+  },
+  "ID: #%@": {
+    "pt": "EU IA: #%@",
+    "es": "IDENTIFICACIÓN: #%@",
+    "ja": "ID: #%@",
+    "fr": "IDENTIFIANT: #%@",
+    "de": "AUSWEIS: #%@"
+  },
+  "PENDING": {
+    "pt": "PENDENTE",
+    "es": "PENDIENTE",
+    "ja": "保留中",
+    "fr": "EN ATTENTE",
+    "de": "AUSSTEHEND"
+  },
+  "Pending": {
+    "pt": "Pendente",
+    "es": "Pendiente",
+    "ja": "保留中",
+    "fr": "En attente",
+    "de": "Ausstehend"
+  },
+  "Queuing": {
+    "pt": "Na fila",
+    "es": "hacer cola",
+    "ja": "キューイング",
+    "fr": "File d'attente",
+    "de": "Warteschlange"
+  },
+  "SUCCESS": {
+    "pt": "SUCESSO",
+    "es": "ÉXITO",
+    "ja": "成功",
+    "fr": "SUCCÈS",
+    "de": "ERFOLG"
+  },
+  "Sign in": {
+    "pt": "Entrar",
+    "es": "Iniciar sesión",
+    "ja": "サインイン",
+    "fr": "Se connecter",
+    "de": "anmelden"
+  },
+  "Spanish": {
+    "pt": "Espanhol",
+    "es": "Español",
+    "ja": "スペイン語",
+    "fr": "Espagnol",
+    "de": "Spanisch"
+  },
+  "Success": {
+    "pt": "Sucesso",
+    "es": "Éxito",
+    "ja": "成功",
+    "fr": "Succès",
+    "de": "Erfolg"
+  },
+  "Add card": {
+    "pt": "Adicionar cartão",
+    "es": "Agregar tarjeta",
+    "ja": "カードを追加する",
+    "fr": "Ajouter une carte",
+    "de": "Karte hinzufügen"
+  },
+  "Creation": {
+    "pt": "Criação",
+    "es": "Creación",
+    "ja": "創造",
+    "fr": "Création",
+    "de": "Schaffung"
+  },
+  "DOWNLOAD": {
+    "pt": "DOWNLOAD",
+    "es": "DESCARGAR",
+    "ja": "ダウンロード",
+    "fr": "TÉLÉCHARGER",
+    "de": "HERUNTERLADEN"
+  },
+  "FEEDBACK": {
+    "pt": "OPINIÃO",
+    "es": "COMENTARIO",
+    "ja": "フィードバック",
+    "fr": "RETOUR",
+    "de": "RÜCKMELDUNG"
+  },
+  "Favorite": {
+    "pt": "Favorito",
+    "es": "Favorito",
+    "ja": "お気に入り",
+    "fr": "Préféré",
+    "de": "Favorit"
+  },
+  "Feedback": {
+    "pt": "Opinião",
+    "es": "Comentario",
+    "ja": "フィードバック",
+    "fr": "Retour",
+    "de": "Rückmeldung"
+  },
+  "Generate": {
+    "pt": "Gerar",
+    "es": "Generar",
+    "ja": "生成する",
+    "fr": "Générer",
+    "de": "Erzeugen"
+  },
+  "Go to My": {
+    "pt": "Vá para o meu",
+    "es": "Ir a mi",
+    "ja": "私のページに移動",
+    "fr": "Aller à Mon",
+    "de": "Gehen Sie zu Mein"
+  },
+  "In queue": {
+    "pt": "Na fila",
+    "es": "En cola",
+    "ja": "キュー中",
+    "fr": "En file d'attente",
+    "de": "In der Warteschlange"
+  },
+  "Japanese": {
+    "pt": "japonês",
+    "es": "japonés",
+    "ja": "日本語",
+    "fr": "japonais",
+    "de": "japanisch"
+  },
+  "Language": {
+    "pt": "Linguagem",
+    "es": "Idioma",
+    "ja": "言語",
+    "fr": "Langue",
+    "de": "Sprache"
+  },
+  "MY LIKES": {
+    "pt": "MEUS GOSTOS",
+    "es": "MIS GUSTOS",
+    "ja": "私の好きなもの",
+    "fr": "MES AIMÉS",
+    "de": "MEINE LIKEN"
+  },
+  "My Likes": {
+    "pt": "Meus gostos",
+    "es": "Mis gustos",
+    "ja": "私のお気に入り",
+    "fr": "Mes goûts",
+    "de": "Meine Vorlieben"
+  },
+  "RECHARGE": {
+    "pt": "RECARREGAR",
+    "es": "RECARGAR",
+    "ja": "リチャージ",
+    "fr": "RECHARGER",
+    "de": "AUFLADEN"
+  },
+  "RESOLVED": {
+    "pt": "RESOLVIDO",
+    "es": "RESUELTO",
+    "ja": "解決済み",
+    "fr": "RÉSOLU",
+    "de": "GELÖST"
+  },
+  "Recharge": {
+    "pt": "Recarregar",
+    "es": "Recargar",
+    "ja": "リチャージ",
+    "fr": "Recharger",
+    "de": "Aufladen"
+  },
+  "Settings": {
+    "pt": "Configurações",
+    "es": "Ajustes",
+    "ja": "設定",
+    "fr": "Paramètres",
+    "de": "Einstellungen"
+  },
+  "TEMPLATE": {
+    "pt": "MODELO",
+    "es": "PLANTILLA",
+    "ja": "テンプレート",
+    "fr": "MODÈLE",
+    "de": "VORLAGE"
+  },
+  "FULL NAME": {
+    "pt": "NOME COMPLETO",
+    "es": "NOMBRE COMPLETO",
+    "ja": "フルネーム",
+    "fr": "NOM ET PRÉNOM",
+    "de": "VOLLSTÄNDIGER NAME"
+  },
+  "ID copied": {
+    "pt": "ID copiado",
+    "es": "DNI copiado",
+    "ja": "IDをコピーしました",
+    "fr": "pièce d'identité copiée",
+    "de": "ID kopiert"
+  },
+  "INQUIRIES": {
+    "pt": "CONSULTAS",
+    "es": "CONSULTAS",
+    "ja": "お問い合わせ",
+    "fr": "DEMANDES",
+    "de": "ANFRAGEN"
+  },
+  "Save card": {
+    "pt": "Salvar cartão",
+    "es": "guardar tarjeta",
+    "ja": "セーブカード",
+    "fr": "Enregistrer la carte",
+    "de": "Karte speichern"
+  },
+  "Submitted": {
+    "pt": "Enviado",
+    "es": "Enviado",
+    "ja": "提出済み",
+    "fr": "Soumis",
+    "de": "Eingereicht"
+  },
+  "Swap Face": {
+    "pt": "Trocar rosto",
+    "es": "Cambiar cara",
+    "ja": "顔を交換する",
+    "fr": "Changer de visage",
+    "de": "Gesicht tauschen"
+  },
+  "%lld BONUS": {
+    "pt": "%lld BÔNUS",
+    "es": "%lld BONIFICACIÓN",
+    "ja": "%lld ボーナス",
+    "fr": "%lld BONUS",
+    "de": "%lld BONUS"
+  },
+  "%lld COINS": {
+    "pt": "%lld MOEDAS",
+    "es": "%lld MONEDAS",
+    "ja": "%lld コイン",
+    "fr": "%lld PIÈCES",
+    "de": "%lld MÜNZEN"
+  },
+  "%lld Total": {
+    "pt": "%lld Total",
+    "es": "%lld Total",
+    "ja": "%lld 合計",
+    "fr": "%lld Total",
+    "de": "%lld Gesamt"
+  },
+  "BEST VALUE": {
+    "pt": "MELHOR VALOR",
+    "es": "MEJOR VALOR",
+    "ja": "ベストバリュー",
+    "fr": "MEILLEURE VALEUR",
+    "de": "BESTER PREIS"
+  },
+  "CREATE NOW": {
+    "pt": "CRIAR AGORA",
+    "es": "CREAR AHORA",
+    "ja": "今すぐ作成",
+    "fr": "CRÉER MAINTENANT",
+    "de": "JETZT ERSTELLEN"
+  },
+  "GENERATING": {
+    "pt": "GERANDO",
+    "es": "GENERANDO",
+    "ja": "生成中",
+    "fr": "GÉNÉRATEUR",
+    "de": "GENERIEREN"
+  },
+  "Generating": {
+    "pt": "Gerando",
+    "es": "generando",
+    "ja": "生成中",
+    "fr": "Générateur",
+    "de": "Generieren"
+  },
+  "Portuguese": {
+    "pt": "Português",
+    "es": "portugués",
+    "ja": "ポルトガル語",
+    "fr": "portugais",
+    "de": "Portugiesisch"
+  },
+  "Processing": {
+    "pt": "Processamento",
+    "es": "Tratamiento",
+    "ja": "処理",
+    "fr": "Traitement",
+    "de": "Verarbeitung"
+  },
+  "SECTION %@": {
+    "pt": "SEÇÃO %@",
+    "es": "SECCIÓN %@",
+    "ja": "セクション ％@",
+    "fr": "SECTION %@",
+    "de": "ABSCHNITT %@"
+  },
+  "VERSION %@": {
+    "pt": "VERSÃO %@",
+    "es": "VERSIÓN %@",
+    "ja": "バージョン %@",
+    "fr": "VERSION %@",
+    "de": "VERSION %@"
+  },
+  "free coins": {
+    "pt": "moedas grátis",
+    "es": "monedas gratis",
+    "ja": "無料のコイン",
+    "fr": "pièces gratuites",
+    "de": "kostenlose Münzen"
+  },
+  "%lld / %lld": {
+    "pt": "%lld / %lld",
+    "es": "%lld/%lld",
+    "ja": "%lld / %lld",
+    "fr": "%lld / %lld",
+    "de": "%lld / %lld"
+  },
+  "CARD NUMBER": {
+    "pt": "NÚMERO DO CARTÃO",
+    "es": "NÚMERO DE TARJETA",
+    "ja": "カード番号",
+    "fr": "NUMÉRO DE CARTE",
+    "de": "KARTENNUMMER"
+  },
+  "GET STARTED": {
+    "pt": "COMEÇAR",
+    "es": "EMPEZAR",
+    "ja": "始めましょう",
+    "fr": "COMMENCER",
+    "de": "Fangen Sie an"
+  },
+  "Generating…": {
+    "pt": "Gerando…",
+    "es": "Generando…",
+    "ja": "生成中…",
+    "fr": "Générateur…",
+    "de": "Generieren…"
+  },
+  "IN PROGRESS": {
+    "pt": "EM ANDAMENTO",
+    "es": "EN CURSO",
+    "ja": "進行中",
+    "fr": "EN COURS",
+    "de": "IM GANGE"
+  },
+  "PROCESSING…": {
+    "pt": "PROCESSAMENTO…",
+    "es": "TRATAMIENTO…",
+    "ja": "処理…",
+    "fr": "TRAITEMENT…",
+    "de": "VERARBEITUNG…"
+  },
+  "Poor result": {
+    "pt": "Resultado ruim",
+    "es": "Mal resultado",
+    "ja": "悪い結果",
+    "fr": "Mauvais résultat",
+    "de": "Schlechtes Ergebnis"
+  },
+  "Signing in…": {
+    "pt": "Fazendo login…",
+    "es": "Iniciando sesión…",
+    "ja": "サインイン中…",
+    "fr": "Connexion…",
+    "de": "Anmelden…"
+  },
+  "Start Dance": {
+    "pt": "Comece a dançar",
+    "es": "empezar a bailar",
+    "ja": "ダンスを始める",
+    "fr": "Commencer la danse",
+    "de": "Fangen Sie an zu tanzen"
+  },
+  "Start dance": {
+    "pt": "Comece a dançar",
+    "es": "empezar a bailar",
+    "ja": "ダンスを始める",
+    "fr": "Commencez à danser",
+    "de": "Fangen Sie an zu tanzen"
+  },
+  "Submitting…": {
+    "pt": "Enviando…",
+    "es": "Sumisión…",
+    "ja": "送信中…",
+    "fr": "Soumission…",
+    "de": "Einreichen…"
+  },
+  "Task failed": {
+    "pt": "Falha na tarefa",
+    "es": "Tarea fallida",
+    "ja": "タスクが失敗しました",
+    "fr": "La tâche a échoué",
+    "de": "Aufgabe fehlgeschlagen"
+  },
+  "Template ID": {
+    "pt": "ID do modelo",
+    "es": "ID de plantilla",
+    "ja": "テンプレートID",
+    "fr": "ID du modèle",
+    "de": "Vorlagen-ID"
+  },
+  "Upload Tips": {
+    "pt": "Dicas de upload",
+    "es": "Subir consejos",
+    "ja": "アップロードのヒント",
+    "fr": "Télécharger des conseils",
+    "de": "Tipps hochladen"
+  },
+  "We've added": {
+    "pt": "Nós adicionamos",
+    "es": "Hemos añadido",
+    "ja": "追加しました",
+    "fr": "Nous avons ajouté",
+    "de": "Wir haben hinzugefügt"
+  },
+  "+%lld%% FREE": {
+    "pt": "+%lld%% GRATUITO",
+    "es": "+%lld%% GRATIS",
+    "ja": "+%lld%% 無料",
+    "fr": "+%lld%% GRATUIT",
+    "de": "+%lld%% KOSTENLOS"
+  },
+  "Back to Home": {
+    "pt": "De volta para casa",
+    "es": "Volver a Inicio",
+    "ja": "ホームに戻る",
+    "fr": "Retour à la maison",
+    "de": "Zurück nach Hause"
+  },
+  "Choose Photo": {
+    "pt": "Escolha a foto",
+    "es": "Elige foto",
+    "ja": "写真を選択",
+    "fr": "Choisissez une photo",
+    "de": "Wählen Sie Foto"
+  },
+  "Create Video": {
+    "pt": "Criar vídeo",
+    "es": "Crear vídeo",
+    "ja": "ビデオの作成",
+    "fr": "Créer une vidéo",
+    "de": "Video erstellen"
+  },
+  "Explore more": {
+    "pt": "Explorar mais",
+    "es": "Explora más",
+    "ja": "もっと詳しく見る",
+    "fr": "Explorer davantage",
+    "de": "Entdecken Sie mehr"
+  },
+  "Legal Center": {
+    "pt": "Centro Jurídico",
+    "es": "Centro Jurídico",
+    "ja": "法務センター",
+    "fr": "Centre juridique",
+    "de": "Rechtszentrum"
+  },
+  "MOST POPULAR": {
+    "pt": "MAIS POPULAR",
+    "es": "MÁS POPULAR",
+    "ja": "最も人気のある",
+    "fr": "LE PLUS POPULAIRE",
+    "de": "AM BELIEBTESTEN"
+  },
+  "MY CREATIONS": {
+    "pt": "MINHAS CRIAÇÕES",
+    "es": "MIS CREACIONES",
+    "ja": "私の作品",
+    "fr": "MES CRÉATIONS",
+    "de": "MEINE KREATIONEN"
+  },
+  "My Creations": {
+    "pt": "Minhas criações",
+    "es": "Mis creaciones",
+    "ja": "私の作品",
+    "fr": "Mes créations",
+    "de": "Meine Kreationen"
+  },
+  "NAME ON CARD": {
+    "pt": "NOME NO CARTÃO",
+    "es": "NOMBRE EN LA TARJETA",
+    "ja": "カード上の名前",
+    "fr": "NOM SUR LA CARTE",
+    "de": "NAME AUF DER KARTE"
+  },
+  "No likes yet": {
+    "pt": "Ainda não há curtidas",
+    "es": "Aún no me gusta",
+    "ja": "まだ「いいね！」はありません",
+    "fr": "Pas encore de likes",
+    "de": "Noch keine Likes"
+  },
+  "RECHARGE NOW": {
+    "pt": "RECARREGUE AGORA",
+    "es": "RECARGAR AHORA",
+    "ja": "今すぐ充電してください",
+    "fr": "RECHARGEZ MAINTENANT",
+    "de": "JETZT AUFLADEN"
+  },
+  "Recharge Now": {
+    "pt": "Recarregue agora",
+    "es": "Recarga ahora",
+    "ja": "今すぐリチャージ",
+    "fr": "Recharger maintenant",
+    "de": "Jetzt aufladen"
+  },
+  "Server error": {
+    "pt": "Erro no servidor",
+    "es": "error del servidor",
+    "ja": "サーバーエラー",
+    "fr": "Erreur de serveur",
+    "de": "Serverfehler"
+  },
+  "TAP TO RETRY": {
+    "pt": "TOQUE PARA TENTAR NOVAMENTE",
+    "es": "TOCA PARA VOLVER A INTENTAR",
+    "ja": "タップして再試行してください",
+    "fr": "APPUYEZ POUR RÉESSAYER",
+    "de": "Tippen Sie auf, um es erneut zu versuchen"
+  },
+  "TOTAL AMOUNT": {
+    "pt": "MONTANTE TOTAL",
+    "es": "IMPORTE TOTAL",
+    "ja": "合計金額",
+    "fr": "MONTANT TOTAL",
+    "de": "GESAMTBETRAG"
+  },
+  "Follow system": {
+    "pt": "Siga o sistema",
+    "es": "Seguir sistema",
+    "ja": "フォローシステム",
+    "fr": "Suivre le système",
+    "de": "Folgen Sie dem System"
+  },
+  "Loading more…": {
+    "pt": "Carregando mais…",
+    "es": "Cargando más…",
+    "ja": "さらに読み込み中…",
+    "fr": "Chargement plus…",
+    "de": "Mehr laden…"
+  },
+  "NOTIFICATIONS": {
+    "pt": "NOTIFICAÇÕES",
+    "es": "NOTIFICACIONES",
+    "ja": "通知",
+    "fr": "NOTIFICATIONS",
+    "de": "MITTEILUNGEN"
+  },
+  "No more items": {
+    "pt": "Não há mais itens",
+    "es": "No más artículos",
+    "ja": "これ以上のアイテムはありません",
+    "fr": "Plus d'articles",
+    "de": "Keine Artikel mehr"
+  },
+  "Payment issue": {
+    "pt": "Problema de pagamento",
+    "es": "Problema de pago",
+    "ja": "支払いの問題",
+    "fr": "Problème de paiement",
+    "de": "Zahlungsproblem"
+  },
+  "WELCOME BONUS": {
+    "pt": "BÔNUS DE BEM-VINDO",
+    "es": "BONO DE BIENVENIDA",
+    "ja": "ウェルカムボーナス",
+    "fr": "PRIME DE BIENVENUE",
+    "de": "WILLKOMMENSBONUS"
+  },
+  "END OF HISTORY": {
+    "pt": "FIM DA HISTÓRIA",
+    "es": "FIN DE LA HISTORIA",
+    "ja": "歴史の終わり",
+    "fr": "FIN DE L'HISTOIRE",
+    "de": "ENDE DER GESCHICHTE"
+  },
+  "EST. %lld MINS": {
+    "pt": "HUSA. %lld MINUTOS",
+    "es": "EST. %lld MINUTOS",
+    "ja": "EST（東部基準時。 %lld 分",
+    "fr": "HNE. %lld MIN",
+    "de": "EST. %lld MIN"
+  },
+  "Generate video": {
+    "pt": "Gerar vídeo",
+    "es": "Generar vídeo",
+    "ja": "ビデオの生成",
+    "fr": "Générer une vidéo",
+    "de": "Video generieren"
+  },
+  "No saved cards": {
+    "pt": "Nenhum cartão salvo",
+    "es": "No hay tarjetas guardadas",
+    "ja": "保存されたカードがありません",
+    "fr": "Aucune carte enregistrée",
+    "de": "Keine gespeicherten Karten"
+  },
+  "OFFICIAL REPLY": {
+    "pt": "RESPOSTA OFICIAL",
+    "es": "RESPUESTA OFICIAL",
+    "ja": "公式返信",
+    "fr": "RÉPONSE OFFICIELLE",
+    "de": "OFFIZIELLE ANTWORT"
+  },
+  "Opens recharge": {
+    "pt": "Abre recarga",
+    "es": "Abre recarga",
+    "ja": "リチャージを開始します",
+    "fr": "Ouvre la recharge",
+    "de": "Öffnet das Aufladen"
+  },
+  "PAYMENT METHOD": {
+    "pt": "FORMA DE PAGAMENTO",
+    "es": "FORMA DE PAGO",
+    "ja": "支払方法",
+    "fr": "MODE DE PAIEMENT",
+    "de": "ZAHLUNGSMETHODE"
+  },
+  "Payment failed": {
+    "pt": "Falha no pagamento",
+    "es": "Pago fallido",
+    "ja": "支払いに失敗しました",
+    "fr": "Échec du paiement",
+    "de": "Die Zahlung ist fehlgeschlagen"
+  },
+  "Privacy Policy": {
+    "pt": "política de Privacidade",
+    "es": "política de privacidad",
+    "ja": "プライバシーポリシー",
+    "fr": "politique de confidentialité",
+    "de": "Datenschutzrichtlinie"
+  },
+  "Select Payment": {
+    "pt": "Selecione Pagamento",
+    "es": "Seleccione Pago",
+    "ja": "お支払いを選択してください",
+    "fr": "Sélectionnez Paiement",
+    "de": "Wählen Sie Zahlung"
+  },
+  "Set as default": {
+    "pt": "Definir como padrão",
+    "es": "Establecer como predeterminado",
+    "ja": "デフォルトとして設定",
+    "fr": "Définir par défaut",
+    "de": "Als Standard festlegen"
+  },
+  "Switch to feed": {
+    "pt": "Mudar para feed",
+    "es": "Cambiar al feed",
+    "ja": "フィードに切り替える",
+    "fr": "Passer au flux",
+    "de": "Wechseln Sie zum Feed"
+  },
+  "Switch to grid": {
+    "pt": "Mudar para grade",
+    "es": "Cambiar a cuadrícula",
+    "ja": "グリッドに切り替える",
+    "fr": "Passer à la grille",
+    "de": "Wechseln Sie zum Raster"
+  },
+  "User Agreement": {
+    "pt": "Contrato do usuário",
+    "es": "Acuerdo de usuario",
+    "ja": "ユーザー同意書",
+    "fr": "Contrat d'utilisation",
+    "de": "Benutzervereinbarung"
+  },
+  "Cannot continue": {
+    "pt": "Não é possível continuar",
+    "es": "no puedo continuar",
+    "ja": "続行できません",
+    "fr": "Impossible de continuer",
+    "de": "Kann nicht fortgesetzt werden"
+  },
+  "Coin balance %@": {
+    "pt": "Saldo de moedas %@",
+    "es": "Saldo de monedas %@",
+    "ja": "コイン残高 %@",
+    "fr": "Solde des pièces %@",
+    "de": "Münzguthaben %@"
+  },
+  "Feedback Center": {
+    "pt": "Centro de Feedback",
+    "es": "Centro de comentarios",
+    "ja": "フィードバックセンター",
+    "fr": "Centre de commentaires",
+    "de": "Feedback-Center"
+  },
+  "No %@ likes yet": {
+    "pt": "Ainda não há %@ curtidas",
+    "es": "No hay %@ me gusta todavía",
+    "ja": "%@ の「いいね！」はまだありません",
+    "fr": "Aucun %@ j'aime pour l'instant",
+    "de": "Noch keine %@ Likes"
+  },
+  "PERSONAL ASSETS": {
+    "pt": "BENS PESSOAIS",
+    "es": "BIENES PERSONALES",
+    "ja": "個人資産",
+    "fr": "BIENS PERSONNELS",
+    "de": "PERSÖNLICHE VERMÖGENSWERTE"
+  },
+  "Payment methods": {
+    "pt": "Métodos de pagamento",
+    "es": "Métodos de pago",
+    "ja": "支払い方法",
+    "fr": "Modes de paiement",
+    "de": "Zahlungsmethoden"
+  },
+  "Product updates": {
+    "pt": "Atualizações de produtos",
+    "es": "Actualizaciones de productos",
+    "ja": "製品のアップデート",
+    "fr": "Mises à jour du produit",
+    "de": "Produktaktualisierungen"
+  },
+  "Recharge Record": {
+    "pt": "Registro de recarga",
+    "es": "Registro de recarga",
+    "ja": "リチャージ記録",
+    "fr": "Enregistrement de recharge",
+    "de": "Aufladeaufzeichnung"
+  },
+  "Remove favorite": {
+    "pt": "Remover favorito",
+    "es": "Eliminar favorito",
+    "ja": "お気に入りを削除",
+    "fr": "Supprimer le favori",
+    "de": "Favorit entfernen"
+  },
+  "SCROLL FOR MORE": {
+    "pt": "Role para mais",
+    "es": "DESPLÁCETE PARA MÁS",
+    "ja": "スクロールしてさらに詳しく",
+    "fr": "DÉFILEZ POUR EN SAVOIR PLUS",
+    "de": "Scrollen Sie für mehr"
+  },
+  "Submit Feedback": {
+    "pt": "Enviar comentários",
+    "es": "Enviar comentarios",
+    "ja": "フィードバックを送信する",
+    "fr": "Envoyer des commentaires",
+    "de": "Geben Sie Feedback ab"
+  },
+  "Confirm & Upload": {
+    "pt": "Confirmar e enviar",
+    "es": "Confirmar y cargar",
+    "ja": "確認してアップロード",
+    "fr": "Confirmer et télécharger",
+    "de": "Bestätigen und hochladen"
+  },
+  "Don't show again": {
+    "pt": "Não mostre novamente",
+    "es": "No volver a mostrar",
+    "ja": "二度と表示しないでください",
+    "fr": "Ne plus montrer",
+    "de": "Nicht mehr anzeigen"
+  },
+  "Feedback History": {
+    "pt": "Histórico de comentários",
+    "es": "Historial de comentarios",
+    "ja": "フィードバック履歴",
+    "fr": "Historique des commentaires",
+    "de": "Feedback-Historie"
+  },
+  "No creations yet": {
+    "pt": "Nenhuma criação ainda",
+    "es": "Aún no hay creaciones",
+    "ja": "まだ作成されていません",
+    "fr": "Aucune création pour l'instant",
+    "de": "Noch keine Kreationen"
+  },
+  "No face detected": {
+    "pt": "Nenhum rosto detectado",
+    "es": "No se detectó ninguna cara",
+    "ja": "顔が検出されませんでした",
+    "fr": "Aucun visage détecté",
+    "de": "Kein Gesicht erkannt"
+  },
+  "RECHARGE SUCCESS": {
+    "pt": "SUCESSO DE RECARGA",
+    "es": "ÉXITO DE RECARGA",
+    "ja": "リチャージ成功",
+    "fr": "RECHARGEMENT SUCCÈS",
+    "de": "ERFOLGREICH AUFLADEN"
+  },
+  "REFUNDED CREDITS": {
+    "pt": "CRÉDITOS REEMBOLSADOS",
+    "es": "CRÉDITOS REEMBOLSADOS",
+    "ja": "返金されたクレジット",
+    "fr": "CRÉDITS REMBOURSÉS",
+    "de": "RÜCKERSTATTET KREDITE"
+  },
+  "SUPPORT & ASSETS": {
+    "pt": "SUPORTE E ATIVOS",
+    "es": "SOPORTE Y ACTIVOS",
+    "ja": "サポートとアセット",
+    "fr": "SOUTIEN & ATOUTS",
+    "de": "UNTERSTÜTZUNG UND VERMÖGENSWERTE"
+  },
+  "Sign in required": {
+    "pt": "É necessário fazer login",
+    "es": "Es necesario iniciar sesión",
+    "ja": "サインインが必要です",
+    "fr": "Connexion requise",
+    "de": "Anmeldung erforderlich"
+  },
+  "%lld + %lld BONUS": {
+    "pt": "%lld + %lld BÔNUS",
+    "es": "%lld + %lld BONIFICACIÓN",
+    "ja": "%lld + %lld ボーナス",
+    "fr": "%lld + %lld BONUS",
+    "de": "%lld + %lld BONUS"
+  },
+  "Issue Description": {
+    "pt": "Descrição do problema",
+    "es": "Descripción del problema",
+    "ja": "問題の説明",
+    "fr": "Description du problème",
+    "de": "Problembeschreibung"
+  },
+  "Network error: %@": {
+    "pt": "Erro de rede: %@",
+    "es": "Error de red: %@",
+    "ja": "ネットワークエラー: %@",
+    "fr": "Erreur réseau : %@",
+    "de": "Netzwerkfehler: %@"
+  },
+  "Submission failed": {
+    "pt": "Falha no envio",
+    "es": "Envío fallido",
+    "ja": "送信に失敗しました",
+    "fr": "Échec de la soumission",
+    "de": "Die Übermittlung ist fehlgeschlagen"
+  },
+  "Use this template": {
+    "pt": "Use este modelo",
+    "es": "Utilice esta plantilla",
+    "ja": "このテンプレートを使用してください",
+    "fr": "Utilisez ce modèle",
+    "de": "Verwenden Sie diese Vorlage"
+  },
+  "%lld PAYMENT BONUS": {
+    "pt": "%lld BÔNUS DE PAGAMENTO",
+    "es": "%lld BONO DE PAGO",
+    "ja": "%lld 支払いボーナス",
+    "fr": "%lld BONUS DE PAIEMENT",
+    "de": "%lld ZAHLUNGSBONUS"
+  },
+  "ACTIVE SUBMISSIONS": {
+    "pt": "ENVIOS ATIVOS",
+    "es": "ENVÍOS ACTIVOS",
+    "ja": "アクティブな投稿",
+    "fr": "SOUMISSIONS ACTIVES",
+    "de": "AKTIVE EINREICHUNGEN"
+  },
+  "Account & activity": {
+    "pt": "Conta e atividade",
+    "es": "Cuenta y actividad",
+    "ja": "アカウントとアクティビティ",
+    "fr": "Compte et activité",
+    "de": "Konto und Aktivität"
+  },
+  "All content loaded": {
+    "pt": "Todo o conteúdo carregado",
+    "es": "Todo el contenido cargado",
+    "ja": "すべてのコンテンツがロードされました",
+    "fr": "Tout le contenu chargé",
+    "de": "Alle Inhalte geladen"
+  },
+  "Category Selection": {
+    "pt": "Seleção de categoria",
+    "es": "Selección de categoría",
+    "ja": "カテゴリの選択",
+    "fr": "Sélection de catégorie",
+    "de": "Kategorieauswahl"
+  },
+  "GENERATION SUCCESS": {
+    "pt": "SUCESSO DE GERAÇÃO",
+    "es": "ÉXITO DE GENERACIÓN",
+    "ja": "世代の成功",
+    "fr": "SUCCÈS DE LA GÉNÉRATION",
+    "de": "ERFOLGREICH DER GENERATION"
+  },
+  "Insufficient coins": {
+    "pt": "Moedas insuficientes",
+    "es": "Monedas insuficientes",
+    "ja": "コインが不足しています",
+    "fr": "Pièces insuffisantes",
+    "de": "Nicht genügend Münzen"
+  },
+  "Result unavailable": {
+    "pt": "Resultado indisponível",
+    "es": "Resultado no disponible",
+    "ja": "結果は利用できません",
+    "fr": "Résultat indisponible",
+    "de": "Ergebnis nicht verfügbar"
+  },
+  "Scroll up for more": {
+    "pt": "Role para cima para ver mais",
+    "es": "Desplázate hacia arriba para más",
+    "ja": "上にスクロールしてさらに表示",
+    "fr": "Faites défiler vers le haut pour en savoir plus",
+    "de": "Scrollen Sie nach oben, um mehr zu erfahren"
+  },
+  "Simplified Chinese": {
+    "pt": "Chinês simplificado",
+    "es": "Chino simplificado",
+    "ja": "簡体字中国語",
+    "fr": "Chinois simplifié",
+    "de": "Vereinfachtes Chinesisch"
+  },
+  "%lld COINS RECEIVED": {
+    "pt": "%lld MOEDAS RECEBIDAS",
+    "es": "%lld MONEDAS RECIBIDAS",
+    "ja": "%lld コインを受け取りました",
+    "fr": "%lld PIÈCES REÇUES",
+    "de": "%lld MÜNZEN ERHALTEN"
+  },
+  "+%@%% BONUS (+%lld)": {
+    "pt": "+%@%% BÔNUS (+%lld)",
+    "es": "+%@%% BONIFICACIÓN (+%lld)",
+    "ja": "+%@%% ボーナス (+%lld)",
+    "fr": "+%@%% BONUS (+%lld)",
+    "de": "+%@%% BONUS (+%lld)"
+  },
+  "How can we improve?": {
+    "pt": "Como podemos melhorar?",
+    "es": "¿Cómo podemos mejorar?",
+    "ja": "どうすれば改善できるでしょうか?",
+    "fr": "Comment pouvons-nous nous améliorer ?",
+    "de": "Wie können wir uns verbessern?"
+  },
+  "No recharge records": {
+    "pt": "Nenhum registro de recarga",
+    "es": "Sin registros de recarga",
+    "ja": "リチャージ記録がありません",
+    "fr": "Aucun enregistrement de recharge",
+    "de": "Keine Aufladeaufzeichnungen"
+  },
+  "Payment page opened": {
+    "pt": "Página de pagamento aberta",
+    "es": "Página de pago abierta",
+    "ja": "支払いページがオープンしました",
+    "fr": "Page de paiement ouverte",
+    "de": "Zahlungsseite geöffnet"
+  },
+  "Sign in with device": {
+    "pt": "Faça login com o dispositivo",
+    "es": "Iniciar sesión con el dispositivo",
+    "ja": "デバイスでサインインする",
+    "fr": "Connectez-vous avec l'appareil",
+    "de": "Melden Sie sich mit dem Gerät an"
+  },
+  "+%lld BONUS INCLUDED": {
+    "pt": "+%lld BÔNUS INCLUÍDO",
+    "es": "+%lld BONO INCLUIDO",
+    "ja": "+%lld ボーナスが含まれています",
+    "fr": "+%lld BONUS INCLUS",
+    "de": "+%lld BONUS INKLUSIVE"
+  },
+  "Remove from My Likes": {
+    "pt": "Remover dos meus gostos",
+    "es": "Quitar de Mis Me gusta",
+    "ja": "「お気に入り」から削除",
+    "fr": "Supprimer de Mes J'aime",
+    "de": "Aus „Meine Likes“ entfernen"
+  },
+  "TAP TO SWITCH LAYOUT": {
+    "pt": "TOQUE PARA ALTERAR LAYOUT",
+    "es": "TOCA PARA CAMBIAR EL DISEÑO",
+    "ja": "タップしてレイアウトを切り替える",
+    "fr": "APPUYEZ POUR CHANGER DE DISPOSITION",
+    "de": "TIPP, UM DAS LAYOUT ZU WECHSELN"
+  },
+  "AI generation quality": {
+    "pt": "Qualidade de geração de IA",
+    "es": "Calidad de generación de IA",
+    "ja": "AI生成の品質",
+    "fr": "Qualité de la génération IA",
+    "de": "Qualität der KI-Generierung"
+  },
+  "No packages available": {
+    "pt": "Nenhum pacote disponível",
+    "es": "No hay paquetes disponibles",
+    "ja": "利用可能なパッケージはありません",
+    "fr": "Aucun forfait disponible",
+    "de": "Keine Pakete verfügbar"
+  },
+  "Generation in progress": {
+    "pt": "Geração em andamento",
+    "es": "Generación en progreso",
+    "ja": "生成中",
+    "fr": "Génération en cours",
+    "de": "Generierung läuft"
+  },
+  "In queue, please wait…": {
+    "pt": "Na fila, por favor aguarde…",
+    "es": "En cola, por favor espere...",
+    "ja": "列に並んでいますのでお待ちください…",
+    "fr": "Dans la file d'attente, veuillez patienter…",
+    "de": "In der Warteschlange, bitte warten…"
+  },
+  "Payment not completed.": {
+    "pt": "Pagamento não concluído.",
+    "es": "Pago no completado.",
+    "ja": "支払いが完了していません。",
+    "fr": "Paiement non effectué.",
+    "de": "Zahlung nicht abgeschlossen."
+  },
+  "Switches to the My tab": {
+    "pt": "Muda para a guia Minha",
+    "es": "Cambia a la pestaña Mi",
+    "ja": "「My」タブに切り替えます",
+    "fr": "Passe à l'onglet Mon",
+    "de": "Wechselt zur Registerkarte „Mein“."
+  },
+  "High-Res / 4K Downloads": {
+    "pt": "Downloads em alta resolução/4K",
+    "es": "Descargas de alta resolución/4K",
+    "ja": "高解像度 / 4K ダウンロード",
+    "fr": "Téléchargements haute résolution / 4K",
+    "de": "Hochauflösende / 4K-Downloads"
+  },
+  "In queue · est. wait %@": {
+    "pt": "Na fila · est. espere %@",
+    "es": "En cola · est. espera %@",
+    "ja": "キュー内 · 待機予定 %@",
+    "fr": "Dans la file d'attente · est. attendre %@",
+    "de": "In der Warteschlange · voraussichtlich warten %@"
+  },
+  "Multiple faces detected": {
+    "pt": "Vários rostos detectados",
+    "es": "Múltiples caras detectadas",
+    "ja": "複数の顔が検出されました",
+    "fr": "Plusieurs visages détectés",
+    "de": "Mehrere Gesichter erkannt"
+  },
+  "Open My to see progress": {
+    "pt": "Abra Meu para ver o progresso",
+    "es": "Abre Mi para ver el progreso",
+    "ja": "「マイ」を開いて進捗状況を確認してください",
+    "fr": "Ouvrez Mon pour voir les progrès",
+    "de": "Öffnen Sie „Mein“, um den Fortschritt zu sehen"
+  },
+  "Same as device language": {
+    "pt": "Igual ao idioma do dispositivo",
+    "es": "Igual que el idioma del dispositivo",
+    "ja": "デバイス言語と同じ",
+    "fr": "Identique à la langue de l'appareil",
+    "de": "Entspricht der Gerätesprache"
+  },
+  "Generating · %lld%% done": {
+    "pt": "Gerando · %lld%% concluído",
+    "es": "Generando · %lld%% hecho",
+    "ja": "生成中 · %lld%% 完了",
+    "fr": "Génération · %lld%% terminée",
+    "de": "Generierung · %lld%% abgeschlossen"
+  },
+  "VIEW FEEDBACK HISTORY  >": {
+    "pt": "VER HISTÓRICO DE FEEDBACK >",
+    "es": "VER HISTORIAL DE COMENTARIOS >",
+    "ja": "フィードバック履歴を表示 >",
+    "fr": "VOIR L'HISTOIRE DES RÉTROACTIONS >",
+    "de": "FEEDBACK-VERLAUF ANZEIGEN >"
+  },
+  "No tasks in this category": {
+    "pt": "Nenhuma tarefa nesta categoria",
+    "es": "No hay tareas en esta categoría.",
+    "ja": "このカテゴリにはタスクがありません",
+    "fr": "Aucune tâche dans cette catégorie",
+    "de": "Keine Aufgaben in dieser Kategorie"
+  },
+  "Sign in to sync your data": {
+    "pt": "Faça login para sincronizar seus dados",
+    "es": "Inicia sesión para sincronizar tus datos",
+    "ja": "サインインしてデータを同期してください",
+    "fr": "Connectez-vous pour synchroniser vos données",
+    "de": "Melden Sie sich an, um Ihre Daten zu synchronisieren"
+  },
+  "No feedback submitted yet.": {
+    "pt": "Nenhum feedback enviado ainda.",
+    "es": "Aún no se han enviado comentarios.",
+    "ja": "まだフィードバックは送信されていません。",
+    "fr": "Aucun commentaire soumis pour l'instant.",
+    "de": "Noch kein Feedback abgegeben."
+  },
+  "Ultra-Realistic AI Effects": {
+    "pt": "Efeitos de IA ultrarrealistas",
+    "es": "Efectos de IA ultrarrealistas",
+    "ja": "超リアルな AI エフェクト",
+    "fr": "Effets IA ultra-réalistes",
+    "de": "Ultrarealistische KI-Effekte"
+  },
+  "This template is unavailable": {
+    "pt": "Este modelo não está disponível",
+    "es": "Esta plantilla no está disponible",
+    "ja": "このテンプレートは使用できません",
+    "fr": "Ce modèle n'est pas disponible",
+    "de": "Diese Vorlage ist nicht verfügbar"
+  },
+  "Unlock All Premium Templates": {
+    "pt": "Desbloqueie todos os modelos premium",
+    "es": "Desbloquear todas las plantillas premium",
+    "ja": "すべてのプレミアム テンプレートのロックを解除する",
+    "fr": "Débloquez tous les modèles Premium",
+    "de": "Schalten Sie alle Premium-Vorlagen frei"
+  },
+  "100% Secure & Private Billing": {
+    "pt": "Faturamento 100% seguro e privado",
+    "es": "Facturación 100% segura y privada",
+    "ja": "100% 安全かつプライベートな請求",
+    "fr": "Facturation 100 % sécurisée et privée",
+    "de": "100 % sichere und private Abrechnung"
+  },
+  "Always use French in this app": {
+    "pt": "Sempre use francês neste aplicativo",
+    "es": "Utilice siempre francés en esta aplicación",
+    "ja": "このアプリでは常にフランス語を使用してください",
+    "fr": "Utilisez toujours le français dans cette application",
+    "de": "Verwenden Sie in dieser App immer Französisch"
+  },
+  "Always use German in this app": {
+    "pt": "Sempre use alemão neste aplicativo",
+    "es": "Utilice siempre alemán en esta aplicación",
+    "ja": "このアプリでは常にドイツ語を使用してください",
+    "fr": "Utilisez toujours l'allemand dans cette application",
+    "de": "Verwenden Sie in dieser App immer Deutsch"
+  },
+  "In-App Purchase via App Store": {
+    "pt": "Compra no aplicativo via App Store",
+    "es": "Compra dentro de la aplicación a través de App Store",
+    "ja": "App Store経由でのApp内購入",
+    "fr": "Achat intégré via l'App Store",
+    "de": "In-App-Kauf über den App Store"
+  },
+  "No payment methods available.": {
+    "pt": "Nenhum método de pagamento disponível.",
+    "es": "No hay métodos de pago disponibles.",
+    "ja": "利用できる支払い方法はありません。",
+    "fr": "Aucun mode de paiement disponible.",
+    "de": "Keine Zahlungsmethoden verfügbar."
+  },
+  "Always use English in this app": {
+    "pt": "Sempre use inglês neste aplicativo",
+    "es": "Utilice siempre inglés en esta aplicación",
+    "ja": "このアプリでは常に英語を使用してください",
+    "fr": "Utilisez toujours l'anglais dans cette application",
+    "de": "Verwenden Sie in dieser App immer Englisch"
+  },
+  "Always use Spanish in this app": {
+    "pt": "Sempre use espanhol neste aplicativo",
+    "es": "Utilice siempre español en esta aplicación.",
+    "ja": "このアプリでは常にスペイン語を使用してください",
+    "fr": "Utilisez toujours l'espagnol dans cette application",
+    "de": "Verwenden Sie in dieser App immer Spanisch"
+  },
+  "Face is off-center or obscured": {
+    "pt": "O rosto está descentralizado ou obscurecido",
+    "es": "La cara está descentrada u oscurecida",
+    "ja": "顔が中心からずれている、または隠れている",
+    "fr": "Le visage est décentré ou masqué",
+    "de": "Das Gesicht ist außermittig oder verdeckt"
+  },
+  "LAST UPDATED: OCTOBER 24, 2023": {
+    "pt": "ÚLTIMA ATUALIZAÇÃO: 24 DE OUTUBRO DE 2023",
+    "es": "ÚLTIMA ACTUALIZACIÓN: 24 DE OCTUBRE DE 2023",
+    "ja": "最終更新日: 2023 年 10 月 24 日",
+    "fr": "DERNIÈRE MISE À JOUR : 24 OCTOBRE 2023",
+    "de": "LETZTE AKTUALISIERT: 24. OKTOBER 2023"
+  },
+  "Add a card to check out faster.": {
+    "pt": "Adicione um cartão para finalizar a compra mais rápido.",
+    "es": "Agregue una tarjeta para pagar más rápido.",
+    "ja": "カードを追加すると、より早くチェックアウトできます。",
+    "fr": "Ajoutez une carte pour payer plus rapidement.",
+    "de": "Fügen Sie eine Karte hinzu, um schneller zur Kasse zu gehen."
+  },
+  "Always use Japanese in this app": {
+    "pt": "Sempre use japonês neste aplicativo",
+    "es": "Utilice siempre japonés en esta aplicación.",
+    "ja": "このアプリでは常に日本語を使用してください",
+    "fr": "Utilisez toujours le japonais dans cette application",
+    "de": "Verwenden Sie in dieser App immer Japanisch"
+  },
+  "Clear, front-facing, high light": {
+    "pt": "Claro, frontal, luz alta",
+    "es": "Luz clara, frontal y alta",
+    "ja": "クリア、正面向き、高光量",
+    "fr": "Clair, orienté vers l'avant, haute luminosité",
+    "de": "Klar, nach vorne gerichtet, hohes Licht"
+  },
+  "Sign in to see recharge history": {
+    "pt": "Faça login para ver o histórico de recarga",
+    "es": "Inicia sesión para ver el historial de recargas",
+    "ja": "サインインしてリチャージ履歴を確認する",
+    "fr": "Connectez-vous pour voir l'historique des recharges",
+    "de": "Melden Sie sich an, um den Aufladeverlauf anzuzeigen"
+  },
+  "Your AI works will appear here.": {
+    "pt": "Seus trabalhos de IA aparecerão aqui.",
+    "es": "Tus trabajos de IA aparecerán aquí.",
+    "ja": "あなたのAI作品がここに表示されます。",
+    "fr": "Vos travaux d’IA apparaîtront ici.",
+    "de": "Ihre KI-Werke werden hier angezeigt."
+  },
+  "Blurry, side view, dark hair/hat": {
+    "pt": "Desfocado, vista lateral, cabelo/chapéu escuro",
+    "es": "Borrosa, vista lateral, cabello oscuro/sombrero",
+    "ja": "ぼやけた、横から見た図、黒い髪/帽子",
+    "fr": "Flou, vue latérale, cheveux foncés/chapeau",
+    "de": "Verschwommen, Seitenansicht, dunkles Haar/Hut"
+  },
+  "Please add a payment card first.": {
+    "pt": "Adicione um cartão de pagamento primeiro.",
+    "es": "Primero agregue una tarjeta de pago.",
+    "ja": "最初に支払いカードを追加してください。",
+    "fr": "Veuillez d'abord ajouter une carte de paiement.",
+    "de": "Bitte fügen Sie zunächst eine Zahlungskarte hinzu."
+  },
+  "Always use Portuguese in this app": {
+    "pt": "Sempre use português neste app",
+    "es": "Utilice siempre portugués en esta aplicación",
+    "ja": "このアプリでは常にポルトガル語を使用してください",
+    "fr": "Utilisez toujours le portugais dans cette application",
+    "de": "Verwenden Sie in dieser App immer Portugiesisch"
+  },
+  "Please sign in before recharging.": {
+    "pt": "Faça login antes de recarregar.",
+    "es": "Por favor inicia sesión antes de recargar.",
+    "ja": "充電する前にサインインしてください。",
+    "fr": "Veuillez vous connecter avant de recharger.",
+    "de": "Bitte melden Sie sich vor dem Aufladen an."
+  },
+  "Processing. Check the list later.": {
+    "pt": "Processamento. Confira a lista mais tarde.",
+    "es": "Tratamiento. Consulta la lista más tarde.",
+    "ja": "処理。後でリストを確認してください。",
+    "fr": "Traitement. Vérifiez la liste plus tard.",
+    "de": "Verarbeitung. Schauen Sie sich die Liste später noch einmal an."
+  },
+  "Uses your device ID. No password.": {
+    "pt": "Usa o ID do seu dispositivo. Sem senha.",
+    "es": "Utiliza la identificación de su dispositivo. Sin contraseña.",
+    "ja": "デバイスIDを使用します。パスワードはありません。",
+    "fr": "Utilise l'identifiant de votre appareil. Pas de mot de passe.",
+    "de": "Verwendet Ihre Geräte-ID. Kein Passwort."
+  },
+  "Invalid user. Please sign in again.": {
+    "pt": "Usuário inválido. Faça login novamente.",
+    "es": "Usuario no válido. Por favor inicia sesión nuevamente.",
+    "ja": "無効なユーザーです。再度サインインしてください。",
+    "fr": "Utilisateur invalide. Veuillez vous reconnecter.",
+    "de": "Ungültiger Benutzer. Bitte melden Sie sich erneut an."
+  },
+  "Priority Processing (Skip the Wait)": {
+    "pt": "Processamento prioritário (ignorar a espera)",
+    "es": "Procesamiento prioritario (evite la espera)",
+    "ja": "優先処理（待ち時間をスキップ）",
+    "fr": "Traitement prioritaire (éviter l'attente)",
+    "de": "Vorrangige Verarbeitung (das Warten überspringen)"
+  },
+  "Sign in to sync your account & coins": {
+    "pt": "Faça login para sincronizar sua conta e moedas",
+    "es": "Inicia sesión para sincronizar tu cuenta y tus monedas",
+    "ja": "サインインしてアカウントとコインを同期してください",
+    "fr": "Connectez-vous pour synchroniser votre compte et vos pièces",
+    "de": "Melden Sie sich an, um Ihr Konto und Ihre Münzen zu synchronisieren"
+  },
+  "Please describe your issue in detail…": {
+    "pt": "Por favor, descreva seu problema em detalhes…",
+    "es": "Describe tu problema en detalle...",
+    "ja": "問題を詳しく説明してください…",
+    "fr": "Veuillez décrire votre problème en détail…",
+    "de": "Bitte beschreiben Sie Ihr Problem im Detail..."
+  },
+  "Card details are encrypted end-to-end.": {
+    "pt": "Os detalhes do cartão são criptografados de ponta a ponta.",
+    "es": "Los datos de la tarjeta están cifrados de extremo a extremo.",
+    "ja": "カードの詳細はエンドツーエンドで暗号化されます。",
+    "fr": "Les détails de la carte sont cryptés de bout en bout.",
+    "de": "Kartendaten werden Ende-zu-Ende verschlüsselt."
+  },
+  "Switch tab or add favorites from Home.": {
+    "pt": "Mude de guia ou adicione favoritos na página inicial.",
+    "es": "Cambie de pestaña o agregue favoritos desde Inicio.",
+    "ja": "タブを切り替えるか、ホームからお気に入りを追加します。",
+    "fr": "Changez d'onglet ou ajoutez des favoris depuis Accueil.",
+    "de": "Wechseln Sie die Registerkarte oder fügen Sie Favoriten von der Startseite aus hinzu."
+  },
+  "Sign in to sync records from the server.": {
+    "pt": "Faça login para sincronizar registros do servidor.",
+    "es": "Inicie sesión para sincronizar registros del servidor.",
+    "ja": "サインインしてサーバーからレコードを同期します。",
+    "fr": "Connectez-vous pour synchroniser les enregistrements du serveur.",
+    "de": "Melden Sie sich an, um Datensätze vom Server zu synchronisieren."
+  },
+  "Sign in to use templates for generation.": {
+    "pt": "Faça login para usar modelos para geração.",
+    "es": "Inicie sesión para utilizar plantillas para la generación.",
+    "ja": "生成用のテンプレートを使用するにはサインインします。",
+    "fr": "Connectez-vous pour utiliser des modèles pour la génération.",
+    "de": "Melden Sie sich an, um Vorlagen für die Generierung zu verwenden."
+  },
+  "Always use Simplified Chinese in this app": {
+    "pt": "Sempre use chinês simplificado neste aplicativo",
+    "es": "Utilice siempre chino simplificado en esta aplicación",
+    "ja": "このアプリでは常に簡体字中国語を使用してください",
+    "fr": "Utilisez toujours le chinois simplifié dans cette application",
+    "de": "Verwenden Sie in dieser App immer vereinfachtes Chinesisch"
+  },
+  "Generation failed. Retry or contact support.": {
+    "pt": "A geração falhou. Tente novamente ou entre em contato com o suporte.",
+    "es": "La generación fracasó. Vuelva a intentarlo o comuníquese con el soporte.",
+    "ja": "生成に失敗しました。再試行するか、サポートにお問い合わせください。",
+    "fr": "La génération a échoué. Réessayez ou contactez l'assistance.",
+    "de": "Die Generierung ist fehlgeschlagen. Versuchen Sie es erneut oder wenden Sie sich an den Support."
+  },
+  "Could not encode this image. Try another one.": {
+    "pt": "Não foi possível codificar esta imagem. Tente outro.",
+    "es": "No se pudo codificar esta imagen. Prueba con otro.",
+    "ja": "この画像をエンコードできませんでした。別のものを試してください。",
+    "fr": "Impossible d'encoder cette image. Essayez-en un autre.",
+    "de": "Dieses Bild konnte nicht kodiert werden. Versuchen Sie es mit einem anderen."
+  },
+  "Transactions will appear here after purchase.": {
+    "pt": "As transações aparecerão aqui após a compra.",
+    "es": "Las transacciones aparecerán aquí después de la compra.",
+    "ja": "購入後、トランザクションがここに表示されます。",
+    "fr": "Les transactions apparaîtront ici après l'achat.",
+    "de": "Nach dem Kauf werden hier Transaktionen angezeigt."
+  },
+  "WORKS EXPIRE AFTER 24H. PLEASE SAVE THEM IN TIME.": {
+    "pt": "AS OBRAS EXPIRAM APÓS 24H. POR FAVOR, SALVE-OS A TEMPO.",
+    "es": "LAS OBRAS CADUCAN DESPUÉS DE 24H. POR FAVOR GUARDELOS A TIEMPO.",
+    "ja": "作品は 24 時間後に期限切れになります。期限内に保存してください。",
+    "fr": "LES TRAVAUX EXPIRENT APRÈS 24H. VEUILLEZ LES CONSERVER À TEMPS.",
+    "de": "Die Arbeiten verfallen nach 24 Stunden. BITTE SPEICHERN SIE DIESE RECHTZEITIG."
+  },
+  "Insufficient coins. Please recharge and try again.": {
+    "pt": "Moedas insuficientes. Por favor, recarregue e tente novamente.",
+    "es": "Monedas insuficientes. Por favor recarga y vuelve a intentarlo.",
+    "ja": "コインが不足しています。充電してもう一度お試しください。",
+    "fr": "Pièces insuffisantes. Veuillez recharger et réessayer.",
+    "de": "Nicht genügend Münzen. Bitte laden Sie den Akku auf und versuchen Sie es erneut."
+  },
+  "Package data expired. Pull to refresh and try again.": {
+    "pt": "Os dados do pacote expiraram. Puxe para atualizar e tente novamente.",
+    "es": "Los datos del paquete caducaron. Tira para actualizar y vuelve a intentarlo.",
+    "ja": "パッケージデータの有効期限が切れました。プルして更新し、再試行してください。",
+    "fr": "Les données du package ont expiré. Tirez pour actualiser et réessayez.",
+    "de": "Paketdaten abgelaufen. Zum Aktualisieren ziehen und erneut versuchen."
+  },
+  "This package has no App Store product configured yet.": {
+    "pt": "Este pacote ainda não possui nenhum produto da App Store configurado.",
+    "es": "Este paquete aún no tiene ningún producto de App Store configurado.",
+    "ja": "このパッケージにはまだ App Store 製品が構成されていません。",
+    "fr": "Ce package n'a pas encore de produit App Store configuré.",
+    "de": "Für dieses Paket ist noch kein App Store-Produkt konfiguriert."
+  },
+  "Could not get payment link. Try again or contact support.": {
+    "pt": "Não foi possível obter o link de pagamento. Tente novamente ou entre em contato com o suporte.",
+    "es": "No se pudo obtener el enlace de pago. Inténtelo de nuevo o comuníquese con el soporte.",
+    "ja": "支払いリンクを取得できませんでした。もう一度試すか、サポートにお問い合わせください。",
+    "fr": "Impossible d'obtenir le lien de paiement. Réessayez ou contactez l'assistance.",
+    "de": "Der Zahlungslink konnte nicht abgerufen werden. Versuchen Sie es erneut oder wenden Sie sich an den Support."
+  },
+  "Your insights drive the future of our digital curation engine.": {
+    "pt": "Seus insights impulsionam o futuro do nosso mecanismo de curadoria digital.",
+    "es": "Sus conocimientos impulsan el futuro de nuestro motor de curación digital.",
+    "ja": "あなたの洞察が当社のデジタル キュレーション エンジンの将来を推進します。",
+    "fr": "Vos idées déterminent l’avenir de notre moteur de curation numérique.",
+    "de": "Ihre Erkenntnisse bestimmen die Zukunft unserer digitalen Kurationsmaschine."
+  },
+  "Thank you for your feedback. We'll review it as soon as possible.": {
+    "pt": "Obrigado pelo seu feedback. Iremos revisá-lo o mais breve possível.",
+    "es": "Gracias por tus comentarios. Lo revisaremos lo antes posible.",
+    "ja": "ご意見ありがとうございます。できるだけ早く検討させていただきます。",
+    "fr": "Merci pour vos commentaires. Nous l'examinerons dès que possible.",
+    "de": "Vielen Dank für Ihr Feedback. Wir werden es so schnell wie möglich überprüfen."
+  },
+  "Tap the heart on templates you love. IDs are saved on this device.": {
+    "pt": "Toque no coração nos modelos que você adora. Os IDs são salvos neste dispositivo.",
+    "es": "Toca el corazón en las plantillas que te encantan. Las identificaciones se guardan en este dispositivo.",
+    "ja": "気に入ったテンプレートのハートをタップします。 IDは本機に保存されます。",
+    "fr": "Appuyez sur le cœur des modèles que vous aimez. Les identifiants sont enregistrés sur cet appareil.",
+    "de": "Tippen Sie auf das Herz der Vorlagen, die Ihnen gefallen. IDs werden auf diesem Gerät gespeichert."
+  },
+  "Tap the menu icon at the top left to switch between feed and grid.": {
+    "pt": "Toque no ícone do menu no canto superior esquerdo para alternar entre feed e grade.",
+    "es": "Toque el ícono de menú en la parte superior izquierda para cambiar entre feed y cuadrícula.",
+    "ja": "左上のメニューアイコンをタップして、フィードとグリッドを切り替えます。",
+    "fr": "Appuyez sur l'icône de menu en haut à gauche pour basculer entre le flux et la grille.",
+    "de": "Tippen Sie oben links auf das Menüsymbol, um zwischen Feed und Raster zu wechseln."
+  },
+  "Upload a clear portrait photo. Generation uses the current template.": {
+    "pt": "Carregue uma foto de retrato nítida. A geração usa o modelo atual.",
+    "es": "Sube una foto de retrato clara. La generación utiliza la plantilla actual.",
+    "ja": "鮮明なポートレート写真をアップロードしてください。生成には現在のテンプレートが使用されます。",
+    "fr": "Téléchargez une photo portrait claire. La génération utilise le modèle actuel.",
+    "de": "Laden Sie ein klares Porträtfoto hoch. Bei der Generierung wird die aktuelle Vorlage verwendet."
+  },
+  "This template costs more coins than your balance. Please recharge first.": {
+    "pt": "Este modelo custa mais moedas do que o seu saldo. Por favor, recarregue primeiro.",
+    "es": "Esta plantilla cuesta más monedas que tu saldo. Por favor recarga primero.",
+    "ja": "このテンプレートでは、残高よりも多くのコインがかかります。まず充電してください。",
+    "fr": "Ce modèle coûte plus de pièces que votre solde. Veuillez d'abord recharger.",
+    "de": "Diese Vorlage kostet mehr Münzen als Ihr Guthaben. Bitte zuerst aufladen."
+  },
+  "Complete payment in the browser; your balance will update when you return.": {
+    "pt": "Conclua o pagamento no navegador; seu saldo será atualizado quando você retornar.",
+    "es": "Pago completo en el navegador; su saldo se actualizará cuando regrese.",
+    "ja": "ブラウザで支払いを完了します。戻ってくると残高が更新されます。",
+    "fr": "Effectuer le paiement dans le navigateur ; votre solde sera mis à jour à votre retour.",
+    "de": "Vollständige Zahlung im Browser; Ihr Guthaben wird bei Ihrer Rückkehr aktualisiert."
+  },
+  "to your wallet. Choose any template and bring your ideas to life for free!": {
+    "pt": "para sua carteira. Escolha qualquer modelo e dê vida às suas ideias gratuitamente!",
+    "es": "a tu billetera. ¡Elige cualquier plantilla y haz realidad tus ideas gratis!",
+    "ja": "あなたの財布に。テンプレートを選択して、あなたのアイデアを無料で実現してください。",
+    "fr": "à votre portefeuille. Choisissez n’importe quel modèle et donnez vie à vos idées gratuitement !",
+    "de": "zu Ihrem Portemonnaie. Wählen Sie eine beliebige Vorlage und erwecken Sie Ihre Ideen kostenlos zum Leben!"
+  },
+  "100% Secure Transaction & Private Billing. Your privacy is our top priority.": {
+    "pt": "Transação 100% segura e faturamento privado. Sua privacidade é nossa principal prioridade.",
+    "es": "Transacciones 100% seguras y facturación privada. Su privacidad es nuestra principal prioridad.",
+    "ja": "100% 安全なトランザクションとプライベート請求。あなたのプライバシーは私たちの最優先事項です。",
+    "fr": "Transaction 100% sécurisée et facturation privée. Votre vie privée est notre priorité absolue.",
+    "de": "100 % sichere Transaktion und private Abrechnung. Ihre Privatsphäre hat für uns oberste Priorität."
+  },
+  "Channel bonuses are for display; actual coins are credited after payment completes.": {
+    "pt": "Os bônus do canal são para exibição; as moedas reais são creditadas após a conclusão do pagamento.",
+    "es": "Los bonos de canal son para visualización; Las monedas reales se acreditan una vez completado el pago.",
+    "ja": "チャンネルボーナスは表示用です。実際のコインは支払い完了後に付与されます。",
+    "fr": "Les bonus de chaîne sont destinés à être affichés ; les pièces réelles sont créditées une fois le paiement terminé.",
+    "de": "Kanalboni dienen der Anzeige; Die tatsächlichen Münzen werden nach Abschluss der Zahlung gutgeschrieben."
+  },
+  "Generation continues in the background. After returning home, check the capsule above the tab bar for progress.": {
+    "pt": "A geração continua em segundo plano. Depois de voltar para casa, verifique o progresso na cápsula acima da barra de guias.",
+    "es": "La generación continúa en un segundo plano. Después de regresar a casa, consulte la cápsula sobre la barra de pestañas para ver el progreso.",
+    "ja": "生成はバックグラウンドで続行されます。家に帰ったら、タブバーの上にあるカプセルで進捗状況を確認してください。",
+    "fr": "La génération continue en arrière-plan. De retour à la maison, vérifiez la capsule au-dessus de la barre d'onglets pour connaître la progression.",
+    "de": "Die Generierung läuft im Hintergrund weiter. Überprüfen Sie nach Ihrer Rückkehr nach Hause die Kapsel über der Tab-Leiste auf den Fortschritt."
+  },
+  "This document outlines our commitment to protecting your digital identity and how we process data within our AI ecosystem.": {
+    "pt": "Este documento descreve nosso compromisso em proteger sua identidade digital e como processamos dados em nosso ecossistema de IA.",
+    "es": "Este documento describe nuestro compromiso de proteger su identidad digital y cómo procesamos los datos dentro de nuestro ecosistema de IA.",
+    "ja": "この文書では、お客様のデジタル ID を保護するための当社の取り組みと、当社の AI エコシステム内でデータを処理する方法について概説します。",
+    "fr": "Ce document décrit notre engagement à protéger votre identité numérique et la manière dont nous traitons les données au sein de notre écosystème d'IA.",
+    "de": "Dieses Dokument beschreibt unser Engagement für den Schutz Ihrer digitalen Identität und wie wir Daten in unserem KI-Ökosystem verarbeiten."
+  },
+  "App interface language. \"Follow system\" matches iOS Settings → General → Language & Region. Selected languages apply only inside this app.": {
+    "pt": "Idioma da interface do aplicativo. \"Seguir sistema\" corresponde a Configurações do iOS → Geral → Idioma e região. Os idiomas selecionados aplicam-se apenas dentro deste aplicativo.",
+    "es": "Idioma de la interfaz de la aplicación. \"Seguir sistema\" coincide con Configuración de iOS → General → Idioma y región. Los idiomas seleccionados se aplican solo dentro de esta aplicación.",
+    "ja": "アプリのインターフェース言語。 「システムに従って」は、iOSの設定→一般→言語と地域に一致します。選択した言語は、このアプリ内でのみ適用されます。",
+    "fr": "Langue de l'interface de l'application. « Suivre le système » correspond aux paramètres iOS → Général → Langue et région. Les langues sélectionnées s'appliquent uniquement dans cette application.",
+    "de": "Sprache der App-Oberfläche. „System folgen“ entspricht iOS-Einstellungen → Allgemein → Sprache und Region. Ausgewählte Sprachen gelten nur innerhalb dieser App."
+  },
+  "In-app purchases are disabled. Enable them in Settings → Screen Time → Content & Privacy Restrictions → In-app Purchases, or check your Apple ID.": {
+    "pt": "As compras no aplicativo estão desativadas. Ative-os em Configurações → Tempo de uso → Restrições de conteúdo e privacidade → Compras no aplicativo ou verifique seu ID Apple.",
+    "es": "Las compras dentro de la aplicación están deshabilitadas. Habilítelos en Configuración → Tiempo de pantalla → Restricciones de contenido y privacidad → Compras dentro de la aplicación, o verifique su ID de Apple.",
+    "ja": "アプリ内購入は無効になっています。 「設定」→「スクリーンタイム」→「コンテンツとプライバシーの制限」→「アプリ内購入」でこれらを有効にするか、Apple ID を確認してください。",
+    "fr": "Les achats intégrés sont désactivés. Activez-les dans Paramètres → Temps d'écran → Restrictions de contenu et de confidentialité → Achats intégrés, ou vérifiez votre identifiant Apple.",
+    "de": "In-App-Käufe sind deaktiviert. Aktivieren Sie sie unter „Einstellungen“ → „Bildschirmzeit“ → „Inhalts- und Datenschutzbeschränkungen“ → „In-App-Käufe“ oder überprüfen Sie Ihre Apple-ID."
+  },
+  "Please read these terms carefully before using our AI-driven ecosystem. Your use of the service constitutes a legal commitment to these protocols.": {
+    "pt": "Leia estes termos com atenção antes de usar nosso ecossistema baseado em IA. O uso do serviço constitui um compromisso legal com esses protocolos.",
+    "es": "Lea estos términos detenidamente antes de utilizar nuestro ecosistema impulsado por IA. Su uso del servicio constituye un compromiso legal con estos protocolos.",
+    "ja": "AI 主導のエコシステムを使用する前に、これらの規約をよくお読みください。お客様によるサービスの使用は、これらのプロトコルに対する法的約束を構成します。",
+    "fr": "Veuillez lire attentivement ces conditions avant d'utiliser notre écosystème basé sur l'IA. Votre utilisation du service constitue un engagement juridique envers ces protocoles.",
+    "de": "Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie unser KI-gesteuertes Ökosystem nutzen. Durch Ihre Nutzung des Dienstes verpflichten Sie sich rechtlich zu diesen Protokollen."
+  },
+  "Payment did not complete. Check your network and Apple ID; configure StoreKit in the Simulator if needed. If charged, check recharge history later.": {
+    "pt": "O pagamento não foi concluído. Verifique sua rede e ID Apple; configure StoreKit no Simulador, se necessário. Se estiver carregado, verifique o histórico de recarga mais tarde.",
+    "es": "El pago no se completó. Verifique su red y su ID de Apple; configure StoreKit en el simulador si es necesario. Si se cobra, verifique el historial de recargas más tarde.",
+    "ja": "支払いが完了しませんでした。ネットワークと Apple ID を確認してください。必要に応じて、シミュレーターで StoreKit を構成します。充電した場合は、後で充電履歴を確認してください。",
+    "fr": "Le paiement n'a pas été effectué. Vérifiez votre réseau et votre identifiant Apple ; configurez StoreKit dans le simulateur si nécessaire. S'il est chargé, vérifiez l'historique de recharge plus tard.",
+    "de": "Die Zahlung wurde nicht abgeschlossen. Überprüfen Sie Ihr Netzwerk und Ihre Apple-ID. Konfigurieren Sie StoreKit bei Bedarf im Simulator. Falls aufgeladen, überprüfen Sie später den Ladeverlauf."
+  }
+}

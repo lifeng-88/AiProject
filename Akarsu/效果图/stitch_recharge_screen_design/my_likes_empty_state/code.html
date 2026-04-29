@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#545462",
+              "tertiary-fixed": "#ff8eae",
+              "surface-container-highest": "#242436",
+              "primary-fixed-dim": "#b075ff",
+              "error-container": "#a70138",
+              "surface-variant": "#242436",
+              "secondary-container": "#705d00",
+              "surface-container-low": "#12121f",
+              "on-surface-variant": "#aba9ba",
+              "tertiary": "#ff6b9b",
+              "on-tertiary-fixed-variant": "#760037",
+              "surface-container-high": "#1e1e2e",
+              "surface": "#0d0d19",
+              "tertiary-container": "#ff067f",
+              "on-secondary-fixed-variant": "#665500",
+              "tertiary-fixed-dim": "#ff75a0",
+              "secondary-fixed-dim": "#efc900",
+              "on-tertiary-container": "#000000",
+              "secondary-dim": "#efc900",
+              "on-error": "#490013",
+              "background": "#0d0d19",
+              "on-primary-fixed-variant": "#3f007c",
+              "on-secondary-container": "#fff7e6",
+              "on-primary-fixed": "#000000",
+              "on-tertiary": "#47001f",
+              "on-secondary": "#5b4b00",
+              "error-dim": "#d73357",
+              "tertiary-dim": "#e30071",
+              "surface-container-lowest": "#000000",
+              "outline": "#757483",
+              "on-background": "#e6e3f5",
+              "secondary-fixed": "#ffd709",
+              "on-tertiary-fixed": "#380017",
+              "surface-container": "#181827",
+              "on-primary-container": "#330066",
+              "primary-container": "#ba88ff",
+              "on-secondary-fixed": "#453900",
+              "primary": "#c59aff",
+              "surface-dim": "#0d0d19",
+              "on-surface": "#e6e3f5",
+              "primary-fixed": "#ba88ff",
+              "surface-tint": "#c59aff",
+              "surface-bright": "#2a2a3d",
+              "error": "#ff6e84",
+              "secondary": "#ffd709",
+              "primary-dim": "#9547f7",
+              "outline-variant": "#474755",
+              "on-primary": "#420082",
+              "inverse-surface": "#fcf8ff",
+              "inverse-primary": "#7e29df",
+              "on-error-container": "#ffb2b9"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        body { min-height: 100dvh; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body select-none">
+<!-- Top App Bar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#0d0d19]">
+<div class="flex items-center px-6 pt-6 pb-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-[#c59aff] active:scale-95 duration-150">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-xl uppercase tracking-tight text-[#c59aff]">My Likes</h1>
+</div>
+</div>
+<!-- Tab Navigation (Pill Style) -->
+<div class="flex items-center pb-4 overflow-x-auto hide-scrollbar gap-2 px-4">
+<button class="px-5 py-1.5 rounded-full border border-[#c59aff] bg-[#c59aff]/10 text-[#c59aff] font-headline font-bold text-[10px] tracking-[0.15em] uppercase whitespace-nowrap transition-all">
+                IMAGE
+            </button>
+<button class="px-5 py-1.5 rounded-full border border-transparent bg-surface-container/50 text-[#e6e3f5]/30 font-headline font-bold text-[10px] tracking-[0.15em] uppercase whitespace-nowrap hover:text-[#e6e3f5]/60 transition-all">
+                VIDEO
+            </button>
+<button class="px-5 py-1.5 rounded-full border border-transparent bg-surface-container/50 text-[#e6e3f5]/30 font-headline font-bold text-[10px] tracking-[0.15em] uppercase whitespace-nowrap hover:text-[#e6e3f5]/60 transition-all">
+                DANCE
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas (Empty State) -->
+<main class="pt-40 pb-10 px-6 max-w-7xl mx-auto min-h-screen flex flex-col items-center justify-center">
+<div class="flex flex-col items-center text-center max-w-xs animate-in fade-in zoom-in duration-700">
+<!-- Sophisticated Dimmed Illustration -->
+<div class="relative mb-8">
+<div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full scale-150 opacity-30"></div>
+<div class="relative w-24 h-24 rounded-full bg-surface-container-high border border-outline-variant/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary/40 text-5xl" style="font-variation-settings: 'FILL' 1, 'wght' 200;">favorite</span>
+</div>
+</div>
+<!-- Text Prompt -->
+<h2 class="font-headline font-bold text-lg tracking-tight text-on-surface mb-2">No Likes Yet</h2>
+<p class="font-body text-sm text-on-surface-variant mb-10 leading-relaxed px-4">
+                Items you like will appear here. Start exploring to find your favorites.
+            </p>
+<!-- Explore Now Button -->
+<button class="w-full py-4 px-8 rounded-full bg-primary text-on-primary font-headline font-extrabold text-xs tracking-[0.2em] uppercase shadow-[0_0_20px_rgba(186,136,255,0.3)] active:scale-[0.98] transition-all hover:bg-primary-container hover:text-on-primary-container">
+                Explore Now
+            </button>
+</div>
+</main>
+<!-- Navigation Drawer (Filters) - Hidden on mobile but present as part of design system -->
+<aside class="fixed left-0 top-0 h-full w-64 z-[60] bg-[#181827] rounded-r-[3rem] shadow-[32px_0_64px_rgba(0,0,0,0.4)] transition-transform -translate-x-full lg:translate-x-0 hidden lg:block">
+<div class="p-8">
+<h2 class="font-['Space_Grotesk'] text-sm uppercase tracking-widest text-[#c59aff] font-black mb-8">Filters</h2>
+<nav class="space-y-4">
+<button class="w-full text-left px-4 py-3 text-[#c59aff] font-bold bg-[#242436] rounded-full flex items-center gap-3">
+<span class="material-symbols-outlined">image</span>
+<span class="font-['Space_Grotesk'] uppercase tracking-widest text-sm">IMAGE</span>
+</button>
+<button class="w-full text-left px-4 py-3 text-[#e6e3f5]/50 hover:bg-[#242436]/50 rounded-full flex items-center gap-3 transition-all duration-300">
+<span class="material-symbols-outlined">movie</span>
+<span class="font-['Space_Grotesk'] uppercase tracking-widest text-sm">VIDEO</span>
+</button>
+<button class="w-full text-left px-4 py-3 text-[#e6e3f5]/50 hover:bg-[#242436]/50 rounded-full flex items-center gap-3 transition-all duration-300">
+<span class="material-symbols-outlined">flare</span>
+<span class="font-['Space_Grotesk'] uppercase tracking-widest text-sm">DANCE</span>
+</button>
+</nav>
+</div>
+</aside>
+</body></html>
