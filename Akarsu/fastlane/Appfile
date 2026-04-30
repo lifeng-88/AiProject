@@ -1,0 +1,5 @@
+# App Store Connect / 证书相关 lane 会用到；仅本地 build_sim 可不填 apple_id
+app_identifier("com.Akarsu.net")
+
+# apple_id("you@example.com")
+# team_id("XXXXXXXXXX") # 组织账号多 Team 时再取消注释
