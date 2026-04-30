@@ -591,7 +591,7 @@ struct FeedbackCenterView: View {
                     submitButton
 
                     NavigationLink {
-                        FeedbackHistoryView()
+                        FeedbackHistoryView(focusFeedbackId: nil)
                     } label: {
                         BBBTrackedText.text(AppLanguageStore.localized("feedback.view_history"), size: 11, weight: .semibold, tracking: 1.2, color: Color.white.opacity(0.92), serif: true)
                             .frame(maxWidth: .infinity)
@@ -791,9 +791,13 @@ struct FeedbackCenterView: View {
 
 /// 设计稿：Feedback History — 活跃统计行、分类色标签、状态徽章、官方回复块、日期与 ID、END OF HISTORY。
 struct FeedbackHistoryView: View {
+    /// 远程推送 `feedback_reply`：加载完成后滚动到对应反馈卡片
+    var focusFeedbackId: Int64?
+
     @State private var items: [FeedbackItem] = []
     @State private var loading = true
     @State private var errorText: String?
+    @State private var didAttemptScrollToFocus = false
 
     private static let cardFill = Color(red: 26 / 255, green: 26 / 255, blue: 36 / 255)
     private static let replyBoxFill = Color(red: 22 / 255, green: 18 / 255, blue: 42 / 255)
@@ -812,29 +816,38 @@ struct FeedbackHistoryView: View {
                     .multilineTextAlignment(.center)
                     .padding(24)
             } else {
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 0) {
-                        summaryRow
+                ScrollViewReader { proxy in
+                    ScrollView {
+                        VStack(alignment: .leading, spacing: 0) {
+                            summaryRow
 
-                        if items.isEmpty {
-                            Text(AppLanguageStore.localized("feedback.history.empty"))
-                                .font(.system(size: 15, weight: .medium))
-                                .foregroundStyle(AppTheme.onSurfaceVariant)
-                                .frame(maxWidth: .infinity)
-                                .padding(.top, 48)
-                        } else {
-                            LazyVStack(spacing: 12) {
-                                ForEach(items) { item in
-                                    feedbackCard(item)
+                            if items.isEmpty {
+                                Text(AppLanguageStore.localized("feedback.history.empty"))
+                                    .font(.system(size: 15, weight: .medium))
+                                    .foregroundStyle(AppTheme.onSurfaceVariant)
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.top, 48)
+                            } else {
+                                LazyVStack(spacing: 12) {
+                                    ForEach(items) { item in
+                                        feedbackCard(item)
+                                            .id(item.id)
+                                    }
                                 }
-                            }
-                            .padding(.top, 8)
+                                .padding(.top, 8)
 
-                            endOfHistoryFooter
+                                endOfHistoryFooter
+                            }
                         }
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 24)
                     }
-                    .padding(.horizontal, 16)
-                    .padding(.bottom, 24)
+                    .onChange(of: items.map(\.id)) { _ in
+                        scrollToFocusedFeedbackIfNeeded(proxy: proxy)
+                    }
+                    .onAppear {
+                        scrollToFocusedFeedbackIfNeeded(proxy: proxy)
+                    }
                 }
             }
         }
@@ -857,6 +870,17 @@ struct FeedbackHistoryView: View {
             await load(isRefresh: true)
         }
         .bbbRefreshOnAppLanguage()
+    }
+
+    private func scrollToFocusedFeedbackIfNeeded(proxy: ScrollViewProxy) {
+        guard !didAttemptScrollToFocus, let fid = focusFeedbackId else { return }
+        guard items.contains(where: { $0.id == fid }) else { return }
+        didAttemptScrollToFocus = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+            withAnimation(.easeOut(duration: 0.32)) {
+                proxy.scrollTo(fid, anchor: .center)
+            }
+        }
     }
 
     private var summaryRow: some View {

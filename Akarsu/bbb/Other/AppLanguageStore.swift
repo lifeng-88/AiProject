@@ -205,8 +205,18 @@ final class AppLanguageStore: ObservableObject {
         }
     }
 
-    /// 与 `/v1/catalogs`、模板列表等接口的 `locale` 参数一致（短标识）
+    /// 与 `/v1/catalogs`、模板列表、`POST /v1/users/{id}/locale` 的 `language` 等一致（短标识）
     var templateAPICatalogLocaleIdentifier: String {
+        Self.apiCatalogLocaleCode(for: preference)
+    }
+
+    /// 从 UserDefaults 读取当前偏好，供非 MainActor 代码（如 `UserLocaleReporter`）上报语言
+    nonisolated static func localeCodeForUserLocaleAPIReporting() -> String {
+        let raw = UserDefaults.standard.string(forKey: Self.userDefaultsKey) ?? "system"
+        return apiCatalogLocaleCode(for: AppLanguagePreference.from(storage: raw))
+    }
+
+    nonisolated private static func apiCatalogLocaleCode(for preference: AppLanguagePreference) -> String {
         switch preference {
         case .english:
             return "en"

@@ -20,6 +20,11 @@ struct MyProfileView: View {
     @State private var userIdSecretTapCount = 0
     @State private var userIdSecretTapResetTask: Task<Void, Never>?
     @State private var refreshTokenDebugToast: String?
+#if false
+    /// 点击底部版本号：按序循环模拟远程推送（调试用）；`#if false` 关闭入口，改为 `true` 可恢复
+    @State private var simPushStep: Int = 0
+    @State private var simPushPayload: SimPushDebugPayload?
+#endif
 
     private let horizontalPadding: CGFloat = 20
 
@@ -41,6 +46,7 @@ struct MyProfileView: View {
 
                                 supportAssetsSection
 
+                                // 底部「版本 x.x」：原 `Button` 内为模拟推送调试；入口已关闭，仅展示文案
                                 BBBTrackedText.text(versionFooterText, size: 10, weight: .semibold, tracking: 2.4, color: AppTheme.outlineVariant)
                                     .textCase(.uppercase)
                                     .frame(maxWidth: .infinity)
@@ -103,15 +109,48 @@ struct MyProfileView: View {
                 LoginView()
                     .environmentObject(auth)
             }
+#if false
+            .alert(
+                "模拟推送",
+                isPresented: Binding(
+                    get: { simPushPayload != nil },
+                    set: { if !$0 { simPushPayload = nil } }
+                ),
+                actions: {
+                    Button("关闭", role: .cancel) {
+                        simPushPayload = nil
+                    }
+                    Button("模拟发送") {
+                        if let p = simPushPayload {
+                            tabRouter.dispatchRemotePush(p.route)
+                        }
+                        simPushPayload = nil
+                    }
+                },
+                message: {
+                    if let p = simPushPayload {
+                        Text(p.detailText)
+                    }
+                }
+            )
+#endif
             .onAppear {
                 syncProfileNavDepth()
+                pushProfileRouteIfDeepLinkPending()
                 pushMyCreationsIfDeepLinkPending()
             }
             .onChange(of: tabRouter.selected) { _ in
+                pushProfileRouteIfDeepLinkPending()
                 pushMyCreationsIfDeepLinkPending()
             }
             .onChange(of: tabRouter.myCreationsDeepLinkToken) { _ in
                 pushMyCreationsIfDeepLinkPending()
+            }
+            .onChange(of: tabRouter.pendingProfileRoute) { _ in
+                pushProfileRouteIfDeepLinkPending()
+            }
+            .onChange(of: tabRouter.profileRouteDeepLinkToken) { _ in
+                pushProfileRouteIfDeepLinkPending()
             }
             .onChange(of: selectedRoute) { _ in
                 if selectedRoute == nil {
@@ -141,6 +180,13 @@ struct MyProfileView: View {
         DispatchQueue.main.async {
             tabRouter.profileNavigationStackCount = count
         }
+    }
+
+    /// 远程推送 `feedback_reply`：跳转「我的」并自动 push 反馈历史（可选滚动到 `feedback_id`）
+    private func pushProfileRouteIfDeepLinkPending() {
+        guard tabRouter.selected == .my, let route = tabRouter.pendingProfileRoute else { return }
+        selectedRoute = route
+        tabRouter.clearPendingProfileRoute()
     }
 
     /// 首页「生成中」横幅：跳转「我的」并自动打开「我的创作」且预选筛选
@@ -420,6 +466,61 @@ struct MyProfileView: View {
         return String(format: AppLanguageStore.localized("legal.version_format"), short.uppercased())
     }
 
+#if false
+    private func presentNextSimulatedPushDialog() {
+        let idx = simPushStep % Self.simPushDebugCases.count
+        simPushStep += 1
+        simPushPayload = Self.simPushDebugCases[idx]
+    }
+
+    /// 与网关约定一致的 `RemotePushRoute`，仅用于本机调试。
+    private static let simPushDebugCases: [SimPushDebugPayload] = [
+        SimPushDebugPayload(
+            detailText: "push_type: generation_success\ntask_id: 1021825353905106944",
+            route: .generationSuccess(taskId: "1021825353905106944")
+        ),
+        SimPushDebugPayload(
+            detailText: "push_type: generation_failure\ntask_id: 1021825353905106944",
+            route: .generationFailure(taskId: "1021825353905106944")
+        ),
+        SimPushDebugPayload(
+            detailText: "push_type: feedback_reply\nfeedback_id: 10001\ncampaign_id: test_d7",
+            route: .feedbackReply(feedbackId: "10001", campaignId: "test_d7")
+        ),
+        SimPushDebugPayload(
+            detailText: "push_type: return_user_coins_claim\nclaim_id: claim_001\ncampaign_id: cmp_2\nreward_coins: 500",
+            route: .returnUserCoinsClaim(
+                ReturnUserCoinsClaimPayload(claimId: "claim_001", campaignId: "cmp_2", rewardCoins: 500)
+            )
+        ),
+        SimPushDebugPayload(
+            detailText: """
+            push_type: recharge_incentive_new_user
+            offer_id: offer_001
+            apple_product_id: com.xmglamai.glamai.consumable.coins_20
+            campaign_id: cmp_1
+            amount_cents_usd: 499 / base_coins: 1000 / bonus_coins: 2000
+            """,
+            route: .rechargeIncentiveNewUser(
+                RechargeNewUserOfferPayload(
+                    offerId: "offer_001",
+                    appleProductId: "com.xmglamai.glamai.consumable.coins_20",
+                    campaignId: "cmp_1",
+                    amountCentsUsd: 499,
+                    baseCoins: 1000,
+                    bonusCoins: 2000
+                )
+            )
+        ),
+        SimPushDebugPayload(
+            detailText: "push_type: template_category\ntemplate_tab_id: 3\ncatalog_id: 1\ncampaign_id: test_cat",
+            route: .templateCategory(
+                HomeTemplateCategoryPush(templateTabId: 3, catalogId: 1, campaignId: "test_cat")
+            )
+        )
+    ]
+#endif
+
     private func copyUserId() {
         UIPasteboard.general.string = auth.userId ?? ""
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
@@ -494,6 +595,14 @@ struct MyProfileView: View {
         }
     }
 }
+
+#if false
+/// 版本号「模拟推送」弹窗携带的说明文案与路由
+private struct SimPushDebugPayload {
+    let detailText: String
+    let route: RemotePushRoute
+}
+#endif
 
 #Preview {
     MyProfileView()

@@ -51,6 +51,11 @@ actor AuthRepository: AuthRepositoryProtocol {
                 await MainActor.run {
                     NotificationCenter.default.post(name: .bbbAuthSessionDidUpdate, object: authInfo)
                 }
+                if let pushId = PushManager.shared.currentPushId(), !pushId.isEmpty {
+                    Task.detached(priority: .utility) {
+                        _ = await AuthAPI.updatePushId(pushId: pushId)
+                    }
+                }
                 return .success(authInfo)
             } catch {
                 print("❌ [AuthRepository] 保存 Token 失败: \(error)")
@@ -66,37 +71,19 @@ actor AuthRepository: AuthRepositoryProtocol {
     func ensureAuthenticatedOnLaunch() async -> Result<AuthInfo, AppError> {
         if let info = await getCurrentAuthInfo() {
             print("🔐 [AuthRepository] ensureAuthenticatedOnLaunch: 已存在本地会话，已同步 APIClient")
+            Task.detached(priority: .utility) {
+                await UserLocaleReporter.reportIfAuthenticated(reason: "cold_start_existing_session")
+            }
             return .success(info)
         }
-        let devId = await DeviceManager.shared.deviceIdForLogin()
-        let version = await DeviceManager.shared.getAppVersion()
         let channel = await AppConfig.shared.getChannel()
-        print("🔐 [AuthRepository] ensureAuthenticatedOnLaunch: 无本地会话，发起设备登录 channel=\(channel)")
-        return await login(
-            devId: devId,
-            source: "app",
-            channel: channel,
-            version: version,
-            afId: nil,
-            adId: nil,
-            afAttributionJson: nil
-        )
+        print("🔐 [AuthRepository] ensureAuthenticatedOnLaunch: 无本地会话，先 AF 归因再设备登录 channel=\(channel)")
+        return await AuthReloginHelper.loginAfterColdStartWithoutSession(channelId: channel)
     }
 
     func loginWithDeviceCredentials() async -> Result<AuthInfo, AppError> {
-        let devId = await DeviceManager.shared.deviceIdForLogin()
-        let version = await DeviceManager.shared.getAppVersion()
-        let channel = await AppConfig.shared.getChannel()
-        print("🔐 [AuthRepository] loginWithDeviceCredentials: refresh 失败后的设备重登 channel=\(channel)")
-        return await login(
-            devId: devId,
-            source: "app",
-            channel: channel,
-            version: version,
-            afId: nil,
-            adId: nil,
-            afAttributionJson: nil
-        )
+        print("🔐 [AuthRepository] loginWithDeviceCredentials: refresh 失败后的设备重登（与 glam AuthReloginHelper 同路径）")
+        return await AuthReloginHelper.loginAfterRefreshFailure()
     }
 
     func refreshToken(refreshToken: String) async -> Result<AuthInfo, AppError> {
@@ -142,9 +129,11 @@ actor AuthRepository: AuthRepositoryProtocol {
                 await MainActor.run {
                     NotificationCenter.default.post(name: .bbbAuthSessionDidUpdate, object: authInfo)
                 }
-                // 协议：token 刷新后上报 push_id
+                // 协议：token 刷新后上报 push_id（异步，与 glam 一致不阻塞）
                 if let pushId = PushManager.shared.currentPushId(), !pushId.isEmpty {
-                    _ = await AuthAPI.updatePushId(pushId: pushId)
+                    Task.detached(priority: .utility) {
+                        _ = await AuthAPI.updatePushId(pushId: pushId)
+                    }
                 }
                 print("   📥 输出结果: 成功")
                 return .success(authInfo)
@@ -160,8 +149,28 @@ actor AuthRepository: AuthRepositoryProtocol {
             if case .serverError(let code, let message) = error {
                 print("   📥 错误码: \(code), 错误消息: \(message)")
             }
+            // 服务端可能用 500 返回「refresh 已过期」；此类情况应设备重登拿新会话，与 TokenManager 401 恢复链一致。
+            if Self.shouldDeviceReloginAfterRefreshFailure(error) {
+                print("🔐 [AuthRepository] refresh 失败且可恢复（令牌失效或用户不存在等），尝试设备重登")
+                return await loginWithDeviceCredentials()
+            }
             return .failure(error)
         }
+    }
+
+    /// refresh 失败但错误语义为「令牌失效 / 用户已不存在」时走设备登录（避免仅打 /v1/refresh 后仍沿用旧 token）。
+    private static func shouldDeviceReloginAfterRefreshFailure(_ error: AppError) -> Bool {
+        if case .unauthorized = error { return true }
+        guard case .serverError(let code, let message) = error else { return false }
+        let m = message.lowercased()
+        let recoverable =
+            m.contains("expired")
+            || m.contains("invalid claims")
+            || m.contains("invalid token")
+            || m.contains("token is expired")
+            || m.contains("user not found")
+        guard recoverable else { return false }
+        return code == 401 || code == 403 || code == 400 || code == 500
     }
     
     func logout() async -> Result<Bool, AppError> {

@@ -42,7 +42,7 @@ struct AuthAPI {
         print("🔐 [AuthAPI] 开始调用登录接口")
         print("   📤 devId: \(request.devId), version: \(request.version), channel: \(request.channel ?? "nil"), source: \(request.source ?? "nil"), afId: \(request.afId ?? "nil")")
         
-        /// 登录不应携带旧 Bearer，否则 access 失效时可能被服务端拒；且勿对登录再触发 401→刷新链
+        /// 公开接口：与 glam 一致 — `requiresAuth: false`（不带 Bearer）；`retryOnUnauthorized: false`（与 `/v1/refresh` 同策略，避免无意义刷新链）。
         let result: Result<LoginResponseWrapper, AppError> = await client.request(
             "/v1/login",
             method: .post,
@@ -96,12 +96,13 @@ struct AuthAPI {
         print("   📤 请求参数:")
         print("      - refreshToken: \(refreshToken.prefix(50))... (长度: \(refreshToken.count))")
         
-        // 禁用自动重试，避免刷新 Token 接口返回 401 时再次触发刷新
+        // 禁用自动重试；勿带 access Bearer（仅用 body 内 refreshToken），否则 access 为空时无法刷新且会触发 APIClient 鉴权守卫
         let result: Result<RefreshResponseWrapper, AppError> = await client.request(
             "/v1/refresh",
             method: .post,
             parameters: parameters,
-            retryOnUnauthorized: false
+            retryOnUnauthorized: false,
+            requiresAuth: false
         )
         
         // 输出服务器返回的结果
@@ -141,10 +142,10 @@ struct AuthAPI {
         )
         switch result {
         case .success(let reply):
-            print("✅ [AuthAPI] 推送 ID 上报成功: ok=\(reply.ok)")
+            print("✅ [AuthAPI] [push_id] 上报成功 ok=\(reply.ok) \(pushId)")
             return .success(reply.ok)
         case .failure(let error):
-            print("❌ [AuthAPI] 推送 ID 上报失败: \(error.localizedDescription)")
+            print("❌ [AuthAPI] [push_id] 上报失败 \(pushId): \(error.localizedDescription)")
             return .failure(error)
         }
     }

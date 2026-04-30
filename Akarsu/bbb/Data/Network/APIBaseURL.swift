@@ -22,7 +22,7 @@ enum APIBaseURL {
         }
 //        return "https://api.musefit.it.com"//正式服10002
         return "https://api.goddess.xin"
-//        return "https://api.glamai01.it.com"
+//        return "https://api.glamai01.it.com"    //10052测试服
     }
 
     /// 根据 HTTP(S) 基地址生成 WebSocket URL

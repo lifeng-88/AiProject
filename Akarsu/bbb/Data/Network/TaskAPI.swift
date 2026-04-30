@@ -369,13 +369,15 @@ struct TaskAPI {
     ///   - status: 状态筛选（可选，0: PENDING, 1: RUNNING, 2: SUCCESS, 3: FAILED）
     ///   - readStatus: 已读状态筛选（可选，0: 未读, 1: 已读）
     ///   - view: 视图类型（可选）
+    ///   - retryOnUnauthorized: 为 false 时 401 不触发刷新 Token（用于次要列表请求，避免刷新失败导致整页重登）
     /// - Returns: 任务列表响应
     static func getTaskList(
         pageNum: Int32? = nil,
         pageSize: Int32? = nil,
         status: Int32? = nil,
         readStatus: Int32? = nil,
-        view: String? = nil
+        view: String? = nil,
+        retryOnUnauthorized: Bool = true
     ) async -> Result<TaskListResponse, AppError> {
         var parameters: [String: Any] = [:]
         
@@ -398,7 +400,8 @@ struct TaskAPI {
         return await client.request(
             "/v1/tasks",
             method: .get,
-            parameters: parameters.isEmpty ? nil : parameters
+            parameters: parameters.isEmpty ? nil : parameters,
+            retryOnUnauthorized: retryOnUnauthorized
         )
     }
     

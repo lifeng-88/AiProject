@@ -108,6 +108,9 @@ struct MyCreationsView: View {
         .onChange(of: tabRouter.myCreationsPendingFilter) { _ in
             applyPendingFilterFromTabRouter()
         }
+        .onChange(of: tabRouter.pendingCreationOpen?.taskId) { _ in
+            Task { await tryResolvePendingPushCreationOpenAfterListChange() }
+        }
         .task {
             await load(reset: true)
         }
@@ -349,6 +352,7 @@ struct MyCreationsView: View {
                 errorMessage = err.userMessage
             }
         }
+        await tryResolvePendingPushCreationOpenAfterListChange()
     }
 
     private func loadMoreIfNeeded() async {
@@ -369,6 +373,41 @@ struct MyCreationsView: View {
                 let merged = resp.list.filter { !existing.contains($0.taskId) }
                 items.append(contentsOf: merged)
                 total = resp.total
+            }
+        }
+        await tryResolvePendingPushCreationOpenAfterListChange()
+    }
+
+    /// 远程推送携带的 `task_id`：在列表含该任务后打开成功页或详情；必要时翻页查找（有上限）。
+    private func tryResolvePendingPushCreationOpenAfterListChange() async {
+        let pending = await MainActor.run { tabRouter.pendingCreationOpen }
+        guard let pending else { return }
+        var extraPages = 0
+        let maxExtra = 24
+        while true {
+            let found: TaskListItem? = await MainActor.run {
+                items.first { $0.taskId == pending.taskId }
+            }
+            if let item = found {
+                await MainActor.run {
+                    tabRouter.consumePendingCreationOpen()
+                    if pending.preferSuccessSheet, shouldPresentGenerationSuccess(item) {
+                        selectedSheet = .generationSuccess(item)
+                    } else {
+                        selectedSheet = .detail(item)
+                    }
+                }
+                return
+            }
+            let canMore: Bool = await MainActor.run {
+                !loadingMore && !loading && items.count < Int(total) && total > 0
+            }
+            if canMore && extraPages < maxExtra {
+                extraPages += 1
+                await loadMoreIfNeeded()
+            } else {
+                await MainActor.run { tabRouter.consumePendingCreationOpen() }
+                return
             }
         }
     }

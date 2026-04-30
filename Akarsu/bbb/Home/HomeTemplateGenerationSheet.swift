@@ -412,6 +412,7 @@ struct HomeTemplateGenerationSheet: View {
                         wallet.applyGenerationSpend(coins: item.consumedCoins)
                         TaskPollingService.shared.startPolling(taskId: resp.taskId)
                         showQueuingExperience = true
+                        PushManager.shared.requestAuthorizationAfterTaskCreatedSuccess()
                     case .failure(let err):
                         if prefilledImage != nil {
                             showQueuingExperience = false

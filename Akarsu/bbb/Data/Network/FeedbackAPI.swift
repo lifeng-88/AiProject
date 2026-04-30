@@ -20,11 +20,11 @@ struct FeedbackAPI {
         )
     }
 
-    /// List current user's feedbacks (paginated)；查询参数与 swagger `pageSize` / `pageToken` 一致
+    /// List current user's feedbacks (paginated)；查询参数与 swagger `page_size` / `page_token` 一致
     static func listFeedbacks(pageToken: String? = nil, pageSize: Int32 = 20) async -> Result<ListFeedbacksResponse, AppError> {
-        var params: [String: Any] = ["pageSize": pageSize]
+        var params: [String: Any] = ["page_size": pageSize]
         if let t = pageToken, !t.isEmpty {
-            params["pageToken"] = t
+            params["page_token"] = t
         }
         return await client.request(
             "/v1/feedbacks",

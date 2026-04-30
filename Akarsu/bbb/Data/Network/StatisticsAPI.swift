@@ -16,6 +16,8 @@ struct BehaviorEventItem {
     let templateId: String
     let taskId: String?
     let ts: Int64
+    /// 对应 proto `BehaviorEventItem.template_type`；非模板类事件为 nil
+    let templateType: Int?
     /// 支付类事件扩展字段（package_id、order_id、payment_method、amount、success、reason、source 等）
     let extra: [String: Any]?
 
@@ -25,6 +27,9 @@ struct BehaviorEventItem {
             "template_id": templateId,
             "ts": ts
         ]
+        if let tt = templateType {
+            dict["template_type"] = tt
+        }
         if let t = taskId, !t.isEmpty {
             dict["task_id"] = t
         }
@@ -82,8 +87,10 @@ enum StatisticsAPI {
             "channel_id": channelId,
             "events": events.map { $0.toParameters() }
         ]
+        // 大整数 user_id 若用 JSON number，在 JS/部分网关解析时会超过 Number.MAX_SAFE_INTEGER 丢精度，
+        // 易与 JWT 内 userid 比对失败 → 401。与 Protobuf JSON 惯例一致，传 **字符串**。
         if let u = userId {
-            params["user_id"] = u
+            params["user_id"] = String(u)
         }
         if let d = deviceId, !d.isEmpty {
             params["device_id"] = d
@@ -97,7 +104,8 @@ enum StatisticsAPI {
             "/v1/statistics/events/batch",
             method: .post,
             parameters: params,
-            retryOnUnauthorized: true
+            retryOnUnauthorized: true,
+            requiresAuth: true
         )
     }
 }

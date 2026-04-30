@@ -91,6 +91,28 @@ struct GoldTransaction: Codable, Identifiable {
     }
 }
 
+/// `POST /v1/users/{userid}/gold/redeem_code` 成功响应
+struct RedeemRedemptionCodeResponse: Decodable {
+    let goldAmount: String
+
+    enum CodingKeys: String, CodingKey {
+        case goldAmount
+    }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        if let s = try? c.decode(String.self, forKey: .goldAmount) {
+            goldAmount = s
+        } else if let i = try? c.decode(Int64.self, forKey: .goldAmount) {
+            goldAmount = "\(i)"
+        } else if let i = try? c.decode(Int.self, forKey: .goldAmount) {
+            goldAmount = "\(i)"
+        } else {
+            throw DecodingError.dataCorruptedError(forKey: .goldAmount, in: c, debugDescription: "goldAmount")
+        }
+    }
+}
+
 /// 金币交易记录列表响应（支持分页）
 struct ListGoldTransactionsResponse: Codable {
     let list: [GoldTransaction]
@@ -100,6 +122,11 @@ struct ListGoldTransactionsResponse: Codable {
         case list
         case nextPageToken  // 服务端实际返回 camelCase
     }
+}
+
+/// `POST /v1/users/{userid}/locale` 成功响应
+struct ReportUserLocaleResponse: Decodable {
+    let ok: Bool
 }
 
 /// 用户相关 API
@@ -130,6 +157,28 @@ struct UserAPI {
             "/v1/users/\(userid)/gold/trans",
             method: .get,
             parameters: parameters
+        )
+    }
+
+    /// 兑换码入账：`code` 与推送 `return_user_coins_claim` 的 `claim_id` 对应
+    static func redeemRedemptionCode(userid: String, code: String) async -> Result<RedeemRedemptionCodeResponse, AppError> {
+        await client.request(
+            "/v1/users/\(userid)/gold/redeem_code",
+            method: .post,
+            parameters: ["code": code]
+        )
+    }
+
+    /// 上报客户端当前界面语言与系统时区（JWT 须与路径 userid 一致）
+    static func reportUserLocale(userid: String, language: String, timeZone: String) async -> Result<ReportUserLocaleResponse, AppError> {
+        await client.request(
+            "/v1/users/\(userid)/locale",
+            method: .post,
+            parameters: [
+                "language": language,
+                "timeZone": timeZone
+            ],
+            retryOnUnauthorized: true
         )
     }
 }

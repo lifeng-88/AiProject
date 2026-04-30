@@ -84,7 +84,7 @@ struct LoginView: View {
                 .padding(.horizontal, 28)
 
                 Spacer()
-                Text(String(format: AppLanguageStore.localized("login.api_format"), LoginAPIConfig.baseURL))
+                Text(String(format: AppLanguageStore.localized("login.api_format"), APIBaseURL.effective))
                     .font(.system(size: 9))
                     .foregroundStyle(AppTheme.outlineVariant.opacity(0.6))
                     .padding(.bottom, 24)

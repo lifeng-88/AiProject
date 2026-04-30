@@ -44,12 +44,27 @@ fileprivate struct HomeImmersiveFeedPageView: View {
     let onPrimaryAction: (HomeFeedItem) -> Void
     let isBackdropSwitchingActive: Bool
 
+    @State private var immersiveUserVoiceOn = false
+
     /// 与底栏 `VStack` 左右 `padding(16)`、`HStack` 间距 `10`、心形 `54` 对齐；写死宽度避免窄屏（SE）在点按 / 弹层后依赖 `maxWidth: .infinity` 二次布局抖动
     private var primaryCapsuleWidth: CGFloat {
         let horizontalInset: CGFloat = 16 * 2
         let heartColumn: CGFloat = 54
         let betweenSpacing: CGFloat = 10
         return max(96, pageWidth - horizontalInset - betweenSpacing - heartColumn)
+    }
+
+    private var immersiveVideoMuted: Bool {
+        !item.hasTemplateVoice || !immersiveUserVoiceOn
+    }
+
+    /// 背板 `allowsHitTesting(false)`，喇叭放在本页叠层；T2/T3 走单段成片，T1 仅当 trans 轮播含视频段时显示。
+    private var immersiveShowsVoiceChip: Bool {
+        guard item.hasTemplateVoice else { return false }
+        if item.templateKind == .t2 || item.templateKind == .t3 {
+            return (item.immersivePrimaryLoopVideoURL ?? item.playbackVideoURL) != nil
+        }
+        return item.immersiveTransAnimationCarouselURLs.contains { HomeImmersiveMediaURL.isVideo($0) }
     }
 
     var body: some View {
@@ -70,8 +85,12 @@ fileprivate struct HomeImmersiveFeedPageView: View {
                 stoppedPosterVideoURL: item.immersiveStoppedPosterVideoURL,
                 transAnimationCarouselURLs: (item.templateKind == .t2 || item.templateKind == .t3)
                     ? []
-                    : item.immersiveTransAnimationCarouselURLs
+                    : item.immersiveTransAnimationCarouselURLs,
+                isVideoMuted: immersiveVideoMuted
             )
+            .onChange(of: item.id) { _ in
+                immersiveUserVoiceOn = false
+            }
 
             LinearGradient(
                 colors: [
@@ -86,6 +105,20 @@ fileprivate struct HomeImmersiveFeedPageView: View {
             )
             .frame(width: pageWidth, height: pageHeight)
             .allowsHitTesting(false)
+
+            if let tag = item.topTag {
+                VStack {
+                    HStack {
+                        HomeGridTopTagView(tag: tag)
+                        Spacer(minLength: 0)
+                    }
+                    .padding(.leading, 16)
+                    .padding(.top, 52)
+                    Spacer(minLength: 0)
+                }
+                .frame(width: pageWidth, height: pageHeight)
+                .allowsHitTesting(false)
+            }
 
             VStack(spacing: 14) {
                 if showScrollHint {
@@ -150,23 +183,35 @@ fileprivate struct HomeImmersiveFeedPageView: View {
                         }
                         .buttonStyle(.plain)
 
-                        Button(action: { onToggleLike(item) }) {
-                            Image(systemName: isLiked ? "heart.fill" : "heart")
-                                .font(.title2)
-                                .foregroundStyle(isLiked ? AppTheme.primary : Color.white.opacity(0.92))
-                                .frame(width: 54, height: 54)
-                                .background(Color.black.opacity(0.35))
-                                .background(.ultraThinMaterial.opacity(0.7))
-                                .clipShape(Circle())
-                                .overlay(
-                                    Circle()
-                                        .stroke(AppTheme.outlineVariant.opacity(0.3), lineWidth: 1)
-                                )
-                                .shadow(color: .black.opacity(0.35), radius: 12, y: 4)
+                    /// 收藏按钮布局与改喇叭前一致；喇叭叠在按钮上方，不占底栏纵向排版
+                    Button(action: { onToggleLike(item) }) {
+                        Image(systemName: isLiked ? "heart.fill" : "heart")
+                            .font(.title2)
+                            .foregroundStyle(isLiked ? AppTheme.primary : Color.white.opacity(0.92))
+                            .frame(width: 54, height: 54)
+                            .background(Color.black.opacity(0.35))
+                            .background(.ultraThinMaterial.opacity(0.7))
+                            .clipShape(Circle())
+                            .overlay(
+                                Circle()
+                                    .stroke(AppTheme.outlineVariant.opacity(0.3), lineWidth: 1)
+                            )
+                            .shadow(color: .black.opacity(0.35), radius: 12, y: 4)
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(likeBusy)
+                    .opacity(likeBusy ? 0.55 : 1)
+                    .overlay(alignment: .top) {
+                        if immersiveShowsVoiceChip {
+                            /// `HomeTemplateVoiceToggleChip` 为 36×36；与心形顶缘留 10pt 间隙
+                            let chipSide: CGFloat = 36
+                            let gapAboveHeart: CGFloat = 10
+                            HomeTemplateVoiceToggleChip(isVoiceOn: immersiveUserVoiceOn) {
+                                immersiveUserVoiceOn.toggle()
+                            }
+                            .offset(y: -(chipSide + gapAboveHeart))
                         }
-                        .buttonStyle(.plain)
-                        .disabled(likeBusy)
-                        .opacity(likeBusy ? 0.55 : 1)
+                    }
                 }
             }
             .padding(.horizontal, 16)
@@ -735,6 +780,8 @@ struct ImmersiveFeedMediaBackdrop: View {
     var aspectFit: Bool = false
     /// T1：多段 `transAnimation` 顺序轮播；T2/T3 传空（仅走 `playbackVideoURL` 单段循环）
     var transAnimationCarouselURLs: [URL] = []
+    /// 成片 / trans 内视频段是否静音（有声模板未开喇叭时为 `true`）。
+    var isVideoMuted: Bool = true
 
     var body: some View {
         Group {
@@ -746,11 +793,18 @@ struct ImmersiveFeedMediaBackdrop: View {
                         interval: interval,
                         width: width,
                         height: height,
-                        imageAspectFit: aspectFit
+                        imageAspectFit: aspectFit,
+                        isVideoMuted: isVideoMuted
                     )
                     .id("\(itemId)-trans-carousel-\(transAnimationCarouselURLs.map(\.absoluteString).joined(separator: "|"))")
                 } else if let videoURL = playbackVideoURL {
-                    HomeImmersiveVideoBackdrop(remoteURL: videoURL, width: width, height: height)
+                    HomeImmersiveVideoBackdrop(
+                        remoteURL: videoURL,
+                        width: width,
+                        height: height,
+                        hasTemplateVoice: false,
+                        externalPlaybackMuted: isVideoMuted
+                    )
                         .id("\(itemId)-loop-\(videoURL.absoluteString)")
                 } else if imageURLs.count >= 2 {
                     ImmersiveFeedScanCompareBackdrop(

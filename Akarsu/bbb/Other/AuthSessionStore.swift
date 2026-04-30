@@ -92,18 +92,7 @@ final class AuthSessionStore: ObservableObject {
         lastError = nil
         defer { isLoading = false }
 
-        let devId = await DeviceManager.shared.deviceIdForLogin()
-        let version = await DeviceManager.shared.getAppVersion()
-        let channel = await AppConfig.shared.getChannel()
-        let result = await repository.login(
-            devId: devId,
-            source: "app",
-            channel: channel,
-            version: version,
-            afId: nil,
-            adId: nil,
-            afAttributionJson: nil
-        )
+        let result = await AuthReloginHelper.login(with: await AFService.shared.getAttributionForLogin())
 
         switch result {
         case .success(let info):

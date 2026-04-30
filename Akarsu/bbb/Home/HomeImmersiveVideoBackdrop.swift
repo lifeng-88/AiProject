@@ -9,6 +9,40 @@ import AVFoundation
 import SwiftUI
 import UIKit
 
+/// 同步 `AVPlayer` 静音/音量，并在开声时激活 `AVAudioSession`（避免 seek/循环后 `isMuted` 被重置或会话未激活导致无声）。
+fileprivate func applyHomeVideoPlaybackAudibleState(player: AVPlayer?, muted: Bool) {
+    guard let p = player else { return }
+    p.volume = 1.0
+    p.isMuted = muted
+    if !muted {
+        try? AVAudioSession.sharedInstance().setActive(true)
+    }
+}
+
+// MARK: - 有声模板：小喇叭（默认静音，点按开/关）
+
+struct HomeTemplateVoiceToggleChip: View {
+    var isVoiceOn: Bool
+    var action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            Image(systemName: isVoiceOn ? "speaker.wave.2.fill" : "speaker.slash.fill")
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(.white)
+                .frame(width: 36, height: 36)
+                .background(Color.black.opacity(0.42))
+                .clipShape(Circle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(
+            isVoiceOn
+                ? AppLanguageStore.localized("home.template.voice.a11y_on")
+                : AppLanguageStore.localized("home.template.voice.a11y_off")
+        )
+    }
+}
+
 // MARK: - AVPlayerLayer 铺满容器
 
 final class HomeVideoFillContainerView: UIView {
@@ -35,6 +69,8 @@ final class HomeVideoFillContainerView: UIView {
 /// 静音循环、`resizeAspectFill`、不拦截触摸；沉浸式底与瀑布流网格预览共用。
 struct HomeMutedLoopingVideoFillView: UIViewRepresentable {
     let url: URL
+    /// `false` 时外放（需模板带声且用户已开喇叭）。
+    var isMuted: Bool = true
     /// `readyToPlay` 且已 seek 到第 0 帧并开始 `play` 后调用（主线程），用于沉浸式「首帧封面再叠视频层」。
     var onReadyToPlayFromFirstFrame: (() -> Void)? = nil
 
@@ -47,8 +83,9 @@ struct HomeMutedLoopingVideoFillView: UIViewRepresentable {
         let item = AVPlayerItem(url: url)
         let player = AVPlayer(playerItem: item)
         context.coordinator.player = player
+        context.coordinator.desiredMuted = isMuted
         context.coordinator.attachLoopEndObserver(item: item, player: player)
-        player.isMuted = true
+        applyHomeVideoPlaybackAudibleState(player: player, muted: isMuted)
         v.videoLayer.player = player
         v.videoLayer.videoGravity = .resizeAspectFill
         context.coordinator.seekToFirstFrameThenPlay(player: player, item: item)
@@ -57,6 +94,8 @@ struct HomeMutedLoopingVideoFillView: UIViewRepresentable {
 
     func updateUIView(_ uiView: HomeVideoFillContainerView, context: Context) {
         context.coordinator.onReadyToPlayFromFirstFrame = onReadyToPlayFromFirstFrame
+        context.coordinator.desiredMuted = isMuted
+        applyHomeVideoPlaybackAudibleState(player: context.coordinator.player, muted: isMuted)
     }
 
     static func dismantleUIView(_ uiView: HomeVideoFillContainerView, coordinator: Coordinator) {
@@ -66,6 +105,8 @@ struct HomeMutedLoopingVideoFillView: UIViewRepresentable {
 
     final class Coordinator {
         var player: AVPlayer?
+        /// 与 SwiftUI 侧 `isMuted` 同步；循环/seek 完成后需再次套用，否则部分系统上会变回无声。
+        var desiredMuted: Bool = true
         var onReadyToPlayFromFirstFrame: (() -> Void)?
         private var readyObserver: NSKeyValueObservation?
         private var endObserver: NSObjectProtocol?
@@ -79,9 +120,12 @@ struct HomeMutedLoopingVideoFillView: UIViewRepresentable {
                 forName: .AVPlayerItemDidPlayToEndTime,
                 object: item,
                 queue: .main
-            ) { [weak player] _ in
-                player?.seek(to: .zero, toleranceBefore: .zero, toleranceAfter: .zero)
-                player?.play()
+            ) { [weak self, weak player] _ in
+                guard let self, let p = player else { return }
+                p.seek(to: .zero, toleranceBefore: .zero, toleranceAfter: .zero) { _ in
+                    applyHomeVideoPlaybackAudibleState(player: p, muted: self.desiredMuted)
+                    p.play()
+                }
             }
         }
 
@@ -94,6 +138,7 @@ struct HomeMutedLoopingVideoFillView: UIViewRepresentable {
                 case .readyToPlay:
                     self.cancelReadyObserver()
                     player.seek(to: .zero, toleranceBefore: .zero, toleranceAfter: .zero) { _ in
+                        applyHomeVideoPlaybackAudibleState(player: player, muted: self.desiredMuted)
                         player.play()
                         let callback = self.onReadyToPlayFromFirstFrame
                         Task { @MainActor in
@@ -130,6 +175,7 @@ struct HomeMutedLoopingVideoFillView: UIViewRepresentable {
 
 struct HomeMutedVideoOnceFillView: UIViewRepresentable {
     let url: URL
+    var isMuted: Bool = true
     let onFinished: () -> Void
 
     func makeCoordinator() -> Coordinator {
@@ -142,14 +188,18 @@ struct HomeMutedVideoOnceFillView: UIViewRepresentable {
         let player = AVPlayer(playerItem: item)
         context.coordinator.player = player
         context.coordinator.observeEnd(of: item)
-        player.isMuted = true
+        context.coordinator.desiredMuted = isMuted
+        applyHomeVideoPlaybackAudibleState(player: player, muted: isMuted)
         v.videoLayer.player = player
         v.videoLayer.videoGravity = .resizeAspectFill
         context.coordinator.seekToFirstFrameThenPlay(player: player, item: item)
         return v
     }
 
-    func updateUIView(_ uiView: HomeVideoFillContainerView, context: Context) {}
+    func updateUIView(_ uiView: HomeVideoFillContainerView, context: Context) {
+        context.coordinator.desiredMuted = isMuted
+        applyHomeVideoPlaybackAudibleState(player: context.coordinator.player, muted: isMuted)
+    }
 
     static func dismantleUIView(_ uiView: HomeVideoFillContainerView, coordinator: Coordinator) {
         uiView.videoLayer.player = nil
@@ -158,6 +208,7 @@ struct HomeMutedVideoOnceFillView: UIViewRepresentable {
 
     final class Coordinator {
         var player: AVPlayer?
+        var desiredMuted: Bool = true
         private var endObserver: NSObjectProtocol?
         private var readyObserver: NSKeyValueObservation?
         private let onFinished: () -> Void
@@ -177,6 +228,7 @@ struct HomeMutedVideoOnceFillView: UIViewRepresentable {
                     self.readyObserver?.invalidate()
                     self.readyObserver = nil
                     player.seek(to: .zero, toleranceBefore: .zero, toleranceAfter: .zero) { _ in
+                        applyHomeVideoPlaybackAudibleState(player: player, muted: self.desiredMuted)
                         player.play()
                     }
                 case .failed:
@@ -224,6 +276,8 @@ struct HomeImmersiveTransAnimationCarouselBackdrop: View {
     let width: CGFloat
     let height: CGFloat
     var imageAspectFit: Bool = false
+    /// 视频段是否静音（有声模板未开喇叭时为 `true`）。
+    var isVideoMuted: Bool = true
 
     @State private var index = 0
     @State private var imageHoldTask: Task<Void, Never>?
@@ -242,7 +296,7 @@ struct HomeImmersiveTransAnimationCarouselBackdrop: View {
             Color.black
             if let u = currentURL {
                 if HomeImmersiveMediaURL.isVideo(u) {
-                    HomeMutedVideoOnceFillView(url: u) {
+                    HomeMutedVideoOnceFillView(url: u, isMuted: isVideoMuted) {
                         advance()
                     }
                     .frame(width: width, height: height)
@@ -320,10 +374,25 @@ struct HomeImmersiveVideoBackdrop: View {
     let remoteURL: URL
     let width: CGFloat
     let height: CGFloat
+    /// 接口声明成片带声时为 `true`。
+    var hasTemplateVoice: Bool = false
+    /// 列表页等在 `allowsHitTesting(false)` 背板外控制静音时传入；`nil` 表示由本视图内喇叭切换（用于详情等）。
+    var externalPlaybackMuted: Bool? = nil
 
     @State private var playURL: URL?
     @State private var coverPoster: UIImage?
     @State private var showVideoLayer = false
+    @State private var userVoiceOn = false
+
+    private var playbackMuted: Bool {
+        if let ext = externalPlaybackMuted { return ext }
+        if !hasTemplateVoice { return true }
+        return !userVoiceOn
+    }
+
+    private var showsInternalVoiceToggle: Bool {
+        externalPlaybackMuted == nil && hasTemplateVoice
+    }
 
     var body: some View {
         ZStack {
@@ -342,6 +411,7 @@ struct HomeImmersiveVideoBackdrop: View {
             let u = playURL ?? remoteURL
             HomeMutedLoopingVideoFillView(
                 url: u,
+                isMuted: playbackMuted,
                 onReadyToPlayFromFirstFrame: {
                     withAnimation(.easeIn(duration: 0.22)) {
                         showVideoLayer = true
@@ -350,6 +420,21 @@ struct HomeImmersiveVideoBackdrop: View {
             )
             .id(u.absoluteString)
             .opacity(showVideoLayer ? 1 : 0)
+
+            if showsInternalVoiceToggle {
+                VStack {
+                    HStack {
+                        Spacer(minLength: 0)
+                        HomeTemplateVoiceToggleChip(isVoiceOn: userVoiceOn) {
+                            userVoiceOn.toggle()
+                        }
+                        .padding(10)
+                    }
+                    Spacer(minLength: 0)
+                }
+                .frame(width: width, height: height)
+                .allowsHitTesting(true)
+            }
         }
         .frame(width: width, height: height)
         .clipped()
@@ -358,6 +443,7 @@ struct HomeImmersiveVideoBackdrop: View {
             await MainActor.run {
                 showVideoLayer = false
                 coverPoster = nil
+                userVoiceOn = false
             }
             async let thumb: UIImage? = VideoCacheManager.shared.thumbnailUIImage(forVideoURLString: s)
             let local = await VideoCacheManager.shared.getVideoURL(for: s)
@@ -384,6 +470,7 @@ struct HomeGridSequentialVideoPreview: View {
     var loops: Bool = true
     /// 为 `true` 时先完成预加载再叠播放器，底层首帧海报始终可见；沉浸式顺序轮播单段镜像为 `false`。
     var deferPlaybackUntilCached: Bool = false
+    var isMuted: Bool = true
     let onFinished: () -> Void
 
     @State private var playURL: URL?
@@ -395,9 +482,9 @@ struct HomeGridSequentialVideoPreview: View {
             if isPlaying, let u = playURL {
                 Group {
                     if loops {
-                        HomeMutedLoopingVideoFillView(url: u)
+                        HomeMutedLoopingVideoFillView(url: u, isMuted: isMuted)
                     } else {
-                        HomeMutedVideoOnceFillView(url: u, onFinished: onFinished)
+                        HomeMutedVideoOnceFillView(url: u, isMuted: isMuted, onFinished: onFinished)
                     }
                 }
                 .id("\(u.absoluteString)-\(playGeneration)-\(loops)")

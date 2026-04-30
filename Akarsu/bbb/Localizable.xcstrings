@@ -7,6 +7,9 @@
     " %@" : {
 
     },
+    "%@ 金币" : {
+
+    },
     "%lld" : {
 
     },
@@ -22,6 +25,9 @@
     "+" : {
 
     },
+    "+%@" : {
+
+    },
     "+%lld" : {
 
     },
@@ -29,6 +35,9 @@
 
     },
     "🎁" : {
+
+    },
+    "$" : {
 
     },
     "0000 0000 0000 0000" : {
@@ -1685,43 +1694,43 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld \/ %lld"
+            "value" : "%lld / %lld"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld \/ %lld"
+            "value" : "%lld / %lld"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld\/%lld"
+            "value" : "%lld/%lld"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld \/ %lld"
+            "value" : "%lld / %lld"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld \/ %lld"
+            "value" : "%lld / %lld"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld \/ %lld"
+            "value" : "%lld / %lld"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld \/ %lld"
+            "value" : "%lld / %lld"
           }
         }
       }
@@ -3696,6 +3705,100 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "需要登錄"
+          }
+        }
+      }
+    },
+    "home.chrome.auth_toggle_login" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anmelden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log in"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connexion"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログイン"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrar"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "登入"
+          }
+        }
+      }
+    },
+    "home.chrome.auth_toggle_logout" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abmelden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log out"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salir"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Déconnexion"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログアウト"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sair"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "登出"
           }
         }
       }
@@ -5985,6 +6088,100 @@
         }
       }
     },
+    "home.template.voice.a11y_off" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stumm. Tippen, um Ton einzuschalten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muted. Tap to turn sound on."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silenciado. Toca para activar el sonido."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son coupé. Appuyez pour activer le son."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ミュート中。タップで音声をオンにします。"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sem som. Toque para ativar o áudio."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已靜音，點一下開啟聲音"
+          }
+        }
+      }
+    },
+    "home.template.voice.a11y_on" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ton an. Tippen, um stumm zu schalten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sound on. Tap to mute."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonido activado. Toca para silenciar."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Son activé. Appuyez pour couper le son."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音声オン。タップでミュートにします。"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Som ligado. Toque para silenciar."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聲音開啟，點一下靜音"
+          }
+        }
+      }
+    },
     "home.toast.no_more" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -6085,37 +6282,37 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Verschwommen, Seitenansicht, dunkles Haar\/Hut"
+            "value" : "Verschwommen, Seitenansicht, dunkles Haar/Hut"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Blurry, side view, dark hair\/hat"
+            "value" : "Blurry, side view, dark hair/hat"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Borrosa, vista lateral, cabello oscuro\/sombrero"
+            "value" : "Borrosa, vista lateral, cabello oscuro/sombrero"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Flou, vue latérale, cheveux foncés\/chapeau"
+            "value" : "Flou, vue latérale, cheveux foncés/chapeau"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ぼやけた、横から見た図、黒い髪\/帽子"
+            "value" : "ぼやけた、横から見た図、黒い髪/帽子"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desfocado, vista lateral, cabelo\/chapéu escuro"
+            "value" : "Desfocado, vista lateral, cabelo/chapéu escuro"
           }
         },
         "zh-Hant" : {
@@ -8241,7 +8438,7 @@
         }
       }
     },
-    "MM\/YY" : {
+    "MM/YY" : {
 
     },
     "my.creations.alert.coins" : {
@@ -10265,6 +10462,382 @@
         }
       }
     },
+    "notification.denied.body" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du kannst Benachrichtigungen in den Einstellungen aktivieren."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can turn on notifications in Settings."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puedes activar las notificaciones en Ajustes."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous pouvez activer les notifications dans Réglages."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定から通知をオンにできます。"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pode ativar as notificações em Definições."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請前往系統「設定」> 本 App，開啟通知權限。"
+          }
+        }
+      }
+    },
+    "notification.denied.open_settings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen öffnen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Settings"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir Ajustes"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir Réglages"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定を開く"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir Definições"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "前往設定"
+          }
+        }
+      }
+    },
+    "notification.denied.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benachrichtigungen sind aus"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications are off"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificaciones desactivadas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications désactivées"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知がオフです"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificações desativadas"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法開啟通知"
+          }
+        }
+      }
+    },
+    "notification.pre_prompt.body" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit Benachrichtigungen informieren wir dich über Produktupdates und wichtige Neuigkeiten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn on notifications to get product updates and important news."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activa las notificaciones para recibir actualizaciones del producto y novedades importantes."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activez les notifications pour les mises à jour produit et les infos importantes."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知をオンにすると、製品アップデートや重要なお知らせをお届けします。"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ative as notificações para receber atualizações do produto e novidades importantes."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟通知後，我們會在產品更新與重要動態時提醒你。"
+          }
+        }
+      }
+    },
+    "notification.pre_prompt.confirm" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zulassen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allow"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permitir"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autoriser"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "許可"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permitir"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允許"
+          }
+        }
+      }
+    },
+    "notification.pre_prompt.not_now" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Später"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not Now"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ahora no"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus tard"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "後で"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agora não"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "稍後再說"
+          }
+        }
+      }
+    },
+    "notification.pre_prompt.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benachrichtigungen aktivieren?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn on notifications?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Activar notificaciones?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer les notifications ?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知をオンにしますか？"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativar notificações?"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要開啟通知嗎？"
+          }
+        }
+      }
+    },
+    "notification.status.denied.hint" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benachrichtigungen sind deaktiviert. In den Einstellungen aktivieren."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications are off. Enable them in Settings."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificaciones desactivadas. Actívalas en Ajustes."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications désactivées. Activez-les dans Réglages."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知がオフです。設定から有効にしてください。"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificações desativadas. Ative em Definições."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知已關閉，請至系統設定開啟。"
+          }
+        }
+      }
+    },
     "photo_validation.encode_failed" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -10600,43 +11173,43 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hochauflösende \/ 4K-Downloads"
+            "value" : "Hochauflösende / 4K-Downloads"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "High-Res \/ 4K Downloads"
+            "value" : "High-Res / 4K Downloads"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Descargas de alta resolución\/4K"
+            "value" : "Descargas de alta resolución/4K"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Téléchargements haute résolution \/ 4K"
+            "value" : "Téléchargements haute résolution / 4K"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "高解像度 \/ 4K ダウンロード"
+            "value" : "高解像度 / 4K ダウンロード"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Downloads em alta resolução\/4K"
+            "value" : "Downloads em alta resolução/4K"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "高清 \/ 4K 下載"
+            "value" : "高清 / 4K 下載"
           }
         }
       }
@@ -10778,6 +11351,53 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "解鎖全部高級模板"
+          }
+        }
+      }
+    },
+    "recharge.browser_pay.still_pending" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zahlung noch nicht bestätigt. Bitte später erneut versuchen oder den Verlauf prüfen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Payment not confirmed yet. Try again shortly or check your recharge history."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pago aún no confirmado. Inténtelo de nuevo o revise el historial."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paiement non confirmé. Réessayez plus tard ou consultez l’historique."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まだ支払いが確認されていません。しばらくして再試行するか、履歴をご確認ください。"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pagamento ainda não confirmado. Tente novamente ou veja o histórico."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "尚未確認支付結果，請稍後重試或至充值記錄查看。"
           }
         }
       }
@@ -11060,53 +11680,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請在瀏覽器中完成付款，返回應用後餘額將隨支付結果更新。"
-          }
-        }
-      }
-    },
-    "recharge.browser_pay.still_pending" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zahlung noch nicht bestätigt. Bitte später erneut versuchen oder den Verlauf prüfen."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Payment not confirmed yet. Try again shortly or check your recharge history."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pago aún no confirmado. Inténtelo de nuevo o revise el historial."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paiement non confirmé. Réessayez plus tard ou consultez l’historique."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "まだ支払いが確認されていません。しばらくして再試行するか、履歴をご確認ください。"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pagamento ainda não confirmado. Tente novamente ou veja o histórico."
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "尚未確認支付結果，請稍後重試或至充值記錄查看。"
           }
         }
       }
@@ -12427,6 +13000,53 @@
         }
       }
     },
+    "recharge.result.balance_format" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktuelles Guthaben: %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current balance: %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saldo actual: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solde actuel : %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現在の残高：%@"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saldo atual: %@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目前餘額：%@"
+          }
+        }
+      }
+    },
     "recharge.result.bonus_format" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -12752,53 +13372,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "充值成功"
-          }
-        }
-      }
-    },
-    "recharge.result.balance_format" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aktuelles Guthaben: %@"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Current balance: %@"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saldo actual: %@"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solde actuel : %@"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "現在の残高：%@"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Saldo atual: %@"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "目前餘額：%@"
           }
         }
       }
@@ -13138,43 +13711,43 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hochauflösende \/ 4K-Downloads"
+            "value" : "Hochauflösende / 4K-Downloads"
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "High-Res \/ 4K Downloads"
+            "value" : "High-Res / 4K Downloads"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Descargas de alta resolución\/4K"
+            "value" : "Descargas de alta resolución/4K"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Téléchargements haute résolution \/ 4K"
+            "value" : "Téléchargements haute résolution / 4K"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "高解像度 \/ 4K ダウンロード"
+            "value" : "高解像度 / 4K ダウンロード"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Downloads em alta resolução\/4K"
+            "value" : "Downloads em alta resolução/4K"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "高清 \/ 4K 下載"
+            "value" : "高清 / 4K 下載"
           }
         }
       }
@@ -13506,102 +14079,6 @@
             "value" : "通知"
           }
         }
-      }
-    },
-    "notification.denied.body" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Du kannst Benachrichtigungen in den Einstellungen aktivieren." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You can turn on notifications in Settings." } },
-        "es" : { "stringUnit" : { "state" : "translated", "value" : "Puedes activar las notificaciones en Ajustes." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vous pouvez activer les notifications dans Réglages." } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "設定から通知をオンにできます。" } },
-        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Pode ativar as notificações em Definições." } },
-        "zh-Hant" : { "stringUnit" : { "state" : "translated", "value" : "請前往系統「設定」> 本 App，開啟通知權限。" } }
-      }
-    },
-    "notification.denied.open_settings" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einstellungen öffnen" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Open Settings" } },
-        "es" : { "stringUnit" : { "state" : "translated", "value" : "Abrir Ajustes" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Ouvrir Réglages" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "設定を開く" } },
-        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Abrir Definições" } },
-        "zh-Hant" : { "stringUnit" : { "state" : "translated", "value" : "前往設定" } }
-      }
-    },
-    "notification.denied.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Benachrichtigungen sind aus" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notifications are off" } },
-        "es" : { "stringUnit" : { "state" : "translated", "value" : "Notificaciones desactivadas" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Notifications désactivées" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知がオフです" } },
-        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Notificações desativadas" } },
-        "zh-Hant" : { "stringUnit" : { "state" : "translated", "value" : "無法開啟通知" } }
-      }
-    },
-    "notification.pre_prompt.body" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Mit Benachrichtigungen informieren wir dich über Produktupdates und wichtige Neuigkeiten." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Turn on notifications to get product updates and important news." } },
-        "es" : { "stringUnit" : { "state" : "translated", "value" : "Activa las notificaciones para recibir actualizaciones del producto y novedades importantes." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Activez les notifications pour les mises à jour produit et les infos importantes." } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知をオンにすると、製品アップデートや重要なお知らせをお届けします。" } },
-        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Ative as notificações para receber atualizações do produto e novidades importantes." } },
-        "zh-Hant" : { "stringUnit" : { "state" : "translated", "value" : "開啟通知後，我們會在產品更新與重要動態時提醒你。" } }
-      }
-    },
-    "notification.pre_prompt.confirm" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Zulassen" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Allow" } },
-        "es" : { "stringUnit" : { "state" : "translated", "value" : "Permitir" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Autoriser" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "許可" } },
-        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Permitir" } },
-        "zh-Hant" : { "stringUnit" : { "state" : "translated", "value" : "允許" } }
-      }
-    },
-    "notification.pre_prompt.not_now" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Später" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Not Now" } },
-        "es" : { "stringUnit" : { "state" : "translated", "value" : "Ahora no" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Plus tard" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "後で" } },
-        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Agora não" } },
-        "zh-Hant" : { "stringUnit" : { "state" : "translated", "value" : "稍後再說" } }
-      }
-    },
-    "notification.pre_prompt.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Benachrichtigungen aktivieren?" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Turn on notifications?" } },
-        "es" : { "stringUnit" : { "state" : "translated", "value" : "¿Activar notificaciones?" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Activer les notifications ?" } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知をオンにしますか？" } },
-        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Ativar notificações?" } },
-        "zh-Hant" : { "stringUnit" : { "state" : "translated", "value" : "要開啟通知嗎？" } }
-      }
-    },
-    "notification.status.denied.hint" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Benachrichtigungen sind deaktiviert. In den Einstellungen aktivieren." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notifications are off. Enable them in Settings." } },
-        "es" : { "stringUnit" : { "state" : "translated", "value" : "Notificaciones desactivadas. Actívalas en Ajustes." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Notifications désactivées. Activez-les dans Réglages." } },
-        "ja" : { "stringUnit" : { "state" : "translated", "value" : "通知がオフです。設定から有効にしてください。" } },
-        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Notificações desativadas. Ative em Definições." } },
-        "zh-Hant" : { "stringUnit" : { "state" : "translated", "value" : "通知已關閉，請至系統設定開啟。" } }
       }
     },
     "settings.title" : {
@@ -14214,6 +14691,36 @@
           }
         }
       }
+    },
+    "专属回归礼" : {
+
+    },
+    "关闭" : {
+
+    },
+    "基础金币" : {
+
+    },
+    "欢迎回来！领取下方金币奖励，已存入活动资格。" : {
+
+    },
+    "立即领取" : {
+
+    },
+    "选择支付" : {
+
+    },
+    "限时加赠" : {
+
+    },
+    "限时活动 · 先到先得" : {
+
+    },
+    "领取中…" : {
+
+    },
+    "额外赠送" : {
+
     }
   },
   "version" : "1.0"

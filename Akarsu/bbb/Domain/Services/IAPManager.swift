@@ -53,7 +53,7 @@ final class IAPManager: ObservableObject {
 
     /// 按需取 Product → 先下单再购买，返回 (success, gold)，success 且 gold>0 为支付成功，success 且 gold==0 为用户取消
     /// - Parameter payChannelId: 与 `/v3/pay_channels` 中 Apple 渠道一致（常为 1，也可能由服务端配置）
-    func runIAPPurchaseFlow(package: Package, payChannelId: Int32) async -> (success: Bool, gold: Int) {
+    func runIAPPurchaseFlow(package: Package, payChannelId: Int32, offerId: String? = nil) async -> (success: Bool, gold: Int) {
         /// 与「Apple Pay / App Store 支付」一致：数字商品仅允许 IAP；设备关闭 App 内购买时不可发起
         guard Self.deviceAllowsInAppPurchases() else {
             reportPayFail(package: package, orderId: nil, reason: "payments_disabled", payChannelId: payChannelId)
@@ -77,7 +77,7 @@ final class IAPManager: ObservableObject {
             userId: authInfo.userid,
             packageId: package.id,
             payChannelId: payChannelId,
-            transactionId: nil
+            offerId: offerId
         )
         guard case .success(let orderId) = orderResult else {
             reportPayFail(package: package, orderId: nil, reason: "order_create_failed", payChannelId: payChannelId)

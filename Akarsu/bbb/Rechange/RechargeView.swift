@@ -81,6 +81,7 @@ struct RechargeView: View {
     @EnvironmentObject private var auth: AuthSessionStore
     @EnvironmentObject private var versionConfig: VersionConfigStore
     @EnvironmentObject private var appLanguage: AppLanguageStore
+    @EnvironmentObject private var tabRouter: AppTabRouter
     @Environment(\.scenePhase) private var scenePhase
 
     @State private var packages: [RechargePackageModel] = []
@@ -211,6 +212,28 @@ struct RechargeView: View {
             if selectedId == nil || packages.first(where: { $0.id == selectedId }) == nil {
                 selectedId = defaultSelectedPackageId()
             }
+            applyPendingRechargeAppleProductSelection()
+        }
+        .onChange(of: domainPackages.map(\.id)) { _ in
+            applyPendingRechargeAppleProductSelection()
+        }
+        .onChange(of: tabRouter.pendingRechargeAppleProductId) { _ in
+            applyPendingRechargeAppleProductSelection()
+        }
+        .onChange(of: tabRouter.pushOfferPaymentChannelRequest) { _ in
+            guard tabRouter.pushOfferPaymentChannelRequest != nil else { return }
+            tabRouter.consumePushOfferPaymentChannelRequest()
+            applyPendingRechargeAppleProductSelection()
+            guard let pkg = selectedPackage else { return }
+            Task {
+                await versionConfig.refresh()
+                let mode = await MainActor.run { versionConfig.rechargePresentationType }
+                if mode == 1 {
+                    await completePurchaseDirectIAP(package: pkg)
+                } else {
+                    await presentPaymentSelectionOrDirectAppleIfOnly(package: pkg)
+                }
+            }
         }
         .sheet(item: $checkoutPackage) { pkg in
             RechargePaymentSelectionView(
@@ -306,6 +329,7 @@ struct RechargeView: View {
                 bonusCoins: package.bonus,
                 newBalanceFormatted: wallet.formattedCoinBalance
             )
+            PushRechargeOrderAttributionStore.notifyRechargePaymentSucceeded()
         }
     }
 
@@ -429,12 +453,22 @@ struct RechargeView: View {
                 if selectedId == nil || packages.first(where: { $0.id == selectedId }) == nil {
                     selectedId = defaultSelectedPackageId()
                 }
+                applyPendingRechargeAppleProductSelection()
             case .failure(let err):
                 domainPackages = []
                 packages = []
                 packagesError = err.userMessage
             }
         }
+    }
+
+    /// 远程推送 `recharge_incentive_new_user`：按 `apple_product_id` 匹配后台套餐并高亮选中。
+    private func applyPendingRechargeAppleProductSelection() {
+        guard let want = tabRouter.pendingRechargeAppleProductId?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !want.isEmpty else { return }
+        guard let domain = domainPackages.first(where: { ($0.resolvedAppleProductId ?? "") == want }) else { return }
+        selectedId = "pkg-\(domain.id)"
+        tabRouter.pendingRechargeAppleProductId = nil
     }
 
     private func packageBonusLine(_ pkg: RechargePackageModel) -> Text {
@@ -663,8 +697,10 @@ struct RechargeView: View {
             return
         }
 
+        let offerId = domain.offerIdForPushAttributedCreateOrderIfMatching()
+
         if !payChannel.isApplePay {
-            await completeNonIAPPurchase(package: package, domain: domain, payChannel: payChannel)
+            await completeNonIAPPurchase(package: package, domain: domain, payChannel: payChannel, offerId: offerId)
             return
         }
 
@@ -682,7 +718,7 @@ struct RechargeView: View {
         }
         await MainActor.run { isPurchasing = true }
         let iapChannelId = domain.iapPayChannelId ?? payChannel.id
-        let result = await IAPManager.shared.runIAPPurchaseFlow(package: domain, payChannelId: iapChannelId)
+        let result = await IAPManager.shared.runIAPPurchaseFlow(package: domain, payChannelId: iapChannelId, offerId: offerId)
         await MainActor.run {
             isPurchasing = false
             checkoutPackage = nil
@@ -706,7 +742,8 @@ struct RechargeView: View {
     private func completeNonIAPPurchase(
         package: RechargePackageModel,
         domain: Package,
-        payChannel: PayChannel
+        payChannel: PayChannel,
+        offerId: String?
     ) async {
         guard let uid = auth.userId else {
             await MainActor.run { paymentOutcome = .failed(message: AppLanguageStore.localized("recharge.error.login_first")) }
@@ -726,10 +763,10 @@ struct RechargeView: View {
                 userId: uid,
                 packageId: domain.id,
                 payChannelId: payChannelId,
-                transactionId: nil,
                 returnUrl: nil,
                 pageUrl: nil,
-                payload: nil
+                payload: nil,
+                offerId: offerId
             )
             switch orderResult {
             case .failure(let err):
@@ -772,10 +809,10 @@ struct RechargeView: View {
             userId: uid,
             packageId: domain.id,
             payChannelId: payChannelId,
-            transactionId: nil,
             returnUrl: nil,
             pageUrl: pageReturnURL,
-            payload: "{}"
+            payload: "{}",
+            offerId: offerId
         )
 
         await MainActor.run { isPurchasing = false }
@@ -849,5 +886,6 @@ struct RechargeView: View {
         .environmentObject(AuthSessionStore())
         .environmentObject(VersionConfigStore())
         .environmentObject(AppLanguageStore())
+        .environmentObject(AppTabRouter())
         .preferredColorScheme(.dark)
 }

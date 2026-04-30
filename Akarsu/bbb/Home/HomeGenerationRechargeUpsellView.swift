@@ -617,8 +617,10 @@ struct HomeGenerationRechargeUpsellView: View {
             return
         }
 
+        let offerId = domain.offerIdForPushAttributedCreateOrderIfMatching()
+
         if !payChannel.isApplePay {
-            await completeNonIAPPurchase(package: package, domain: domain, payChannel: payChannel)
+            await completeNonIAPPurchase(package: package, domain: domain, payChannel: payChannel, offerId: offerId)
             return
         }
 
@@ -636,7 +638,7 @@ struct HomeGenerationRechargeUpsellView: View {
         }
         await MainActor.run { isPurchasing = true }
         let iapChannelId = domain.iapPayChannelId ?? payChannel.id
-        let result = await IAPManager.shared.runIAPPurchaseFlow(package: domain, payChannelId: iapChannelId)
+        let result = await IAPManager.shared.runIAPPurchaseFlow(package: domain, payChannelId: iapChannelId, offerId: offerId)
         await MainActor.run {
             isPurchasing = false
             checkoutPackage = nil
@@ -655,7 +657,8 @@ struct HomeGenerationRechargeUpsellView: View {
     private func completeNonIAPPurchase(
         package: RechargePackageModel,
         domain: Package,
-        payChannel: PayChannel
+        payChannel: PayChannel,
+        offerId: String?
     ) async {
         guard let uid = auth.userId else {
             await MainActor.run { paymentOutcome = .failed(message: AppLanguageStore.localized("recharge.error.login_first")) }
@@ -674,10 +677,10 @@ struct HomeGenerationRechargeUpsellView: View {
                 userId: uid,
                 packageId: domain.id,
                 payChannelId: payChannelId,
-                transactionId: nil,
                 returnUrl: nil,
                 pageUrl: nil,
-                payload: nil
+                payload: nil,
+                offerId: offerId
             )
             switch orderResult {
             case .failure(let err):
@@ -720,10 +723,10 @@ struct HomeGenerationRechargeUpsellView: View {
             userId: uid,
             packageId: domain.id,
             payChannelId: payChannelId,
-            transactionId: nil,
             returnUrl: nil,
             pageUrl: pageReturnURL,
-            payload: "{}"
+            payload: "{}",
+            offerId: offerId
         )
 
         await MainActor.run { isPurchasing = false }

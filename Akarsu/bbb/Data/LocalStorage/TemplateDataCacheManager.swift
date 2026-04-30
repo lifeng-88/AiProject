@@ -124,6 +124,7 @@ class TemplateDataCacheManager {
         
         do {
             let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
             return try decoder.decode(T.self, from: data)
         } catch {
             print("⚠️ [TemplateDataCacheManager] Failed to decode cached data from \(fileName): \(error)")

@@ -61,24 +61,25 @@ struct RechargeAPI {
     ///   - returnUrl: 三方回调服务端的 Webhook URL（可选，不传时服务端从 pay_channel 配置取）
     ///   - pageUrl: 支付完成后客户端跳转地址（仅 33001/33002/33003，如 {api_base}/payment/return）
     ///   - payload: 重定向支付用户填写信息 JSON
-    /// - Note: 协议已调整，无 cancel_url；取消场景由客户端或三方页面自行处理
+    ///   - offerId: **仅**「统计/推送带来的额外加赠」且用户从套餐列表点击了对应活动包时传递；普通充值勿传
+    /// - Note: 协议已调整，无 cancel_url；取消场景由客户端或三方页面自行处理。创建订单不传 `transaction_id`，确认支付在 `confirmRecharge` 传。
     static func createRechargeOrder(
         userId: String,
         packageId: Int32,
         payChannelId: Int32,
-        transactionId: String? = nil,
         returnUrl: String? = nil,
         pageUrl: String? = nil,
-        payload: String? = nil
+        payload: String? = nil,
+        offerId: String? = nil
     ) async -> Result<CreateRechargeOrderResponse, AppError> {
         var params: [String: Any] = [
             "package_id": packageId,
             "pay_channel_id": payChannelId
         ]
-        if let t = transactionId, !t.isEmpty { params["transaction_id"] = t }
         if let r = returnUrl, !r.isEmpty { params["return_url"] = r }
         if let u = pageUrl, !u.isEmpty { params["page_url"] = u }
         if let p = payload, !p.isEmpty { params["payload"] = p }
+        if let o = offerId, !o.isEmpty { params["offer_id"] = o }
         return await client.request(
             "/v1/users/\(userId)/recharges",
             method: .post,

@@ -33,9 +33,10 @@ actor APIClient {
         return APIClient(baseURL: baseURL)
     }
     
-    /// 设置访问令牌
+    /// 设置访问令牌（去首尾空白；空串视为未登录，避免发出 `Bearer ` 遭 OpenResty 401）
     func setAccessToken(_ token: String?) {
-        accessToken = token
+        let trimmed = token?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        accessToken = trimmed.isEmpty ? nil : trimmed
     }
     
     /// 获取访问令牌
@@ -102,8 +103,12 @@ actor APIClient {
         request.httpMethod = method.rawValue
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        // 仅当需要鉴权时添加 Authorization 头（公开接口如 IP 定位不加）
-        if requiresAuth, let token = accessToken {
+        // 仅当需要鉴权时添加 Authorization 头（公开接口如 IP 定位不加）；无有效 token 时不发请求，避免网关 HTML 401
+        if requiresAuth {
+            guard let token = accessToken, !token.isEmpty else {
+                print("❌ [APIClient] requiresAuth 但未设置有效 accessToken，跳过请求: \(endpoint)")
+                return .failure(.unauthorized)
+            }
             request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         }
         
@@ -297,7 +302,19 @@ actor APIClient {
                 return .failure(.decodingError(error.localizedDescription))
             }
         } catch {
+            Self.logURLSessionFailure(error, label: "request \(method.rawValue) \(endpoint)")
             return .failure(.networkError(error.localizedDescription))
+        }
+    }
+
+    /// 控制台诊断：区分 DNS(-1003)、断连(-1005)、超时等，便于与系统 `nw_` 日志对照（与 glam `APIClient` 一致）
+    private static func logURLSessionFailure(_ error: Error, label: String) {
+        if let urlError = error as? URLError {
+            let code = urlError.code.rawValue
+            let failing = urlError.failureURLString ?? "(nil)"
+            print("❌ [APIClient] 传输失败 [\(label)] URLError rawValue=\(code) \(urlError.code) failingURL=\(failing) — \(urlError.localizedDescription)")
+        } else {
+            print("❌ [APIClient] 传输失败 [\(label)] \(type(of: error)): \(error.localizedDescription)")
         }
     }
     
@@ -458,6 +475,7 @@ actor APIClient {
                 return .failure(.decodingError(error.localizedDescription))
             }
         } catch {
+            Self.logURLSessionFailure(error, label: "upload \(endpoint)")
             return .failure(.networkError(error.localizedDescription))
         }
     }

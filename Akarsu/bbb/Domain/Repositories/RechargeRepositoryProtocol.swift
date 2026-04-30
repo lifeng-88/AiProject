@@ -21,11 +21,11 @@ protocol RechargeRepositoryProtocol {
     /// 获取 Apple Pay Session
     func getApplePaySession(validationURL: String) async -> Result<String, AppError>
     
-    /// 创建充值订单
-    func createRechargeOrder(userId: String, packageId: Int32, payChannelId: Int32, transactionId: String?) async -> Result<String, AppError>
+    /// 创建充值订单（`offerId` 仅新用户活动套餐由用户点击套餐时传入）
+    func createRechargeOrder(userId: String, packageId: Int32, payChannelId: Int32, offerId: String?) async -> Result<String, AppError>
     
     /// 创建重定向支付订单（33001/33002/33003），返回 orderId 与 paymentUrl
-    func createRedirectRechargeOrder(userId: String, packageId: Int32, payChannelId: Int32, pageUrl: String, payload: String) async -> Result<CreateRechargeOrderResponse, AppError>
+    func createRedirectRechargeOrder(userId: String, packageId: Int32, payChannelId: Int32, pageUrl: String, payload: String, offerId: String?) async -> Result<CreateRechargeOrderResponse, AppError>
     
     /// 查询订单支付状态（重定向支付 return_url 回调后调用）
     func getOrderPaymentStatus(orderId: String) async -> Result<OrderPaymentStatusResponse, AppError>

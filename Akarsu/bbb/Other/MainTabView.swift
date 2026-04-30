@@ -49,6 +49,9 @@ enum AppTab: Int, CaseIterable {
 
 struct MainTabView: View {
     @EnvironmentObject private var tabRouter: AppTabRouter
+    @EnvironmentObject private var wallet: UserWalletStore
+    @EnvironmentObject private var auth: AuthSessionStore
+    @EnvironmentObject private var appLanguage: AppLanguageStore
 
     /// 已进入过的 Tab 保留根视图实例，避免 `switch` 销毁视图导致 Home / Recharge 每次切换都重新 `.task` 拉数。
     /// 未访问过的 Tab 不挂载（如首次不进 Recharge 则不请求套餐列表）。
@@ -62,6 +65,8 @@ struct MainTabView: View {
                 tabRoot(.my) { MyProfileView() }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+            pushOverlayLayer
         }
         /// 将 TabBar 作为底部 inset；栏背景 `.ignoresSafeArea(edges: .bottom)` 铺满屏幕底缘（含 Home Indicator 区域）
         /// 进入各 Tab 内二级导航时隐藏，避免与内页底部操作区重叠
@@ -82,6 +87,53 @@ struct MainTabView: View {
         }
         .ignoresSafeArea(.keyboard)
     }
+
+    /// 与 glam 一致：推送营销弹窗叠在当前 Tab 上（非系统 `alert`），底层界面仍可见。
+    @ViewBuilder
+    private var pushOverlayLayer: some View {
+        if let incentiveCtx = tabRouter.newUserRechargeIncentiveSheet {
+            RechargeIncentiveSheet(
+                context: incentiveCtx,
+                isPresented: Binding(
+                    get: { tabRouter.newUserRechargeIncentiveSheet != nil },
+                    set: { if !$0 { tabRouter.clearNewUserRechargeIncentiveSheet() } }
+                ),
+                onChoosePayment: {
+                    tabRouter.clearNewUserRechargeIncentiveSheet()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) {
+                        tabRouter.requestPushOfferPaymentChannelFlow()
+                    }
+                },
+                dimBackgroundOpacity: 0.48,
+                showGradientBackdrop: false,
+                tapOutsideToDismiss: true
+            )
+            .environmentObject(appLanguage)
+            .transition(Self.pushOverlayTransition)
+            .zIndex(2000)
+        } else if let coinsCtx = tabRouter.coinsClaimSheetContext {
+            PushCoinsClaimSheet(
+                context: coinsCtx,
+                isPresented: Binding(
+                    get: { tabRouter.coinsClaimSheetContext != nil },
+                    set: { if !$0 { tabRouter.clearCoinsClaimSheet() } }
+                ),
+                dimBackgroundOpacity: 0.48,
+                showGradientBackdrop: false,
+                tapOutsideToDismiss: true
+            )
+            .environmentObject(auth)
+            .environmentObject(wallet)
+            .environmentObject(appLanguage)
+            .transition(Self.pushOverlayTransition)
+            .zIndex(2000)
+        }
+    }
+
+    private static let pushOverlayTransition: AnyTransition = .asymmetric(
+        insertion: .opacity.combined(with: .scale(scale: 0.92, anchor: .center)),
+        removal: .opacity.combined(with: .scale(scale: 0.94, anchor: .center))
+    )
 
     @ViewBuilder
     private func tabRoot<Content: View>(_ tab: AppTab, @ViewBuilder content: () -> Content) -> some View {

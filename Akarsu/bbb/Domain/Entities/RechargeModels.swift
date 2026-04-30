@@ -218,7 +218,7 @@ struct PayChannel: Identifiable, Codable {
         self.bonusPercentage = bonusPercentage
     }
 
-    /// 接口未返回 Apple 渠道时，「直接 Recharge」仍走内购（与 `IAPManager.createRechargeOrder` 的 `payChannelId: 1` 对齐）
+    /// 接口未返回 Apple 渠道时，「直接 Recharge」仍走内购（与 `PayChannel.fallbackApplePayForIAP` / IAP 默认渠道对齐）
     static let fallbackApplePayForIAP = PayChannel(id: 1, name: "Apple Pay", icon: nil, type: "apple_pay", bonusPercentage: nil)
     
     /// 是否为 Apple Pay（根据 type 字段，如 apple_pay）

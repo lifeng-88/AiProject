@@ -122,7 +122,8 @@ struct HomeTemplateDetailView: View {
                     fallbackImageURL: feed.imageURL ?? gridItem.imageURL,
                     width: w,
                     height: h,
-                    aspectFit: true
+                    aspectFit: true,
+                    hasTemplateVoice: feed.hasTemplateVoice
                 )
             } else {
                 HomeGridCardSharedMediaStack(
@@ -568,6 +569,7 @@ private struct HomeTemplateDetailT2T3PreviewHero: View {
     let width: CGFloat
     let height: CGFloat
     var aspectFit: Bool = true
+    var hasTemplateVoice: Bool = false
 
     @State private var showLoopingPlayback = false
 
@@ -575,7 +577,13 @@ private struct HomeTemplateDetailT2T3PreviewHero: View {
         ZStack {
             Color.black
             if showLoopingPlayback, let pv = playbackVideoURL {
-                HomeImmersiveVideoBackdrop(remoteURL: pv, width: width, height: height)
+                HomeImmersiveVideoBackdrop(
+                    remoteURL: pv,
+                    width: width,
+                    height: height,
+                    hasTemplateVoice: hasTemplateVoice,
+                    externalPlaybackMuted: nil
+                )
                     .id("\(itemId)-detail-loop-\(pv.absoluteString)")
                     .transition(.opacity)
             } else {

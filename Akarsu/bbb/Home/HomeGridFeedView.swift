@@ -289,6 +289,24 @@ struct HomeGridCardSharedMediaStack: View {
     var cellAspectRatio: CGFloat = 9 / 16
     /// 首页沉浸式列表可对 Dance（T2）/ Video（T3）关闭左下角金币；双列网格保持默认 `true`
     var showsBottomLeftBadge: Bool = true
+    /// `nil` 时栈内自持 `@State`；瀑布流 `HomeGridCard` 传入 `$state` 并把 `rendersVoiceToggleInStack` 设为 `false`，喇叭画在按钮外以免被整格点穿。
+    var voiceUnmuted: Binding<Bool>? = nil
+    var rendersVoiceToggleInStack: Bool = true
+
+    @State private var internalVoiceUnmuted = false
+
+    private var effectiveVoiceUnmuted: Bool {
+        voiceUnmuted?.wrappedValue ?? internalVoiceUnmuted
+    }
+
+    private var gridVideoPlaybackMuted: Bool {
+        !item.hasTemplateVoice || !effectiveVoiceUnmuted
+    }
+
+    private var showsVoiceToggleInStack: Bool {
+        guard rendersVoiceToggleInStack else { return false }
+        return item.shouldShowTemplateVoiceToggle(prefersTransAnimationCarousel: prefersTransAnimationCarousel)
+    }
 
     private var usesGridTransAnimationCarousel: Bool {
         prefersTransAnimationCarousel
@@ -310,7 +328,8 @@ struct HomeGridCardSharedMediaStack: View {
                                 interval: item.gridSlideshowInterval,
                                 width: w,
                                 height: h,
-                                imageAspectFit: false
+                                imageAspectFit: false,
+                                isVideoMuted: gridVideoPlaybackMuted
                             )
                         } else if let first = item.gridTransAnimationCarouselURLs.first {
                             if HomeImmersiveMediaURL.isVideo(first) {
@@ -340,6 +359,7 @@ struct HomeGridCardSharedMediaStack: View {
                         isPlaying: isPlaybackActive,
                         loops: loopsGridVideoWhilePlaying,
                         deferPlaybackUntilCached: deferSequentialVideoUntilCached,
+                        isMuted: gridVideoPlaybackMuted,
                         onFinished: { onPlaybackFinished?() }
                     )
                     /// `isPlaybackActive` 变化时重建，确保 `.task` 重新拉流（避免首帧停在 `guard isPlaying` 后永不补播）。
@@ -357,10 +377,27 @@ struct HomeGridCardSharedMediaStack: View {
         }
         .modifier(HomeGridCardMediaSizingModifier(fixedWidthHeight: fixedWidthHeight, cellAspectRatio: cellAspectRatio))
         .clipped()
+        .onChange(of: item.id) { _ in
+            if voiceUnmuted == nil {
+                internalVoiceUnmuted = false
+            }
+        }
         .overlay(alignment: .topLeading) {
             if let tag = item.topTag {
                 HomeGridTopTagView(tag: tag)
                     .padding(10)
+            }
+        }
+        .overlay(alignment: .topTrailing) {
+            if showsVoiceToggleInStack {
+                HomeTemplateVoiceToggleChip(isVoiceOn: effectiveVoiceUnmuted) {
+                    if let b = voiceUnmuted {
+                        b.wrappedValue.toggle()
+                    } else {
+                        internalVoiceUnmuted.toggle()
+                    }
+                }
+                .padding(10)
             }
         }
         .overlay(alignment: .bottomLeading) {
@@ -476,6 +513,7 @@ struct HomeGridCard: View {
 
     /// 与 cell 自身 `onAppear` 绑定，避免 LazyVGrid 首帧尚未写入父级 `visibleItemIds` 时不播
     @State private var isCellVisibleForPlayback = false
+    @State private var gridVoiceUnmuted = false
 
     private var effectiveGridPlaybackActive: Bool {
         let cellVisible = isCellVisibleForPlayback || isTrackedVisibleByGrid
@@ -500,7 +538,9 @@ struct HomeGridCard: View {
                     prefersTransAnimationCarousel: false,
                     deferSequentialVideoUntilCached: false,
                     fixedWidthHeight: nil,
-                    cellAspectRatio: cellAspectRatio
+                    cellAspectRatio: cellAspectRatio,
+                    voiceUnmuted: $gridVoiceUnmuted,
+                    rendersVoiceToggleInStack: false
                 )
             }
             .buttonStyle(.plain)
@@ -515,6 +555,17 @@ struct HomeGridCard: View {
                         .padding(8)
                 }
             }
+        }
+        .overlay(alignment: .topTrailing) {
+            if item.shouldShowTemplateVoiceToggle(prefersTransAnimationCarousel: false) {
+                HomeTemplateVoiceToggleChip(isVoiceOn: gridVoiceUnmuted) {
+                    gridVoiceUnmuted.toggle()
+                }
+                .padding(10)
+            }
+        }
+        .onChange(of: item.id) { _ in
+            gridVoiceUnmuted = false
         }
         /// 挂在整格上，避免 LazyVGrid + `Button` 嵌套时内层 `onAppear` 过晚，`isPlaybackActive` 长期为 false 导致视频不自动播。
         .onAppear { isCellVisibleForPlayback = true }

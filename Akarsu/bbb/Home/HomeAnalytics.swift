@@ -32,18 +32,22 @@ enum HomeTemplateClickAction: String {
 }
 
 enum HomeTemplateAnalytics {
-    static func logExposure(templateId: String, listSource: HomeFeedListSource) {
+    /// `templateType`：与 proto `template_type` 一致（1/2/3）；与 glam `HomeView` 埋点一致
+    static func logExposure(templateId: String, listSource: HomeFeedListSource, templateType: Int?) {
         guard !templateId.isEmpty else { return }
         Task {
             await BehaviorEventQueue.shared.enqueue(
                 eventType: "template_exposure",
                 templateId: templateId,
+                taskId: nil,
+                ts: nil,
+                templateType: templateType,
                 extra: Self.listExtra(listSource: listSource)
             )
         }
     }
 
-    static func logClick(templateId: String, listSource: HomeFeedListSource, action: HomeTemplateClickAction) {
+    static func logClick(templateId: String, listSource: HomeFeedListSource, action: HomeTemplateClickAction, templateType: Int?) {
         guard !templateId.isEmpty else { return }
         Task {
             var extra = Self.listExtra(listSource: listSource)
@@ -51,6 +55,9 @@ enum HomeTemplateAnalytics {
             await BehaviorEventQueue.shared.enqueue(
                 eventType: "template_click",
                 templateId: templateId,
+                taskId: nil,
+                ts: nil,
+                templateType: templateType,
                 extra: extra
             )
         }

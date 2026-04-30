@@ -7,17 +7,6 @@
 
 import AVFoundation
 import SwiftUI
-import UIKit
-
-/// iPad 需在 Info.plist 声明四种方向以满足多任务审核；界面仍只使用竖屏由 `supportedInterfaceOrientationsFor` 锁定。
-final class BBBApplicationDelegate: NSObject, UIApplicationDelegate {
-    func application(
-        _ application: UIApplication,
-        supportedInterfaceOrientationsFor window: UIWindow?
-    ) -> UIInterfaceOrientationMask {
-        .portrait
-    }
-}
 
 @main
 struct bbbApp: App {
@@ -33,8 +22,10 @@ struct bbbApp: App {
         BBBNavigationChrome.applyGlobalTint()
         /// 首页瀑布流 / 沉浸式静音视频：不配置时部分机型上 `AVPlayer` 可能无法自动起播或与其它音频抢占异常。
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [.mixWithOthers])
-            try AVAudioSession.sharedInstance().setActive(true)
+            /// 外放成片：`defaultToSpeaker` 避免部分机型在路由切换后仍走听筒；`mixWithOthers` 与其它 App 音频共存。
+            let session = AVAudioSession.sharedInstance()
+            try session.setCategory(.playback, mode: .moviePlayback, options: [.defaultToSpeaker, .mixWithOthers])
+            try session.setActive(true)
         } catch {}
     }
 

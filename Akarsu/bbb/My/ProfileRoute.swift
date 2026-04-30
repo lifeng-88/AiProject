@@ -13,6 +13,8 @@ enum ProfileRoute: Hashable {
     case userAgreement
     case privacy
     case feedback
+    /// 远程推送 `feedback_reply`：直达历史列表，可选滚动到 `feedback_id` 对应条目
+    case feedbackHistory(focusFeedbackId: Int64?)
 }
 
 struct ProfileRouteDestination: View {
@@ -35,6 +37,8 @@ struct ProfileRouteDestination: View {
             LegalH5DocumentView(url: ResBaseURL.privacyPolicyURL, titleLocalizationKey: "legal.privacy")
         case .feedback:
             FeedbackCenterView()
+        case .feedbackHistory(let focusId):
+            FeedbackHistoryView(focusFeedbackId: focusId)
         }
     }
 }

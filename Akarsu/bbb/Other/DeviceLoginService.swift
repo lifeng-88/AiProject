@@ -2,7 +2,7 @@
 //  DeviceLoginService.swift
 //  bbb
 //
-//  轻量设备登录：POST /v1/login，与 Data/AuthAPI 约定一致，不依赖 APIClient 目标成员。
+//  轻量设备登录：POST /v1/login，与 Data/AuthAPI 约定一致；基址与 `APIClient` 相同，使用 `APIBaseURL.effective`。
 //
 
 import Foundation
@@ -24,21 +24,6 @@ enum DeviceLoginError: LocalizedError {
     }
 }
 
-/// 与 `APIBaseURL.effective` 一致：Info.plist `APIBaseURL` > 默认
-enum LoginAPIConfig {
-    private static let infoKey = "APIBaseURL"
-
-    static var baseURL: String {
-        if let value = Bundle.main.object(forInfoDictionaryKey: infoKey) as? String {
-            let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
-            if !trimmed.isEmpty, !(trimmed.hasPrefix("$(") && trimmed.hasSuffix(")")) {
-                return trimmed.hasSuffix("/") ? String(trimmed.dropLast()) : trimmed
-            }
-        }
-        return "https://api.musefit.it.com"
-    }
-}
-
 struct DeviceLoginResponse: Decodable {
     let userid: String
     let accessToken: String
@@ -51,9 +36,13 @@ private struct ErrorPayload: Decodable {
 
 enum DeviceLoginService {
     /// 设备登录（devId 使用 identifierForVendor，缺失时 fallback UUID）
+    /// 请求体字段与 `AuthAPI.login` / glam 一致；优先走 `AuthRepository.login` + `AuthAPI`，本方法仅保留作独立 URLSession 调试路径。
     static func login(
         channel: String? = "ios",
-        source: String? = "app"
+        source: String? = "app",
+        afId: String? = nil,
+        adId: String? = nil,
+        afAttributionJson: String? = nil
     ) async -> Result<DeviceLoginResponse, DeviceLoginError> {
         let (devId, version) = await MainActor.run {
             let d = UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString
@@ -61,7 +50,7 @@ enum DeviceLoginService {
             return (d, v)
         }
 
-        guard let url = URL(string: LoginAPIConfig.baseURL + "/v1/login") else {
+        guard let url = URL(string: APIBaseURL.effective + "/v1/login") else {
             return .failure(.invalidURL)
         }
 
@@ -69,8 +58,11 @@ enum DeviceLoginService {
             "devId": devId,
             "version": version
         ]
-        if let channel { body["channel"] = channel }
         if let source { body["source"] = source }
+        if let channel { body["channel"] = channel }
+        if let afId, !afId.isEmpty { body["afId"] = afId }
+        if let adId, !adId.isEmpty { body["adId"] = adId }
+        if let afAttributionJson, !afAttributionJson.isEmpty { body["afAttributionJson"] = afAttributionJson }
 
         var request = URLRequest(url: url)
         request.httpMethod = "POST"

@@ -186,6 +186,10 @@ struct HomeFeedItem: Identifiable {
     let carouselTimelineURLs: [URL]
     /// T2/T3：接口 `afterVideo` 单独解析；`transAnimation` 为空时沉浸式单列循环**只**用此地址（不用 before 里误识别的视频）。
     let afterVideoURL: URL?
+    /// 与列表接口 `is_new` / `is_hot` 一致；沉浸式顶角标与网格同源
+    let topTag: HomeGridTopTag?
+    /// 接口 `hasAudio` / `has_audio` 等为真时模板成片可外放；默认静音，由 UI 喇叭切换。
+    let hasTemplateVoice: Bool
 
     /// 沉浸式背景配图序列（T2/T3 与 `slideshowURLs` 一致；trans 非空时已为 **转场配图优先**）
     var immersiveImageURLs: [URL] {
@@ -294,7 +298,9 @@ struct HomeFeedItem: Identifiable {
         consumedCoins: Int = 0,
         transAnimation: String = "",
         carouselTimelineURLs: [URL] = [],
-        afterVideoURL: URL? = nil
+        afterVideoURL: URL? = nil,
+        topTag: HomeGridTopTag? = nil,
+        hasTemplateVoice: Bool = false
     ) {
         self.id = id
         let resolved = slideshowURLs.isEmpty ? [imageURL].compactMap { $0 } : slideshowURLs
@@ -310,6 +316,8 @@ struct HomeFeedItem: Identifiable {
         self.transAnimation = transAnimation
         self.carouselTimelineURLs = carouselTimelineURLs
         self.afterVideoURL = afterVideoURL
+        self.topTag = topTag
+        self.hasTemplateVoice = hasTemplateVoice
     }
 
     /// 点赞状态在客户端集合中的键（区分 t1/t2/t3 下同 id 的极端情况）
@@ -329,11 +337,12 @@ struct HomeFeedItem: Identifiable {
             gridVideoTransAnimationImageURLs: slideshowURLs,
             gridCarouselTimelineURLs: carouselTimelineURLs,
             gridSlideshowInterval: slideshowInterval,
-            topTag: nil,
+            topTag: topTag,
             bottomLeft: .coins(consumedCoins),
             aspectRatio: 9 / 16,
             templateKind: templateKind,
-            transAnimation: transAnimation
+            transAnimation: transAnimation,
+            hasTemplateVoice: hasTemplateVoice
         )
     }
 
@@ -353,7 +362,8 @@ struct HomeFeedItem: Identifiable {
                 bottomLeft: chrome.bottomLeft,
                 aspectRatio: chrome.aspectRatio,
                 templateKind: m.templateKind,
-                transAnimation: m.transAnimation
+                transAnimation: m.transAnimation,
+                hasTemplateVoice: m.hasTemplateVoice
             )
         }
         return HomeGridCardItem(
@@ -369,7 +379,8 @@ struct HomeFeedItem: Identifiable {
             bottomLeft: chrome.bottomLeft,
             aspectRatio: chrome.aspectRatio,
             templateKind: .t1,
-            transAnimation: transAnimation
+            transAnimation: transAnimation,
+            hasTemplateVoice: hasTemplateVoice
         )
     }
 
@@ -441,6 +452,11 @@ extension HomeFeedItem {
         self.transAnimationVideoURL = nil
         self.carouselTimelineURLs = []
         self.afterVideoURL = nil
+        self.topTag = HomeGridTopTag.fromApiFlags(
+            isNew: imageTemplate.isNew?.isOn == true,
+            isHot: imageTemplate.isHot?.isOn == true
+        )
+        self.hasTemplateVoice = imageTemplate.hasAudio?.isOn == true
     }
 
     /// 由 `TemplateAPI.getVideoTemplates`（T3）条目构建；`transAnimation` 非空时路径 **trans 先于** `beforePics`。
@@ -476,6 +492,11 @@ extension HomeFeedItem {
         self.transAnimation = ta
         self.carouselTimelineURLs = urls
         self.afterVideoURL = afterResolved
+        self.topTag = HomeGridTopTag.fromApiFlags(
+            isNew: videoTemplate.isNew?.isOn == true,
+            isHot: videoTemplate.isHot?.isOn == true
+        )
+        self.hasTemplateVoice = videoTemplate.hasAudio?.isOn == true
     }
 
     /// 由 `TemplateAPI.getDancingTemplates`（T2）条目构建；`transAnimation` 非空时路径 **trans 先于** `beforePic`。
@@ -511,6 +532,11 @@ extension HomeFeedItem {
         self.transAnimation = ta
         self.carouselTimelineURLs = urls
         self.afterVideoURL = afterResolved
+        self.topTag = HomeGridTopTag.fromApiFlags(
+            isNew: dancingTemplate.isNew?.isOn == true,
+            isHot: dancingTemplate.isHot?.isOn == true
+        )
+        self.hasTemplateVoice = dancingTemplate.hasAudio?.isOn == true
     }
 
     fileprivate static func parseConsumedGold(_ s: String) -> Int {
@@ -525,6 +551,13 @@ enum HomeGridTopTag: Hashable {
     case free
     case hot
     case new
+
+    /// 仅根据接口 **`isNew` / `isHot`** 判定；二者均为真时优先展示 **`new`**。
+    static func fromApiFlags(isNew: Bool, isHot: Bool) -> HomeGridTopTag? {
+        if isNew { return .new }
+        if isHot { return .hot }
+        return nil
+    }
 }
 
 enum HomeGridBottomLeft: Hashable {
@@ -552,6 +585,8 @@ struct HomeGridCardItem: Identifiable, Hashable {
     /// 对应 `/v1/t1|t2|t3`，与 `HomeFeedItem` 一致
     let templateKind: TemplateResourceKind
     let transAnimation: String
+    /// 与 `HomeFeedItem.hasTemplateVoice` 同源
+    let hasTemplateVoice: Bool
     /// 宽:高；双列列表由 `HomeGridFeedView.cellAspectRatio` 统一控制，此项仅作数据保留或自定义用途。
     var aspectRatio: CGFloat = 9 / 16
 
@@ -635,7 +670,8 @@ struct HomeGridCardItem: Identifiable, Hashable {
         bottomLeft: HomeGridBottomLeft,
         aspectRatio: CGFloat = 9 / 16,
         templateKind: TemplateResourceKind = .t1,
-        transAnimation: String = ""
+        transAnimation: String = "",
+        hasTemplateVoice: Bool = false
     ) {
         self.id = id
         self.imageURL = imageURL
@@ -650,6 +686,7 @@ struct HomeGridCardItem: Identifiable, Hashable {
         self.aspectRatio = aspectRatio
         self.templateKind = templateKind
         self.transAnimation = transAnimation
+        self.hasTemplateVoice = hasTemplateVoice
     }
 
     /// 兼容旧调用点（`imageURL` 后紧跟 `topTag`，无 `previewVideoURL`）；与「喜欢」列表等一致。
@@ -676,6 +713,20 @@ struct HomeGridCardItem: Identifiable, Hashable {
             templateKind: templateKind,
             transAnimation: ""
         )
+    }
+}
+
+extension HomeGridCardItem {
+    /// 与 `HomeGridCardSharedMediaStack` 内 `usesGridTransAnimationCarousel` / 成片预览 URL 一致；`prefersTransAnimationCarousel` 必须与栈上传入值相同。
+    func shouldShowTemplateVoiceToggle(prefersTransAnimationCarousel: Bool) -> Bool {
+        guard hasTemplateVoice else { return false }
+        let usesCarousel = prefersTransAnimationCarousel
+            && (templateKind == .t2 || templateKind == .t3)
+            && gridTransAnimationCarouselURLs.count >= 2
+        if usesCarousel {
+            return gridTransAnimationCarouselURLs.contains { HomeImmersiveMediaURL.isVideo($0) }
+        }
+        return gridPlaybackVideoURL != nil
     }
 }
 
@@ -707,11 +758,15 @@ extension HomeGridCardItem {
         self.imageURL = urls.first
         self.gridSlideshowInterval = Self.gridSlideshowInterval(fromTransAnimation: imageTemplate.transAnimation)
         self.previewVideoURL = nil
-        self.topTag = nil
+        self.topTag = HomeGridTopTag.fromApiFlags(
+            isNew: imageTemplate.isNew?.isOn == true,
+            isHot: imageTemplate.isHot?.isOn == true
+        )
         self.bottomLeft = .coins(Self.parseGold(imageTemplate.consumedGold))
         self.aspectRatio = aspectRatio
         self.templateKind = .t1
         self.transAnimation = ta
+        self.hasTemplateVoice = imageTemplate.hasAudio?.isOn == true
     }
 
     /// 由 `TemplateAPI.getVideoTemplates`（T3）条目构建。**首页 cell 不加载 beforePic**，仅 `transAnimation` 片段 + 成片；与 `HomeFeedItem`（含 before 时间线）不同源。
@@ -743,7 +798,10 @@ extension HomeGridCardItem {
         self.imageURL = transSplit.images.first
             ?? HomeTemplateMediaURL.resolve(videoTemplate.afterSnapshot ?? "")
         self.gridSlideshowInterval = Self.gridSlideshowInterval(fromTransAnimation: videoTemplate.transAnimation)
-        self.topTag = nil
+        self.topTag = HomeGridTopTag.fromApiFlags(
+            isNew: videoTemplate.isNew?.isOn == true,
+            isHot: videoTemplate.isHot?.isOn == true
+        )
         self.bottomLeft = .coins(Self.parseGold(videoTemplate.consumedGold))
         self.aspectRatio = aspectRatio
         self.templateKind = .t3
@@ -754,6 +812,7 @@ extension HomeGridCardItem {
             transFieldFirstVideo: transFieldFirstVideo,
             mergedTimelineFirstVideo: feedMergedVideo
         )
+        self.hasTemplateVoice = videoTemplate.hasAudio?.isOn == true
     }
 
     /// 由 `TemplateAPI.getDancingTemplates`（T2）条目构建。**首页 cell 不加载 beforePic**，仅 `transAnimation` 片段 + 成片。
@@ -782,7 +841,10 @@ extension HomeGridCardItem {
         self.imageURL = transSplit.images.first
             ?? HomeTemplateMediaURL.resolve(dancingTemplate.afterSnapshot ?? "")
         self.gridSlideshowInterval = Self.gridSlideshowInterval(fromTransAnimation: dancingTemplate.transAnimation)
-        self.topTag = nil
+        self.topTag = HomeGridTopTag.fromApiFlags(
+            isNew: dancingTemplate.isNew?.isOn == true,
+            isHot: dancingTemplate.isHot?.isOn == true
+        )
         self.bottomLeft = .coins(Self.parseGold(dancingTemplate.consumedGold))
         self.aspectRatio = aspectRatio
         self.templateKind = .t2
@@ -793,6 +855,7 @@ extension HomeGridCardItem {
             transFieldFirstVideo: transFieldFirstVideo,
             mergedTimelineFirstVideo: feedMergedVideo
         )
+        self.hasTemplateVoice = dancingTemplate.hasAudio?.isOn == true
     }
 
     /// 与 `HomeFeedItem` 中 `slideshowInterval(fromTransAnimation:)` 规则一致

@@ -7,6 +7,54 @@
 
 import Foundation
 
+/// 解码列表项 **`isNew` / `isHot`**（JSON 常见 `isNew`/`isHot` 或 `is_new`/`is_hot`，配合 `convertFromSnakeCase`）：值为布尔或 0/1 数字；缺省或解析失败视为关。
+struct TemplateListTruthyFlag: Codable, Hashable {
+    var isOn: Bool
+
+    init(isOn: Bool) {
+        self.isOn = isOn
+    }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.singleValueContainer()
+        if c.decodeNil() {
+            isOn = false
+            return
+        }
+        if let b = try? c.decode(Bool.self) {
+            isOn = b
+            return
+        }
+        if let i = try? c.decode(Int32.self) {
+            isOn = i != 0
+            return
+        }
+        if let i = try? c.decode(Int.self) {
+            isOn = i != 0
+            return
+        }
+        if let i = try? c.decode(Int64.self) {
+            isOn = i != 0
+            return
+        }
+        if let d = try? c.decode(Double.self) {
+            isOn = d != 0
+            return
+        }
+        if let s = try? c.decode(String.self) {
+            let t = s.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+            isOn = ["1", "true", "yes", "y", "on"].contains(t)
+            return
+        }
+        isOn = false
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var c = encoder.singleValueContainer()
+        try c.encode(isOn)
+    }
+}
+
 /// 模板标签
 struct TemplateTab: Identifiable, Codable {
     let id: Int32
@@ -67,6 +115,25 @@ enum TemplateResourceKind: String, Codable {
 
     /// 创建任务接口 `taskType`（与 `favoriteTargetType` 一致：1 T1 / 2 T2 / 3 T3）
     var apiTaskType: Int32 { favoriteTargetType }
+
+    /// 与 proto `BehaviorEventItem.template_type` / 统计批量上报一致：1=t1，2=t2，3=t3
+    var behaviorEventTemplateType: Int {
+        switch self {
+        case .t1: return 1
+        case .t2: return 2
+        case .t3: return 3
+        }
+    }
+}
+
+/// 模板行为埋点：`template_type`（与 glam `TemplateBehaviorReport` 一致）
+enum TemplateBehaviorReport {
+    static func templateType(for template: Any?) -> Int? {
+        if template is ImageTemplate { return TemplateResourceKind.t1.behaviorEventTemplateType }
+        if template is DancingTemplate { return TemplateResourceKind.t2.behaviorEventTemplateType }
+        if template is VideoTemplate { return TemplateResourceKind.t3.behaviorEventTemplateType }
+        return nil
+    }
 }
 
 /// 基础模板协议
@@ -88,7 +155,13 @@ struct ImageTemplate: TemplateProtocol, Codable {
     let changeBackground: Bool
     let transAnimation: String
     let consumedGold: String
-    
+    /// 首页角标：为真则展示 **NEW**（与 `isHot` 同时为真时 UI 优先 **NEW**）
+    let isNew: TemplateListTruthyFlag?
+    /// 首页角标：为真则展示 **HOT**
+    let isHot: TemplateListTruthyFlag?
+    /// 成片/预览是否带声轨（接口 `hasAudio` / `has_audio`，见 `TemplateListTruthyFlag`）；客户端默认静音，由用户点喇叭开启。
+    let hasAudio: TemplateListTruthyFlag?
+
     enum CodingKeys: String, CodingKey {
         case id = "tid"
         case title
@@ -98,6 +171,9 @@ struct ImageTemplate: TemplateProtocol, Codable {
         case changeBackground
         case transAnimation
         case consumedGold
+        case isNew
+        case isHot
+        case hasAudio
     }
 }
 
@@ -120,7 +196,13 @@ struct DancingTemplate: TemplateProtocol, Codable {
     let changeBackground: Bool
     let afterSnapshot: String? // 详情接口可能不返回此字段
     let consumedGold: String
-    
+    /// 首页角标 **NEW**（与 `isHot` 同时为真时优先 NEW）
+    let isNew: TemplateListTruthyFlag?
+    /// 首页角标 **HOT**
+    let isHot: TemplateListTruthyFlag?
+    /// 成片是否带声轨（`hasAudio` / `has_audio`）；默认静音，用户点喇叭开声。
+    let hasAudio: TemplateListTruthyFlag?
+
     enum CodingKeys: String, CodingKey {
         case id = "tid"
         case title
@@ -131,6 +213,9 @@ struct DancingTemplate: TemplateProtocol, Codable {
         case changeBackground
         case afterSnapshot
         case consumedGold
+        case isNew
+        case isHot
+        case hasAudio
     }
 }
 
@@ -157,7 +242,13 @@ struct VideoTemplate: TemplateProtocol, Codable {
     let afterSnapshot: String? // 详情接口可能不返回此字段
     let consumedGold: String // 480p 价格
     let consumedGold720: String? // 720p 价格（可选，列表接口可能不返回）
-    
+    /// 首页角标 **NEW**（与 `isHot` 同时为真时优先 NEW）
+    let isNew: TemplateListTruthyFlag?
+    /// 首页角标 **HOT**
+    let isHot: TemplateListTruthyFlag?
+    /// 成片是否带声轨（`hasAudio` / `has_audio`）；默认静音，用户点喇叭开声。
+    let hasAudio: TemplateListTruthyFlag?
+
     enum CodingKeys: String, CodingKey {
         case id = "tid"
         case title
@@ -172,6 +263,9 @@ struct VideoTemplate: TemplateProtocol, Codable {
         case afterSnapshot
         case consumedGold
         case consumedGold720
+        case isNew
+        case isHot
+        case hasAudio
     }
 }
 

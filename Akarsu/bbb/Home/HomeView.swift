@@ -43,6 +43,8 @@ struct HomeView: View {
     @State private var gridAnchorLikeKey: String?
     /// `TemplateRepository.getCatalogs` → `/v1/catalogs`；仅 **Video** 展示二级分类条并用 `catalogId` 请求；Image / Dance 无子分类
     @State private var homeCatalogs: [Catalog] = []
+    /// `TemplateRepository.getTemplateTabs` → `/v1/template_tabs`；一级 TAB 文案（与 `titleId` 1/2/3 对应 Image / Video / Dance）
+    @State private var homeTemplateTabs: [TemplateTab] = []
     @AppStorage("homeLayoutHintSeen") private var layoutHintSeen = false
     /// 大列表滑过第 8 条后的「切小列表」引导，仅展示一次
     @AppStorage("homeGridSwitchGuideSeen") private var homeGridSwitchGuideSeen = false
@@ -129,17 +131,32 @@ struct HomeView: View {
     @State private var danceListHasMore = true
     @State private var danceListLoadingMore = false
 
+    /// 一级 TAB：优先 `/v1/template_tabs` 返回的 `title`（按 `titleId` 1=Image、2=Video、3=Dance）；缺项或为空时回退 String Catalog
     private var primaryTabs: [String] {
         [
-            AppLanguageStore.localized("home.primary.image"),
-            AppLanguageStore.localized("home.primary.video"),
-            AppLanguageStore.localized("home.primary.dance")
+            primaryTabTitleFromAPI(titleId: 1, fallbackKey: "home.primary.image"),
+            primaryTabTitleFromAPI(titleId: 2, fallbackKey: "home.primary.video"),
+            primaryTabTitleFromAPI(titleId: 3, fallbackKey: "home.primary.dance")
         ]
     }
 
-    /// 与 `TemplateAPI` 注释一致：Video titleId=2，Dance titleId=3
-    private let videoTitleId: Int32 = 2
-    private let danceTitleId: Int32 = 3
+    private func primaryTabTitleFromAPI(titleId: Int32, fallbackKey: String) -> String {
+        if let t = homeTemplateTabs.first(where: { $0.id == titleId }) {
+            let s = t.title.trimmingCharacters(in: .whitespacesAndNewlines)
+            if !s.isEmpty { return s }
+        }
+        return AppLanguageStore.localized(fallbackKey)
+    }
+
+    /// T3 列表 `titleId`：与接口约定 **2 = Video**；未拉到 tabs 前仍用 2
+    private var homeVideoTitleId: Int32 {
+        homeTemplateTabs.first(where: { $0.id == 2 })?.id ?? 2
+    }
+
+    /// T2 列表 `titleId`：与接口约定 **3 = Dance**
+    private var homeDanceTitleId: Int32 {
+        homeTemplateTabs.first(where: { $0.id == 3 })?.id ?? 3
+    }
 
     /// 仅 Video（`primaryTab == 1`）使用子分类：`selectedTag == 0` 为「全部」；`1...n` 对应 `homeCatalogs[selectedTag - 1]`。Image / Dance 始终为 `nil`（不按分类过滤）
     private var selectedCatalog: Catalog? {
@@ -244,6 +261,44 @@ struct HomeView: View {
         return parts.allSatisfy { t.contains($0) }
     }
 
+    /// 远程推送 `template_category`：`template_tab_id` 1/2/3 → 首页 Image/Video/Dance；Video 时按 `catalog_id` 选二级分类。
+    private func applyPendingHomeTemplateCategoryFromPush() {
+        guard let push = tabRouter.pendingHomeTemplateCategoryPush else { return }
+
+        let titleId = push.templateTabId
+        let newPrimary: Int
+        switch titleId {
+        case 1: newPrimary = 0
+        case 2: newPrimary = 1
+        case 3: newPrimary = 2
+        default: newPrimary = 0
+        }
+
+        DispatchQueue.main.async {
+            if self.primaryTab != newPrimary {
+                self.primaryTab = newPrimary
+            }
+
+            if newPrimary == 1 {
+                if let cid = push.catalogId {
+                    if self.homeCatalogs.isEmpty { return }
+                    if let idx = self.homeCatalogs.firstIndex(where: { $0.id == cid }) {
+                        self.selectedTag = idx + 1
+                    } else {
+                        self.selectedTag = 0
+                    }
+                    self.tabRouter.clearPendingHomeTemplateCategoryPush()
+                } else {
+                    self.selectedTag = 0
+                    self.tabRouter.clearPendingHomeTemplateCategoryPush()
+                }
+            } else {
+                self.selectedTag = 0
+                self.tabRouter.clearPendingHomeTemplateCategoryPush()
+            }
+        }
+    }
+
     private var gridShowSkeleton: Bool {
         currentLoading && gridItems.isEmpty
     }
@@ -332,6 +387,7 @@ struct HomeView: View {
             await withTaskGroup(of: Void.self) { group in
                 group.addTask { _ = await AuthRepository.shared.getCurrentAuthInfo() }
                 group.addTask { await loadHomeCatalogs(forceRefresh: false) }
+                group.addTask { await loadHomeTemplateTabs() }
             }
         }
         .task(id: primaryTab) {
@@ -393,7 +449,7 @@ struct HomeView: View {
             let dedup = "i-\(homeAnalyticsScopeTag())-\(item.likeStateKey)"
             guard !homeAnalyticsImmersiveExposedKeys.contains(dedup) else { return }
             homeAnalyticsImmersiveExposedKeys.insert(dedup)
-            HomeTemplateAnalytics.logExposure(templateId: item.id, listSource: .immersive)
+            HomeTemplateAnalytics.logExposure(templateId: item.id, listSource: .immersive, templateType: item.templateKind.behaviorEventTemplateType)
         }
         .onChange(of: taskPolling.isGenerationInProgress) { isActive in
             if isActive {
@@ -421,6 +477,7 @@ struct HomeView: View {
         .onChange(of: appLanguage.preference) { _ in
             Task {
                 await loadHomeCatalogs(forceRefresh: true)
+                await loadHomeTemplateTabs()
                 await loadTemplatesForPrimaryTab(onlyIfEmpty: false)
             }
         }
@@ -464,6 +521,12 @@ struct HomeView: View {
             DispatchQueue.main.async {
                 tabRouter.homeNavigationStackCount = count
             }
+        }
+        .onChange(of: tabRouter.pendingHomeTemplateCategoryPush) { _ in
+            applyPendingHomeTemplateCategoryFromPush()
+        }
+        .onChange(of: homeCatalogs.map(\.id)) { _ in
+            applyPendingHomeTemplateCategoryFromPush()
         }
         .bbbRefreshOnAppLanguage()
     }
@@ -646,14 +709,14 @@ struct HomeView: View {
                         onToggleLike: { item in toggleLike(for: item) },
                         onSelectItem: { item in
                             lightHaptic()
-                            HomeTemplateAnalytics.logClick(templateId: item.id, listSource: .grid, action: .openDetail)
+                            HomeTemplateAnalytics.logClick(templateId: item.id, listSource: .grid, action: .openDetail, templateType: item.templateKind.behaviorEventTemplateType)
                             gridDetailItem = item
                         },
                         onTemplateExpose: { item in
                             let dedup = "g-\(homeAnalyticsScopeTag())-\(item.likeStateKey)"
                             guard !homeAnalyticsGridExposedKeys.contains(dedup) else { return }
                             homeAnalyticsGridExposedKeys.insert(dedup)
-                            HomeTemplateAnalytics.logExposure(templateId: item.id, listSource: .grid)
+                            HomeTemplateAnalytics.logExposure(templateId: item.id, listSource: .grid, templateType: item.templateKind.behaviorEventTemplateType)
                         },
                         onRefresh: { await refreshFeed() },
                         hasMore: homeHasMore,
@@ -805,7 +868,21 @@ struct HomeView: View {
 
     private func refreshFeed() async {
         await loadHomeCatalogs(forceRefresh: true)
+        await loadHomeTemplateTabs()
         await loadTemplatesForPrimaryTab(onlyIfEmpty: false)
+    }
+
+    private func loadHomeTemplateTabs() async {
+        let locale = appLanguage.templateAPICatalogLocaleIdentifier
+        let result = await TemplateRepository.shared.getTemplateTabs(locale: locale)
+        await MainActor.run {
+            switch result {
+            case .success(let list):
+                homeTemplateTabs = list
+            case .failure:
+                break
+            }
+        }
     }
 
     private func loadHomeCatalogs(forceRefresh: Bool) async {
@@ -948,7 +1025,7 @@ struct HomeView: View {
                 pageNum: page,
                 pageSize: homeListPageSize,
                 catalogId: cid,
-                titleId: videoTitleId
+                titleId: homeVideoTitleId
             )
 
             await MainActor.run {
@@ -987,7 +1064,7 @@ struct HomeView: View {
                 pageNum: page,
                 pageSize: homeListPageSize,
                 catalogId: startCid,
-                titleId: videoTitleId
+                titleId: homeVideoTitleId
             )
 
             await MainActor.run {
@@ -1041,7 +1118,7 @@ struct HomeView: View {
         let result = await TemplateRepository.shared.getDancingTemplates(
             pageNum: page,
             pageSize: homeListPageSize,
-            titleId: danceTitleId
+            titleId: homeDanceTitleId
         )
 
         await MainActor.run {
@@ -1146,7 +1223,7 @@ struct HomeView: View {
 
     private func handlePrimaryGenerate(_ item: HomeFeedItem, clickListSource: HomeFeedListSource = .other, prefilledImage: UIImage? = nil) {
         lightHaptic()
-        HomeTemplateAnalytics.logClick(templateId: item.id, listSource: clickListSource, action: .primaryGenerate)
+        HomeTemplateAnalytics.logClick(templateId: item.id, listSource: clickListSource, action: .primaryGenerate, templateType: item.templateKind.behaviorEventTemplateType)
         guard auth.isAuthenticated else {
             showNeedLoginAlert = true
             return

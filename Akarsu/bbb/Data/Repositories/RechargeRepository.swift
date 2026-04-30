@@ -43,20 +43,28 @@ actor RechargeRepository: RechargeRepositoryProtocol {
         return result.map { $0.sessionPayload }
     }
     
-    func createRechargeOrder(userId: String, packageId: Int32, payChannelId: Int32, transactionId: String?) async -> Result<String, AppError> {
-        let result = await RechargeAPI.createRechargeOrder(userId: userId, packageId: packageId, payChannelId: payChannelId, transactionId: transactionId)
+    func createRechargeOrder(userId: String, packageId: Int32, payChannelId: Int32, offerId: String?) async -> Result<String, AppError> {
+        let result = await RechargeAPI.createRechargeOrder(
+            userId: userId,
+            packageId: packageId,
+            payChannelId: payChannelId,
+            returnUrl: nil,
+            pageUrl: nil,
+            payload: nil,
+            offerId: offerId
+        )
         return result.map { $0.orderId }
     }
     
-    func createRedirectRechargeOrder(userId: String, packageId: Int32, payChannelId: Int32, pageUrl: String, payload: String) async -> Result<CreateRechargeOrderResponse, AppError> {
+    func createRedirectRechargeOrder(userId: String, packageId: Int32, payChannelId: Int32, pageUrl: String, payload: String, offerId: String?) async -> Result<CreateRechargeOrderResponse, AppError> {
         return await RechargeAPI.createRechargeOrder(
             userId: userId,
             packageId: packageId,
             payChannelId: payChannelId,
-            transactionId: nil,
             returnUrl: nil,
             pageUrl: pageUrl,
-            payload: payload
+            payload: payload,
+            offerId: offerId
         )
     }
     
