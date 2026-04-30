@@ -1,0 +1,20 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeUploadTipsOverlay.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Upload Tips"
+      },
+      {
+        "comment": "",
+        "key": "Don't show again"
+      },
+      {
+        "comment": "",
+        "key": "Confirm & Upload"
+      }
+    ]
+  },
+  "version": 1
+}

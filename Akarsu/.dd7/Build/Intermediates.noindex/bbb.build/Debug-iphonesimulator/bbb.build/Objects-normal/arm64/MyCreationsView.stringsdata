@@ -1,0 +1,44 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/My/MyCreationsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "My Creations"
+      },
+      {
+        "comment": "",
+        "key": "重试"
+      },
+      {
+        "comment": "",
+        "key": "关闭"
+      },
+      {
+        "comment": "",
+        "key": "No creations yet"
+      },
+      {
+        "comment": "",
+        "key": "Your AI works will appear here."
+      },
+      {
+        "comment": "",
+        "key": "%lld coins"
+      },
+      {
+        "comment": "",
+        "key": "Creation"
+      },
+      {
+        "comment": "",
+        "key": "生成失败，请重试或联系客服。"
+      },
+      {
+        "comment": "",
+        "key": "任务处理中，请稍后在列表中查看。"
+      }
+    ]
+  },
+  "version": 1
+}

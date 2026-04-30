@@ -1,0 +1,24 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeChrome.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Coin balance %@"
+      },
+      {
+        "comment": "",
+        "key": "Opens recharge"
+      },
+      {
+        "comment": "",
+        "key": "Generation in progress..."
+      },
+      {
+        "comment": "",
+        "key": "Processing your AI masterpiece"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Entities/FeedbackModels.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "feedback.category.ai_generation_quality"
+      },
+      {
+        "comment": "",
+        "key": "feedback.category.poor_generation_result"
+      },
+      {
+        "comment": "",
+        "key": "feedback.category.payment_issue"
+      },
+      {
+        "comment": "",
+        "key": "feedback.category.app_bug"
+      },
+      {
+        "comment": "",
+        "key": "feedback.category.other"
+      }
+    ]
+  },
+  "version": 1
+}

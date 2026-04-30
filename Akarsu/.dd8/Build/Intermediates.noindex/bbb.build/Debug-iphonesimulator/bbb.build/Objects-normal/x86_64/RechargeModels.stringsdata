@@ -1,0 +1,24 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Entities/RechargeModels.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "recharge.status.pending"
+      },
+      {
+        "comment": "",
+        "key": "recharge.status.recharging"
+      },
+      {
+        "comment": "",
+        "key": "recharge.status.success"
+      },
+      {
+        "comment": "",
+        "key": "recharge.status.failed"
+      }
+    ]
+  },
+  "version": 1
+}

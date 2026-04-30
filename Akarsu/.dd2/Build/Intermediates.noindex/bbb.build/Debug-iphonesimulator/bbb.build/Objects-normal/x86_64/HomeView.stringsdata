@@ -1,0 +1,44 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "收藏失败"
+      },
+      {
+        "comment": "",
+        "key": "需要登录"
+      },
+      {
+        "comment": "",
+        "key": "金币不足"
+      },
+      {
+        "comment": "",
+        "key": "确定"
+      },
+      {
+        "comment": "",
+        "key": "去我的"
+      },
+      {
+        "comment": "",
+        "key": "取消"
+      },
+      {
+        "comment": "",
+        "key": "登录后即可使用模板生成。"
+      },
+      {
+        "comment": "",
+        "key": "去充值"
+      },
+      {
+        "comment": "",
+        "key": "当前模板所需金币超过账户余额，请先充值。"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/LegalAndSupportViews.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "User Agreement"
+      },
+      {
+        "comment": "",
+        "key": "Privacy Policy"
+      },
+      {
+        "comment": "",
+        "key": "Feedback"
+      },
+      {
+        "comment": "",
+        "key": "Tell us what went wrong or what you’d like to see next."
+      },
+      {
+        "comment": "",
+        "key": "Submit"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,20 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/PhotoValidationService.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "photo_validation.error.no_person"
+      },
+      {
+        "comment": "",
+        "key": "photo_validation.error.multiple_people"
+      },
+      {
+        "comment": "",
+        "key": "photo_validation.error.face_offset_or_obscured"
+      }
+    ]
+  },
+  "version": 1
+}

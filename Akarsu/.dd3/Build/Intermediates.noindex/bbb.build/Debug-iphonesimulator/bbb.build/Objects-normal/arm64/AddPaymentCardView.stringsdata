@@ -1,0 +1,40 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/AddPaymentCardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Add card"
+      },
+      {
+        "comment": "",
+        "key": "Card details are encrypted end-to-end."
+      },
+      {
+        "comment": "",
+        "key": "0000 0000 0000 0000"
+      },
+      {
+        "comment": "",
+        "key": "MM/YY"
+      },
+      {
+        "comment": "",
+        "key": "•••"
+      },
+      {
+        "comment": "",
+        "key": "FULL NAME"
+      },
+      {
+        "comment": "",
+        "key": "Save card"
+      },
+      {
+        "comment": "",
+        "key": "Cancel"
+      }
+    ]
+  },
+  "version": 1
+}

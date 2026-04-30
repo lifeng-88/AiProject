@@ -1,0 +1,828 @@
+{
+  "" : {
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbb-master.dia",
+    "emit-module-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbb-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbb-master-emit-module.dia",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbb-master.swiftdeps"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/bbbApp.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/ContentView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ContentView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ContentView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ContentView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ContentView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ContentView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ContentView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/LocalStorage/ImageCacheManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ImageCacheManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ImageCacheManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ImageCacheManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ImageCacheManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ImageCacheManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ImageCacheManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ImageCacheManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ImageCacheManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/LocalStorage/KeychainManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/KeychainManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/KeychainManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/KeychainManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/KeychainManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/KeychainManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/KeychainManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/KeychainManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/KeychainManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/LocalStorage/PoorGenerationFeedbackStore.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PoorGenerationFeedbackStore.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PoorGenerationFeedbackStore.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PoorGenerationFeedbackStore.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PoorGenerationFeedbackStore.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PoorGenerationFeedbackStore.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PoorGenerationFeedbackStore.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PoorGenerationFeedbackStore.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PoorGenerationFeedbackStore~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/LocalStorage/RechargeDataCacheManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeDataCacheManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeDataCacheManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeDataCacheManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeDataCacheManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeDataCacheManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeDataCacheManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeDataCacheManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeDataCacheManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/LocalStorage/RedirectPaymentInfoStore.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RedirectPaymentInfoStore.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RedirectPaymentInfoStore.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RedirectPaymentInfoStore.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RedirectPaymentInfoStore.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RedirectPaymentInfoStore.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RedirectPaymentInfoStore.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RedirectPaymentInfoStore.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RedirectPaymentInfoStore~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/LocalStorage/TemplateDataCacheManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateDataCacheManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateDataCacheManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateDataCacheManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateDataCacheManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateDataCacheManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateDataCacheManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateDataCacheManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateDataCacheManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/LocalStorage/UserDefaultsManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserDefaultsManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserDefaultsManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserDefaultsManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserDefaultsManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserDefaultsManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserDefaultsManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserDefaultsManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserDefaultsManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/LocalStorage/VideoCacheManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/VideoCacheManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/VideoCacheManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/VideoCacheManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/VideoCacheManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/VideoCacheManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/VideoCacheManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/VideoCacheManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/VideoCacheManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/APIBaseURL.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIBaseURL.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIBaseURL.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIBaseURL.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIBaseURL.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIBaseURL.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIBaseURL.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIBaseURL.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIBaseURL~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/APIClient.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIClient.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIClient.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIClient.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIClient.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIClient.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIClient.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIClient.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/APIClient~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/AuthAPI.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthAPI.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthAPI.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthAPI.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthAPI.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthAPI.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthAPI.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthAPI.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthAPI~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/FavoritesAPI.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoritesAPI.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoritesAPI.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoritesAPI.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoritesAPI.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoritesAPI.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoritesAPI.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoritesAPI.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoritesAPI~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/FeedbackAPI.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackAPI.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackAPI.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackAPI.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackAPI.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackAPI.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackAPI.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackAPI.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackAPI~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/RechargeAPI.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAPI.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAPI.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAPI.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAPI.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAPI.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAPI.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAPI.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAPI~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/ResBaseURL.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ResBaseURL.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ResBaseURL.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ResBaseURL.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ResBaseURL.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ResBaseURL.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ResBaseURL.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ResBaseURL.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ResBaseURL~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/StatisticsAPI.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/StatisticsAPI.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/StatisticsAPI.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/StatisticsAPI.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/StatisticsAPI.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/StatisticsAPI.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/StatisticsAPI.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/StatisticsAPI.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/StatisticsAPI~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/TaskAPI.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskAPI.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskAPI.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskAPI.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskAPI.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskAPI.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskAPI.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskAPI.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskAPI~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/TemplateAPI.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateAPI.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateAPI.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateAPI.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateAPI.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateAPI.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateAPI.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateAPI.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateAPI~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/UploadAPI.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadAPI.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadAPI.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadAPI.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadAPI.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadAPI.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadAPI.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadAPI.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadAPI~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Network/UserAPI.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserAPI.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserAPI.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserAPI.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserAPI.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserAPI.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserAPI.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserAPI.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserAPI~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Repositories/AuthRepository.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepository.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepository.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepository.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepository.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepository.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepository.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepository.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepository~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Repositories/RechargeRepository.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepository.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepository.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepository.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepository.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepository.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepository.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepository.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepository~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Repositories/TemplateRepository.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepository.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepository.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepository.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepository.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepository.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepository.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepository.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepository~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Data/Repositories/UploadRepository.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadRepository.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadRepository.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadRepository.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadRepository.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadRepository.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadRepository.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadRepository.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UploadRepository~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Entities/AuthModels.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthModels.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthModels.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthModels.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthModels.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthModels.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthModels.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthModels.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthModels~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Entities/FavoriteModels.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoriteModels.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoriteModels.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoriteModels.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoriteModels.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoriteModels.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoriteModels.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoriteModels.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FavoriteModels~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Entities/FeedbackModels.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackModels.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackModels.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackModels.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackModels.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackModels.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackModels.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackModels.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/FeedbackModels~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Entities/RechargeModels.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeModels.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeModels.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeModels.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeModels.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeModels.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeModels.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeModels.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeModels~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Entities/TemplateModels.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateModels.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateModels.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateModels.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateModels.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateModels.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateModels.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateModels.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateModels~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Repositories/AuthRepositoryProtocol.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepositoryProtocol.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepositoryProtocol.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepositoryProtocol.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepositoryProtocol.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepositoryProtocol.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepositoryProtocol.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepositoryProtocol.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthRepositoryProtocol~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Repositories/RechargeRepositoryProtocol.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepositoryProtocol.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepositoryProtocol.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepositoryProtocol.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepositoryProtocol.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepositoryProtocol.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepositoryProtocol.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepositoryProtocol.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRepositoryProtocol~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Repositories/TemplateRepositoryProtocol.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepositoryProtocol.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepositoryProtocol.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepositoryProtocol.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepositoryProtocol.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepositoryProtocol.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepositoryProtocol.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepositoryProtocol.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TemplateRepositoryProtocol~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/AFConfigManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFConfigManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFConfigManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFConfigManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFConfigManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFConfigManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFConfigManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFConfigManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFConfigManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/AFService.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFService.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFService.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFService.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFService.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFService.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFService.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFService.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AFService~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/BehaviorEventQueue.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BehaviorEventQueue.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BehaviorEventQueue.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BehaviorEventQueue.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BehaviorEventQueue.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BehaviorEventQueue.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BehaviorEventQueue.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BehaviorEventQueue.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BehaviorEventQueue~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/IAPManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/IAPOrderMapping.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPOrderMapping.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPOrderMapping.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPOrderMapping.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPOrderMapping.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPOrderMapping.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPOrderMapping.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPOrderMapping.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IAPOrderMapping~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/IPLocationManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IPLocationManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IPLocationManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IPLocationManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IPLocationManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IPLocationManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IPLocationManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IPLocationManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/IPLocationManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/PackageManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PackageManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PackageManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PackageManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PackageManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PackageManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PackageManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PackageManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PackageManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/PayChannelManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PayChannelManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PayChannelManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PayChannelManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PayChannelManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PayChannelManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PayChannelManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PayChannelManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PayChannelManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/PaymentCardManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PaymentCardManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PaymentCardManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PaymentCardManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PaymentCardManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PaymentCardManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PaymentCardManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PaymentCardManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PaymentCardManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/PhotoValidationService.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PhotoValidationService.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PhotoValidationService.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PhotoValidationService.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PhotoValidationService.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PhotoValidationService.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PhotoValidationService.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PhotoValidationService.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PhotoValidationService~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/TaskPollingService.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskPollingService.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskPollingService.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskPollingService.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskPollingService.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskPollingService.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskPollingService.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskPollingService.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TaskPollingService~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/WebSocketService.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/WebSocketService.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/WebSocketService.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/WebSocketService.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/WebSocketService.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/WebSocketService.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/WebSocketService.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/WebSocketService.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/WebSocketService~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeCachedImage.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeCachedImage.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeCachedImage.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeCachedImage.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeCachedImage.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeCachedImage.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeCachedImage.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeCachedImage.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeCachedImage~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeChrome.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeChrome.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeChrome.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeChrome.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeChrome.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeChrome.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeChrome.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeChrome.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeChrome~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeGridFeedView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeImmersiveFeedView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeImmersiveVideoBackdrop.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveVideoBackdrop.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveVideoBackdrop.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveVideoBackdrop.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveVideoBackdrop.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveVideoBackdrop.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveVideoBackdrop.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveVideoBackdrop.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveVideoBackdrop~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeModels.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeModels.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeModels.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeModels.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeModels.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeModels.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeModels.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeModels.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeModels~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeTemplateGenerationSheet.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeTemplateGenerationSheet.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeTemplateGenerationSheet.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeTemplateGenerationSheet.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeTemplateGenerationSheet.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeTemplateGenerationSheet.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeTemplateGenerationSheet.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeTemplateGenerationSheet.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeTemplateGenerationSheet~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeUploadTipsOverlay.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeUploadTipsOverlay.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeUploadTipsOverlay.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeUploadTipsOverlay.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeUploadTipsOverlay.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeUploadTipsOverlay.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeUploadTipsOverlay.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeUploadTipsOverlay.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeUploadTipsOverlay~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/My/LoginView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/My/MyCreationsView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyCreationsView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyCreationsView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyCreationsView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyCreationsView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyCreationsView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyCreationsView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyCreationsView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyCreationsView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/My/MyProfileView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/My/ProfileFeatureViews.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/My/ProfileRoute.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileRoute.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileRoute.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileRoute.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileRoute.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileRoute.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileRoute.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileRoute.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileRoute~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/AppConfig.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppConfig.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppConfig.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppConfig.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppConfig.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppConfig.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppConfig.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppConfig.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppConfig~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/AppError.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppError.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppError.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppError.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppError.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppError.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppError.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppError.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppError~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/AppTabRouter.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTabRouter.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTabRouter.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTabRouter.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTabRouter.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTabRouter.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTabRouter.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTabRouter.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTabRouter~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/AppTheme.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTheme.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTheme.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTheme.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTheme.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTheme.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTheme.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTheme.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AppTheme~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/AuthSessionStore.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthSessionStore.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthSessionStore.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthSessionStore.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthSessionStore.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthSessionStore.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthSessionStore.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthSessionStore.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AuthSessionStore~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/BalanceManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BalanceManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BalanceManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BalanceManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BalanceManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BalanceManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BalanceManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BalanceManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/BalanceManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/DeviceLoginService.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceLoginService.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceLoginService.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceLoginService.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceLoginService.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceLoginService.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceLoginService.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceLoginService.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceLoginService~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/DeviceManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/DeviceManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/LegalAndSupportViews.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/MainTabView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/PushManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PushManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PushManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PushManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PushManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PushManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PushManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PushManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/PushManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/RechargeAFLogger.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAFLogger.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAFLogger.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAFLogger.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAFLogger.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAFLogger.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAFLogger.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAFLogger.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeAFLogger~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/TokenManager.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TokenManager.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TokenManager.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TokenManager.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TokenManager.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TokenManager.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TokenManager.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TokenManager.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/TokenManager~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/UserWalletStore.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserWalletStore.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserWalletStore.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserWalletStore.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserWalletStore.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserWalletStore.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserWalletStore.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserWalletStore.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/UserWalletStore~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/AddPaymentCardView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/CreditCardManagementView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargePaymentSelectionView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargeRecordListView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargeResultOverlay.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargeUIModels.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeUIModels.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeUIModels.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeUIModels.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeUIModels.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeUIModels.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeUIModels.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeUIModels.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeUIModels~partial.swiftmodule"
+  },
+  "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargeView.swift" : {
+    "const-values" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.swiftconstvalues",
+    "dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.d",
+    "diagnostics" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.dia",
+    "index-unit-output-path" : "/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.o",
+    "llvm-bc" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.bc",
+    "object" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.o",
+    "swift-dependencies" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.swiftdeps",
+    "swiftmodule" : "/Users/mac/Desktop/CursorXcode/bbb/.dd6/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView~partial.swiftmodule"
+  }
+}

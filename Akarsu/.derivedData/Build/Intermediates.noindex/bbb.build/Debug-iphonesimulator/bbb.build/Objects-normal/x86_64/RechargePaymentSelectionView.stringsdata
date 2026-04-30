@@ -1,0 +1,48 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargePaymentSelectionView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Payment"
+      },
+      {
+        "comment": "",
+        "key": "PAYMENT METHOD"
+      },
+      {
+        "comment": "",
+        "key": "Add new card"
+      },
+      {
+        "comment": "",
+        "key": "Pay %@"
+      },
+      {
+        "comment": "",
+        "key": "Encrypted checkout · Apple Pay ready in production"
+      },
+      {
+        "comment": "",
+        "key": "Close"
+      },
+      {
+        "comment": "",
+        "key": "Order summary"
+      },
+      {
+        "comment": "",
+        "key": "%lld + %lld bonus"
+      },
+      {
+        "comment": "",
+        "key": "%lld coins"
+      },
+      {
+        "comment": "",
+        "key": "Default"
+      }
+    ]
+  },
+  "version": 1
+}

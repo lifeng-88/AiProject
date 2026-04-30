@@ -1,0 +1,28 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/My/MyProfileView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Profile"
+      },
+      {
+        "comment": "",
+        "key": "ID copied"
+      },
+      {
+        "comment": "",
+        "key": "Opens recharge tab"
+      },
+      {
+        "comment": "",
+        "key": "Top up"
+      },
+      {
+        "comment": "",
+        "key": "ID: %@"
+      }
+    ]
+  },
+  "version": 1
+}

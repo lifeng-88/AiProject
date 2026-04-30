@@ -1,0 +1,40 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Recharge"
+      },
+      {
+        "comment": "",
+        "key": "RECHARGE"
+      },
+      {
+        "comment": "",
+        "key": "暂无可用套餐"
+      },
+      {
+        "comment": "",
+        "key": "Recharge Now"
+      },
+      {
+        "comment": "",
+        "key": "100% Secure & Private Billing"
+      },
+      {
+        "comment": "",
+        "key": "重试"
+      },
+      {
+        "comment": "",
+        "key": "%lld + %lld BONUS"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      }
+    ]
+  },
+  "version": 1
+}

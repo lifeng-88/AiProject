@@ -1,0 +1,24 @@
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/My/LoginView.swift":
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.d"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.swiftconstvalues"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.o"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.swiftdeps"
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LoginView.dia"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/AddPaymentCardView.swift":
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.d"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.o"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.swiftconstvalues"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.swiftdeps"
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/AddPaymentCardView.dia"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/CreditCardManagementView.swift":
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.swiftconstvalues"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.swiftdeps"
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.dia"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.o"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/CreditCardManagementView.d"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/My/MyProfileView.swift":
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.dia"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.swiftconstvalues"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.o"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.swiftdeps"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MyProfileView.d"

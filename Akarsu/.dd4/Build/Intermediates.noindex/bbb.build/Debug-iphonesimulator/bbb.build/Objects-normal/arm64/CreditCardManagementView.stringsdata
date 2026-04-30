@@ -1,0 +1,32 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/CreditCardManagementView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Payment methods"
+      },
+      {
+        "comment": "",
+        "key": "No saved cards"
+      },
+      {
+        "comment": "",
+        "key": "Add a card to check out faster."
+      },
+      {
+        "comment": "",
+        "key": "Add card"
+      },
+      {
+        "comment": "",
+        "key": "Default"
+      },
+      {
+        "comment": "",
+        "key": "Set as default"
+      }
+    ]
+  },
+  "version": 1
+}

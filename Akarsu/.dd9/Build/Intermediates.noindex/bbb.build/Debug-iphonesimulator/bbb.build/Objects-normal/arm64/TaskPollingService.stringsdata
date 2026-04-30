@@ -1,0 +1,24 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Domain/Services/TaskPollingService.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "task.error.failed_default"
+      },
+      {
+        "comment": "",
+        "key": "task.error.result_missing"
+      },
+      {
+        "comment": "",
+        "key": "task.error.network_with_reason"
+      },
+      {
+        "comment": "",
+        "key": "task.error.server_default"
+      }
+    ]
+  },
+  "version": 1
+}

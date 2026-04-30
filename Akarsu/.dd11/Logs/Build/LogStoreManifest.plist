@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>A5B063FA-0F0C-4A7F-A12F-C5C6A0DEB09B</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A5B063FA-0F0C-4A7F-A12F-C5C6A0DEB09B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>bbb project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>bbb</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project bbb with scheme bbb</string>
+			<key>timeStartedRecording</key>
+			<real>796834129.09766901</real>
+			<key>timeStoppedRecording</key>
+			<real>796834136.86561203</real>
+			<key>title</key>
+			<string>Building project bbb with scheme bbb</string>
+			<key>uniqueIdentifier</key>
+			<string>A5B063FA-0F0C-4A7F-A12F-C5C6A0DEB09B</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

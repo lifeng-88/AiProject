@@ -1,0 +1,24 @@
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargePaymentSelectionView.swift":
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.dia"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.o"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.swiftconstvalues"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.d"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargePaymentSelectionView.swiftdeps"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargeResultOverlay.swift":
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.swiftconstvalues"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.d"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.o"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.swiftdeps"
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeResultOverlay.dia"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargeRecordListView.swift":
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.swiftdeps"
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.dia"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.o"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.d"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeRecordListView.swiftconstvalues"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargeView.swift":
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.o"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.d"
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.dia"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.swiftconstvalues"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/RechargeView.swiftdeps"

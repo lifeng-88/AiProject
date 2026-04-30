@@ -1,0 +1,56 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargePaymentSelectionView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Payment"
+      },
+      {
+        "comment": "",
+        "key": "PAYMENT METHOD"
+      },
+      {
+        "comment": "",
+        "key": "实际支付通过 Apple 应用内购买完成，以下卡片信息仅作账户展示。"
+      },
+      {
+        "comment": "",
+        "key": "Add new card"
+      },
+      {
+        "comment": "",
+        "key": "Processing…"
+      },
+      {
+        "comment": "",
+        "key": "Pay %@"
+      },
+      {
+        "comment": "",
+        "key": "App Store 加密结算 · 与套餐绑定的消耗型 IAP"
+      },
+      {
+        "comment": "",
+        "key": "Close"
+      },
+      {
+        "comment": "",
+        "key": "Order summary"
+      },
+      {
+        "comment": "",
+        "key": "%lld + %lld bonus"
+      },
+      {
+        "comment": "",
+        "key": "%lld coins"
+      },
+      {
+        "comment": "",
+        "key": "Default"
+      }
+    ]
+  },
+  "version": 1
+}

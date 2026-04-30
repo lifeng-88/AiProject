@@ -1,0 +1,44 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeTemplateGenerationSheet.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "无法继续"
+      },
+      {
+        "comment": "",
+        "key": "处理中…"
+      },
+      {
+        "comment": "",
+        "key": "上传一张含清晰人像的照片，将使用当前模板生成。"
+      },
+      {
+        "comment": "",
+        "key": "消耗"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      },
+      {
+        "comment": "",
+        "key": "选择照片"
+      },
+      {
+        "comment": "",
+        "key": "开始生成"
+      },
+      {
+        "comment": "",
+        "key": "关闭"
+      },
+      {
+        "comment": "",
+        "key": "确定"
+      }
+    ]
+  },
+  "version": 1
+}

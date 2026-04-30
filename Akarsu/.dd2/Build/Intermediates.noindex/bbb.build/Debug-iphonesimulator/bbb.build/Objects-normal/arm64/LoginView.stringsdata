@@ -1,0 +1,32 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/My/LoginView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "API: %@"
+      },
+      {
+        "comment": "",
+        "key": "bbb"
+      },
+      {
+        "comment": "",
+        "key": "Sign in to sync your account & coins"
+      },
+      {
+        "comment": "",
+        "key": "Uses your device ID. No password."
+      },
+      {
+        "comment": "",
+        "key": "Signing in…"
+      },
+      {
+        "comment": "",
+        "key": "Sign in with device"
+      }
+    ]
+  },
+  "version": 1
+}

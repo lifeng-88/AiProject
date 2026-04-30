@@ -1,0 +1,16 @@
+# Bundler / Fastlane（建议将 Gemfile.lock 纳入版本库以固定 fastlane 版本）
+/.bundle/
+/vendor/bundle/
+
+# Fastlane 本地产物与敏感信息
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+fastlane/.env
+.env
+*.mobileprovision
+*.p12
+
+# 构建输出（与 CI / Fastlane 共用 DerivedData 目录名）
+/DerivedData/

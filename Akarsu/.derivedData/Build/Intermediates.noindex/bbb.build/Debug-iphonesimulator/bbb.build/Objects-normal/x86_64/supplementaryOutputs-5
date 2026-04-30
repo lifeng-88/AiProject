@@ -1,0 +1,24 @@
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeGridFeedView.swift":
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.dia"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.swiftdeps"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.o"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.d"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeGridFeedView.swiftconstvalues"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeImmersiveFeedView.swift":
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.swiftconstvalues"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.swiftdeps"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.o"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.d"
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeImmersiveFeedView.dia"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/MainTabView.swift":
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.d"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.swiftdeps"
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.dia"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.swiftconstvalues"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/MainTabView.o"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Home/HomeSideDrawer.swift":
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeSideDrawer.dia"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeSideDrawer.d"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeSideDrawer.o"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeSideDrawer.swiftconstvalues"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/HomeSideDrawer.swiftdeps"

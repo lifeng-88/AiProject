@@ -1,0 +1,24 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Rechange/RechargeRecordListView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Recharge Record"
+      },
+      {
+        "comment": "",
+        "key": "No recharge records"
+      },
+      {
+        "comment": "",
+        "key": "Transactions will appear here after purchase."
+      },
+      {
+        "comment": "",
+        "key": "+%lld"
+      }
+    ]
+  },
+  "version": 1
+}

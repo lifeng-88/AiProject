@@ -1,0 +1,18 @@
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/bbbApp.swift":
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.d"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.o"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.swiftconstvalues"
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.dia"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/bbbApp.swiftdeps"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/My/ProfileFeatureViews.swift":
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.dia"
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.swiftconstvalues"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.o"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.swiftdeps"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/ProfileFeatureViews.d"
+"/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/LegalAndSupportViews.swift":
+  const-values: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.swiftconstvalues"
+  diagnostics: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.dia"
+  dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.d"
+  swift-dependencies: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.swiftdeps"
+  object: "/Users/mac/Desktop/CursorXcode/bbb/.derivedData/Build/Intermediates.noindex/bbb.build/Debug-iphonesimulator/bbb.build/Objects-normal/x86_64/LegalAndSupportViews.o"

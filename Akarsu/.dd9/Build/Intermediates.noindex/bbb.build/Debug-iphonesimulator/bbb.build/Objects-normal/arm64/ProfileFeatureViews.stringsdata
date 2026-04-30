@@ -1,0 +1,44 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/My/ProfileFeatureViews.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "My Likes"
+      },
+      {
+        "comment": "",
+        "key": "No likes yet"
+      },
+      {
+        "comment": "",
+        "key": "Tap the heart on templates you love."
+      },
+      {
+        "comment": "",
+        "key": "Settings"
+      },
+      {
+        "comment": "",
+        "key": "Product updates"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Language"
+      },
+      {
+        "comment": "",
+        "key": "English"
+      },
+      {
+        "comment": "",
+        "key": "Build"
+      }
+    ]
+  },
+  "version": 1
+}

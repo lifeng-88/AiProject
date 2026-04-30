@@ -1,0 +1,84 @@
+{
+  "source": "/Users/mac/Desktop/CursorXcode/bbb/bbb/Other/LegalAndSupportViews.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "User Agreement"
+      },
+      {
+        "comment": "",
+        "key": "Privacy Policy"
+      },
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "How can we improve?"
+      },
+      {
+        "comment": "",
+        "key": "Your insights drive the future of our digital curation engine."
+      },
+      {
+        "comment": "",
+        "key": "VIEW FEEDBACK HISTORY  >"
+      },
+      {
+        "comment": "",
+        "key": "Feedback"
+      },
+      {
+        "comment": "",
+        "key": "OK"
+      },
+      {
+        "comment": "",
+        "key": "%lld / %lld"
+      },
+      {
+        "comment": "",
+        "key": "Please describe your issue in detail..."
+      },
+      {
+        "comment": "",
+        "key": "Submitting…"
+      },
+      {
+        "comment": "",
+        "key": "Submit Feedback"
+      },
+      {
+        "comment": "",
+        "key": "No feedback submitted yet."
+      },
+      {
+        "comment": "",
+        "key": "Feedback History"
+      },
+      {
+        "comment": "",
+        "key": "ACTIVE SUBMISSIONS"
+      },
+      {
+        "comment": "",
+        "key": "%lld Total"
+      },
+      {
+        "comment": "",
+        "key": "ID: #%lld"
+      },
+      {
+        "comment": "",
+        "key": "OFFICIAL REPLY"
+      },
+      {
+        "comment": "",
+        "key": "END OF HISTORY"
+      }
+    ]
+  },
+  "version": 1
+}
