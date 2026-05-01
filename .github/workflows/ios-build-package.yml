@@ -20,15 +20,20 @@ concurrency:
 jobs:
   package:
     runs-on: macos-26
-    timeout-minutes: 90
+    timeout-minutes: 120
+    env:
+      COMPILER_INDEX_STORE_ENABLE: NO
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Select Xcode (26 SDK)
-        uses: maxim-lobanov/setup-xcode@v1
+      - name: Cache DerivedData
+        uses: actions/cache@v4
         with:
-          xcode-version: latest-stable
+          path: Akarsu/build/DerivedData
+          key: ${{ runner.os }}-dd-pkg-${{ hashFiles('Akarsu/bbb/**/*.swift', 'Akarsu/bbb.xcodeproj/project.pbxproj', 'Akarsu/bbb/**/*.xcassets/**') }}
+          restore-keys: |
+            ${{ runner.os }}-dd-pkg-
 
       - name: Build Release (unsigned)
         run: |
@@ -41,7 +46,7 @@ jobs:
             -derivedDataPath "$PWD/build/DerivedData" \
             CODE_SIGN_IDENTITY="-" \
             CODE_SIGNING_ALLOWED=NO \
-            clean build
+            build
 
       - name: Zip app bundle
         run: |
