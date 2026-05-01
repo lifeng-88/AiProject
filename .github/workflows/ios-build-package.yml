@@ -1,0 +1,58 @@
+# 无需证书：云端 Release 构建并上传 .app 的 zip（与本地「未签名真机构建」一致）。
+# 若要可上传 App Store 的 IPA，请使用工作流「iOS App Store (CI)」并配置 Secrets。
+name: iOS Build Package
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: Akarsu
+
+concurrency:
+  group: ios-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  package:
+    runs-on: macos-26
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode (26 SDK)
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Build Release (unsigned)
+        run: |
+          set -euo pipefail
+          mkdir -p build/DerivedData build/out
+          xcodebuild -project bbb.xcodeproj \
+            -scheme bbb \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -derivedDataPath "$PWD/build/DerivedData" \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_ALLOWED=NO \
+            clean build
+
+      - name: Zip app bundle
+        run: |
+          set -euo pipefail
+          APP="$PWD/build/DerivedData/Build/Products/Release-iphoneos/bbb.app"
+          test -d "$APP"
+          ditto -c -k --sequesterRsrc --keepParent "$APP" "$PWD/build/out/bbb-Release-iphoneos-unsigned.zip"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bbb-Release-iphoneos-unsigned
+          path: Akarsu/build/out/bbb-Release-iphoneos-unsigned.zip
+          if-no-files-found: error

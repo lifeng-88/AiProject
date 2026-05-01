@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>96A45BA9-74FC-4926-8A42-71803F83E8FD</key>
+		<key>5B3EC447-AB6B-4226-8465-1A1098579B3E</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>96A45BA9-74FC-4926-8A42-71803F83E8FD.xcactivitylog</string>
+			<string>5B3EC447-AB6B-4226-8465-1A1098579B3E.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,13 +40,55 @@
 			<key>signature</key>
 			<string>Building project bbb with scheme bbb and configuration Release</string>
 			<key>timeStartedRecording</key>
-			<real>799290662.09003997</real>
+			<real>799322185.63395798</real>
 			<key>timeStoppedRecording</key>
-			<real>799290949.27631903</real>
+			<real>799322443.94012105</real>
 			<key>title</key>
 			<string>Building project bbb with scheme bbb and configuration Release</string>
 			<key>uniqueIdentifier</key>
-			<string>96A45BA9-74FC-4926-8A42-71803F83E8FD</string>
+			<string>5B3EC447-AB6B-4226-8465-1A1098579B3E</string>
+		</dict>
+		<key>ECA3A821-7107-4366-ADDF-75BDC98A066F</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ECA3A821-7107-4366-ADDF-75BDC98A066F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>bbb project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>bbb</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Cleaning project bbb with scheme bbb and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>799322184.14831495</real>
+			<key>timeStoppedRecording</key>
+			<real>799322185.48778296</real>
+			<key>title</key>
+			<string>Cleaning project bbb with scheme bbb and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>ECA3A821-7107-4366-ADDF-75BDC98A066F</string>
 		</dict>
 	</dict>
 </dict>
