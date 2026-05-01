@@ -1,0 +1,60 @@
+{
+  "source": "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/PushMarketingSheets.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "关闭"
+      },
+      {
+        "comment": "",
+        "key": "专属回归礼"
+      },
+      {
+        "comment": "",
+        "key": "欢迎回来！领取下方金币奖励，已存入活动资格。"
+      },
+      {
+        "comment": "",
+        "key": "限时活动 · 先到先得"
+      },
+      {
+        "comment": "",
+        "key": "%@ 金币"
+      },
+      {
+        "comment": "",
+        "key": "$"
+      },
+      {
+        "comment": "",
+        "key": "立即领取"
+      },
+      {
+        "comment": "",
+        "key": "领取中…"
+      },
+      {
+        "comment": "",
+        "key": "限时加赠"
+      },
+      {
+        "comment": "",
+        "key": "基础金币"
+      },
+      {
+        "comment": "",
+        "key": "额外赠送"
+      },
+      {
+        "comment": "",
+        "key": "+%@"
+      },
+      {
+        "comment": "",
+        "key": "选择支付"
+      }
+    ]
+  },
+  "version": 1
+}

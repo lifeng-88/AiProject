@@ -1,0 +1,20 @@
+{
+  "source": "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Rechange/AddPaymentCardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "0000 0000 0000 0000"
+      },
+      {
+        "comment": "",
+        "key": "MM/YY"
+      },
+      {
+        "comment": "",
+        "key": "•••"
+      }
+    ]
+  },
+  "version": 1
+}

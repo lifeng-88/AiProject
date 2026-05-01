@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>add_card.field.cvv</key>
+	<string>CVV</string>
+	<key>add_card.field.expires</key>
+	<string>EXPIRE</string>
+	<key>add_card.field.name</key>
+	<string>NOM SUR LA CARTE</string>
+	<key>add_card.field.number</key>
+	<string>NUMÉRO DE CARTE</string>
+	<key>add_card.footer</key>
+	<string>Les détails de la carte sont cryptés de bout en bout.</string>
+	<key>add_card.placeholder.name</key>
+	<string>NOM ET PRÉNOM</string>
+	<key>add_card.save</key>
+	<string>Enregistrer la carte</string>
+	<key>add_card.title</key>
+	<string>Ajouter une carte</string>
+	<key>cards.add</key>
+	<string>Ajouter une carte</string>
+	<key>cards.add_hint</key>
+	<string>Ajoutez une carte pour payer plus rapidement.</string>
+	<key>cards.default</key>
+	<string>Défaut</string>
+	<key>cards.empty</key>
+	<string>Aucune carte enregistrée</string>
+	<key>cards.set_default</key>
+	<string>Définir par défaut</string>
+	<key>cards.title</key>
+	<string>Modes de paiement</string>
+	<key>common.back</key>
+	<string>Dos</string>
+	<key>common.cancel</key>
+	<string>Annuler</string>
+	<key>common.close</key>
+	<string>Fermer</string>
+	<key>common.confirm</key>
+	<string>Confirmer</string>
+	<key>common.ok</key>
+	<string>D'ACCORD</string>
+	<key>common.retry</key>
+	<string>Réessayer</string>
+	<key>common.tip</key>
+	<string>Avis</string>
+	<key>creation.meta.created</key>
+	<string>Créé</string>
+	<key>creation.meta.status</key>
+	<string>Statut</string>
+	<key>creation.meta.template_id</key>
+	<string>ID du modèle</string>
+	<key>creation.meta.type</key>
+	<string>Taper</string>
+	<key>feedback.active_submissions</key>
+	<string>SOUMISSIONS ACTIVES</string>
+	<key>feedback.alert.failed_title</key>
+	<string>Échec de la soumission</string>
+	<key>feedback.alert.submitted_body</key>
+	<string>Merci pour vos commentaires. Nous l'examinerons dès que possible.</string>
+	<key>feedback.alert.submitted_title</key>
+	<string>Soumis</string>
+	<key>feedback.body</key>
+	<string>Vos idées déterminent l’avenir de notre moteur de curation numérique.</string>
+	<key>feedback.category.ai_generation_quality</key>
+	<string>Qualité de la génération IA</string>
+	<key>feedback.category.app_bug</key>
+	<string>Bogue de l'application</string>
+	<key>feedback.category.other</key>
+	<string>Autre</string>
+	<key>feedback.category.payment_issue</key>
+	<string>Problème de paiement</string>
+	<key>feedback.category.poor_generation_result</key>
+	<string>Mauvais résultat</string>
+	<key>feedback.char_count</key>
+	<string>%lld / %lld</string>
+	<key>feedback.end_history</key>
+	<string>FIN DE L'HISTOIRE</string>
+	<key>feedback.history.empty</key>
+	<string>Aucun commentaire soumis pour l'instant.</string>
+	<key>feedback.history.id_format</key>
+	<string>IDENTIFIANT: #%@</string>
+	<key>feedback.history.title</key>
+	<string>Historique des commentaires</string>
+	<key>feedback.history.total_format</key>
+	<string>%lld Total</string>
+	<key>feedback.nav_title</key>
+	<string>Retour</string>
+	<key>feedback.official_reply</key>
+	<string>RÉPONSE OFFICIELLE</string>
+	<key>feedback.placeholder</key>
+	<string>Veuillez décrire votre problème en détail…</string>
+	<key>feedback.section.category</key>
+	<string>Sélection de catégorie</string>
+	<key>feedback.section.description</key>
+	<string>Description du problème</string>
+	<key>feedback.status.in_progress</key>
+	<string>EN COURS</string>
+	<key>feedback.status.pending</key>
+	<string>EN ATTENTE</string>
+	<key>feedback.status.resolved</key>
+	<string>RÉSOLU</string>
+	<key>feedback.submit</key>
+	<string>Envoyer des commentaires</string>
+	<key>feedback.submitting</key>
+	<string>Soumission…</string>
+	<key>feedback.subtitle</key>
+	<string>Comment pouvons-nous nous améliorer ?</string>
+	<key>feedback.view_history</key>
+	<string>VOIR L'HISTOIRE DES RÉTROACTIONS &gt;</string>
+	<key>generation.success.download</key>
+	<string>TÉLÉCHARGER</string>
+	<key>generation.success.feedback</key>
+	<string>RETOUR</string>
+	<key>generation.success.reroll</key>
+	<string>REROLLER</string>
+	<key>generation.success.reroll.template_load_failed</key>
+	<string>Impossible de charger ce modèle. Réessaie plus tard.</string>
+	<key>generation.success.save.denied.message</key>
+	<string>Autorisez l’accès aux photos dans Réglages pour enregistrer votre création.</string>
+	<key>generation.success.save.denied.title</key>
+	<string>Enregistrement impossible</string>
+	<key>generation.success.save.error.invalid_image</key>
+	<string>Données d’image invalides.</string>
+	<key>generation.success.save.error.title</key>
+	<string>Échec de l’enregistrement</string>
+	<key>generation.success.save.ok.message</key>
+	<string>Votre création a été enregistrée dans Photos.</string>
+	<key>generation.success.save.ok.title</key>
+	<string>Enregistré</string>
+	<key>generation.success.title</key>
+	<string>SUCCÈS DE LA GÉNÉRATION</string>
+	<key>generation.success.type_label</key>
+	<string>TAPER</string>
+	<key>grid.tag.free</key>
+	<string>GRATUIT</string>
+	<key>grid.tag.hot</key>
+	<string>CHAUD</string>
+	<key>grid.tag.new</key>
+	<string>NOUVEAU</string>
+	<key>home.action.create_video</key>
+	<string>Créer une vidéo</string>
+	<key>home.action.start_dance</key>
+	<string>Commencer la danse</string>
+	<key>home.action.swap_face</key>
+	<string>Changer de visage</string>
+	<key>home.alert.cancel</key>
+	<string>Annuler</string>
+	<key>home.alert.coins.go_recharge</key>
+	<string>Recharger</string>
+	<key>home.alert.coins.message</key>
+	<string>Ce modèle coûte plus de pièces que votre solde. Veuillez d'abord recharger.</string>
+	<key>home.alert.coins.title</key>
+	<string>Pièces insuffisantes</string>
+	<key>home.alert.login.go_my</key>
+	<string>Aller à Mon</string>
+	<key>home.alert.login.message</key>
+	<string>Connectez-vous pour utiliser des modèles pour la génération.</string>
+	<key>home.alert.login.title</key>
+	<string>Connexion requise</string>
+	<key>home.chrome.auth_toggle_login</key>
+	<string>Connexion</string>
+	<key>home.chrome.auth_toggle_logout</key>
+	<string>Déconnexion</string>
+	<key>home.chrome.coin_a11y</key>
+	<string>Solde des pièces %@</string>
+	<key>home.chrome.layout.feed</key>
+	<string>Passer au flux</string>
+	<key>home.chrome.layout.grid</key>
+	<string>Passer à la grille</string>
+	<key>home.chrome.recharge_hint</key>
+	<string>Ouvre la recharge</string>
+	<key>home.favorite.add_a11y</key>
+	<string>Préféré</string>
+	<key>home.favorite.remove_a11y</key>
+	<string>Supprimer le favori</string>
+	<key>home.generating.dismiss_a11y</key>
+	<string>Rejeter</string>
+	<key>home.generating.fullscreen.back</key>
+	<string>Retour à la maison</string>
+	<key>home.generating.fullscreen.footer</key>
+	<string>La génération continue en arrière-plan. De retour à la maison, vérifiez la capsule au-dessus de la barre d'onglets pour connaître la progression.</string>
+	<key>home.generating.fullscreen.headline_queue</key>
+	<string>En file d'attente</string>
+	<key>home.generating.fullscreen.headline_run</key>
+	<string>Générateur</string>
+	<key>home.generating.pending</key>
+	<string>Dans la file d'attente, veuillez patienter…</string>
+	<key>home.generating.pending_wait</key>
+	<string>Dans la file d'attente · est. attendre %@</string>
+	<key>home.generating.running</key>
+	<string>Générateur…</string>
+	<key>home.generating.running_percent</key>
+	<string>Génération · %lld%% terminée</string>
+	<key>home.generating.title</key>
+	<string>Génération en cours</string>
+	<key>home.generating.view_my</key>
+	<string>Ouvrez Mon pour voir les progrès</string>
+	<key>home.generating.view_my_hint</key>
+	<string>Passe à l'onglet Mon</string>
+	<key>home.grid.load_more</key>
+	<string>Faites défiler vers le haut pour en savoir plus</string>
+	<key>home.grid.no_more</key>
+	<string>Plus d'articles</string>
+	<key>home.immersive.all_loaded</key>
+	<string>Tout le contenu chargé</string>
+	<key>home.immersive.loading_more</key>
+	<string>Chargement plus…</string>
+	<key>home.layout.hint</key>
+	<string>Appuyez sur l'icône de menu en haut à gauche pour basculer entre le flux et la grille.</string>
+	<key>home.layout.switch_guide</key>
+	<string>APPUYEZ POUR CHANGER DE DISPOSITION</string>
+	<key>home.primary.dance</key>
+	<string>Danse</string>
+	<key>home.primary.image</key>
+	<string>Image</string>
+	<key>home.primary.video</key>
+	<string>Vidéo</string>
+	<key>home.scroll.more</key>
+	<string>DÉFILEZ POUR EN SAVOIR PLUS</string>
+	<key>home.tag.all</key>
+	<string>Tous</string>
+	<key>home.template.cta.dance</key>
+	<string>Commencez à danser</string>
+	<key>home.template.cta.image</key>
+	<string>Utilisez ce modèle</string>
+	<key>home.template.cta.video</key>
+	<string>Générer une vidéo</string>
+	<key>home.template.detail.generate</key>
+	<string>GÉNÉRER</string>
+	<key>home.template.detail.preview_title</key>
+	<string>Aperçu</string>
+	<key>home.template.detail.unavailable</key>
+	<string>Ce modèle n'est pas disponible</string>
+	<key>home.template.nav.generate</key>
+	<string>Générer</string>
+	<key>home.template.photo_permission.message</key>
+	<string>Autorisez l’accès aux photos dans Réglages pour choisir une image dans votre bibliothèque.</string>
+	<key>home.template.photo_permission.open_settings</key>
+	<string>Ouvrir Réglages</string>
+	<key>home.template.photo_permission.title</key>
+	<string>Accès aux photos requis</string>
+	<key>home.template.sheet.body</key>
+	<string>Téléchargez une photo portrait claire. La génération utilise le modèle actuel.</string>
+	<key>home.template.sheet.cannot</key>
+	<string>Impossible de continuer</string>
+	<key>home.template.sheet.cost</key>
+	<string>Coût</string>
+	<key>home.template.sheet.pick_photo</key>
+	<string>Choisissez une photo</string>
+	<key>home.template.sheet.start</key>
+	<string>Commencer</string>
+	<key>home.template.toolbar</key>
+	<string>MODÈLE</string>
+	<key>home.template.voice.a11y_off</key>
+	<string>Son coupé. Appuyez pour activer le son.</string>
+	<key>home.template.voice.a11y_on</key>
+	<string>Son activé. Appuyez pour couper le son.</string>
+	<key>home.toast.no_more</key>
+	<string>Plus d'articles</string>
+	<key>home.upload.bad</key>
+	<string>MAUVAIS</string>
+	<key>home.upload.bad_caption</key>
+	<string>Flou, vue latérale, cheveux foncés/chapeau</string>
+	<key>home.upload.confirm</key>
+	<string>Confirmer et télécharger</string>
+	<key>home.upload.dont_show</key>
+	<string>Ne plus montrer</string>
+	<key>home.upload.good</key>
+	<string>BIEN</string>
+	<key>home.upload.good_caption</key>
+	<string>Clair, orienté vers l'avant, haute luminosité</string>
+	<key>home.upload.title</key>
+	<string>Télécharger des conseils</string>
+	<key>iap.payments_disabled</key>
+	<string>Les achats intégrés sont désactivés. Activez-les dans Paramètres → Temps d'écran → Restrictions de contenu et de confidentialité → Achats intégrés, ou vérifiez votre identifiant Apple.</string>
+	<key>iap.store_purchases_label</key>
+	<string>Achat intégré via l'App Store</string>
+	<key>kind.all</key>
+	<string>Tous</string>
+	<key>kind.dance</key>
+	<string>Danse</string>
+	<key>kind.image</key>
+	<string>Image</string>
+	<key>kind.media</key>
+	<string>MÉDIAS</string>
+	<key>kind.video</key>
+	<string>Vidéo</string>
+	<key>language.option.chinese</key>
+	<string>Chinois traditionnel</string>
+	<key>language.option.chinese.subtitle</key>
+	<string>Utilisez toujours le chinois traditionnel dans cette application</string>
+	<key>language.option.english</key>
+	<string>Anglais</string>
+	<key>language.option.english.subtitle</key>
+	<string>Utilisez toujours l'anglais dans cette application</string>
+	<key>language.option.french</key>
+	<string>Français</string>
+	<key>language.option.french.subtitle</key>
+	<string>Utilisez toujours le français dans cette application</string>
+	<key>language.option.german</key>
+	<string>Allemand</string>
+	<key>language.option.german.subtitle</key>
+	<string>Utilisez toujours l'allemand dans cette application</string>
+	<key>language.option.japanese</key>
+	<string>japonais</string>
+	<key>language.option.japanese.subtitle</key>
+	<string>Utilisez toujours le japonais dans cette application</string>
+	<key>language.option.portuguese</key>
+	<string>portugais</string>
+	<key>language.option.portuguese.subtitle</key>
+	<string>Utilisez toujours le portugais dans cette application</string>
+	<key>language.option.spanish</key>
+	<string>Espagnol</string>
+	<key>language.option.spanish.subtitle</key>
+	<string>Utilisez toujours l'espagnol dans cette application</string>
+	<key>language.option.system</key>
+	<string>Suivre le système</string>
+	<key>language.option.system.subtitle</key>
+	<string>Identique à la langue de l'appareil</string>
+	<key>language.picker.footer</key>
+	<string>Langue de l'interface de l'application. « Suivre le système » correspond aux paramètres iOS → Général → Langue et région. Les langues sélectionnées s'appliquent uniquement dans cette application.</string>
+	<key>language.picker.title</key>
+	<string>Langue</string>
+	<key>legal.center</key>
+	<string>Centre juridique</string>
+	<key>legal.inquiries</key>
+	<string>DEMANDES</string>
+	<key>legal.privacy</key>
+	<string>politique de confidentialité</string>
+	<key>legal.privacy.last_updated</key>
+	<string>DERNIÈRE MISE À JOUR : 24 OCTOBRE 2023</string>
+	<key>legal.privacy.lead</key>
+	<string>Ce document décrit notre engagement à protéger votre identité numérique et la manière dont nous traitons les données au sein de notre écosystème d'IA.</string>
+	<key>legal.section_prefix</key>
+	<string>SECTION %@</string>
+	<key>legal.ua.lead</key>
+	<string>Veuillez lire attentivement ces conditions avant d'utiliser notre écosystème basé sur l'IA. Votre utilisation du service constitue un engagement juridique envers ces protocoles.</string>
+	<key>legal.user_agreement</key>
+	<string>Contrat d'utilisation</string>
+	<key>legal.version_format</key>
+	<string>VERSION %@</string>
+	<key>login.api_format</key>
+	<string>API : %@</string>
+	<key>login.hint</key>
+	<string>Utilise l'identifiant de votre appareil. Pas de mot de passe.</string>
+	<key>login.sign_in_device</key>
+	<string>Connectez-vous avec l'appareil</string>
+	<key>login.signing_in</key>
+	<string>Connexion…</string>
+	<key>login.subtitle</key>
+	<string>Connectez-vous pour synchroniser votre compte et vos pièces</string>
+	<key>login.title</key>
+	<string>bbb</string>
+	<key>my.creations.alert.coins</key>
+	<string>Pièces insuffisantes. Veuillez recharger et réessayer.</string>
+	<key>my.creations.banner.expire</key>
+	<string>LES TRAVAUX EXPIRENT APRÈS 24H. VEUILLEZ LES CONSERVER À TEMPS.</string>
+	<key>my.creations.detail.title</key>
+	<string>Création</string>
+	<key>my.creations.empty.all</key>
+	<string>Aucune création pour l'instant</string>
+	<key>my.creations.empty.detail</key>
+	<string>Vos travaux d’IA apparaîtront ici.</string>
+	<key>my.creations.empty.filtered</key>
+	<string>Aucune tâche dans cette catégorie</string>
+	<key>my.creations.error.detail</key>
+	<string>La génération a échoué. Réessayez ou contactez l'assistance.</string>
+	<key>my.creations.est_mins_format</key>
+	<string>HNE. %lld MIN</string>
+	<key>my.creations.expired</key>
+	<string>EXPIRÉ</string>
+	<key>my.creations.failure</key>
+	<string>Échoué</string>
+	<key>my.creations.filter.all</key>
+	<string>TOUS</string>
+	<key>my.creations.filter.generating</key>
+	<string>GÉNÉRATEUR</string>
+	<key>my.creations.filter.success</key>
+	<string>SUCCÈS</string>
+	<key>my.creations.generating_label</key>
+	<string>GÉNÉRATEUR</string>
+	<key>my.creations.percent_format</key>
+	<string>%ld%%</string>
+	<key>my.creations.processing.detail</key>
+	<string>Traitement. Vérifiez la liste plus tard.</string>
+	<key>my.creations.queuing</key>
+	<string>File d'attente</string>
+	<key>my.creations.refunded</key>
+	<string>CRÉDITS REMBOURSÉS</string>
+	<key>my.creations.success_pill</key>
+	<string>SUCCÈS</string>
+	<key>my.creations.tap_retry</key>
+	<string>APPUYEZ POUR RÉESSAYER</string>
+	<key>my.creations.title</key>
+	<string>MES CRÉATIONS</string>
+	<key>my.likes.empty</key>
+	<string>Pas encore de likes</string>
+	<key>my.likes.empty_detail</key>
+	<string>Appuyez sur le cœur des modèles que vous aimez. Les identifiants sont enregistrés sur cet appareil.</string>
+	<key>my.likes.empty_switch</key>
+	<string>Changez d'onglet ou ajoutez des favoris depuis Accueil.</string>
+	<key>my.likes.empty_tab_format</key>
+	<string>Aucun %@ j'aime pour l'instant</string>
+	<key>my.likes.remove</key>
+	<string>Supprimer de Mes J'aime</string>
+	<key>my.likes.title</key>
+	<string>MES AIMÉS</string>
+	<key>my.profile.debug.token_no_auth_info</key>
+	<string>Impossible de lire les informations de connexion.</string>
+	<key>my.profile.debug.token_not_signed_in</key>
+	<string>Non connecté. Impossible d’actualiser le jeton.</string>
+	<key>my.profile.debug.token_refreshed</key>
+	<string>Jeton actualisé.</string>
+	<key>my.profile.id_copied</key>
+	<string>pièce d'identité copiée</string>
+	<key>my.profile.id_format</key>
+	<string>IDENTIFIANT: %@</string>
+	<key>my.profile.row.feedback</key>
+	<string>Centre de commentaires</string>
+	<key>my.profile.row.likes</key>
+	<string>Mes goûts</string>
+	<key>my.profile.section.personal_assets</key>
+	<string>BIENS PERSONNELS</string>
+	<key>my.profile.section.support_assets</key>
+	<string>SOUTIEN &amp; ATOUTS</string>
+	<key>my.profile.settings_a11y</key>
+	<string>Paramètres</string>
+	<key>my.profile.shortcut.creations</key>
+	<string>Mes créations</string>
+	<key>my.profile.sign_in</key>
+	<string>Se connecter</string>
+	<key>my.profile.sign_in_a11y</key>
+	<string>Se connecter</string>
+	<key>my.profile.subtitle_guest</key>
+	<string>Connectez-vous pour synchroniser vos données</string>
+	<key>my.profile.subtitle_signed_in</key>
+	<string>Compte et activité</string>
+	<key>my.profile.title</key>
+	<string>Mon</string>
+	<key>notification.denied.body</key>
+	<string>Vous pouvez activer les notifications dans Réglages.</string>
+	<key>notification.denied.open_settings</key>
+	<string>Ouvrir Réglages</string>
+	<key>notification.denied.title</key>
+	<string>Notifications désactivées</string>
+	<key>notification.pre_prompt.body</key>
+	<string>Activez les notifications pour les mises à jour produit et les infos importantes.</string>
+	<key>notification.pre_prompt.confirm</key>
+	<string>Autoriser</string>
+	<key>notification.pre_prompt.not_now</key>
+	<string>Plus tard</string>
+	<key>notification.pre_prompt.title</key>
+	<string>Activer les notifications ?</string>
+	<key>notification.status.denied.hint</key>
+	<string>Notifications désactivées. Activez-les dans Réglages.</string>
+	<key>photo_validation.encode_failed</key>
+	<string>Impossible d'encoder cette image. Essayez-en un autre.</string>
+	<key>photo_validation.error.face_offset_or_obscured</key>
+	<string>Le visage est décentré ou masqué</string>
+	<key>photo_validation.error.multiple_people</key>
+	<string>Plusieurs visages détectés</string>
+	<key>photo_validation.error.no_person</key>
+	<string>Aucun visage détecté</string>
+	<key>recharge.badge.best_value</key>
+	<string>MEILLEURE VALEUR</string>
+	<key>recharge.badge.free_percent</key>
+	<string>+%lld%% GRATUIT</string>
+	<key>recharge.badge.most_popular</key>
+	<string>LE PLUS POPULAIRE</string>
+	<key>recharge.benefit.download</key>
+	<string>Téléchargements haute résolution / 4K</string>
+	<key>recharge.benefit.effects</key>
+	<string>Effets IA ultra-réalistes</string>
+	<key>recharge.benefit.priority</key>
+	<string>Traitement prioritaire (éviter l'attente)</string>
+	<key>recharge.benefit.unlock</key>
+	<string>Débloquez tous les modèles Premium</string>
+	<key>recharge.browser_pay.still_pending</key>
+	<string>Paiement non confirmé. Réessayez plus tard ou consultez l’historique.</string>
+	<key>recharge.error.bind_card_first</key>
+	<string>Veuillez d'abord ajouter une carte de paiement.</string>
+	<key>recharge.error.iap_failed_generic</key>
+	<string>Le paiement n'a pas été effectué. Vérifiez votre réseau et votre identifiant Apple ; configurez StoreKit dans le simulateur si nécessaire. S'il est chargé, vérifiez l'historique de recharge plus tard.</string>
+	<key>recharge.error.login_first</key>
+	<string>Veuillez vous connecter avant de recharger.</string>
+	<key>recharge.error.no_iap_product</key>
+	<string>Ce package n'a pas encore de produit App Store configuré.</string>
+	<key>recharge.error.no_payment_url</key>
+	<string>Impossible d'obtenir le lien de paiement. Réessayez ou contactez l'assistance.</string>
+	<key>recharge.error.open_browser_pay</key>
+	<string>Effectuer le paiement dans le navigateur ; votre solde sera mis à jour à votre retour.</string>
+	<key>recharge.error.package_stale</key>
+	<string>Les données du package ont expiré. Tirez pour actualiser et réessayez.</string>
+	<key>recharge.error.payment_incomplete</key>
+	<string>Paiement non effectué.</string>
+	<key>recharge.error.user_id_invalid</key>
+	<string>Utilisateur invalide. Veuillez vous reconnecter.</string>
+	<key>recharge.header</key>
+	<string>RECHARGER</string>
+	<key>recharge.list_title</key>
+	<string>RECHARGER</string>
+	<key>recharge.no_packages</key>
+	<string>Aucun forfait disponible</string>
+	<key>recharge.now</key>
+	<string>Recharger maintenant</string>
+	<key>recharge.package_bonus_format</key>
+	<string>%lld + %lld BONUS</string>
+	<key>recharge.package_bonus_suffix</key>
+	<string>PRIME</string>
+	<key>recharge.page_title</key>
+	<string>Recharger</string>
+	<key>recharge.payment.add_card_short</key>
+	<string>AJOUTER+</string>
+	<key>recharge.payment.bonus_api_format</key>
+	<string>+%@%% BONUS (+%lld)</string>
+	<key>recharge.payment.bonus_label</key>
+	<string>%lld BONUS</string>
+	<key>recharge.payment.btn_now</key>
+	<string>RECHARGEZ MAINTENANT</string>
+	<key>recharge.payment.channel_bonus_format</key>
+	<string>%lld BONUS DE PAIEMENT</string>
+	<key>recharge.payment.coins_format</key>
+	<string>%lld PIÈCES</string>
+	<key>recharge.payment.disclaimer</key>
+	<string>Les bonus de chaîne sont destinés à être affichés ; les pièces réelles sont créditées une fois le paiement terminé.</string>
+	<key>recharge.payment.method_section</key>
+	<string>MODE DE PAIEMENT</string>
+	<key>recharge.payment.none</key>
+	<string>Aucun mode de paiement disponible.</string>
+	<key>recharge.payment.secure_line</key>
+	<string>Transaction 100% sécurisée et facturation privée. Votre vie privée est notre priorité absolue.</string>
+	<key>recharge.payment.title</key>
+	<string>Sélectionnez Paiement</string>
+	<key>recharge.payment.total_amount</key>
+	<string>MONTANT TOTAL</string>
+	<key>recharge.processing</key>
+	<string>TRAITEMENT…</string>
+	<key>recharge.record.empty_guest</key>
+	<string>Connectez-vous pour voir l'historique des recharges</string>
+	<key>recharge.record.empty_guest_sub</key>
+	<string>Connectez-vous pour synchroniser les enregistrements du serveur.</string>
+	<key>recharge.record.empty_logged_in</key>
+	<string>Aucun enregistrement de recharge</string>
+	<key>recharge.record.empty_logged_in_sub</key>
+	<string>Les transactions apparaîtront ici après l'achat.</string>
+	<key>recharge.record.title</key>
+	<string>Enregistrement de recharge</string>
+	<key>recharge.result.balance_format</key>
+	<string>Solde actuel : %@</string>
+	<key>recharge.result.bonus_format</key>
+	<string>+%lld BONUS INCLUS</string>
+	<key>recharge.result.close_a11y</key>
+	<string>Fermer</string>
+	<key>recharge.result.coins_format</key>
+	<string>%lld PIÈCES REÇUES</string>
+	<key>recharge.result.get_started</key>
+	<string>COMMENCER</string>
+	<key>recharge.result.page_opened</key>
+	<string>Page de paiement ouverte</string>
+	<key>recharge.result.pay_failed</key>
+	<string>Échec du paiement</string>
+	<key>recharge.result.title</key>
+	<string>RECHARGEMENT SUCCÈS</string>
+	<key>recharge.secure_footer</key>
+	<string>Facturation 100 % sécurisée et privée</string>
+	<key>recharge.status.failed</key>
+	<string>Échoué</string>
+	<key>recharge.status.pending</key>
+	<string>En attente</string>
+	<key>recharge.status.recharging</key>
+	<string>Traitement</string>
+	<key>recharge.status.success</key>
+	<string>Succès</string>
+	<key>recharge.upsell.benefit.effects</key>
+	<string>Effets IA ultra-réalistes</string>
+	<key>recharge.upsell.benefit.priority</key>
+	<string>Traitement prioritaire (éviter l'attente)</string>
+	<key>recharge.upsell.benefit.quality</key>
+	<string>Téléchargements haute résolution / 4K</string>
+	<key>recharge.upsell.benefit.templates</key>
+	<string>Débloquez tous les modèles Premium</string>
+	<key>recharge.upsell.explore_more</key>
+	<string>Explorer davantage</string>
+	<key>settings.build</key>
+	<string>Construire</string>
+	<key>settings.language</key>
+	<string>Langue</string>
+	<key>settings.product_updates</key>
+	<string>Mises à jour du produit</string>
+	<key>settings.section.general</key>
+	<string>GÉNÉRAL</string>
+	<key>settings.section.notifications</key>
+	<string>NOTIFICATIONS</string>
+	<key>settings.title</key>
+	<string>Paramètres</string>
+	<key>tab.home</key>
+	<string>Maison</string>
+	<key>tab.my</key>
+	<string>Mon</string>
+	<key>tab.recharge</key>
+	<string>Recharger</string>
+	<key>task.error.failed_default</key>
+	<string>La tâche a échoué</string>
+	<key>task.error.network_with_reason</key>
+	<string>Erreur réseau : %@</string>
+	<key>task.error.result_missing</key>
+	<string>Résultat indisponible</string>
+	<key>task.error.server_default</key>
+	<string>Erreur de serveur</string>
+	<key>welcome.bonus.added_prefix</key>
+	<string>Nous avons ajouté</string>
+	<key>welcome.bonus.body</key>
+	<string>à votre portefeuille. Choisissez n’importe quel modèle et donnez vie à vos idées gratuitement !</string>
+	<key>welcome.bonus.cta</key>
+	<string>CRÉER MAINTENANT</string>
+	<key>welcome.bonus.free_coins</key>
+	<string>pièces gratuites</string>
+	<key>welcome.bonus.title</key>
+	<string>PRIME DE BIENVENUE</string>
+</dict>
+</plist>

@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>add_card.field.cvv</key>
+	<string>CVV</string>
+	<key>add_card.field.expires</key>
+	<string>EXPIRES</string>
+	<key>add_card.field.name</key>
+	<string>NAME ON CARD</string>
+	<key>add_card.field.number</key>
+	<string>CARD NUMBER</string>
+	<key>add_card.footer</key>
+	<string>Card details are encrypted end-to-end.</string>
+	<key>add_card.placeholder.name</key>
+	<string>FULL NAME</string>
+	<key>add_card.save</key>
+	<string>Save card</string>
+	<key>add_card.title</key>
+	<string>Add card</string>
+	<key>cards.add</key>
+	<string>Add card</string>
+	<key>cards.add_hint</key>
+	<string>Add a card to check out faster.</string>
+	<key>cards.default</key>
+	<string>Default</string>
+	<key>cards.empty</key>
+	<string>No saved cards</string>
+	<key>cards.set_default</key>
+	<string>Set as default</string>
+	<key>cards.title</key>
+	<string>Payment methods</string>
+	<key>common.back</key>
+	<string>Back</string>
+	<key>common.cancel</key>
+	<string>Cancel</string>
+	<key>common.close</key>
+	<string>Close</string>
+	<key>common.confirm</key>
+	<string>Confirm</string>
+	<key>common.ok</key>
+	<string>OK</string>
+	<key>common.retry</key>
+	<string>Retry</string>
+	<key>common.tip</key>
+	<string>Notice</string>
+	<key>creation.meta.created</key>
+	<string>Created</string>
+	<key>creation.meta.status</key>
+	<string>Status</string>
+	<key>creation.meta.template_id</key>
+	<string>Template ID</string>
+	<key>creation.meta.type</key>
+	<string>Type</string>
+	<key>feedback.active_submissions</key>
+	<string>ACTIVE SUBMISSIONS</string>
+	<key>feedback.alert.failed_title</key>
+	<string>Submission failed</string>
+	<key>feedback.alert.submitted_body</key>
+	<string>Thank you for your feedback. We'll review it as soon as possible.</string>
+	<key>feedback.alert.submitted_title</key>
+	<string>Submitted</string>
+	<key>feedback.body</key>
+	<string>Your insights drive the future of our digital curation engine.</string>
+	<key>feedback.category.ai_generation_quality</key>
+	<string>AI generation quality</string>
+	<key>feedback.category.app_bug</key>
+	<string>App bug</string>
+	<key>feedback.category.other</key>
+	<string>Other</string>
+	<key>feedback.category.payment_issue</key>
+	<string>Payment issue</string>
+	<key>feedback.category.poor_generation_result</key>
+	<string>Poor result</string>
+	<key>feedback.char_count</key>
+	<string>%lld / %lld</string>
+	<key>feedback.end_history</key>
+	<string>END OF HISTORY</string>
+	<key>feedback.history.empty</key>
+	<string>No feedback submitted yet.</string>
+	<key>feedback.history.id_format</key>
+	<string>ID: #%@</string>
+	<key>feedback.history.title</key>
+	<string>Feedback History</string>
+	<key>feedback.history.total_format</key>
+	<string>%lld Total</string>
+	<key>feedback.nav_title</key>
+	<string>Feedback</string>
+	<key>feedback.official_reply</key>
+	<string>OFFICIAL REPLY</string>
+	<key>feedback.placeholder</key>
+	<string>Please describe your issue in detail…</string>
+	<key>feedback.section.category</key>
+	<string>Category Selection</string>
+	<key>feedback.section.description</key>
+	<string>Issue Description</string>
+	<key>feedback.status.in_progress</key>
+	<string>IN PROGRESS</string>
+	<key>feedback.status.pending</key>
+	<string>PENDING</string>
+	<key>feedback.status.resolved</key>
+	<string>RESOLVED</string>
+	<key>feedback.submit</key>
+	<string>Submit Feedback</string>
+	<key>feedback.submitting</key>
+	<string>Submitting…</string>
+	<key>feedback.subtitle</key>
+	<string>How can we improve?</string>
+	<key>feedback.view_history</key>
+	<string>VIEW FEEDBACK HISTORY  &gt;</string>
+	<key>generation.success.download</key>
+	<string>DOWNLOAD</string>
+	<key>generation.success.feedback</key>
+	<string>FEEDBACK</string>
+	<key>generation.success.reroll</key>
+	<string>REROLL</string>
+	<key>generation.success.reroll.template_load_failed</key>
+	<string>Could not load this template. Please try again later.</string>
+	<key>generation.success.save.denied.message</key>
+	<string>Please allow Photos access in Settings to save your work.</string>
+	<key>generation.success.save.denied.title</key>
+	<string>Unable to Save</string>
+	<key>generation.success.save.error.invalid_image</key>
+	<string>Invalid image data.</string>
+	<key>generation.success.save.error.title</key>
+	<string>Save Failed</string>
+	<key>generation.success.save.ok.message</key>
+	<string>Your work has been saved to Photos.</string>
+	<key>generation.success.save.ok.title</key>
+	<string>Saved</string>
+	<key>generation.success.title</key>
+	<string>GENERATION SUCCESS</string>
+	<key>generation.success.type_label</key>
+	<string>TYPE</string>
+	<key>grid.tag.free</key>
+	<string>FREE</string>
+	<key>grid.tag.hot</key>
+	<string>HOT</string>
+	<key>grid.tag.new</key>
+	<string>NEW</string>
+	<key>home.action.create_video</key>
+	<string>Create Video</string>
+	<key>home.action.start_dance</key>
+	<string>Start Dance</string>
+	<key>home.action.swap_face</key>
+	<string>Swap Face</string>
+	<key>home.alert.cancel</key>
+	<string>Cancel</string>
+	<key>home.alert.coins.go_recharge</key>
+	<string>Recharge</string>
+	<key>home.alert.coins.message</key>
+	<string>This template costs more coins than your balance. Please recharge first.</string>
+	<key>home.alert.coins.title</key>
+	<string>Insufficient coins</string>
+	<key>home.alert.login.go_my</key>
+	<string>Go to My</string>
+	<key>home.alert.login.message</key>
+	<string>Sign in to use templates for generation.</string>
+	<key>home.alert.login.title</key>
+	<string>Sign in required</string>
+	<key>home.chrome.auth_toggle_login</key>
+	<string>Log in</string>
+	<key>home.chrome.auth_toggle_logout</key>
+	<string>Log out</string>
+	<key>home.chrome.coin_a11y</key>
+	<string>Coin balance %@</string>
+	<key>home.chrome.layout.feed</key>
+	<string>Switch to feed</string>
+	<key>home.chrome.layout.grid</key>
+	<string>Switch to grid</string>
+	<key>home.chrome.recharge_hint</key>
+	<string>Opens recharge</string>
+	<key>home.favorite.add_a11y</key>
+	<string>Favorite</string>
+	<key>home.favorite.remove_a11y</key>
+	<string>Remove favorite</string>
+	<key>home.feed.compare.after</key>
+	<string>AFTER</string>
+	<key>home.feed.compare.before</key>
+	<string>BEFORE</string>
+	<key>home.generating.dismiss_a11y</key>
+	<string>Dismiss</string>
+	<key>home.generating.fullscreen.back</key>
+	<string>Back to Home</string>
+	<key>home.generating.fullscreen.footer</key>
+	<string>Generation continues in the background. After returning home, check the capsule above the tab bar for progress.</string>
+	<key>home.generating.fullscreen.headline_queue</key>
+	<string>In queue</string>
+	<key>home.generating.fullscreen.headline_run</key>
+	<string>Generating</string>
+	<key>home.generating.pending</key>
+	<string>In queue, please wait…</string>
+	<key>home.generating.pending_wait</key>
+	<string>In queue · est. wait %@</string>
+	<key>home.generating.queuing.browse_other</key>
+	<string>Browse other content</string>
+	<key>home.generating.queuing.creating_task</key>
+	<string>Creating task…</string>
+	<key>home.generating.queuing.detail_running</key>
+	<string>Blending your photo with the template. This may take a moment.</string>
+	<key>home.generating.queuing.footer_short</key>
+	<string>Generation continues in the background. You can safely leave this page.</string>
+	<key>home.generating.queuing.hero_generating</key>
+	<string>GENERATING…</string>
+	<key>home.generating.queuing.nav_title</key>
+	<string>QUEUING…</string>
+	<key>home.generating.queuing.source_tag</key>
+	<string>SOURCE</string>
+	<key>home.generating.queuing.template_tag</key>
+	<string>TEMPLATE</string>
+	<key>home.generating.running</key>
+	<string>Generating…</string>
+	<key>home.generating.running_percent</key>
+	<string>Generating · %lld%% done</string>
+	<key>home.generating.title</key>
+	<string>Generation in progress</string>
+	<key>home.generating.view_my</key>
+	<string>Open My to see progress</string>
+	<key>home.generating.view_my_hint</key>
+	<string>Switches to the My tab</string>
+	<key>home.grid.load_more</key>
+	<string>Scroll up for more</string>
+	<key>home.grid.no_more</key>
+	<string>No more items</string>
+	<key>home.immersive.all_loaded</key>
+	<string>All content loaded</string>
+	<key>home.immersive.loading_more</key>
+	<string>Loading more…</string>
+	<key>home.layout.hint</key>
+	<string>Tap the menu icon at the top left to switch between feed and grid.</string>
+	<key>home.layout.switch_guide</key>
+	<string>TAP TO SWITCH LAYOUT</string>
+	<key>home.primary.dance</key>
+	<string>Dance</string>
+	<key>home.primary.image</key>
+	<string>Image</string>
+	<key>home.primary.video</key>
+	<string>Video</string>
+	<key>home.scroll.more</key>
+	<string>SCROLL FOR MORE</string>
+	<key>home.tag.all</key>
+	<string>All</string>
+	<key>home.template.cta.dance</key>
+	<string>Start dance</string>
+	<key>home.template.cta.image</key>
+	<string>Use this template</string>
+	<key>home.template.cta.video</key>
+	<string>Generate video</string>
+	<key>home.template.detail.generate</key>
+	<string>GENERATE</string>
+	<key>home.template.detail.preview_title</key>
+	<string>Preview</string>
+	<key>home.template.detail.unavailable</key>
+	<string>This template is unavailable</string>
+	<key>home.template.nav.generate</key>
+	<string>Generate</string>
+	<key>home.template.photo_permission.message</key>
+	<string>Allow photo access in Settings to choose an image from your library.</string>
+	<key>home.template.photo_permission.open_settings</key>
+	<string>Open Settings</string>
+	<key>home.template.photo_permission.title</key>
+	<string>Photo Access Needed</string>
+	<key>home.template.sheet.body</key>
+	<string>Upload a clear portrait photo. Generation uses the current template.</string>
+	<key>home.template.sheet.cannot</key>
+	<string>Cannot continue</string>
+	<key>home.template.sheet.cost</key>
+	<string>Cost</string>
+	<key>home.template.sheet.pick_photo</key>
+	<string>Choose Photo</string>
+	<key>home.template.sheet.start</key>
+	<string>Start</string>
+	<key>home.template.toolbar</key>
+	<string>TEMPLATE</string>
+	<key>home.template.voice.a11y_off</key>
+	<string>Muted. Tap to turn sound on.</string>
+	<key>home.template.voice.a11y_on</key>
+	<string>Sound on. Tap to mute.</string>
+	<key>home.toast.no_more</key>
+	<string>No more items</string>
+	<key>home.upload.bad</key>
+	<string>BAD</string>
+	<key>home.upload.bad_caption</key>
+	<string>Blurry, side view, dark hair/hat</string>
+	<key>home.upload.confirm</key>
+	<string>Confirm &amp; Upload</string>
+	<key>home.upload.dont_show</key>
+	<string>Don't show again</string>
+	<key>home.upload.good</key>
+	<string>GOOD</string>
+	<key>home.upload.good_caption</key>
+	<string>Clear, front-facing, high light</string>
+	<key>home.upload.title</key>
+	<string>Upload Tips</string>
+	<key>iap.payments_disabled</key>
+	<string>In-app purchases are disabled. Enable them in Settings → Screen Time → Content &amp; Privacy Restrictions → In-app Purchases, or check your Apple ID.</string>
+	<key>iap.store_purchases_label</key>
+	<string>In-App Purchase via App Store</string>
+	<key>kind.all</key>
+	<string>All</string>
+	<key>kind.dance</key>
+	<string>Dance</string>
+	<key>kind.image</key>
+	<string>Image</string>
+	<key>kind.media</key>
+	<string>MEDIA</string>
+	<key>kind.video</key>
+	<string>Video</string>
+	<key>language.option.chinese</key>
+	<string>Traditional Chinese</string>
+	<key>language.option.chinese.subtitle</key>
+	<string>Always use Traditional Chinese in this app</string>
+	<key>language.option.english</key>
+	<string>English</string>
+	<key>language.option.english.subtitle</key>
+	<string>Always use English in this app</string>
+	<key>language.option.french</key>
+	<string>French</string>
+	<key>language.option.french.subtitle</key>
+	<string>Always use French in this app</string>
+	<key>language.option.german</key>
+	<string>German</string>
+	<key>language.option.german.subtitle</key>
+	<string>Always use German in this app</string>
+	<key>language.option.japanese</key>
+	<string>Japanese</string>
+	<key>language.option.japanese.subtitle</key>
+	<string>Always use Japanese in this app</string>
+	<key>language.option.portuguese</key>
+	<string>Portuguese</string>
+	<key>language.option.portuguese.subtitle</key>
+	<string>Always use Portuguese in this app</string>
+	<key>language.option.spanish</key>
+	<string>Spanish</string>
+	<key>language.option.spanish.subtitle</key>
+	<string>Always use Spanish in this app</string>
+	<key>language.option.system</key>
+	<string>Follow system</string>
+	<key>language.option.system.subtitle</key>
+	<string>Same as device language</string>
+	<key>language.picker.footer</key>
+	<string>App interface language. "Follow system" matches iOS Settings → General → Language &amp; Region. Selected languages apply only inside this app.</string>
+	<key>language.picker.title</key>
+	<string>Language</string>
+	<key>legal.center</key>
+	<string>Legal Center</string>
+	<key>legal.inquiries</key>
+	<string>INQUIRIES</string>
+	<key>legal.privacy</key>
+	<string>Privacy Policy</string>
+	<key>legal.privacy.last_updated</key>
+	<string>LAST UPDATED: OCTOBER 24, 2023</string>
+	<key>legal.privacy.lead</key>
+	<string>This document outlines our commitment to protecting your digital identity and how we process data within our AI ecosystem.</string>
+	<key>legal.section_prefix</key>
+	<string>SECTION %@</string>
+	<key>legal.ua.lead</key>
+	<string>Please read these terms carefully before using our AI-driven ecosystem. Your use of the service constitutes a legal commitment to these protocols.</string>
+	<key>legal.user_agreement</key>
+	<string>User Agreement</string>
+	<key>legal.version_format</key>
+	<string>VERSION %@</string>
+	<key>login.api_format</key>
+	<string>API: %@</string>
+	<key>login.hint</key>
+	<string>Uses your device ID. No password.</string>
+	<key>login.sign_in_device</key>
+	<string>Sign in with device</string>
+	<key>login.signing_in</key>
+	<string>Signing in…</string>
+	<key>login.subtitle</key>
+	<string>Sign in to sync your account &amp; coins</string>
+	<key>login.title</key>
+	<string>bbb</string>
+	<key>my.creations.alert.coins</key>
+	<string>Insufficient coins. Please recharge and try again.</string>
+	<key>my.creations.banner.expire</key>
+	<string>WORKS EXPIRE AFTER 24H. PLEASE SAVE THEM IN TIME.</string>
+	<key>my.creations.detail.title</key>
+	<string>Creation</string>
+	<key>my.creations.empty.all</key>
+	<string>No creations yet</string>
+	<key>my.creations.empty.detail</key>
+	<string>Your AI works will appear here.</string>
+	<key>my.creations.empty.filtered</key>
+	<string>No tasks in this category</string>
+	<key>my.creations.error.detail</key>
+	<string>Generation failed. Retry or contact support.</string>
+	<key>my.creations.est_mins_format</key>
+	<string>EST. %lld MINS</string>
+	<key>my.creations.expired</key>
+	<string>EXPIRED</string>
+	<key>my.creations.failure</key>
+	<string>Failed</string>
+	<key>my.creations.filter.all</key>
+	<string>ALL</string>
+	<key>my.creations.filter.generating</key>
+	<string>GENERATING</string>
+	<key>my.creations.filter.success</key>
+	<string>SUCCESS</string>
+	<key>my.creations.generating_label</key>
+	<string>GENERATING</string>
+	<key>my.creations.percent_format</key>
+	<string>%lld%%</string>
+	<key>my.creations.processing.detail</key>
+	<string>Processing. Check the list later.</string>
+	<key>my.creations.queuing</key>
+	<string>Queuing</string>
+	<key>my.creations.refunded</key>
+	<string>REFUNDED CREDITS</string>
+	<key>my.creations.success_pill</key>
+	<string>SUCCESS</string>
+	<key>my.creations.tap_retry</key>
+	<string>TAP TO RETRY</string>
+	<key>my.creations.title</key>
+	<string>MY CREATIONS</string>
+	<key>my.likes.empty</key>
+	<string>No likes yet</string>
+	<key>my.likes.empty_detail</key>
+	<string>Tap the heart on templates you love. IDs are saved on this device.</string>
+	<key>my.likes.empty_switch</key>
+	<string>Switch tab or add favorites from Home.</string>
+	<key>my.likes.empty_tab_format</key>
+	<string>No %@ likes yet</string>
+	<key>my.likes.remove</key>
+	<string>Remove from My Likes</string>
+	<key>my.likes.title</key>
+	<string>MY LIKES</string>
+	<key>my.profile.debug.token_no_auth_info</key>
+	<string>Unable to read sign-in information.</string>
+	<key>my.profile.debug.token_not_signed_in</key>
+	<string>Not signed in. Cannot refresh token.</string>
+	<key>my.profile.debug.token_refreshed</key>
+	<string>Token refreshed.</string>
+	<key>my.profile.id_copied</key>
+	<string>ID copied</string>
+	<key>my.profile.id_format</key>
+	<string>ID: %@</string>
+	<key>my.profile.row.feedback</key>
+	<string>Feedback Center</string>
+	<key>my.profile.row.likes</key>
+	<string>My Likes</string>
+	<key>my.profile.section.personal_assets</key>
+	<string>PERSONAL ASSETS</string>
+	<key>my.profile.section.support_assets</key>
+	<string>SUPPORT &amp; ASSETS</string>
+	<key>my.profile.settings_a11y</key>
+	<string>Settings</string>
+	<key>my.profile.shortcut.creations</key>
+	<string>My Creations</string>
+	<key>my.profile.sign_in</key>
+	<string>Sign in</string>
+	<key>my.profile.sign_in_a11y</key>
+	<string>Sign in</string>
+	<key>my.profile.subtitle_guest</key>
+	<string>Sign in to sync your data</string>
+	<key>my.profile.subtitle_signed_in</key>
+	<string>Account &amp; activity</string>
+	<key>my.profile.title</key>
+	<string>My</string>
+	<key>notification.denied.body</key>
+	<string>You can turn on notifications in Settings.</string>
+	<key>notification.denied.open_settings</key>
+	<string>Open Settings</string>
+	<key>notification.denied.title</key>
+	<string>Notifications are off</string>
+	<key>notification.pre_prompt.body</key>
+	<string>Turn on notifications to get product updates and important news.</string>
+	<key>notification.pre_prompt.confirm</key>
+	<string>Allow</string>
+	<key>notification.pre_prompt.not_now</key>
+	<string>Not Now</string>
+	<key>notification.pre_prompt.title</key>
+	<string>Turn on notifications?</string>
+	<key>notification.status.denied.hint</key>
+	<string>Notifications are off. Enable them in Settings.</string>
+	<key>photo_validation.encode_failed</key>
+	<string>Could not encode this image. Try another one.</string>
+	<key>photo_validation.error.face_offset_or_obscured</key>
+	<string>Face is off-center or obscured</string>
+	<key>photo_validation.error.multiple_people</key>
+	<string>Multiple faces detected</string>
+	<key>photo_validation.error.no_person</key>
+	<string>No face detected</string>
+	<key>recharge.badge.best_value</key>
+	<string>BEST VALUE</string>
+	<key>recharge.badge.free_percent</key>
+	<string>+%lld%% FREE</string>
+	<key>recharge.badge.most_popular</key>
+	<string>MOST POPULAR</string>
+	<key>recharge.benefit.download</key>
+	<string>High-Res / 4K Downloads</string>
+	<key>recharge.benefit.effects</key>
+	<string>Ultra-Realistic AI Effects</string>
+	<key>recharge.benefit.priority</key>
+	<string>Priority Processing (Skip the Wait)</string>
+	<key>recharge.benefit.unlock</key>
+	<string>Unlock All Premium Templates</string>
+	<key>recharge.browser_pay.still_pending</key>
+	<string>Payment not confirmed yet. Try again shortly or check your recharge history.</string>
+	<key>recharge.error.bind_card_first</key>
+	<string>Please add a payment card first.</string>
+	<key>recharge.error.iap_failed_generic</key>
+	<string>Payment did not complete. Check your network and Apple ID; configure StoreKit in the Simulator if needed. If charged, check recharge history later.</string>
+	<key>recharge.error.login_first</key>
+	<string>Please sign in before recharging.</string>
+	<key>recharge.error.no_iap_product</key>
+	<string>This package has no App Store product configured yet.</string>
+	<key>recharge.error.no_payment_url</key>
+	<string>Could not get payment link. Try again or contact support.</string>
+	<key>recharge.error.open_browser_pay</key>
+	<string>Complete payment in the browser; your balance will update when you return.</string>
+	<key>recharge.error.package_stale</key>
+	<string>Package data expired. Pull to refresh and try again.</string>
+	<key>recharge.error.payment_incomplete</key>
+	<string>Payment not completed.</string>
+	<key>recharge.error.user_id_invalid</key>
+	<string>Invalid user. Please sign in again.</string>
+	<key>recharge.header</key>
+	<string>RECHARGE</string>
+	<key>recharge.list_title</key>
+	<string>RECHARGE</string>
+	<key>recharge.no_packages</key>
+	<string>No packages available</string>
+	<key>recharge.now</key>
+	<string>Recharge Now</string>
+	<key>recharge.package_bonus_format</key>
+	<string>%lld + %lld BONUS</string>
+	<key>recharge.package_bonus_suffix</key>
+	<string>BONUS</string>
+	<key>recharge.page_title</key>
+	<string>Recharge</string>
+	<key>recharge.payment.add_card_short</key>
+	<string>ADD+</string>
+	<key>recharge.payment.bonus_api_format</key>
+	<string>+%@%% BONUS (+%lld)</string>
+	<key>recharge.payment.bonus_label</key>
+	<string>%lld BONUS</string>
+	<key>recharge.payment.btn_now</key>
+	<string>RECHARGE NOW</string>
+	<key>recharge.payment.channel_bonus_format</key>
+	<string>%lld PAYMENT BONUS</string>
+	<key>recharge.payment.coins_format</key>
+	<string>%lld COINS</string>
+	<key>recharge.payment.disclaimer</key>
+	<string>Channel bonuses are for display; actual coins are credited after payment completes.</string>
+	<key>recharge.payment.method_section</key>
+	<string>PAYMENT METHOD</string>
+	<key>recharge.payment.none</key>
+	<string>No payment methods available.</string>
+	<key>recharge.payment.secure_line</key>
+	<string>100% Secure Transaction &amp; Private Billing. Your privacy is our top priority.</string>
+	<key>recharge.payment.title</key>
+	<string>Select Payment</string>
+	<key>recharge.payment.total_amount</key>
+	<string>TOTAL AMOUNT</string>
+	<key>recharge.processing</key>
+	<string>PROCESSING…</string>
+	<key>recharge.record.empty_guest</key>
+	<string>Sign in to see recharge history</string>
+	<key>recharge.record.empty_guest_sub</key>
+	<string>Sign in to sync records from the server.</string>
+	<key>recharge.record.empty_logged_in</key>
+	<string>No recharge records</string>
+	<key>recharge.record.empty_logged_in_sub</key>
+	<string>Transactions will appear here after purchase.</string>
+	<key>recharge.record.title</key>
+	<string>Recharge Record</string>
+	<key>recharge.result.balance_format</key>
+	<string>Current balance: %@</string>
+	<key>recharge.result.bonus_format</key>
+	<string>+%lld BONUS INCLUDED</string>
+	<key>recharge.result.close_a11y</key>
+	<string>Close</string>
+	<key>recharge.result.coins_format</key>
+	<string>%lld COINS RECEIVED</string>
+	<key>recharge.result.get_started</key>
+	<string>GET STARTED</string>
+	<key>recharge.result.page_opened</key>
+	<string>Payment page opened</string>
+	<key>recharge.result.pay_failed</key>
+	<string>Payment failed</string>
+	<key>recharge.result.title</key>
+	<string>RECHARGE SUCCESS</string>
+	<key>recharge.secure_footer</key>
+	<string>100% Secure &amp; Private Billing</string>
+	<key>recharge.status.failed</key>
+	<string>Failed</string>
+	<key>recharge.status.pending</key>
+	<string>Pending</string>
+	<key>recharge.status.recharging</key>
+	<string>Processing</string>
+	<key>recharge.status.success</key>
+	<string>Success</string>
+	<key>recharge.upsell.benefit.effects</key>
+	<string>Ultra-Realistic AI Effects</string>
+	<key>recharge.upsell.benefit.priority</key>
+	<string>Priority Processing (Skip the Wait)</string>
+	<key>recharge.upsell.benefit.quality</key>
+	<string>High-Res / 4K Downloads</string>
+	<key>recharge.upsell.benefit.templates</key>
+	<string>Unlock All Premium Templates</string>
+	<key>recharge.upsell.explore_more</key>
+	<string>Explore more</string>
+	<key>settings.build</key>
+	<string>Build</string>
+	<key>settings.language</key>
+	<string>Language</string>
+	<key>settings.product_updates</key>
+	<string>Product updates</string>
+	<key>settings.section.general</key>
+	<string>GENERAL</string>
+	<key>settings.section.notifications</key>
+	<string>NOTIFICATIONS</string>
+	<key>settings.title</key>
+	<string>Settings</string>
+	<key>tab.home</key>
+	<string>Home</string>
+	<key>tab.my</key>
+	<string>My</string>
+	<key>tab.recharge</key>
+	<string>Recharge</string>
+	<key>task.error.failed_default</key>
+	<string>Task failed</string>
+	<key>task.error.network_with_reason</key>
+	<string>Network error: %@</string>
+	<key>task.error.result_missing</key>
+	<string>Result unavailable</string>
+	<key>task.error.server_default</key>
+	<string>Server error</string>
+	<key>welcome.bonus.added_prefix</key>
+	<string>We've added</string>
+	<key>welcome.bonus.body</key>
+	<string>to your wallet. Choose any template and bring your ideas to life for free!</string>
+	<key>welcome.bonus.cta</key>
+	<string>CREATE NOW</string>
+	<key>welcome.bonus.free_coins</key>
+	<string>free coins</string>
+	<key>welcome.bonus.title</key>
+	<string>WELCOME BONUS</string>
+</dict>
+</plist>

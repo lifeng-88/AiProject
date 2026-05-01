@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array/>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameLaunchScreen</string>
+			<key>relativePath</key>
+			<string>./LaunchScreen.imageset</string>
+			<key>swiftSymbol</key>
+			<string>launchScreen</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUploadTipsBad</string>
+			<key>relativePath</key>
+			<string>./UploadTipsBad.imageset</string>
+			<key>swiftSymbol</key>
+			<string>uploadTipsBad</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameUploadTipsGood</string>
+			<key>relativePath</key>
+			<string>./UploadTipsGood.imageset</string>
+			<key>swiftSymbol</key>
+			<string>uploadTipsGood</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

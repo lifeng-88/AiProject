@@ -3,44 +3,18 @@
 default_platform(:ios)
 
 platform :ios do
-  PROJECT = "bbb.xcodeproj"
-  SCHEME = "bbb"
-
-  desc "模拟器 Debug 编译（与 .github/workflows/ios.yml 一致，无需签名）"
-  lane :build_sim do
-    root = File.expand_path("..", __dir__)
-    derived = File.expand_path("DerivedData", root)
-    sh(
-      <<~CMD
-        set -euo pipefail
-        xcodebuild \
-          -project "#{File.join(root, PROJECT)}" \
-          -scheme "#{SCHEME}" \
-          -configuration Debug \
-          -sdk iphonesimulator \
-          -destination 'generic/platform=iOS Simulator' \
-          -derivedDataPath "#{derived}" \
-          COMPILER_INDEX_STORE_ENABLE=NO \
-          build
-      CMD
+  desc "Upload an existing IPA to App Store Connect (TestFlight / 构建版本)"
+  lane :upload_connect do
+    api_key = app_store_connect_api_key(
+      key_id: ENV.fetch("ASC_KEY_ID"),
+      issuer_id: ENV.fetch("ASC_ISSUER_ID"),
+      key_filepath: ENV.fetch("ASC_KEY_PATH"),
+      in_house: false
+    )
+    upload_to_testflight(
+      api_key: api_key,
+      ipa: ENV.fetch("IPA_PATH"),
+      skip_waiting_for_build_processing: true
     )
   end
-
-  desc "运行单元测试（需本机已安装对应 iOS Simulator runtime）"
-  lane :test do
-    root = File.expand_path("..", __dir__)
-    run_tests(
-      project: File.join(root, PROJECT),
-      scheme: SCHEME,
-      devices: ["iPhone 16"],
-      code_coverage: false,
-      derived_data_path: File.expand_path("DerivedData", root)
-    )
-  end
-
-  # desc "TestFlight / App Store 请自行配置 match、sigh、app_store_connect_api_key 等后再启用"
-  # lane :beta do
-  #   build_app(project: PROJECT, scheme: SCHEME, export_method: "app-store")
-  #   upload_to_testflight
-  # end
 end

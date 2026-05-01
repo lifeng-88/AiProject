@@ -1,0 +1,525 @@
+{
+  "" : {
+    "const-values" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/bbb-master.swiftconstvalues",
+    "dependencies" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/bbb-master.d",
+    "diagnostics" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/bbb-master.dia",
+    "emit-module-dependencies" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/bbb-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/bbb-master-emit-module.dia",
+    "swift-dependencies" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/bbb-master.swiftdeps"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/bbbApp.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/bbbApp.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/bbbApp.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/bbbApp.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/ContentView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/LocalStorage/ImageCacheManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ImageCacheManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ImageCacheManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ImageCacheManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/LocalStorage/KeychainManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/KeychainManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/KeychainManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/KeychainManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/LocalStorage/LocalFavoriteTemplateStore.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LocalFavoriteTemplateStore.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LocalFavoriteTemplateStore.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LocalFavoriteTemplateStore.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/LocalStorage/PoorGenerationFeedbackStore.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PoorGenerationFeedbackStore.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PoorGenerationFeedbackStore.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PoorGenerationFeedbackStore.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/LocalStorage/RechargeDataCacheManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeDataCacheManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeDataCacheManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeDataCacheManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/LocalStorage/RedirectPaymentInfoStore.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RedirectPaymentInfoStore.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RedirectPaymentInfoStore.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RedirectPaymentInfoStore.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/LocalStorage/TemplateDataCacheManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateDataCacheManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateDataCacheManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateDataCacheManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/LocalStorage/UserDefaultsManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserDefaultsManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserDefaultsManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserDefaultsManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/LocalStorage/VideoCacheManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/VideoCacheManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/VideoCacheManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/VideoCacheManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/APIBaseURL.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/APIBaseURL.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/APIBaseURL.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/APIBaseURL.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/APIClient.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/APIClient.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/APIClient.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/APIClient.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/AuthAPI.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthAPI.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthAPI.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthAPI.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/FavoritesAPI.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FavoritesAPI.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FavoritesAPI.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FavoritesAPI.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/FeedbackAPI.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FeedbackAPI.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FeedbackAPI.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FeedbackAPI.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/RechargeAPI.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeAPI.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeAPI.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeAPI.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/ResBaseURL.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ResBaseURL.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ResBaseURL.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ResBaseURL.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/StatisticsAPI.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/StatisticsAPI.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/StatisticsAPI.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/StatisticsAPI.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/TaskAPI.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TaskAPI.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TaskAPI.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TaskAPI.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/TemplateAPI.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateAPI.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateAPI.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateAPI.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/UploadAPI.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UploadAPI.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UploadAPI.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UploadAPI.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/UserAPI.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserAPI.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserAPI.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserAPI.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Network/VersionConfigAPI.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/VersionConfigAPI.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/VersionConfigAPI.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/VersionConfigAPI.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Repositories/AuthRepository.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthRepository.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthRepository.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthRepository.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Repositories/RechargeRepository.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeRepository.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeRepository.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeRepository.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Repositories/TemplateRepository.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateRepository.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateRepository.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateRepository.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Data/Repositories/UploadRepository.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UploadRepository.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UploadRepository.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UploadRepository.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Entities/AuthModels.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthModels.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthModels.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthModels.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Entities/FavoriteModels.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FavoriteModels.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FavoriteModels.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FavoriteModels.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Entities/FeedbackModels.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FeedbackModels.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FeedbackModels.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/FeedbackModels.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Entities/RechargeModels.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeModels.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeModels.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeModels.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Entities/TemplateModels.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateModels.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateModels.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateModels.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Repositories/AuthRepositoryProtocol.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthRepositoryProtocol.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthRepositoryProtocol.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthRepositoryProtocol.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Repositories/RechargeRepositoryProtocol.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeRepositoryProtocol.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeRepositoryProtocol.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeRepositoryProtocol.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Repositories/TemplateRepositoryProtocol.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateRepositoryProtocol.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateRepositoryProtocol.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TemplateRepositoryProtocol.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/AFConfigManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AFConfigManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AFConfigManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AFConfigManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/AFService.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AFService.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AFService.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AFService.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/BehaviorEventQueue.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BehaviorEventQueue.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BehaviorEventQueue.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BehaviorEventQueue.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/IAPManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IAPManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IAPManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IAPManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/IAPOrderMapping.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IAPOrderMapping.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IAPOrderMapping.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IAPOrderMapping.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/IPLocationManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IPLocationManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IPLocationManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IPLocationManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/PackageManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PackageManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PackageManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PackageManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/PayChannelManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PayChannelManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PayChannelManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PayChannelManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/PaymentCardManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PaymentCardManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PaymentCardManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PaymentCardManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/PhotoValidationService.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PhotoValidationService.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PhotoValidationService.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PhotoValidationService.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/TaskPollingService.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TaskPollingService.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TaskPollingService.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TaskPollingService.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/UserLocaleReporter.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserLocaleReporter.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserLocaleReporter.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserLocaleReporter.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Domain/Services/WebSocketService.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/WebSocketService.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/WebSocketService.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/WebSocketService.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeAnalytics.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeAnalytics.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeAnalytics.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeAnalytics.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeCachedImage.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeCachedImage.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeCachedImage.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeCachedImage.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeChrome.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeChrome.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeChrome.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeChrome.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeGenerationRechargeUpsellView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeGenerationRechargeUpsellView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeGenerationRechargeUpsellView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeGenerationRechargeUpsellView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeGridFeedView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeGridFeedView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeGridFeedView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeGridFeedView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeImmersiveFeedView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeImmersiveFeedView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeImmersiveFeedView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeImmersiveFeedView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeImmersiveVideoBackdrop.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeImmersiveVideoBackdrop.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeImmersiveVideoBackdrop.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeImmersiveVideoBackdrop.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeLayoutTransitions.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeLayoutTransitions.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeLayoutTransitions.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeLayoutTransitions.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeModels.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeModels.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeModels.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeModels.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeTemplateDetailView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeTemplateDetailView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeTemplateDetailView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeTemplateDetailView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeTemplateGenerationSheet.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeTemplateGenerationSheet.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeTemplateGenerationSheet.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeTemplateGenerationSheet.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeUploadTipsOverlay.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeUploadTipsOverlay.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeUploadTipsOverlay.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeUploadTipsOverlay.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Home/HomeView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/HomeView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/My/GenerationSuccessView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/GenerationSuccessView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/GenerationSuccessView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/GenerationSuccessView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/My/LoginView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LoginView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LoginView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LoginView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/My/MyCreationsView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/MyCreationsView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/MyCreationsView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/MyCreationsView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/My/MyProfileView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/MyProfileView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/MyProfileView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/MyProfileView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/My/ProfileFeatureViews.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ProfileFeatureViews.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ProfileFeatureViews.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ProfileFeatureViews.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/My/ProfileRoute.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ProfileRoute.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ProfileRoute.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/ProfileRoute.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/AppCoinIcon.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppCoinIcon.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppCoinIcon.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppCoinIcon.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/AppConfig.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppConfig.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppConfig.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppConfig.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/AppError.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppError.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppError.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppError.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/AppLanguageStore.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppLanguageStore.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppLanguageStore.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppLanguageStore.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/AppTabRouter.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppTabRouter.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppTabRouter.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppTabRouter.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/AppTheme.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppTheme.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppTheme.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AppTheme.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/AuthReloginHelper.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthReloginHelper.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthReloginHelper.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthReloginHelper.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/AuthSessionStore.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthSessionStore.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthSessionStore.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AuthSessionStore.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/BalanceManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BalanceManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BalanceManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BalanceManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/BBBApplicationDelegate.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BBBApplicationDelegate.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BBBApplicationDelegate.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BBBApplicationDelegate.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/BBBPushNotificationCenterDelegate.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BBBPushNotificationCenterDelegate.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BBBPushNotificationCenterDelegate.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/BBBPushNotificationCenterDelegate.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/DeviceLoginService.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/DeviceLoginService.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/DeviceLoginService.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/DeviceLoginService.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/DeviceManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/DeviceManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/DeviceManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/DeviceManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/IOS15Compat.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IOS15Compat.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IOS15Compat.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/IOS15Compat.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/LegacyImagePicker.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LegacyImagePicker.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LegacyImagePicker.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LegacyImagePicker.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/LegalAndSupportViews.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LegalAndSupportViews.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LegalAndSupportViews.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/LegalAndSupportViews.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/MainTabView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/MainTabView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/MainTabView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/MainTabView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/NotificationPermissionStore.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/NotificationPermissionStore.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/NotificationPermissionStore.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/NotificationPermissionStore.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/PushManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PushManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PushManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PushManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/PushMarketingSheets.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PushMarketingSheets.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PushMarketingSheets.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PushMarketingSheets.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/PushRechargeOrderAttribution.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PushRechargeOrderAttribution.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PushRechargeOrderAttribution.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/PushRechargeOrderAttribution.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/RechargeAFLogger.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeAFLogger.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeAFLogger.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeAFLogger.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/RemotePushRoute.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RemotePushRoute.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RemotePushRoute.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RemotePushRoute.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/TokenManager.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TokenManager.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TokenManager.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/TokenManager.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/UserWalletStore.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserWalletStore.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserWalletStore.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/UserWalletStore.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/VersionConfigStore.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/VersionConfigStore.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/VersionConfigStore.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/VersionConfigStore.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/WelcomeBonusOverlay.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/WelcomeBonusOverlay.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/WelcomeBonusOverlay.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/WelcomeBonusOverlay.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Rechange/AddPaymentCardView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AddPaymentCardView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AddPaymentCardView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/AddPaymentCardView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Rechange/CreditCardManagementView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/CreditCardManagementView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/CreditCardManagementView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/CreditCardManagementView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Rechange/RechargePaymentSelectionView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargePaymentSelectionView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargePaymentSelectionView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargePaymentSelectionView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Rechange/RechargeRecordListView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeRecordListView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeRecordListView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeRecordListView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Rechange/RechargeResultOverlay.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeResultOverlay.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeResultOverlay.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeResultOverlay.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Rechange/RechargeUIModels.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeUIModels.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeUIModels.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeUIModels.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Rechange/RechargeView.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeView.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeView.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/RechargeView.o"
+  },
+  "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mac/Documents/IosProject/AiProject/build/DerivedData/Build/Intermediates.noindex/bbb.build/Release-iphoneos/bbb.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

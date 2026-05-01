@@ -1,0 +1,16 @@
+{
+  "source": "/Users/mac/Documents/IosProject/AiProject/Akarsu/bbb/Other/WelcomeBonusOverlay.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "🎁"
+      },
+      {
+        "comment": "",
+        "key": "%lld"
+      }
+    ]
+  },
+  "version": 1
+}
