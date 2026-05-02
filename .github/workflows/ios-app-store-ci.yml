@@ -75,7 +75,8 @@ jobs:
           test -n "${PROVISION_BASE64:-}" || { echo "::error::缺少 Repository secret：APPLE_PROVISION_PROFILE_BASE64"; exit 1; }
           test -n "${APPLE_TEAM_ID:-}" || { echo "::error::缺少 Repository secret：APPLE_TEAM_ID"; exit 1; }
 
-          KEYCHAIN_PATH="$PWD/build-ci.keychain-db"
+          # 使用绝对路径，避免后续 step 工作目录变化导致找不到钥匙串
+          KEYCHAIN_PATH="${GITHUB_WORKSPACE}/Akarsu/build-ci.keychain-db"
           security create-keychain -p "" "${KEYCHAIN_PATH}"
           security default-keychain -s "${KEYCHAIN_PATH}"
           security unlock-keychain -p "" "${KEYCHAIN_PATH}"
@@ -107,11 +108,26 @@ jobs:
       - name: Resolve Distribution signing identity
         run: |
           set -euo pipefail
-          security find-identity -v -p codesigning "${KEYCHAIN_PATH}" || true
-          LINE=$(security find-identity -v -p codesigning "${KEYCHAIN_PATH}" | grep -E "Apple Distribution|iPhone Distribution" | head -1 || true)
+          KCHAIN="${KEYCHAIN_PATH}"
+          if [[ "${KCHAIN}" != /* ]]; then
+            KCHAIN="${GITHUB_WORKSPACE}/Akarsu/${KCHAIN}"
+          fi
+          test -f "${KCHAIN}" || { echo "::error::钥匙串文件不存在: ${KCHAIN}"; exit 1; }
+
+          echo "Listing code signing identities in: ${KCHAIN}"
+          security find-identity -v -p codesigning "${KCHAIN}" || true
+
+          # 上架须为 Apple Distribution（或旧式 iPhone Distribution），不能是 Apple Development
+          LINE=$(security find-identity -v -p codesigning "${KCHAIN}" | grep -E "Apple Distribution|iPhone Distribution" | head -1 || true)
           if [ -z "${LINE}" ]; then
-            echo "::error::未在钥匙串中找到 Apple Distribution / iPhone Distribution 证书，请检查 APPLE_CERT_P12_BASE64 是否为分发证书。"
-            security find-identity -v -p codesigning "${KEYCHAIN_PATH}" || true
+            echo "::error::未在钥匙串中找到「Apple Distribution」或「iPhone Distribution」证书。"
+            if security find-identity -v -p codesigning "${KCHAIN}" | grep -qi "Apple Development"; then
+              echo "::error::当前 .p12 为「Apple Development」（开发证书），无法用于 App Store 归档。请在 developer.apple.com → Certificates 创建并安装「Apple Distribution」，从钥匙串重新导出 .p12，并更新 Secret APPLE_CERT_P12_BASE64。"
+            else
+              echo "::error::请确认 APPLE_CERT_P12_BASE64 解码正确、APPLE_CERT_PASSWORD 与导出 .p12 时一致，且 .p12 内含分发证书。"
+            fi
+            echo "完整列表："
+            security find-identity -v -p codesigning "${KCHAIN}" || true
             exit 1
           fi
           SIGN_IDENTITY=$(echo "${LINE}" | sed -n 's/.*"\(.*\)"/\1/p')
