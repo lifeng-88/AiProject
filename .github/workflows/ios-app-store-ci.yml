@@ -81,16 +81,12 @@ jobs:
           security unlock-keychain -p "" "${KEYCHAIN_PATH}"
           security set-keychain-settings -lut 21600 "${KEYCHAIN_PATH}"
 
-          # macOS 使用 base64 -d（勿用 base64 --decode）；Secret 勿含多余换行
-          CERT_P12_BASE64=$(printf '%s' "${CERT_P12_BASE64}" | tr -d '\n\r')
-          PROVISION_BASE64=$(printf '%s' "${PROVISION_BASE64}" | tr -d '\n\r')
-          printf '%s' "${CERT_P12_BASE64}" | base64 -d > /tmp/dist.p12
+          python3 "${{ github.workspace }}/.github/scripts/decode_secrets.py"
+
           security import /tmp/dist.p12 -k "${KEYCHAIN_PATH}" -P "${CERT_PASSWORD}" \
             -T /usr/bin/codesign -T /usr/bin/security -A
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "" "${KEYCHAIN_PATH}"
           rm -f /tmp/dist.p12
-
-          printf '%s' "${PROVISION_BASE64}" | base64 -d > /tmp/app.mobileprovision
           security cms -D -i /tmp/app.mobileprovision > /tmp/profile.plist
           PROFILE_UUID=$(/usr/libexec/PlistBuddy -c "Print :UUID" /tmp/profile.plist)
           PROFILE_NAME=$(/usr/libexec/PlistBuddy -c "Print :Name" /tmp/profile.plist)
