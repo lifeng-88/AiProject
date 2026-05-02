@@ -157,12 +157,17 @@ jobs:
             "PROVISIONING_PROFILE_SPECIFIER=${PROFILE_NAME}"
 
       - name: Export IPA
+        env:
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
         run: |
           set -euo pipefail
+          export OUT_PATH="$PWD/build/ExportOptions-export.plist"
+          export BUNDLE_ID="com.Akarsu.net"
+          python3 "${GITHUB_WORKSPACE}/.github/scripts/write_export_options.py"
           xcodebuild -exportArchive \
             -archivePath "$PWD/build/bbb.xcarchive" \
             -exportPath "$PWD/build/AppStoreExport" \
-            -exportOptionsPlist "$PWD/ExportOptions-app-store-ci.plist"
+            -exportOptionsPlist "$PWD/build/ExportOptions-export.plist"
 
       - name: Upload IPA artifact
         uses: actions/upload-artifact@v4
